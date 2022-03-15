@@ -2,11 +2,21 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Production deploy
+
+```
+yarn install --frozen-lockfile
+yarn run build:po
+yarn run build
+```
+
+When the build is complete, serve the files from the `/build` directory using nginx as regular static files.
+
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+### `yarn run watch`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -14,12 +24,35 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `npm test`
+### `yarn run watch:po`
+
+Generate typescript-compatible dictionaries from .po files in watch mode
+
+### `yarn run watch:storybook`
+
+Runs the storybook in the development mode.\
+Open [http://localhost:6006](http://localhost:6006) to view it in the browser.
+
+The page will reload if you make edits.
+
+### `yarn run test`
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### `yarn run lint`
+
+Run linter.
+
+### `yarn run prettier`
+
+Run prettier. To automatically fix problems in the code, run with the "-w" flag:
+
+```sh
+yarn run prettier -w
+```
+
+### `yarn run build`
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
@@ -29,15 +62,13 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+### `yarn run build:po`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Generate typescript-compatible dictionaries from .po files
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### `yarn run build:storybook`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Build storybook stories as static website.
 
 ## Learn More
 

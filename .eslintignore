@@ -1,0 +1,4 @@
+_generated.ts
+*.d.ts
+build
+node_modules
