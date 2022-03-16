@@ -1,20 +1,17 @@
-name: jsnake
+name: Tests
 
 on:
   push:
     branches:
-      - main
-      - master
       - develop
   pull_request:
     branches:
       - main
-      - master
       - develop
 
 jobs:
-  validate_code:
-    name: Validate code
+  test:
+    name: Test
     runs-on: ubuntu-latest
 
     steps:

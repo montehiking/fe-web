@@ -1,0 +1,32 @@
+name: Deployments
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deployment:
+    name: Deployment
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2-beta
+        with:
+          node-version: '14'
+
+      - name: Get app version
+        id: package-version
+        uses: martinbeentjes/npm-get-version-action@master
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Set url
+        run: git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Deploy app
+        run: yarn run deploy -u "github-actions-bot <support+actions@github.com>" -m "Release ${{ steps.package-version.outputs.current-version }}"
