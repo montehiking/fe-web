@@ -1,6 +1,6 @@
 {
   "name": "montehiking",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
   "scripts": {
     "build": "react-scripts build",
@@ -9,6 +9,7 @@
     "watch": "react-scripts start",
     "watch:po": "po-extract --outExt=.ts --outDir=./src/i18n/dictionaries --watch",
     "watch:storybook": "start-storybook -p 6006 -s public",
+    "predeploy": "yarn run build",
     "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "lint": "eslint . --ext .ts,.tsx",
