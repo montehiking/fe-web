@@ -3,3 +3,8 @@
 // expect(element).toHaveTextContent(/react/i)
 // learn more: https://github.com/testing-library/jest-dom
 import '@testing-library/jest-dom';
+
+jest.mock('@googlemaps/typescript-guards', () => {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  return { isLatLngLiteral: (_abj: any) => true };
+});
