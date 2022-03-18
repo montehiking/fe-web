@@ -6,7 +6,7 @@ import { Provider } from 'src/components/providers/Provider';
 export const App: React.FC = () => (
   <Provider>
     <div className="app" data-testid="page">
-      <MapView />
+      <MapView isAdmin={false} />
     </div>
   </Provider>
 );

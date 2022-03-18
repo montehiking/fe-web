@@ -41,13 +41,28 @@ function useDeepCompareMemoize(value: any) {
 }
 
 export const useMap = ({ onClick }: Props) => {
+  const InfoWindow = global?.google?.maps.InfoWindow;
+
   const ref = useRef<HTMLDivElement>(null);
 
   const [map, setMap] = useState<google.maps.Map>();
   const [zoom, setZoom] = useState(INITIAL_ZOOM);
   const [center, setCenter] = useState(INITIAL_CENTER);
+  const [infoWindow, setInfoWindow] = useState<google.maps.InfoWindow>();
 
   const options = { zoom, center };
+
+  const handler = (event: google.maps.MapMouseEvent) => {
+    infoWindow?.close();
+    onClick(event);
+  };
+
+  useEffect(() => {
+    if (InfoWindow && !infoWindow) {
+      setInfoWindow(new InfoWindow());
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [!!InfoWindow, !!infoWindow]);
 
   useEffect(() => {
     if (ref.current && !map) {
@@ -61,7 +76,7 @@ export const useMap = ({ onClick }: Props) => {
         google.maps.event.clearListeners(map, eventName)
       );
 
-      map.addListener('click', onClick);
+      map.addListener('click', handler);
       map.addListener('idle', () => {
         const newZoom = map.getZoom();
         const newCenter = map.getCenter();
@@ -75,7 +90,8 @@ export const useMap = ({ onClick }: Props) => {
         }
       });
     }
-  }, [zoom, map, onClick]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [zoom, map]);
 
   useEffect(() => {
     if (map) {
@@ -84,5 +100,5 @@ export const useMap = ({ onClick }: Props) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [useDeepCompareMemoize(map), useDeepCompareMemoize(options)]);
 
-  return { ref, map };
+  return { ref, map, infoWindow };
 };
