@@ -19,6 +19,7 @@ code {
     monospace;
 }
 
+.poi-info-window *,
 .gm-ui-hover-effect {
   outline: none !important;
 }
