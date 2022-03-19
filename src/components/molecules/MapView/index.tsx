@@ -26,9 +26,9 @@ export const MapView: React.FC<Props> = ({ isAdmin }) => {
     <div className={styles.wrapper}>
       <Wrapper apiKey={GOOGLE_MAPS_API_KEY}>
         <Map onClick={onClick}>
-          {markers.map(({ type, title, ...latLng }, i) => (
+          {markers.map(({ type, title, ...latLng }) => (
             <Marker
-              key={i}
+              key={`${latLng.lat}${latLng.lng}`}
               position={latLng}
               title={title}
               label={type ? type.charAt(0).toUpperCase() : undefined}

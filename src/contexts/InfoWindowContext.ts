@@ -1,5 +1,6 @@
 import { createContext } from 'react';
 
-export const InfoWindowContext = createContext<
-  google.maps.InfoWindow | undefined
->(undefined);
+export const InfoWindowContext = createContext<{
+  infoWindow?: google.maps.InfoWindow;
+  zoom: number;
+}>({ zoom: 1 });

@@ -6,7 +6,6 @@ export type Props = google.maps.MapOptions & {
   onClick: (e: google.maps.MapMouseEvent) => void;
 };
 
-const INITIAL_ZOOM = 9;
 const INITIAL_CENTER: google.maps.LatLngLiteral = {
   lat: 42.729601871834504,
   lng: 19.28824681389678,
@@ -43,10 +42,12 @@ function useDeepCompareMemoize(value: any) {
 export const useMap = ({ onClick }: Props) => {
   const InfoWindow = global?.google?.maps.InfoWindow;
 
+  const initialZoom = window.innerWidth > 700 ? 9 : 8;
+
   const ref = useRef<HTMLDivElement>(null);
 
   const [map, setMap] = useState<google.maps.Map>();
-  const [zoom, setZoom] = useState(INITIAL_ZOOM);
+  const [zoom, setZoom] = useState(initialZoom);
   const [center, setCenter] = useState(INITIAL_CENTER);
   const [infoWindow, setInfoWindow] = useState<google.maps.InfoWindow>();
 
@@ -100,5 +101,5 @@ export const useMap = ({ onClick }: Props) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [useDeepCompareMemoize(map), useDeepCompareMemoize(options)]);
 
-  return { ref, map, infoWindow };
+  return { ref, map, zoom, infoWindow };
 };
