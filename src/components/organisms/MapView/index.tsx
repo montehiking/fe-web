@@ -1,13 +1,12 @@
 import { Wrapper } from '@googlemaps/react-wrapper';
 import React, { useState } from 'react';
 
-import { Map } from 'src/components/atoms/Map';
-import { Marker } from 'src/components/atoms/Marker';
 import { Sidebar } from 'src/components/atoms/Sidebar';
+import { Map } from 'src/components/molecules/Map';
 import { GOOGLE_MAPS_API_KEY } from 'src/constants/env';
 import { Point, points } from 'src/points';
 
-import styles from 'src/components/molecules/MapView/styles.module.css';
+import styles from 'src/components/organisms/MapView/styles.module.css';
 
 type Props = {
   isAdmin: boolean;
@@ -25,18 +24,7 @@ export const MapView: React.FC<Props> = ({ isAdmin }) => {
   return (
     <div className={styles.wrapper}>
       <Wrapper apiKey={GOOGLE_MAPS_API_KEY}>
-        <Map onClick={onClick}>
-          {markers.map(({ type, title, ...latLng }) => (
-            <Marker
-              key={`${latLng.lat}${latLng.lng}`}
-              position={latLng}
-              title={title}
-              label={type ? type.charAt(0).toUpperCase() : undefined}
-              draggable={isAdmin}
-              optimized
-            />
-          ))}
-        </Map>
+        <Map onClick={onClick} markers={markers} isAdmin={isAdmin}></Map>
       </Wrapper>
 
       {isAdmin && (

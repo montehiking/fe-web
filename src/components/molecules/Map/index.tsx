@@ -1,0 +1,54 @@
+import React from 'react';
+
+import { Marker } from 'src/components/atoms/Marker';
+import { Props as MapProps, useMap } from 'src/hooks/useMap';
+import { Point } from 'src/points';
+import { createGoogleMapsURL } from 'src/utils/maps';
+
+import styles from 'src/components/molecules/Map/styles.module.css';
+
+type Props = MapProps & {
+  markers: Point[];
+  isAdmin: boolean;
+};
+
+export const Map: React.FC<Props> = ({ markers, isAdmin, ...options }) => {
+  const { ref, map, zoom, infoWindow } = useMap(options);
+
+  const isMapReady = !!(map && infoWindow);
+
+  return (
+    <>
+      <div ref={ref} className={styles.map} />
+
+      {isMapReady &&
+        markers.map(({ type, title, ...latLng }) => (
+          <Marker
+            draggable={isAdmin}
+            key={`${latLng.lat}${latLng.lng}`}
+            label={type ? type.charAt(0).toUpperCase() : undefined}
+            map={map}
+            optimized
+            position={latLng}
+            title={title}
+            onClick={(marker) => {
+              const url = createGoogleMapsURL(latLng.lat, latLng.lng, zoom);
+
+              infoWindow.close();
+              infoWindow.setContent(
+                `<div class="poi-info-window gm-style">
+                  <div class="title full-width">${title}</div>
+                  <div class="address">
+                    <a href="${url}" target="_blank">
+                      <span>Показать на Google Картах</span>
+                    </a>
+                  </div>
+                </div>`
+              );
+              infoWindow.open(map, marker);
+            }}
+          />
+        ))}
+    </>
+  );
+};
