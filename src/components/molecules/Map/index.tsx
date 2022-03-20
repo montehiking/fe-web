@@ -22,7 +22,7 @@ export const Map: React.FC<Props> = ({ markers, isAdmin, ...options }) => {
       <div ref={ref} className={styles.map} />
 
       {isMapReady &&
-        markers.map(({ type, title, ...latLng }) => (
+        markers.map(({ type, title, description, ...latLng }) => (
           <Marker
             draggable={isAdmin}
             key={`${latLng.lat}${latLng.lng}`}
@@ -38,6 +38,7 @@ export const Map: React.FC<Props> = ({ markers, isAdmin, ...options }) => {
               infoWindow.setContent(
                 `<div class="poi-info-window gm-style">
                   <div class="title full-width">${title}</div>
+                  <div class="point-description full-width">${description}</div>
                   <div class="address">
                     <a href="${url}" target="_blank">
                       <span>Показать на Google Картах</span>
