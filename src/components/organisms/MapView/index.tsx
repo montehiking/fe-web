@@ -1,12 +1,12 @@
 import { Wrapper } from '@googlemaps/react-wrapper';
 import React, { useState } from 'react';
 
-import { Map } from 'src/components/atoms/Map';
 import { Sidebar } from 'src/components/atoms/Sidebar';
+import { Map } from 'src/components/molecules/Map';
 import { GOOGLE_MAPS_API_KEY } from 'src/constants/env';
 import { Point, points } from 'src/points';
 
-import styles from 'src/components/molecules/MapView/styles.module.css';
+import styles from 'src/components/organisms/MapView/styles.module.css';
 
 type Props = {
   isAdmin: boolean;

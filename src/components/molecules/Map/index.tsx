@@ -5,7 +5,7 @@ import { Props as MapProps, useMap } from 'src/hooks/useMap';
 import { Point } from 'src/points';
 import { createGoogleMapsURL } from 'src/utils/maps';
 
-import styles from 'src/components/atoms/Map/styles.module.css';
+import styles from 'src/components/molecules/Map/styles.module.css';
 
 type Props = MapProps & {
   markers: Point[];
