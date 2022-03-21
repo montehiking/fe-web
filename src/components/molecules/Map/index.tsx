@@ -13,15 +13,13 @@ type Props = MapProps & {
 };
 
 export const Map: React.FC<Props> = ({ markers, isAdmin, ...options }) => {
-  const { ref, map, zoom, infoWindow } = useMap(options);
-
-  const isMapReady = !!(map && infoWindow);
+  const { ref, map, infoWindow, initialZoom } = useMap(options);
 
   return (
     <>
       <div ref={ref} className={styles.map} />
 
-      {isMapReady &&
+      {!!map &&
         markers.map(({ type, title, description, ...latLng }) => (
           <Marker
             draggable={isAdmin}
@@ -32,7 +30,11 @@ export const Map: React.FC<Props> = ({ markers, isAdmin, ...options }) => {
             position={latLng}
             title={title}
             onClick={(marker) => {
-              const url = createGoogleMapsURL(latLng.lat, latLng.lng, zoom);
+              const url = createGoogleMapsURL(
+                latLng.lat,
+                latLng.lng,
+                map?.getZoom() ?? initialZoom
+              );
 
               infoWindow.close();
               infoWindow.setContent(
