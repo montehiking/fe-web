@@ -1,6 +1,6 @@
 {
   "name": "montehiking",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "private": true,
   "scripts": {
     "build": "react-scripts build",
@@ -17,7 +17,6 @@
   },
   "dependencies": {
     "@googlemaps/react-wrapper": "^1.1.27",
-    "@googlemaps/typescript-guards": "^1.0.10",
     "@storybook/addon-actions": "^6.4.19",
     "@storybook/addon-essentials": "^6.4.19",
     "@storybook/addon-interactions": "^6.4.19",
@@ -51,7 +50,6 @@
     "eslint-plugin-react": "^7.21.5",
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-storybook": "^0.5.7",
-    "fast-equals": "^3.0.0",
     "gh-pages": "^3.2.3",
     "husky": "^4.3.0",
     "po-extract": "^1.0.1",

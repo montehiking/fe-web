@@ -17,7 +17,10 @@ export const MapView: React.FC<Props> = ({ isAdmin }) => {
 
   const onClick = ({ latLng }: google.maps.MapMouseEvent) => {
     if (latLng && isAdmin) {
-      setMarkers([...markers, { ...latLng.toJSON(), type: '', title: '' }]);
+      setMarkers([
+        ...markers,
+        { ...latLng.toJSON(), type: '', title: '', description: '' },
+      ]);
     }
   };
 

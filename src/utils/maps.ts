@@ -28,7 +28,7 @@ export const createGoogleMapsURL = (
   zoom: Zoom
 ) => {
   const dms = latLngToDMS(lat, lng);
-  const url = `https://www.google.com/maps/place/${dms}/@${lat}${lng},${zoom}z`;
+  const url = `https://www.google.com/maps/place/${dms}/@${lat},${lng},${zoom}z`;
 
   return encodeURI(url).replace(
     /[!'()*]/g,

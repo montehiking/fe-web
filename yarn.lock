@@ -1570,11 +1570,6 @@
   dependencies:
     "@googlemaps/js-api-loader" "^1.13.2"
 
-"@googlemaps/typescript-guards@^1.0.10":
-  version "1.0.10"
-  resolved "https://registry.yarnpkg.com/@googlemaps/typescript-guards/-/typescript-guards-1.0.10.tgz#190c38cd84b05a891d74c6caf0fb8974d8eafcd0"
-  integrity sha512-ynDrBiStxc8ThlUDzMAabDSXtW5QeebX1v2Ukn9lyH7ciofioVus4ZJanCWRpXoVLiAHbiscIdMs5rzpbVuDDQ==
-
 "@humanwhocodes/config-array@^0.5.0":
   version "0.5.0"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.5.0.tgz#1407967d4c6eecd7388f83acf1eaf4d0c6e58ef9"
@@ -7394,11 +7389,6 @@ fast-diff@^1.1.2:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/fast-diff/-/fast-diff-1.2.0.tgz#73ee11982d86caaf7959828d519cfe927fac5f03"
   integrity sha512-xJuoT5+L99XlZ8twedaRf6Ax2TgQVxvgZOYoPKqZufmJib0tL2tegPBOZb1pVNgIhlqDlA0eO0c3wBvQcmzx4w==
-
-fast-equals@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/fast-equals/-/fast-equals-3.0.0.tgz#efbe679d4c0d74040f61d4dda3e6bcb3bdccab82"
-  integrity sha512-Af7nSOpf7617idrFg0MJY6x7yVDPoO80aSwtKTC0afT8B/SsmvTpA+2a+uPLmhVF5IHmY5NPuBAA3dJrp55rJA==
 
 fast-glob@^2.2.6:
   version "2.2.7"

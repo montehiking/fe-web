@@ -15,7 +15,7 @@ describe('Converting latLng to DMS', () => {
 describe('createGoogleMapsURL', () => {
   test('function working correctly', () => {
     expect(createGoogleMapsURL(42.399914442570854, 18.8375186920166, 9)).toBe(
-      'https://www.google.com/maps/place/42%C2%B023%2759.69%22N+18%C2%B050%2715.07%22E/@42.39991444257085418.8375186920166,9z'
+      'https://www.google.com/maps/place/42%C2%B023%2759.69%22N+18%C2%B050%2715.07%22E/@42.399914442570854,18.8375186920166,9z'
     );
   });
 });

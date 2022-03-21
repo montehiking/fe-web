@@ -23,3 +23,9 @@ code {
 .gm-ui-hover-effect {
   outline: none !important;
 }
+
+.point-description {
+  color: #999999 !important;
+  font-size: 95% !important;
+  padding-bottom: 5px;
+}
