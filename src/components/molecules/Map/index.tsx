@@ -30,25 +30,35 @@ export const Map: React.FC<Props> = ({ markers, isAdmin, ...options }) => {
             position={latLng}
             title={title}
             onClick={(marker) => {
-              const url = createGoogleMapsURL(
-                latLng.lat,
-                latLng.lng,
-                map?.getZoom() ?? initialZoom
-              );
+              const oldPosition = infoWindow.getPosition();
 
-              infoWindow.close();
-              infoWindow.setContent(
-                `<div class="poi-info-window gm-style">
-                  <div class="title full-width">${title}</div>
-                  <div class="point-description full-width">${description}</div>
-                  <div class="address">
-                    <a href="${url}" target="_blank">
-                      <span>Показать на Google Картах</span>
-                    </a>
-                  </div>
-                </div>`
-              );
-              infoWindow.open(map, marker);
+              if (
+                oldPosition?.lat() === latLng.lat &&
+                oldPosition?.lng() === latLng.lng &&
+                // eslint-disable-next-line @typescript-eslint/no-explicit-any
+                !!(infoWindow as any).map
+              ) {
+                infoWindow.close();
+              } else {
+                const url = createGoogleMapsURL(
+                  latLng.lat,
+                  latLng.lng,
+                  map?.getZoom() ?? initialZoom
+                );
+
+                infoWindow.setContent(
+                  `<div class="poi-info-window gm-style">
+                    <div class="title full-width">${title}</div>
+                    <div class="point-description full-width">${description}</div>
+                    <div class="address">
+                      <a href="${url}" target="_blank">
+                        <span>Показать на Google Картах</span>
+                      </a>
+                    </div>
+                  </div>`
+                );
+                infoWindow.open(map, marker);
+              }
             }}
           />
         ))}
