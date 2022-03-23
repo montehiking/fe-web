@@ -25,7 +25,7 @@ export const MapView: React.FC<Props> = ({ isAdmin }) => {
   };
 
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.wrapper} data-testid="page">
       <Wrapper apiKey={GOOGLE_MAPS_API_KEY}>
         <Map onClick={onClick} markers={markers} isAdmin={isAdmin}></Map>
       </Wrapper>

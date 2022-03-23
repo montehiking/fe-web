@@ -29,3 +29,7 @@ code {
   font-size: 95% !important;
   padding-bottom: 5px;
 }
+
+.gm-style-mtc li img {
+  vertical-align: baseline;
+}
