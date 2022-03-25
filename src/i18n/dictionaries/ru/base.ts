@@ -12,4 +12,7 @@ export const base = {
     'Природные достопримечательности',
   'components.organisms.Filters.filters.old_town': 'Старые города',
   'components.organisms.Filters.filters.ruin': 'Руины',
+
+  'components.molecules.Map.tooltip.showOnGoogleMaps':
+    'Показать на Google Картах',
 };

@@ -41,3 +41,7 @@ msgstr "Старые города"
 msgctxt "base"
 msgid "components.organisms.Filters.filters.ruin"
 msgstr "Руины"
+
+msgctxt "base"
+msgid "components.molecules.Map.tooltip.showOnGoogleMaps"
+msgstr "Показать на Google Картах"

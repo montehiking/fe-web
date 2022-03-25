@@ -1,7 +1,9 @@
 import React from 'react';
+import { useIntl } from 'react-intl';
 
 import { Marker } from 'src/components/atoms/Marker';
 import { Props as MapProps, useMap } from 'src/hooks/useMap';
+import { msg } from 'src/i18n/Msg';
 import { Point } from 'src/points';
 import { createGoogleMapsURL } from 'src/utils/maps';
 
@@ -9,10 +11,11 @@ import styles from 'src/components/molecules/Map/styles.module.css';
 
 type Props = MapProps & {
   markers: Point[];
-  isAdmin: boolean;
+  draggable: boolean;
 };
 
-export const Map: React.FC<Props> = ({ markers, isAdmin, ...options }) => {
+export const Map: React.FC<Props> = ({ markers, draggable, ...options }) => {
+  const intl = useIntl();
   const { ref, map, infoWindow, initialZoom } = useMap(options);
 
   return (
@@ -22,7 +25,7 @@ export const Map: React.FC<Props> = ({ markers, isAdmin, ...options }) => {
       {!!map &&
         markers.map(({ type, title, description, ...latLng }) => (
           <Marker
-            draggable={isAdmin}
+            draggable={draggable}
             key={`${latLng.lat}${latLng.lng}`}
             label={type ? type.charAt(0).toUpperCase() : undefined}
             map={map}
@@ -46,13 +49,17 @@ export const Map: React.FC<Props> = ({ markers, isAdmin, ...options }) => {
                   map?.getZoom() ?? initialZoom
                 );
 
+                const text = msg(intl, {
+                  id: 'components.molecules.Map.tooltip.showOnGoogleMaps',
+                });
+
                 infoWindow.setContent(
                   `<div class="poi-info-window gm-style">
                     <div class="title full-width">${title}</div>
                     <div class="point-description full-width">${description}</div>
                     <div class="address">
                       <a href="${url}" target="_blank">
-                        <span>Показать на Google Картах</span>
+                        <span>${text}</span>
                       </a>
                     </div>
                   </div>`
