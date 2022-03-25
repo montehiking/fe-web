@@ -1,56 +1,61 @@
-# Getting Started with Create React App
+# MonteHiking
+
+This app helps you find interesting hiking locations.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Production deploy
+## Infrastructure
 
-```
-yarn install --frozen-lockfile
-yarn run build:po
-yarn run build
+- staging: TODO
+- production: [map.neruchev.com](https://map.neruchev.com)
+
+## Pre requirements
+
+- `node.js`: `14.*`
+- `yarn`: `1.22.*`
+- `tmux`: `*` (optional, for local launch)
+
+## Development
+
+1. install `node`, `yarn`, `tmux`
+
+```sh
+# tmux
+brew install tmux
 ```
 
-When the build is complete, serve the files from the `/build` directory using nginx as regular static files.
+2. (optional) run `chmod 0755 ./tmux.sh`
+
+3. run `yarn install` on repository root.
+
+4. run `./tmux.sh` **OR** run parallel:
+
+```sh
+yarn run watch:po
+```
+
+```sh
+yarn run watch:storybook
+```
+
+```sh
+yarn run watch
+```
+
+## Production
+
+Just merge the changes into the `main` branch.
+
+### Manual deploy
+
+1. run `yarn install --frozen-lockfile` on repository root.
+2. run `yarn run deploy`
+
+When the build completes, the app will be published to Github Pages.
 
 ## Available Scripts
 
 In the project directory, you can run:
-
-### `yarn run watch`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn run watch:po`
-
-Generate typescript-compatible dictionaries from .po files in watch mode
-
-### `yarn run watch:storybook`
-
-Runs the storybook in the development mode.\
-Open [http://localhost:6006](http://localhost:6006) to view it in the browser.
-
-The page will reload if you make edits.
-
-### `yarn run test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn run lint`
-
-Run linter.
-
-### `yarn run prettier`
-
-Run prettier. To automatically fix problems in the code, run with the "-w" flag:
-
-```sh
-yarn run prettier -w
-```
 
 ### `yarn run build`
 
@@ -64,11 +69,48 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ### `yarn run build:po`
 
-Generate typescript-compatible dictionaries from .po files
+Generate typescript-compatible dictionaries from .po files.
 
 ### `yarn run build:storybook`
 
 Build storybook stories as static website.
+
+### `yarn run deploy`
+
+Publish the production bundle to Github Pages.
+
+### `yarn run watch`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
+
+### `yarn run watch:po`
+
+Generate typescript-compatible dictionaries from .po files in watch mode.
+
+### `yarn run watch:storybook`
+
+Runs the storybook in the development mode.\
+Open [http://localhost:6006](http://localhost:6006) to view it in the browser.
+
+The page will reload if you make edits.
+
+### `yarn run prettier`
+
+Run prettier.\
+See the [documentation](https://prettier.io/docs/en/cli.html) for the `prettier` package for details.
+
+### `yarn run lint`
+
+Run eslint.
+
+### `yarn run test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ## Learn More
 

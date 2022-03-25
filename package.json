@@ -1,7 +1,22 @@
 {
   "name": "montehiking",
   "version": "0.0.9",
-  "private": true,
+  "description": "This app helps you find interesting hiking locations",
+  "keywords": [
+    "Montenegro",
+    "Crna Gora",
+    "hiking",
+    "planinarenje",
+    "map",
+    "mapa"
+  ],
+  "repository": "git@github.com:neruchev/montehiking.git",
+  "bugs": {
+    "url": "https://github.com/neruchev/montehiking/issues"
+  },
+  "author": "Kirill Neruchev <kirill@neruchev.com>",
+  "license": "MIT",
+  "private": false,
   "scripts": {
     "build": "react-scripts build",
     "build:po": "po-extract --outExt=.ts --outDir=./src/i18n/dictionaries",
