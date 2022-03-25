@@ -10,6 +10,8 @@ export default {
 
 export const Switch: Story = () => (
   <StorybookProvider>
-    <SwitchComponent label={{ id: 'events.forms.notCompletely' }} />
+    <SwitchComponent
+      label={{ id: 'components.organisms.Filters.filters.fortress' }}
+    />
   </StorybookProvider>
 );

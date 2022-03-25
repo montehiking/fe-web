@@ -1,14 +1,16 @@
+export type PointType =
+  | ''
+  | 'cave'
+  | 'fortress'
+  | 'historical'
+  | 'lighthouse'
+  | 'monument'
+  | 'natural'
+  | 'old_town'
+  | 'ruin';
+
 export type Point = google.maps.LatLngLiteral & {
-  type:
-    | ''
-    | 'cave'
-    | 'fortress'
-    | 'historical'
-    | 'lighthouse'
-    | 'monument'
-    | 'natural'
-    | 'old_town'
-    | 'ruin';
+  type: PointType;
   title: string;
   description: string;
 };

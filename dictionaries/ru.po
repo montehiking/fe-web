@@ -3,9 +3,41 @@
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
-"POT-Creation-Date: 2021-01-08T00:00:00.000Z\n"
-"PO-Revision-Date: 2021-01-08T00:00:00.000Z\n"
+"POT-Creation-Date: 2022-03-25T00:00:00.000Z\n"
+"PO-Revision-Date: 2022-03-25T00:00:00.000Z\n"
 
-msgctxt "events"
-msgid "events.forms.notCompletely"
-msgstr "Форма заполнена не полностью"
+msgctxt "base"
+msgid "components.organisms.Filters.filters.empty"
+msgstr "Без категории"
+
+msgctxt "base"
+msgid "components.organisms.Filters.filters.cave"
+msgstr "Пещеры"
+
+msgctxt "base"
+msgid "components.organisms.Filters.filters.fortress"
+msgstr "Крепости"
+
+msgctxt "base"
+msgid "components.organisms.Filters.filters.historical"
+msgstr "Исторические объекты"
+
+msgctxt "base"
+msgid "components.organisms.Filters.filters.lighthouse"
+msgstr "Маяки"
+
+msgctxt "base"
+msgid "components.organisms.Filters.filters.monument"
+msgstr "Монументы"
+
+msgctxt "base"
+msgid "components.organisms.Filters.filters.natural"
+msgstr "Природные достопримечательности"
+
+msgctxt "base"
+msgid "components.organisms.Filters.filters.old_town"
+msgstr "Старые города"
+
+msgctxt "base"
+msgid "components.organisms.Filters.filters.ruin"
+msgstr "Руины"
