@@ -35,6 +35,7 @@ export const Map: Story = () => (
         description: 'древнеримский город',
       },
     ]}
+    filter={{ from: 100, to: 50, onClick: console.log }}
     draggable
   />
 );

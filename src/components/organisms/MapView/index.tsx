@@ -14,6 +14,9 @@ type Props = {
 export const MapView: React.FC<Props> = ({ isAdmin }) => {
   const [markers, setMarkers] = useState<Point[]>(points);
   const [filters, setFilters] = useState(filtersInitial);
+  const [isSidebarVisible, setIsSidebarVisible] = useState(false);
+
+  const filteredMarkers = markers.filter((m) => filters[m.type]);
 
   const onClick = ({ latLng }: google.maps.MapMouseEvent) => {
     if (latLng && isAdmin) {
@@ -28,21 +31,28 @@ export const MapView: React.FC<Props> = ({ isAdmin }) => {
     <div className={styles.wrapper} data-testid="page">
       <Map
         onClick={onClick}
-        markers={markers.filter((m) => filters[m.type])}
+        markers={filteredMarkers}
         draggable={isAdmin}
+        filter={{
+          from: markers.length,
+          to: filteredMarkers.length,
+          onClick: () => setIsSidebarVisible(!isSidebarVisible),
+        }}
       />
 
-      {isAdmin && (
+      {isSidebarVisible && (
         <Sidebar>
           <Filters filters={filters} onChange={setFilters} />
 
-          <pre className={styles.code}>
-            {JSON.stringify(
-              markers.filter((m) => !m.type),
-              null,
-              2
-            )}
-          </pre>
+          {isAdmin && (
+            <pre className={styles.code}>
+              {JSON.stringify(
+                markers.filter((m) => !m.type),
+                null,
+                2
+              )}
+            </pre>
+          )}
         </Sidebar>
       )}
     </div>

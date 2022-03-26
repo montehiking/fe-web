@@ -1,7 +1,12 @@
 import React from 'react';
 import { useIntl } from 'react-intl';
 
+import { MapControl } from 'src/components/atoms/MapControl';
 import { Marker } from 'src/components/atoms/Marker';
+import {
+  FilterButton,
+  Props as FilterButtonProps,
+} from 'src/components/molecules/FilterButton';
 import { Props as MapProps, useMap } from 'src/hooks/useMap';
 import { msg } from 'src/i18n/Msg';
 import { Point } from 'src/points';
@@ -12,15 +17,32 @@ import styles from 'src/components/molecules/Map/styles.module.css';
 type Props = MapProps & {
   markers: Point[];
   draggable: boolean;
+  filter: FilterButtonProps;
 };
 
-export const Map: React.FC<Props> = ({ markers, draggable, ...options }) => {
+export const Map: React.FC<Props> = ({
+  markers,
+  draggable,
+  filter,
+  ...options
+}) => {
   const intl = useIntl();
   const { ref, map, infoWindow, initialZoom } = useMap(options);
 
   return (
     <>
       <div ref={ref} className={styles.map} />
+
+      {!!map && (
+        <MapControl
+          map={map}
+          width="60px"
+          height="80px"
+          position={google.maps.ControlPosition.RIGHT_BOTTOM}
+        >
+          <FilterButton {...filter} />
+        </MapControl>
+      )}
 
       {!!map &&
         markers.map(({ type, title, description, ...latLng }) => (
