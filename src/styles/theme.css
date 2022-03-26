@@ -1,0 +1,16 @@
+:root {
+  --COLOR_WHITE: #ffffff;
+
+  --COLOR_GRAY_1: #999999;
+  --COLOR_GRAY_2: #666666;
+  --COLOR_GRAY_3: #333333;
+
+  --FONT_SIZE_SMALL: 10px;
+
+  --SPACING_NORMAL: 10px;
+  --SPACING_EXTRA_LARGE: 25px;
+
+  --TRANSITION: 0.5s;
+
+  --RADIUS_MAP_CONTROL: 2px;
+}

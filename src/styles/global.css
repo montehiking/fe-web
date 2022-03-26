@@ -25,9 +25,9 @@ code {
 }
 
 .point-description {
-  color: #999999 !important;
-  font-size: 95% !important;
-  padding-bottom: 5px;
+  color: var(--COLOR_GRAY_1) !important;
+  font-size: var(--FONT_SIZE_SMALL) !important;
+  padding-bottom: var(--SPACING_NORMAL);
 }
 
 .gm-style-mtc li img {

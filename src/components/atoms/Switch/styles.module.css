@@ -4,6 +4,6 @@
 }
 
 .span {
-  padding-left: 10px;
+  padding-left: var(--SPACING_NORMAL);
   line-height: 24px;
 }
