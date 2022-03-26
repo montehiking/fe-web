@@ -1,0 +1,41 @@
+.button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--COLOR_WHITE);
+  margin: var(--SPACING_NORMAL);
+  padding: 0px;
+  border: none;
+  text-transform: none;
+  appearance: none;
+  cursor: pointer;
+  user-select: none;
+  border-radius: var(--RADIUS_MAP_CONTROL);
+  height: 70px;
+  width: 40px;
+  box-shadow: rgb(0 0 0 / 30%) 0px 1px 4px -1px;
+}
+
+.button svg {
+  fill: var(--COLOR_GRAY_2);
+  transition: fill var(--TRANSITION);
+}
+
+.button:hover svg,
+.button:focus svg {
+  fill: var(--COLOR_GRAY_3);
+}
+
+.button span {
+  font-size: var(--FONT_SIZE_SMALL);
+  line-height: 16px;
+  font-weight: 800;
+  color: var(--COLOR_GRAY_1);
+  transition: color var(--TRANSITION);
+}
+
+.button:hover span,
+.button:focus span {
+  color: var(--COLOR_GRAY_2);
+}
