@@ -2,12 +2,13 @@ export type PointType =
   | ''
   | 'cave'
   | 'fortress'
-  | 'historical'
   | 'lighthouse'
   | 'monument'
-  | 'natural'
   | 'old_town'
-  | 'ruin';
+  | 'other'
+  | 'palace'
+  | 'park'
+  | 'waterfall';
 
 export type Point = google.maps.LatLngLiteral & {
   type: PointType;
@@ -26,21 +27,21 @@ export const points: Point[] = [
   {
     lat: 42.27860666307504,
     lng: 18.836129307746887,
-    type: 'ruin',
+    type: 'monument',
     title: 'Antička nekropola',
     description: 'греко-римский некрополь',
   },
   {
     lat: 42.294409390923214,
     lng: 18.87403428554535,
-    type: 'natural',
+    type: 'other',
     title: 'Velja Maslina',
     description: 'памятник природы',
   },
   {
     lat: 42.293835245820986,
     lng: 18.875591026300892,
-    type: 'ruin',
+    type: 'other',
     title: 'Stari mlin',
     description: 'разрушенная мельница',
   },
@@ -68,14 +69,14 @@ export const points: Point[] = [
   {
     lat: 42.27125921448397,
     lng: 18.846744833369705,
-    type: 'historical',
+    type: 'other',
     title: 'Crkva Svetog Nikole',
     description: 'часовня крестоносцев',
   },
   {
     lat: 42.287052571960125,
     lng: 18.885689892322766,
-    type: 'natural',
+    type: 'waterfall',
     title: 'Vodopad',
     description: 'природная достопримечательность',
   },
@@ -89,14 +90,14 @@ export const points: Point[] = [
   {
     lat: 42.29803761094782,
     lng: 18.844456806203493,
-    type: 'historical',
+    type: 'other',
     title: 'Manastir Podmaine (Podostrog)',
     description: 'древний монастырь',
   },
   {
     lat: 42.297946797761924,
     lng: 18.84341023914012,
-    type: 'historical',
+    type: 'other',
     title: 'Most na Grđevici',
     description: 'старинный мост',
   },
@@ -105,7 +106,7 @@ export const points: Point[] = [
     lng: 18.891446962014257,
     type: 'old_town',
     title: 'Sveti Stefan',
-    description: 'старый город',
+    description: 'старинное поселение',
   },
   {
     lat: 42.39580006812814,
@@ -124,7 +125,7 @@ export const points: Point[] = [
   {
     lat: 42.39074914393358,
     lng: 18.711776919687182,
-    type: 'natural',
+    type: 'park',
     title: 'Solila',
     description: 'парк природы',
   },
@@ -152,7 +153,7 @@ export const points: Point[] = [
   {
     lat: 42.46789412201348,
     lng: 19.266767864055097,
-    type: 'ruin',
+    type: 'old_town',
     title: 'Duklja (Diokleja)',
     description: 'древнеримский город',
   },
@@ -166,7 +167,7 @@ export const points: Point[] = [
   {
     lat: 42.24619402714383,
     lng: 19.091258949410722,
-    type: 'historical',
+    type: 'other',
     title: 'Most na Crmnici',
     description: 'старинный мост',
   },
@@ -175,7 +176,7 @@ export const points: Point[] = [
     lng: 19.090697453038924,
     type: 'old_town',
     title: 'Virpazar',
-    description: 'старый город',
+    description: 'старинное поселение',
   },
   {
     lat: 42.3938008811846,
@@ -196,7 +197,7 @@ export const points: Point[] = [
     lng: 18.556442581944513,
     type: 'old_town',
     title: 'Rose',
-    description: 'старый город',
+    description: 'старинное поселение',
   },
   {
     lat: 42.4286327060343,
@@ -208,28 +209,28 @@ export const points: Point[] = [
   {
     lat: 42.51378269755718,
     lng: 18.681551579394878,
-    type: 'natural',
+    type: 'waterfall',
     title: 'Vodopad Sopot',
     description: 'природная достопримечательность',
   },
   {
     lat: 42.36710394637622,
     lng: 18.953089730534305,
-    type: 'natural',
+    type: 'cave',
     title: 'Lipska pećina',
     description: 'пещера',
   },
   {
     lat: 42.094208602985994,
     lng: 19.1348991174308,
-    type: 'ruin',
+    type: 'old_town',
     title: 'Stari Bar',
-    description: 'старый город',
+    description: 'старинное поселение',
   },
   {
     lat: 42.094140467135325,
     lng: 19.136201264742816,
-    type: 'historical',
+    type: 'other',
     title: 'Barski akvadukt',
     description: 'турецкий акведук',
   },
@@ -250,35 +251,35 @@ export const points: Point[] = [
   {
     lat: 42.42239174099881,
     lng: 18.77593567526932,
-    type: 'ruin',
+    type: 'old_town',
     title: 'Špiljari',
     description: 'заброшенная деревня',
   },
   {
     lat: 42.43607347565511,
     lng: 18.764200508594513,
-    type: 'natural',
+    type: 'other',
     title: 'Boka Aquarium',
     description: 'океанариум',
   },
   {
     lat: 42.10087726917829,
     lng: 19.091084003448486,
-    type: 'ruin',
+    type: 'monument',
     title: 'Praistorijski tumul',
     description: 'курган бронзового века',
   },
   {
     lat: 42.100676095855995,
     lng: 19.091215032832988,
-    type: 'historical',
+    type: 'palace',
     title: 'Dvorac kralja Nikole',
     description: 'музей',
   },
   {
     lat: 42.10078754208998,
     lng: 19.091746110217937,
-    type: 'natural',
+    type: 'park',
     title: 'Dvorski park',
     description: 'парк',
   },
@@ -313,7 +314,7 @@ export const points: Point[] = [
   {
     lat: 42.28611186037201,
     lng: 18.822779970220854,
-    type: 'natural',
+    type: 'park',
     title: 'Park Prirode «Spas»',
     description: 'парк природы',
   },
@@ -327,21 +328,21 @@ export const points: Point[] = [
   {
     lat: 42.40067480734931,
     lng: 18.837052238037078,
-    type: 'monument',
+    type: 'other',
     title: 'Vidikovac',
     description: 'смотровая площадка',
   },
   {
     lat: 42.42408896111287,
     lng: 18.706616342017828,
-    type: 'natural',
+    type: 'park',
     title: 'Župa',
     description: 'парк',
   },
   {
     lat: 42.423092205901625,
     lng: 18.704336285591125,
-    type: 'ruin',
+    type: 'palace',
     title: 'Kompleks Bizanti',
     description: 'развалины виллы',
   },
@@ -350,19 +351,19 @@ export const points: Point[] = [
     lng: 18.700078210404676,
     type: 'old_town',
     title: 'Perast',
-    description: 'старый город',
+    description: 'старинное поселение',
   },
   {
     lat: 42.48523220061461,
     lng: 18.70025396347046,
-    type: 'historical',
+    type: 'palace',
     title: 'Palata Visković',
     description: 'музей',
   },
   {
     lat: 42.48681897035983,
     lng: 18.68867932258627,
-    type: 'historical',
+    type: 'other',
     title: 'Gospa od Škrpjela',
     description: 'рукотворный остров',
   },

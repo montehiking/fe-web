@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 
 import { Map } from 'src/components/molecules/Map';
 import { Sidebar } from 'src/components/molecules/Sidebar';
-import { Filters, filtersInitial } from 'src/components/organisms/Filters';
+import { Filters } from 'src/components/organisms/Filters';
+import { filtersState } from 'src/constants/filters';
 import { getWithDecline } from 'src/i18n/Decline';
 import { Point, points } from 'src/points';
 
@@ -14,10 +15,10 @@ type Props = {
 
 export const MapView: React.FC<Props> = ({ isAdmin }) => {
   const [markers, setMarkers] = useState<Point[]>(points);
-  const [filters, setFilters] = useState(filtersInitial);
+  const [filters, setFilters] = useState(filtersState);
   const [isSidebarVisible, setIsSidebarVisible] = useState(false);
 
-  const filteredMarkers = markers.filter((m) => filters[m.type]);
+  const filteredMarkers = markers.filter((m) => filters[m.type].checked);
 
   const counter = {
     from: markers.length,

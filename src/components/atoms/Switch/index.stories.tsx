@@ -12,5 +12,6 @@ export default {
 export const Switch: Story = () => (
   <SwitchComponent
     label={{ id: 'components.organisms.Filters.filters.fortress' }}
+    subLabel={{ id: 'components.organisms.Filters.subLabel.0' }}
   />
 );

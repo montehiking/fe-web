@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import React from 'react';
 
 import styles from 'src/components/molecules/FilterButton/styles.module.css';
@@ -9,7 +10,12 @@ export type Props = {
 };
 
 export const FilterButton: React.FC<Props> = ({ from, to, onClick }) => (
-  <button className={styles.button} onClick={onClick}>
+  <button
+    className={classNames(styles.button, {
+      [styles.active]: from !== to,
+    })}
+    onClick={onClick}
+  >
     <span>{from}</span>
     <svg
       xmlns="http://www.w3.org/2000/svg"

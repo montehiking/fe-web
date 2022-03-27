@@ -23,8 +23,20 @@ msgid "components.organisms.Filters.filters.fortress"
 msgstr "Форты и крепости"
 
 msgctxt "base"
+msgid "components.organisms.Filters.filters.palace"
+msgstr "Дворцы"
+
+msgctxt "base"
 msgid "components.organisms.Filters.filters.cave"
 msgstr "Пещеры"
+
+msgctxt "base"
+msgid "components.organisms.Filters.filters.waterfall"
+msgstr "Водопады"
+
+msgctxt "base"
+msgid "components.organisms.Filters.filters.park"
+msgstr "Парки природы"
 
 msgctxt "base"
 msgid "components.organisms.Filters.filters.lighthouse"
@@ -32,19 +44,27 @@ msgstr "Маяки"
 
 msgctxt "base"
 msgid "components.organisms.Filters.filters.monument"
-msgstr "Монументы"
+msgstr "Монументы и памятники"
 
 msgctxt "base"
-msgid "components.organisms.Filters.filters.ruin"
-msgstr "Руины"
+msgid "components.organisms.Filters.filters.other"
+msgstr "Разное"
 
 msgctxt "base"
-msgid "components.organisms.Filters.filters.historical"
-msgstr "Разное историческое"
+msgid "components.organisms.Filters.subLabel.0"
+msgstr "нет локаций"
 
 msgctxt "base"
-msgid "components.organisms.Filters.filters.natural"
-msgstr "Разное природное"
+msgid "components.organisms.Filters.subLabel.1"
+msgstr "{count} локация"
+
+msgctxt "base"
+msgid "components.organisms.Filters.subLabel.2"
+msgstr "{count} локации"
+
+msgctxt "base"
+msgid "components.organisms.Filters.subLabel.3"
+msgstr "{count} локаций"
 
 msgctxt "base"
 msgid "components.organisms.MapView.filters"
@@ -52,16 +72,16 @@ msgstr "Фильтры"
 
 msgctxt "base"
 msgid "components.organisms.MapView.filters.0"
-msgstr "Ничего не выбрано"
+msgstr "ничего не выбрано"
 
 msgctxt "base"
 msgid "components.organisms.MapView.filters.1"
-msgstr "{to} точка из {from}"
+msgstr "{to} локация из {from}"
 
 msgctxt "base"
 msgid "components.organisms.MapView.filters.2"
-msgstr "{to} точки из {from}"
+msgstr "{to} локации из {from}"
 
 msgctxt "base"
 msgid "components.organisms.MapView.filters.3"
-msgstr "{to} точек из {from}"
+msgstr "{to} локаций из {from}"

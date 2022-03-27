@@ -39,3 +39,7 @@
 .button:focus span {
   color: var(--COLOR_GRAY_2);
 }
+
+.active svg {
+  fill: var(--COLOR_BLUE);
+}

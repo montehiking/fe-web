@@ -1,7 +1,7 @@
 :root {
   --WIDTH_SIDEBAR: 335px;
 
-  --HEIGHT_SIDEBAR: 90vh;
+  --HEIGHT_SIDEBAR: 85vh;
 
   --COLOR_WHITE: #ffffff;
 
@@ -9,6 +9,8 @@
   --COLOR_GRAY_1: #999999;
   --COLOR_GRAY_2: #666666;
   --COLOR_GRAY_3: #333333;
+
+  --COLOR_BLUE: #1890ff;
 
   --FONT_SIZE_SMALL: 10px;
 

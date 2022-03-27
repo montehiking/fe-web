@@ -30,7 +30,7 @@ export const Map: Story = () => (
       {
         lat: 42.46789412201348,
         lng: 19.266767864055097,
-        type: 'ruin',
+        type: 'other',
         title: 'Duklja (Diokleja)',
         description: 'древнеримский город',
       },
