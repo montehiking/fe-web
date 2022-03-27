@@ -40,12 +40,28 @@ msgstr "Руины"
 
 msgctxt "base"
 msgid "components.organisms.Filters.filters.historical"
-msgstr "Всякое историческое"
+msgstr "Разное историческое"
 
 msgctxt "base"
 msgid "components.organisms.Filters.filters.natural"
-msgstr "Всякое природное"
+msgstr "Разное природное"
 
 msgctxt "base"
 msgid "components.organisms.MapView.filters"
 msgstr "Фильтры"
+
+msgctxt "base"
+msgid "components.organisms.MapView.filters.0"
+msgstr "Ничего не выбрано"
+
+msgctxt "base"
+msgid "components.organisms.MapView.filters.1"
+msgstr "{to} точка из {from}"
+
+msgctxt "base"
+msgid "components.organisms.MapView.filters.2"
+msgstr "{to} точки из {from}"
+
+msgctxt "base"
+msgid "components.organisms.MapView.filters.3"
+msgstr "{to} точек из {from}"

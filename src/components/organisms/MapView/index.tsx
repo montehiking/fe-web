@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { Map } from 'src/components/molecules/Map';
 import { Sidebar } from 'src/components/molecules/Sidebar';
 import { Filters, filtersInitial } from 'src/components/organisms/Filters';
+import { getWithDecline } from 'src/i18n/Decline';
 import { Point, points } from 'src/points';
 
 import styles from 'src/components/organisms/MapView/styles.module.css';
@@ -17,6 +18,11 @@ export const MapView: React.FC<Props> = ({ isAdmin }) => {
   const [isSidebarVisible, setIsSidebarVisible] = useState(false);
 
   const filteredMarkers = markers.filter((m) => filters[m.type]);
+
+  const counter = {
+    from: markers.length,
+    to: filteredMarkers.length,
+  };
 
   const onClick = ({ latLng }: google.maps.MapMouseEvent) => {
     if (latLng && isAdmin) {
@@ -34,8 +40,7 @@ export const MapView: React.FC<Props> = ({ isAdmin }) => {
         markers={filteredMarkers}
         draggable={isAdmin}
         filter={{
-          from: markers.length,
-          to: filteredMarkers.length,
+          ...counter,
           onClick: () => setIsSidebarVisible(!isSidebarVisible),
         }}
       />
@@ -44,8 +49,14 @@ export const MapView: React.FC<Props> = ({ isAdmin }) => {
         isVisible={isSidebarVisible}
         onClose={() => setIsSidebarVisible(false)}
         title={{ id: 'components.organisms.MapView.filters' }}
+        subTitle={getWithDecline(filteredMarkers.length, [
+          { id: 'components.organisms.MapView.filters.0' },
+          { id: 'components.organisms.MapView.filters.1', values: counter },
+          { id: 'components.organisms.MapView.filters.2', values: counter },
+          { id: 'components.organisms.MapView.filters.3', values: counter },
+        ])}
       >
-        <Filters filters={filters} onChange={setFilters} />
+        <Filters filters={filters} onChange={setFilters} isAdmin={isAdmin} />
 
         {isAdmin && (
           <pre className={styles.code}>

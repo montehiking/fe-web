@@ -13,8 +13,24 @@ export default {
   decorators,
 } as Meta;
 
-export const Filters: Story = () => {
+const Filters: Story = ({ isAdmin }) => {
   const [filters, setFilters] = useState(filtersInitial);
 
-  return <FiltersComponent filters={filters} onChange={setFilters} />;
+  return (
+    <FiltersComponent
+      filters={filters}
+      onChange={setFilters}
+      isAdmin={isAdmin}
+    />
+  );
+};
+
+export const FiltersWithoutAdmin = Filters.bind({});
+FiltersWithoutAdmin.args = {
+  isAdmin: false,
+};
+
+export const FiltersWithAdmin = Filters.bind({});
+FiltersWithAdmin.args = {
+  isAdmin: true,
 };

@@ -12,6 +12,7 @@ type FiltersState = Record<PointType, boolean>;
 type Props = {
   filters: FiltersState;
   onChange: (value: FiltersState) => void;
+  isAdmin: boolean;
 };
 
 const labels: Record<PointType, DictionaryKey> = {
@@ -37,19 +38,25 @@ export const filtersInitial = pointTypes.reduce<FiltersState>(
   {} as any
 );
 
-export const Filters: React.FC<Props> = ({ filters, onChange }) => (
-  <List
-    dataSource={pointTypes}
-    renderItem={(pointType) => (
-      <List.Item>
-        <div className={styles.item}>
-          <Switch
-            defaultChecked={filters[pointType]}
-            onChange={(value) => onChange({ ...filters, [pointType]: value })}
-            label={{ id: labels[pointType] }}
-          />
-        </div>
-      </List.Item>
-    )}
-  />
-);
+export const Filters: React.FC<Props> = ({ filters, onChange, isAdmin }) => {
+  const dataSource = isAdmin
+    ? pointTypes
+    : pointTypes.filter((pointType) => pointType !== '');
+
+  return (
+    <List
+      dataSource={dataSource}
+      renderItem={(pointType) => (
+        <List.Item>
+          <div className={styles.item}>
+            <Switch
+              defaultChecked={filters[pointType]}
+              onChange={(value) => onChange({ ...filters, [pointType]: value })}
+              label={{ id: labels[pointType] }}
+            />
+          </div>
+        </List.Item>
+      )}
+    />
+  );
+};

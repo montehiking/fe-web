@@ -1,6 +1,8 @@
 :root {
   --WIDTH_SIDEBAR: 335px;
 
+  --HEIGHT_SIDEBAR: 90vh;
+
   --COLOR_WHITE: #ffffff;
 
   --COLOR_GRAY_0: #f8f8f8;

@@ -22,6 +22,7 @@ export const Sidebar: Story = () => {
         isVisible={isVisible}
         onClose={() => setIsVisible(false)}
         title={{ id: 'components.organisms.MapView.filters' }}
+        subTitle={{ id: 'components.organisms.MapView.filters.0' }}
       >
         children
       </SidebarComponent>

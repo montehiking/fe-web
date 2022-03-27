@@ -9,6 +9,7 @@ import styles from 'src/components/molecules/Sidebar/styles.module.css';
 
 type Props = {
   title: MsgProps;
+  subTitle: MsgProps;
   isVisible: boolean;
   onClose: () => void;
 };
@@ -18,6 +19,7 @@ export const Sidebar: React.FC<Props> = ({
   isVisible,
   onClose,
   title,
+  subTitle,
 }) => {
   const { visible, inProgress } = useUnmount({ isVisible, delaySeconds: 0.3 });
   const [isModalVisible, setIsModalVisible] = useState(!inProgress);
@@ -40,7 +42,7 @@ export const Sidebar: React.FC<Props> = ({
       })}
     >
       <div className={styles.container}>
-        <PageHeader onBack={onClose} title={title} />
+        <PageHeader onBack={onClose} title={title} subTitle={subTitle} />
 
         {children}
       </div>

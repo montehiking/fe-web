@@ -12,8 +12,12 @@ export const base = {
   'components.organisms.Filters.filters.lighthouse': 'Маяки',
   'components.organisms.Filters.filters.monument': 'Монументы',
   'components.organisms.Filters.filters.ruin': 'Руины',
-  'components.organisms.Filters.filters.historical': 'Всякое историческое',
-  'components.organisms.Filters.filters.natural': 'Всякое природное',
+  'components.organisms.Filters.filters.historical': 'Разное историческое',
+  'components.organisms.Filters.filters.natural': 'Разное природное',
 
   'components.organisms.MapView.filters': 'Фильтры',
+  'components.organisms.MapView.filters.0': 'Ничего не выбрано',
+  'components.organisms.MapView.filters.1': '{to} точка из {from}',
+  'components.organisms.MapView.filters.2': '{to} точки из {from}',
+  'components.organisms.MapView.filters.3': '{to} точек из {from}',
 };

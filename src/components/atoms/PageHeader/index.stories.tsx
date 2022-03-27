@@ -12,7 +12,8 @@ export default {
 export const PageHeader: Story = () => (
   <div className="sb-gray-box">
     <PageHeaderComponent
-      title={{ id: 'components.organisms.Filters.filters.fortress' }}
+      title={{ id: 'components.organisms.MapView.filters' }}
+      subTitle={{ id: 'components.organisms.MapView.filters.0' }}
       onBack={console.log}
     />
   </div>
