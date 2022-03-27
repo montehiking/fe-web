@@ -40,21 +40,19 @@ export const MapView: React.FC<Props> = ({ isAdmin }) => {
         }}
       />
 
-      {isSidebarVisible && (
-        <Sidebar>
-          <Filters filters={filters} onChange={setFilters} />
+      <Sidebar isVisible={isSidebarVisible}>
+        <Filters filters={filters} onChange={setFilters} />
 
-          {isAdmin && (
-            <pre className={styles.code}>
-              {JSON.stringify(
-                markers.filter((m) => !m.type),
-                null,
-                2
-              )}
-            </pre>
-          )}
-        </Sidebar>
-      )}
+        {isAdmin && (
+          <pre className={styles.code}>
+            {JSON.stringify(
+              markers.filter((m) => !m.type),
+              null,
+              2
+            )}
+          </pre>
+        )}
+      </Sidebar>
     </div>
   );
 };

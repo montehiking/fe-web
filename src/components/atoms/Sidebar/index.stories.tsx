@@ -10,5 +10,5 @@ export default {
 } as Meta;
 
 export const Sidebar: Story = () => (
-  <SidebarComponent>children</SidebarComponent>
+  <SidebarComponent isVisible>children</SidebarComponent>
 );

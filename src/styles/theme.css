@@ -1,4 +1,6 @@
 :root {
+  --WIDTH_SIDEBAR: 335px;
+
   --COLOR_WHITE: #ffffff;
 
   --COLOR_GRAY_1: #999999;
@@ -10,7 +12,8 @@
   --SPACING_NORMAL: 10px;
   --SPACING_EXTRA_LARGE: 25px;
 
-  --TRANSITION: 0.5s;
+  --TRANSITION_CONTROLS: 0.5s;
+  --TRANSITION_SIDEBAR: 0.25s;
 
   --RADIUS_MAP_CONTROL: 2px;
 }

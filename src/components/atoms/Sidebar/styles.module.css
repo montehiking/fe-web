@@ -1,6 +1,95 @@
-.aside {
+@keyframes SidebarInDesktop {
+  from {
+    width: 0;
+  }
+  to {
+    width: var(--WIDTH_SIDEBAR);
+  }
+}
+
+@keyframes SidebarInMobile {
+  from {
+    height: 0;
+  }
+  to {
+    height: 90vh;
+  }
+}
+
+@keyframes SidebarOutDesktop {
+  from {
+    width: var(--WIDTH_SIDEBAR);
+  }
+  to {
+    width: 0;
+  }
+}
+
+@keyframes SidebarOutMobile {
+  from {
+    height: 90vh;
+  }
+  to {
+    height: 0;
+  }
+}
+
+.sidebar {
+  z-index: 101;
+  top: auto;
+  bottom: 0;
+  right: 0;
+  width: auto;
+  height: 0;
+  position: fixed;
+  align-items: flex-start;
+  overflow: hidden;
+  background-color: var(--COLOR_WHITE);
+  animation-fill-mode: both;
+  animation-duration: var(--TRANSITION_SIDEBAR);
+  animation-timing-function: ease-in;
+  animation-name: SidebarInMobile;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar__visible {
+  animation-name: none;
+  width: 100vw;
+  height: 90vh;
+}
+
+.sidebar__hide {
+  animation-name: SidebarOutMobile;
+}
+
+.container {
+  height: 100%;
+  width: 100vw;
   padding: var(--SPACING_NORMAL);
-  flex-basis: 250px;
-  height: 100vh;
-  overflow: auto;
+}
+
+@media only screen and (min-width: 780px) {
+  .sidebar {
+    top: 0;
+    bottom: auto;
+    width: 0;
+    height: auto;
+    min-height: 100vh;
+    animation-name: SidebarInDesktop;
+  }
+
+  .sidebar__hide {
+    animation-name: SidebarOutDesktop;
+  }
+
+  .sidebar__visible {
+    animation-name: none;
+    width: var(--WIDTH_SIDEBAR);
+    height: auto;
+  }
+
+  .container {
+    width: var(--WIDTH_SIDEBAR);
+  }
 }

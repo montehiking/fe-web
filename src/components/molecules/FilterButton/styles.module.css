@@ -19,7 +19,7 @@
 
 .button svg {
   fill: var(--COLOR_GRAY_2);
-  transition: fill var(--TRANSITION);
+  transition: fill var(--TRANSITION_CONTROLS);
 }
 
 .button:hover svg,
@@ -32,7 +32,7 @@
   line-height: 16px;
   font-weight: 800;
   color: var(--COLOR_GRAY_1);
-  transition: color var(--TRANSITION);
+  transition: color var(--TRANSITION_CONTROLS);
 }
 
 .button:hover span,
