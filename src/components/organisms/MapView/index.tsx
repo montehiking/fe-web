@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
-import { Sidebar } from 'src/components/atoms/Sidebar';
 import { Map } from 'src/components/molecules/Map';
+import { Sidebar } from 'src/components/molecules/Sidebar';
 import { Filters, filtersInitial } from 'src/components/organisms/Filters';
 import { Point, points } from 'src/points';
 
@@ -40,7 +40,11 @@ export const MapView: React.FC<Props> = ({ isAdmin }) => {
         }}
       />
 
-      <Sidebar isVisible={isSidebarVisible}>
+      <Sidebar
+        isVisible={isSidebarVisible}
+        onClose={() => setIsSidebarVisible(false)}
+        title={{ id: 'components.organisms.MapView.filters' }}
+      >
         <Filters filters={filters} onChange={setFilters} />
 
         {isAdmin && (

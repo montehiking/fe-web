@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { List } from 'src/components/atoms/List';
 import { Switch } from 'src/components/atoms/Switch';
 import { DictionaryKey } from 'src/i18n';
 import { PointType } from 'src/points';
@@ -18,11 +19,11 @@ const labels: Record<PointType, DictionaryKey> = {
   old_town: 'components.organisms.Filters.filters.old_town',
   fortress: 'components.organisms.Filters.filters.fortress',
   cave: 'components.organisms.Filters.filters.cave',
-  natural: 'components.organisms.Filters.filters.natural',
   lighthouse: 'components.organisms.Filters.filters.lighthouse',
   monument: 'components.organisms.Filters.filters.monument',
   ruin: 'components.organisms.Filters.filters.ruin',
   historical: 'components.organisms.Filters.filters.historical',
+  natural: 'components.organisms.Filters.filters.natural',
 };
 
 const pointTypes = Object.keys(labels) as PointType[];
@@ -37,15 +38,18 @@ export const filtersInitial = pointTypes.reduce<FiltersState>(
 );
 
 export const Filters: React.FC<Props> = ({ filters, onChange }) => (
-  <div>
-    {pointTypes.map((pointType) => (
-      <div key={pointType} className={styles.item}>
-        <Switch
-          defaultChecked={filters[pointType]}
-          onChange={(value) => onChange({ ...filters, [pointType]: value })}
-          label={{ id: labels[pointType] }}
-        />
-      </div>
-    ))}
-  </div>
+  <List
+    dataSource={pointTypes}
+    renderItem={(pointType) => (
+      <List.Item>
+        <div className={styles.item}>
+          <Switch
+            defaultChecked={filters[pointType]}
+            onChange={(value) => onChange({ ...filters, [pointType]: value })}
+            label={{ id: labels[pointType] }}
+          />
+        </div>
+      </List.Item>
+    )}
+  />
 );

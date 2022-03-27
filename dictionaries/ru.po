@@ -7,20 +7,24 @@
 "PO-Revision-Date: 2022-03-25T00:00:00.000Z\n"
 
 msgctxt "base"
+msgid "components.molecules.Map.tooltip.showOnGoogleMaps"
+msgstr "Показать на Google Картах"
+
+msgctxt "base"
 msgid "components.organisms.Filters.filters.empty"
 msgstr "Без категории"
 
 msgctxt "base"
-msgid "components.organisms.Filters.filters.cave"
-msgstr "Пещеры"
+msgid "components.organisms.Filters.filters.old_town"
+msgstr "Старинные поселения"
 
 msgctxt "base"
 msgid "components.organisms.Filters.filters.fortress"
-msgstr "Крепости"
+msgstr "Форты и крепости"
 
 msgctxt "base"
-msgid "components.organisms.Filters.filters.historical"
-msgstr "Исторические объекты"
+msgid "components.organisms.Filters.filters.cave"
+msgstr "Пещеры"
 
 msgctxt "base"
 msgid "components.organisms.Filters.filters.lighthouse"
@@ -31,17 +35,17 @@ msgid "components.organisms.Filters.filters.monument"
 msgstr "Монументы"
 
 msgctxt "base"
-msgid "components.organisms.Filters.filters.natural"
-msgstr "Природные достопримечательности"
-
-msgctxt "base"
-msgid "components.organisms.Filters.filters.old_town"
-msgstr "Старые города"
-
-msgctxt "base"
 msgid "components.organisms.Filters.filters.ruin"
 msgstr "Руины"
 
 msgctxt "base"
-msgid "components.molecules.Map.tooltip.showOnGoogleMaps"
-msgstr "Показать на Google Картах"
+msgid "components.organisms.Filters.filters.historical"
+msgstr "Всякое историческое"
+
+msgctxt "base"
+msgid "components.organisms.Filters.filters.natural"
+msgstr "Всякое природное"
+
+msgctxt "base"
+msgid "components.organisms.MapView.filters"
+msgstr "Фильтры"

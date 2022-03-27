@@ -19,6 +19,11 @@ code {
     monospace;
 }
 
+.sb-gray-box {
+  background-color: var(--COLOR_GRAY_0);
+  height: 100vh;
+}
+
 .poi-info-window *,
 .gm-ui-hover-effect {
   outline: none !important;
