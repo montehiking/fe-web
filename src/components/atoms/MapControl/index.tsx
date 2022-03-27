@@ -29,7 +29,9 @@ export const MapControl: React.FC<Props> = ({
     const index = controls.push(controlDiv);
 
     return () => {
-      controls.removeAt(index);
+      if (controls.getAt(index)) {
+        controls.removeAt(index);
+      }
     };
 
     // eslint-disable-next-line react-hooks/exhaustive-deps

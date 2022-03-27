@@ -2,3 +2,7 @@
   width: 100vw;
   height: 100vh;
 }
+
+.map > div:nth-child(2n) {
+  display: none !important;
+}
