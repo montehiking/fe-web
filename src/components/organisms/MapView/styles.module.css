@@ -5,4 +5,5 @@
 
 .code {
   font-size: var(--FONT_SIZE_SMALL);
+  min-height: 100px;
 }

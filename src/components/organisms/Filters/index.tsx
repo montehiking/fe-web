@@ -20,10 +20,12 @@ const labels: Record<PointType, DictionaryKey> = {
   old_town: 'components.organisms.Filters.filters.old_town',
   fortress: 'components.organisms.Filters.filters.fortress',
   palace: 'components.organisms.Filters.filters.palace',
+  christian: 'components.organisms.Filters.filters.christian',
   cave: 'components.organisms.Filters.filters.cave',
   waterfall: 'components.organisms.Filters.filters.waterfall',
-  park: 'components.organisms.Filters.filters.park',
+  nature: 'components.organisms.Filters.filters.nature',
   lighthouse: 'components.organisms.Filters.filters.lighthouse',
+  bridge: 'components.organisms.Filters.filters.bridge',
   monument: 'components.organisms.Filters.filters.monument',
   other: 'components.organisms.Filters.filters.other',
 };

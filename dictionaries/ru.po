@@ -27,6 +27,10 @@ msgid "components.organisms.Filters.filters.palace"
 msgstr "Дворцы"
 
 msgctxt "base"
+msgid "components.organisms.Filters.filters.christian"
+msgstr "Часовни и монастыри"
+
+msgctxt "base"
 msgid "components.organisms.Filters.filters.cave"
 msgstr "Пещеры"
 
@@ -35,12 +39,16 @@ msgid "components.organisms.Filters.filters.waterfall"
 msgstr "Водопады"
 
 msgctxt "base"
-msgid "components.organisms.Filters.filters.park"
-msgstr "Парки природы"
+msgid "components.organisms.Filters.filters.nature"
+msgstr "Озера, парки и природные зоны"
 
 msgctxt "base"
 msgid "components.organisms.Filters.filters.lighthouse"
 msgstr "Маяки"
+
+msgctxt "base"
+msgid "components.organisms.Filters.filters.bridge"
+msgstr "Мосты"
 
 msgctxt "base"
 msgid "components.organisms.Filters.filters.monument"

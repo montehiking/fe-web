@@ -18,7 +18,7 @@ export const MapView: React.FC<Props> = ({ isAdmin }) => {
   const [filters, setFilters] = useState(filtersState);
   const [isSidebarVisible, setIsSidebarVisible] = useState(false);
 
-  const filteredMarkers = markers.filter((m) => filters[m.type].checked);
+  const filteredMarkers = markers.filter((m) => filters[m.type]?.checked);
 
   const counter = {
     from: markers.length,
@@ -61,11 +61,7 @@ export const MapView: React.FC<Props> = ({ isAdmin }) => {
 
         {isAdmin && (
           <pre className={styles.code}>
-            {JSON.stringify(
-              markers.filter((m) => !m.type),
-              null,
-              2
-            )}
+            {JSON.stringify(markers.filter((m) => !m.type)[0], null, 2)}
           </pre>
         )}
       </Sidebar>
