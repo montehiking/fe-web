@@ -13,8 +13,10 @@ export const Marker: React.FC<Props> = ({ onClick, ...options }) => {
       marker = new google.maps.Marker();
 
       marker.setOptions(options);
-      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-      listener = marker.addListener('click', () => onClick(marker!));
+
+      listener = marker.addListener('click', () =>
+        onClick(marker as google.maps.Marker)
+      );
     }
 
     return () => {

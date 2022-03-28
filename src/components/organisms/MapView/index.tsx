@@ -1,9 +1,10 @@
-import { Wrapper } from '@googlemaps/react-wrapper';
 import React, { useState } from 'react';
 
-import { Sidebar } from 'src/components/atoms/Sidebar';
 import { Map } from 'src/components/molecules/Map';
-import { GOOGLE_MAPS_API_KEY } from 'src/constants/env';
+import { Sidebar } from 'src/components/molecules/Sidebar';
+import { Filters } from 'src/components/organisms/Filters';
+import { filtersState } from 'src/constants/filters';
+import { getWithDecline } from 'src/i18n/Decline';
 import { Point, points } from 'src/points';
 
 import styles from 'src/components/organisms/MapView/styles.module.css';
@@ -14,6 +15,15 @@ type Props = {
 
 export const MapView: React.FC<Props> = ({ isAdmin }) => {
   const [markers, setMarkers] = useState<Point[]>(points);
+  const [filters, setFilters] = useState(filtersState);
+  const [isSidebarVisible, setIsSidebarVisible] = useState(false);
+
+  const filteredMarkers = markers.filter((m) => filters[m.type]?.checked);
+
+  const counter = {
+    from: markers.length,
+    to: filteredMarkers.length,
+  };
 
   const onClick = ({ latLng }: google.maps.MapMouseEvent) => {
     if (latLng && isAdmin) {
@@ -25,24 +35,36 @@ export const MapView: React.FC<Props> = ({ isAdmin }) => {
   };
 
   return (
-    <div className={styles.wrapper}>
-      <Wrapper apiKey={GOOGLE_MAPS_API_KEY}>
-        <Map onClick={onClick} markers={markers} isAdmin={isAdmin}></Map>
-      </Wrapper>
+    <div className={styles.wrapper} data-testid="page">
+      <Map
+        onClick={onClick}
+        markers={filteredMarkers}
+        draggable={isAdmin}
+        filter={{
+          ...counter,
+          onClick: () => setIsSidebarVisible(!isSidebarVisible),
+        }}
+      />
 
-      {isAdmin && (
-        <Sidebar>
+      <Sidebar
+        isVisible={isSidebarVisible}
+        onClose={() => setIsSidebarVisible(false)}
+        title={{ id: 'components.organisms.MapView.filters' }}
+        subTitle={getWithDecline(filteredMarkers.length, [
+          { id: 'components.organisms.MapView.filters.0' },
+          { id: 'components.organisms.MapView.filters.1', values: counter },
+          { id: 'components.organisms.MapView.filters.2', values: counter },
+          { id: 'components.organisms.MapView.filters.3', values: counter },
+        ])}
+      >
+        <Filters filters={filters} onChange={setFilters} isAdmin={isAdmin} />
+
+        {isAdmin && (
           <pre className={styles.code}>
-            {JSON.stringify(
-              markers.filter((m) => !m.type),
-              null,
-              2
-            )}
+            {JSON.stringify(markers.filter((m) => !m.type)[0], null, 2)}
           </pre>
-
-          <button onClick={() => setMarkers([])}>Clear</button>
-        </Sidebar>
-      )}
+        )}
+      </Sidebar>
     </div>
   );
 };

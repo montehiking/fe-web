@@ -4,5 +4,6 @@
 }
 
 .code {
-  font-size: 10px;
+  font-size: var(--FONT_SIZE_SMALL);
+  min-height: 100px;
 }

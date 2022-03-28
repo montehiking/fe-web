@@ -30,7 +30,11 @@ export const useMap = ({ onClick }: Props) => {
       );
 
       newMap.addListener('click', (event: google.maps.MapMouseEvent) => {
-        infoWindow.close();
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        if (!!(infoWindow as any).map) {
+          infoWindow.close();
+        }
+
         onClick(event);
       });
 

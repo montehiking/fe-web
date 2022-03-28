@@ -1,4 +1,8 @@
 .map {
-  flex-grow: 1;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
+}
+
+.map > div:nth-child(2n) {
+  display: none !important;
 }

@@ -1,0 +1,24 @@
+.switch {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 30px;
+  user-select: none;
+}
+
+.labels {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  padding-left: var(--SPACING_NORMAL);
+  line-height: 14px;
+}
+
+.subLabel {
+  padding-left: var(--SPACING_NORMAL);
+  color: var(--COLOR_GRAY_1);
+  font-size: var(--FONT_SIZE_SMALL);
+}

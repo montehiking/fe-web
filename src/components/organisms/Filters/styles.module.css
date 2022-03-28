@@ -1,0 +1,4 @@
+.item {
+  padding-left: var(--SPACING_EXTRA_LARGE);
+  padding-right: var(--SPACING_EXTRA_LARGE);
+}
