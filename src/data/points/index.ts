@@ -9,7 +9,7 @@ import { old_town } from 'src/data/points/old_town';
 import { other } from 'src/data/points/other';
 import { palace } from 'src/data/points/palace';
 import { waterfall } from 'src/data/points/waterfall';
-import { Point } from 'src/types';
+import { FiltersState, Point } from 'src/types';
 
 export const points: Point[] = [
   ...bridge,
@@ -24,3 +24,10 @@ export const points: Point[] = [
   ...palace,
   ...waterfall,
 ];
+
+export const filtersState = points.reduce<FiltersState>((acc, point) => {
+  const { count } = acc[point.type] ?? { count: 0 };
+  acc[point.type] = { checked: true, count: count + 1 };
+
+  return acc;
+}, {} as never);

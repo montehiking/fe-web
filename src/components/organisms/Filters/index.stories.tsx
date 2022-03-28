@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 import { Filters as FiltersComponent } from 'src/components/organisms/Filters';
 import { decorators } from 'src/components/providers/StorybookProvider';
-import { filtersState } from 'src/constants/filters';
+import { filtersState } from 'src/data/points';
 
 export default {
   title: 'Organisms/Filters',

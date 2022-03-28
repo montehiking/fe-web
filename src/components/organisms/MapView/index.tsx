@@ -3,8 +3,7 @@ import React, { useState } from 'react';
 import { Map } from 'src/components/molecules/Map';
 import { Sidebar } from 'src/components/molecules/Sidebar';
 import { Filters } from 'src/components/organisms/Filters';
-import { filtersState } from 'src/constants/filters';
-import { points } from 'src/data/points';
+import { filtersState, points } from 'src/data/points';
 import { getWithDecline } from 'src/i18n/Decline';
 import { Point } from 'src/types';
 
@@ -28,10 +27,14 @@ export const MapView: React.FC<Props> = ({ isAdmin }) => {
 
   const onClick = ({ latLng }: google.maps.MapMouseEvent) => {
     if (latLng && isAdmin) {
-      setMarkers([
-        ...markers,
-        { ...latLng.toJSON(), type: '', title: '', description: '' },
-      ]);
+      const newMarker: Point = {
+        ...latLng.toJSON(),
+        type: '',
+        title: '',
+        description: '',
+      };
+
+      setMarkers([...markers, newMarker]);
     }
   };
 

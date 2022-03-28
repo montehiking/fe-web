@@ -25,3 +25,8 @@ export type Point = google.maps.LatLngLiteral & {
   title: string;
   description: string;
 };
+
+export type FiltersState = Record<
+  PointType,
+  { checked: boolean; count: number }
+>;
