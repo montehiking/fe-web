@@ -5,7 +5,7 @@ import { Switch } from 'src/components/atoms/Switch';
 import { FiltersState } from 'src/constants/filters';
 import { DictionaryKey } from 'src/i18n';
 import { getWithDecline } from 'src/i18n/Decline';
-import { PointType } from 'src/points';
+import { PointType } from 'src/types';
 
 import styles from 'src/components/organisms/Filters/styles.module.css';
 

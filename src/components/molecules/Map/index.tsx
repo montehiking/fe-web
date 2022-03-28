@@ -9,7 +9,7 @@ import {
 } from 'src/components/molecules/FilterButton';
 import { Props as MapProps, useMap } from 'src/hooks/useMap';
 import { msg } from 'src/i18n/Msg';
-import { Point } from 'src/points';
+import { Point } from 'src/types';
 import { createGoogleMapsURL } from 'src/utils/maps';
 
 import styles from 'src/components/molecules/Map/styles.module.css';

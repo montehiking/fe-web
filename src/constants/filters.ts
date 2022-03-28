@@ -1,4 +1,5 @@
-import { PointType, points } from 'src/points';
+import { points } from 'src/points';
+import { PointType } from 'src/types';
 
 export type FiltersState = Record<
   PointType,
