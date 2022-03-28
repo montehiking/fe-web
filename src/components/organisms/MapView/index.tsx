@@ -4,8 +4,8 @@ import { Map } from 'src/components/molecules/Map';
 import { Sidebar } from 'src/components/molecules/Sidebar';
 import { Filters } from 'src/components/organisms/Filters';
 import { filtersState } from 'src/constants/filters';
+import { points } from 'src/data/points';
 import { getWithDecline } from 'src/i18n/Decline';
-import { points } from 'src/points';
 import { Point } from 'src/types';
 
 import styles from 'src/components/organisms/MapView/styles.module.css';
