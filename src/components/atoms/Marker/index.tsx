@@ -10,9 +10,7 @@ export const Marker: React.FC<Props> = ({ onClick, ...options }) => {
     let listener: google.maps.MapsEventListener | undefined = undefined;
 
     if (!marker) {
-      marker = new google.maps.Marker();
-
-      marker.setOptions(options);
+      marker = new google.maps.Marker({ ...options, icon: '/pin/red.svg' });
 
       listener = marker.addListener('click', () =>
         onClick(marker as google.maps.Marker)
