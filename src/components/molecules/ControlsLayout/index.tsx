@@ -11,7 +11,7 @@ type Props = {
   map: google.maps.Map;
 };
 
-export const MapControls: React.FC<Props> = ({ filter, map }) => (
+export const ControlsLayout: React.FC<Props> = ({ filter, map }) => (
   <MapControl map={map} width="60px" height="80px">
     <FilterButton {...filter} />
   </MapControl>

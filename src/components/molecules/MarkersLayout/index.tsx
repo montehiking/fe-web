@@ -3,46 +3,44 @@ import { useIntl } from 'react-intl';
 
 import { Marker } from 'src/components/atoms/Marker';
 import { msg } from 'src/i18n/Msg';
-import { Point, Zoom } from 'src/types';
-import { createGoogleMapsURL } from 'src/utils/maps';
+import { Point } from 'src/types';
+import { createGoogleMapsURL, getInitialZoom } from 'src/utils/maps';
 
 type Props = {
   draggable: boolean;
   infoWindow: google.maps.InfoWindow;
-  initialZoom: Zoom;
   map: google.maps.Map;
-  markers: Point[];
+  points: Point[];
 };
 
-export const MapMarkers: React.FC<Props> = ({
+export const MarkersLayout: React.FC<Props> = ({
   draggable,
   infoWindow,
-  initialZoom,
   map,
-  markers,
+  points,
 }) => {
   const intl = useIntl();
 
-  const renderMarker = ({ type, title, description, ...latLng }: Point) => {
+  const renderMarker = ({ title, description, lat, lng }: Point) => {
     const onClick = (marker: google.maps.Marker) => {
       const oldPosition = infoWindow.getPosition();
 
       if (
-        oldPosition?.lat() === latLng.lat &&
-        oldPosition?.lng() === latLng.lng &&
+        oldPosition?.lat() === lat &&
+        oldPosition?.lng() === lng &&
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         !!(infoWindow as any).map
       ) {
         infoWindow.close();
       } else {
         const url = createGoogleMapsURL(
-          latLng.lat,
-          latLng.lng,
-          map?.getZoom() ?? initialZoom
+          lat,
+          lng,
+          map.getZoom() ?? getInitialZoom()
         );
 
         const text = msg(intl, {
-          id: 'components.molecules.MapMarkers.tooltip.showOnGoogleMaps',
+          id: 'components.molecules.MarkersLayout.tooltip.showOnGoogleMaps',
         });
 
         infoWindow.setContent(
@@ -63,15 +61,15 @@ export const MapMarkers: React.FC<Props> = ({
     return (
       <Marker
         draggable={draggable}
-        key={`${latLng.lat}${latLng.lng}`}
+        key={`${lat}${lng}`}
         map={map}
         optimized
-        position={latLng}
+        position={{ lat, lng }}
         title={title}
         onClick={onClick}
       />
     );
   };
 
-  return <>{markers.map(renderMarker)}</>;
+  return <>{points.map(renderMarker)}</>;
 };

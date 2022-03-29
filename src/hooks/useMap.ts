@@ -1,5 +1,7 @@
 import { useLayoutEffect, useMemo, useRef, useState } from 'react';
 
+import { getInitialZoom } from 'src/utils/maps';
+
 export type Props = google.maps.MapOptions & {
   onClick: (e: google.maps.MapMouseEvent) => void;
 };
@@ -15,13 +17,11 @@ export const useMap = ({ onClick }: Props) => {
 
   const [map, setMap] = useState<google.maps.Map>();
 
-  const initialZoom = window.innerWidth > 700 ? 9 : 8;
-
   useLayoutEffect(() => {
     if (ref.current && !map) {
       const newMap = new window.google.maps.Map(ref.current, {
         streetViewControl: false,
-        zoom: initialZoom,
+        zoom: getInitialZoom(),
         center: INITIAL_CENTER,
       });
 
@@ -43,5 +43,5 @@ export const useMap = ({ onClick }: Props) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [ref, map]);
 
-  return { ref, map, initialZoom, infoWindow };
+  return { ref, map, infoWindow };
 };

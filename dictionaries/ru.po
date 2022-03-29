@@ -7,7 +7,7 @@
 "PO-Revision-Date: 2022-03-25T00:00:00.000Z\n"
 
 msgctxt "base"
-msgid "components.molecules.MapMarkers.tooltip.showOnGoogleMaps"
+msgid "components.molecules.MarkersLayout.tooltip.showOnGoogleMaps"
 msgstr "Показать на Google Картах"
 
 msgctxt "base"

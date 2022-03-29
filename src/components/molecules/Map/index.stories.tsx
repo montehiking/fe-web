@@ -12,9 +12,9 @@ export default {
 
 export const Map: Story = () => (
   <MapComponent
-    onClick={console.log}
-    markers={points.slice(0, 5)}
-    filter={{ from: 100, to: 5, onClick: console.log }}
     draggable
+    filter={{ from: 100, to: 5, onClick: console.log }}
+    onClick={console.log}
+    points={points.slice(0, 5)}
   />
 );

@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { Map } from 'src/components/molecules/Map';
 import { Sidebar } from 'src/components/molecules/Sidebar';
 import { Filters } from 'src/components/organisms/Filters';
-import { filtersState, points } from 'src/data/points';
+import { filtersState, points as originalPoints } from 'src/data/points';
 import { getWithDecline } from 'src/i18n/Decline';
 import { Point } from 'src/types';
 
@@ -14,27 +14,27 @@ type Props = {
 };
 
 export const MapView: React.FC<Props> = ({ isAdmin }) => {
-  const [markers, setMarkers] = useState<Point[]>(points);
+  const [points, setPoints] = useState<Point[]>(originalPoints);
   const [filters, setFilters] = useState(filtersState);
   const [isSidebarVisible, setIsSidebarVisible] = useState(false);
 
-  const filteredMarkers = markers.filter((m) => filters[m.type]?.checked);
+  const filteredPoints = points.filter((m) => filters[m.type]?.checked);
 
   const counter = {
-    from: markers.length,
-    to: filteredMarkers.length,
+    from: points.length,
+    to: filteredPoints.length,
   };
 
   const onClick = ({ latLng }: google.maps.MapMouseEvent) => {
     if (latLng && isAdmin) {
-      const newMarker: Point = {
+      const newPoint: Point = {
         ...latLng.toJSON(),
         type: '',
         title: '',
         description: '',
       };
 
-      setMarkers([...markers, newMarker]);
+      setPoints([...points, newPoint]);
     }
   };
 
@@ -42,7 +42,7 @@ export const MapView: React.FC<Props> = ({ isAdmin }) => {
     <div className={styles.wrapper} data-testid="page">
       <Map
         onClick={onClick}
-        markers={filteredMarkers}
+        points={filteredPoints}
         draggable={isAdmin}
         filter={{
           ...counter,
@@ -54,7 +54,7 @@ export const MapView: React.FC<Props> = ({ isAdmin }) => {
         isVisible={isSidebarVisible}
         onClose={() => setIsSidebarVisible(false)}
         title={{ id: 'components.organisms.MapView.filters' }}
-        subTitle={getWithDecline(filteredMarkers.length, [
+        subTitle={getWithDecline(filteredPoints.length, [
           { id: 'components.organisms.MapView.filters.0' },
           { id: 'components.organisms.MapView.filters.1', values: counter },
           { id: 'components.organisms.MapView.filters.2', values: counter },
@@ -65,7 +65,7 @@ export const MapView: React.FC<Props> = ({ isAdmin }) => {
 
         {isAdmin && (
           <pre className={styles.code}>
-            {JSON.stringify(markers.filter((m) => !m.type)[0], null, 2)}
+            {JSON.stringify(points.filter((m) => !m.type)[0], null, 2)}
           </pre>
         )}
       </Sidebar>

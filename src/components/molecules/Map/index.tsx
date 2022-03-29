@@ -1,26 +1,26 @@
 import React from 'react';
 
+import { ControlsLayout } from 'src/components/molecules/ControlsLayout';
 import { Props as FilterButtonProps } from 'src/components/molecules/FilterButton';
-import { MapControls } from 'src/components/molecules/MapControls';
-import { MapMarkers } from 'src/components/molecules/MapMarkers';
+import { MarkersLayout } from 'src/components/molecules/MarkersLayout';
 import { Props as MapProps, useMap } from 'src/hooks/useMap';
 import { Point } from 'src/types';
 
 import styles from 'src/components/molecules/Map/styles.module.css';
 
 type Props = MapProps & {
-  markers: Point[];
   draggable: boolean;
   filter: FilterButtonProps;
+  points: Point[];
 };
 
 export const Map: React.FC<Props> = ({
-  markers,
   draggable,
   filter,
+  points,
   ...options
 }) => {
-  const { ref, map, infoWindow, initialZoom } = useMap(options);
+  const { ref, map, infoWindow } = useMap(options);
 
   return (
     <>
@@ -28,14 +28,13 @@ export const Map: React.FC<Props> = ({
 
       {!!map && (
         <>
-          <MapControls filter={filter} map={map} />
+          <ControlsLayout filter={filter} map={map} />
 
-          <MapMarkers
+          <MarkersLayout
             draggable={draggable}
             infoWindow={infoWindow}
-            initialZoom={initialZoom}
             map={map}
-            markers={markers}
+            points={points}
           />
         </>
       )}
