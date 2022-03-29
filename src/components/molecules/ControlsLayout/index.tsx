@@ -5,6 +5,7 @@ import {
   FilterButton,
   Props as FilterButtonProps,
 } from 'src/components/molecules/FilterButton';
+import { GeolocationButton } from 'src/components/molecules/GeolocationButton';
 
 type Props = {
   filter: FilterButtonProps;
@@ -12,7 +13,12 @@ type Props = {
 };
 
 export const ControlsLayout: React.FC<Props> = ({ filter, map }) => (
-  <MapControl map={map} width="60px" height="80px">
-    <FilterButton {...filter} />
-  </MapControl>
+  <>
+    <MapControl map={map} width="60px" height="80px">
+      <FilterButton {...filter} />
+    </MapControl>
+    <MapControl map={map} width="60px" height="50px">
+      <GeolocationButton map={map} />
+    </MapControl>
+  </>
 );

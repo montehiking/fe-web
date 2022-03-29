@@ -1,4 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 240 240">
-  <circle fill="#fff" cx="120" cy="120" opacity=".7" r="90" />
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 240 240">
+  <circle fill="#1890ff" cx="120" cy="120" r="110" opacity=".3" />
+  <circle fill="#fff" cx="120" cy="120" r="90" />
   <circle fill="#1890ff" cx="120" cy="120" r="70" />
 </svg>

@@ -7,8 +7,7 @@
   box-shadow: var(--SHADOW);
   cursor: pointer;
   display: flex;
-  flex-direction: column;
-  height: 70px;
+  height: 40px;
   justify-content: center;
   margin: var(--SPACING_NORMAL);
   padding: 0px;
@@ -24,18 +23,6 @@
 
 .button:hover svg {
   fill: var(--COLOR_GRAY_3);
-}
-
-.button span {
-  color: var(--COLOR_GRAY_1);
-  font-size: var(--FONT_SIZE_SMALL);
-  font-weight: 800;
-  line-height: 16px;
-  transition: color var(--TRANSITION_CONTROLS);
-}
-
-.button:hover span {
-  color: var(--COLOR_GRAY_2);
 }
 
 .active svg {
