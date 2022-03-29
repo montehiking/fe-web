@@ -14,7 +14,7 @@ export const Sidebar: Story = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   return (
-    <div className="sb-gray-box">
+    <div className="sb-box">
       <button type="button" onClick={() => setIsVisible(!isVisible)}>
         {isVisible ? 'hide' : 'show'}
       </button>

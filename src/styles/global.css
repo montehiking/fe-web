@@ -2,8 +2,8 @@ html,
 body,
 #root {
   height: 100%;
-  width: 100%;
   margin: 0;
+  width: 100%;
 }
 
 body {
@@ -19,8 +19,7 @@ code {
     monospace;
 }
 
-.sb-gray-box {
-  background-color: var(--COLOR_GRAY_0);
+.sb-box {
   height: 100vh;
 }
 

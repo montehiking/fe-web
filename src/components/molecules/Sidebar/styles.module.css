@@ -35,28 +35,29 @@
 }
 
 .sidebar {
-  z-index: 101;
-  top: auto;
-  bottom: 0;
-  right: 0;
-  width: auto;
-  height: 0;
-  position: fixed;
   align-items: flex-start;
-  overflow: hidden;
-  background-color: var(--COLOR_WHITE);
-  animation-fill-mode: both;
   animation-duration: var(--TRANSITION_SIDEBAR);
-  animation-timing-function: ease-in;
+  animation-fill-mode: both;
   animation-name: SidebarInMobile;
+  animation-timing-function: ease-in;
+  background-color: var(--COLOR_WHITE);
+  bottom: 0;
+  box-shadow: var(--SHADOW);
   display: flex;
   flex-direction: column;
+  height: 0;
+  overflow: hidden;
+  position: fixed;
+  right: 0;
+  top: auto;
+  width: auto;
+  z-index: 101;
 }
 
 .sidebar__visible {
   animation-name: none;
-  width: 100vw;
   height: var(--HEIGHT_SIDEBAR);
+  width: 100vw;
 }
 
 .sidebar__hide {
@@ -65,21 +66,21 @@
 
 .container {
   display: flex;
-  width: 100vw;
+  flex-direction: column;
   height: var(--HEIGHT_SIDEBAR);
   overflow: auto;
-  flex-direction: column;
   padding-bottom: var(--SPACING_EXTRA_LARGE);
+  width: 100vw;
 }
 
 @media only screen and (orientation: landscape) {
   .sidebar {
-    top: 0;
+    animation-name: SidebarInDesktop;
     bottom: auto;
-    width: 0;
     height: auto;
     min-height: 100vh;
-    animation-name: SidebarInDesktop;
+    top: 0;
+    width: 0;
   }
 
   .sidebar__hide {
@@ -88,12 +89,12 @@
 
   .sidebar__visible {
     animation-name: none;
-    width: var(--WIDTH_SIDEBAR);
     height: auto;
+    width: var(--WIDTH_SIDEBAR);
   }
 
   .container {
-    width: var(--WIDTH_SIDEBAR);
     height: 100vh;
+    width: var(--WIDTH_SIDEBAR);
   }
 }

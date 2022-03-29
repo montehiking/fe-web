@@ -36,40 +36,34 @@ export const Filters: React.FC<Props> = ({ filters, onChange, isAdmin }) => {
     ? pointTypes
     : pointTypes.filter((pointType) => pointType !== '');
 
-  return (
-    <List
-      dataSource={dataSource}
-      renderItem={(pointType) => {
-        const { checked, count } = filters[pointType] ?? {
-          checked: true,
-          count: 0,
-        };
+  const renderItem = (pointType: PointType) => {
+    const { checked, count } = filters[pointType] ?? {
+      checked: true,
+      count: 0,
+    };
 
-        const values = { count };
+    const values = { count };
 
-        return (
-          <List.Item>
-            <div className={styles.item}>
-              <Switch
-                defaultChecked={checked}
-                onChange={(value) =>
-                  onChange({
-                    ...filters,
-                    [pointType]: { count, checked: value },
-                  })
-                }
-                label={{ id: labels[pointType] }}
-                subLabel={getWithDecline(count, [
-                  { id: 'components.organisms.Filters.subLabel.0', values },
-                  { id: 'components.organisms.Filters.subLabel.1', values },
-                  { id: 'components.organisms.Filters.subLabel.2', values },
-                  { id: 'components.organisms.Filters.subLabel.3', values },
-                ])}
-              />
-            </div>
-          </List.Item>
-        );
-      }}
-    />
-  );
+    return (
+      <List.Item>
+        <div className={styles.item}>
+          <Switch
+            defaultChecked={checked}
+            onChange={(value) =>
+              onChange({ ...filters, [pointType]: { count, checked: value } })
+            }
+            label={{ id: labels[pointType] }}
+            subLabel={getWithDecline(count, [
+              { id: 'components.organisms.Filters.subLabel.0', values },
+              { id: 'components.organisms.Filters.subLabel.1', values },
+              { id: 'components.organisms.Filters.subLabel.2', values },
+              { id: 'components.organisms.Filters.subLabel.3', values },
+            ])}
+          />
+        </div>
+      </List.Item>
+    );
+  };
+
+  return <List dataSource={dataSource} renderItem={renderItem} />;
 };

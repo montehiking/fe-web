@@ -10,7 +10,7 @@ export default {
 } as Meta;
 
 export const PageHeader: Story = () => (
-  <div className="sb-gray-box">
+  <div className="sb-box">
     <PageHeaderComponent
       title={{ id: 'components.organisms.MapView.filters' }}
       subTitle={{ id: 'components.organisms.MapView.filters.0' }}

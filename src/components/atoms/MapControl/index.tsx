@@ -5,12 +5,12 @@ type Props = {
   map: google.maps.Map;
   width: string;
   height: string;
-  position: google.maps.ControlPosition;
+  position?: google.maps.ControlPosition;
 };
 
 export const MapControl: React.FC<Props> = ({
   map,
-  position,
+  position = google.maps.ControlPosition.RIGHT_BOTTOM,
   width,
   height,
   children,

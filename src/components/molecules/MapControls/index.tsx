@@ -12,12 +12,7 @@ type Props = {
 };
 
 export const MapControls: React.FC<Props> = ({ filter, map }) => (
-  <MapControl
-    map={map}
-    width="60px"
-    height="80px"
-    position={google.maps.ControlPosition.RIGHT_BOTTOM}
-  >
+  <MapControl map={map} width="60px" height="80px">
     <FilterButton {...filter} />
   </MapControl>
 );

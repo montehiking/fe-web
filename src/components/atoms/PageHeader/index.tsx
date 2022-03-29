@@ -14,6 +14,7 @@ export const PageHeader: React.FC<Props> = ({ title, subTitle, ...props }) => (
   <PageHeaderAnt
     title={<Msg {...title} />}
     subTitle={<Msg {...subTitle} />}
+    style={{ userSelect: 'none' }}
     {...props}
   />
 );
