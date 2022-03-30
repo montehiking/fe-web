@@ -106,4 +106,28 @@ export const old_town: Point[] = [
     title: 'Rijeka Crnojevića',
     description: 'старинное поселение',
   },
+  {
+    lat: 42.47016880860117,
+    lng: 18.716346077860518,
+    type: 'old_town',
+    title: 'Donji Stoliv',
+    description: 'старинное поселение',
+    notVerified: true,
+  },
+  {
+    lat: 42.466564709089965,
+    lng: 18.715574081861472,
+    type: 'old_town',
+    title: 'Gornji Stoliv',
+    description: 'старинное поселение',
+    notVerified: true,
+  },
+  {
+    lat: 42.44922845827137,
+    lng: 18.753419464407482,
+    type: 'old_town',
+    title: 'Prčanj',
+    description: 'старинное поселение',
+    notVerified: true,
+  },
 ];

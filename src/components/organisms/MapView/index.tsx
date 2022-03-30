@@ -28,7 +28,6 @@ export const MapView: React.FC<Props> = ({ isAdmin }) => {
       <Map
         onClick={setPoints}
         points={filteredPoints}
-        draggable={isAdmin}
         filter={{
           ...counter,
           onClick: () => setIsSidebarVisible(!isSidebarVisible),

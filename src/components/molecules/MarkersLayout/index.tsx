@@ -7,21 +7,23 @@ import { Point } from 'src/types';
 import { createGoogleMapsURL, getInitialZoom } from 'src/utils/maps';
 
 type Props = {
-  draggable: boolean;
   infoWindow: google.maps.InfoWindow;
   map: google.maps.Map;
   points: Point[];
 };
 
-export const MarkersLayout: React.FC<Props> = ({
-  draggable,
-  infoWindow,
-  map,
-  points,
-}) => {
+export const MarkersLayout: React.FC<Props> = ({ infoWindow, map, points }) => {
   const intl = useIntl();
 
-  const renderMarker = ({ title, description, lat, lng }: Point) => {
+  const renderMarker = ({
+    notVerified,
+    title,
+    description,
+    lat,
+    lng,
+  }: Point) => {
+    const iconName = notVerified ? '/pin/yellow.svg' : '/pin/red.svg';
+
     const onClick = (marker: google.maps.Marker) => {
       const oldPosition = infoWindow.getPosition();
 
@@ -60,7 +62,7 @@ export const MarkersLayout: React.FC<Props> = ({
 
     return (
       <Marker
-        draggable={draggable}
+        icon={iconName}
         key={`${lat}${lng}`}
         map={map}
         onClick={onClick}

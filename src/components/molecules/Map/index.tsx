@@ -9,17 +9,11 @@ import { Point } from 'src/types';
 import styles from 'src/components/molecules/Map/styles.module.css';
 
 type Props = MapProps & {
-  draggable: boolean;
   filter: FilterButtonProps;
   points: Point[];
 };
 
-export const Map: React.FC<Props> = ({
-  draggable,
-  filter,
-  points,
-  ...options
-}) => {
+export const Map: React.FC<Props> = ({ filter, points, ...options }) => {
   const { ref, map, infoWindow } = useMap(options);
 
   return (
@@ -30,12 +24,7 @@ export const Map: React.FC<Props> = ({
         <>
           <ControlsLayout filter={filter} map={map} />
 
-          <MarkersLayout
-            draggable={draggable}
-            infoWindow={infoWindow}
-            map={map}
-            points={points}
-          />
+          <MarkersLayout infoWindow={infoWindow} map={map} points={points} />
         </>
       )}
     </>

@@ -8,6 +8,9 @@ type State = {
   points: Point[];
 };
 
+const isPointAllowed = (point: Point, isAdmin: boolean) =>
+  !point.notVerified || isAdmin;
+
 const enabledFilters = getItem<Partial<FiltersState>>('filters');
 
 export const usePoints = (isAdmin: boolean) => {
@@ -20,32 +23,36 @@ export const usePoints = (isAdmin: boolean) => {
     import('src/data/points').then(({ points }) => {
       setState({
         filters: points.reduce<FiltersState>((acc, point) => {
-          const { count, checked } = acc[point.type] ?? {
-            count: 0,
-            checked: enabledFilters[point.type]?.checked ?? true,
-          };
-          acc[point.type] = { checked, count: count + 1 };
+          if (isPointAllowed(point, isAdmin)) {
+            const { count, checked } = acc[point.type] ?? {
+              count: 0,
+              checked: enabledFilters[point.type]?.checked ?? true,
+            };
+            acc[point.type] = { checked, count: count + 1 };
+          }
 
           return acc;
         }, {} as never),
-        points,
+        points: points.filter((point) => isPointAllowed(point, isAdmin)),
       });
     });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const setPoints = ({ latLng }: google.maps.MapMouseEvent) => {
     if (latLng && isAdmin) {
       const newPoint: Point = {
         ...latLng.toJSON(),
-        description: '',
-        title: '',
         type: '',
+        title: '',
+        description: '',
+        notVerified: true,
       };
 
-      setState({
+      setState((state) => ({
         filters: state.filters,
-        points: [...state.points, newPoint],
-      });
+        points: [newPoint, ...state.points],
+      }));
     }
   };
 
@@ -55,7 +62,7 @@ export const usePoints = (isAdmin: boolean) => {
       points: state.points,
     });
 
-    setItem('filters', state);
+    setItem('filters', filtersState);
   };
 
   return { ...state, setPoints, setFilters };

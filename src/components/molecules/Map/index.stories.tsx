@@ -15,7 +15,6 @@ export const Map: Story = () => {
 
   return (
     <MapComponent
-      draggable
       filter={{ from: 100, to: 5, onClick: console.log }}
       onClick={console.log}
       points={points.slice(0, 10)}

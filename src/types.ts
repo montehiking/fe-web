@@ -21,9 +21,10 @@ export type PointType =
   | 'waterfall';
 
 export type Point = google.maps.LatLngLiteral & {
-  type: PointType;
-  title: string;
   description: string;
+  notVerified?: boolean;
+  title: string;
+  type: PointType;
 };
 
 export type FiltersState = Partial<

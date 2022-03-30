@@ -113,4 +113,20 @@ export const other: Point[] = [
     title: 'Stara džamija',
     description: 'деревянная мечеть XV в.',
   },
+  {
+    lat: 42.41144808577672,
+    lng: 18.690956875984707,
+    type: 'other',
+    title: 'Ostrvo Sveti Marko (Stradioti)',
+    description: 'заброшенный отель',
+    notVerified: true,
+  },
+  {
+    lat: 42.39270082440593,
+    lng: 18.702947849040672,
+    type: 'other',
+    title: 'Prva Bokeška Glinena Industrija',
+    description: 'руины старого кирпичного завода',
+    notVerified: true,
+  },
 ];

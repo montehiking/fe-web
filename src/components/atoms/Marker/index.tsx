@@ -11,7 +11,6 @@ export const Marker: React.FC<Props> = ({ onClick, ...options }) => {
 
     if (!marker) {
       marker = new google.maps.Marker({
-        icon: '/pin/red.svg',
         optimized: true,
         ...options,
       });
