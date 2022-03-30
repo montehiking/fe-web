@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo } from 'react';
+import React, { useLayoutEffect, useMemo } from 'react';
 import ReactDOM from 'react-dom';
 
 type Props = {
@@ -24,7 +24,7 @@ export const MapControl: React.FC<Props> = ({
     return div;
   }, [width, height]);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const controls = map.controls[position];
     const index = controls.push(controlDiv);
 

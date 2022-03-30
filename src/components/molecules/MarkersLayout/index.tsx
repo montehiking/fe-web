@@ -63,10 +63,9 @@ export const MarkersLayout: React.FC<Props> = ({
         draggable={draggable}
         key={`${lat}${lng}`}
         map={map}
-        optimized
+        onClick={onClick}
         position={{ lat, lng }}
         title={title}
-        onClick={onClick}
       />
     );
   };

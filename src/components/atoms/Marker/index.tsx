@@ -1,16 +1,20 @@
-import React, { useEffect } from 'react';
+import React, { useLayoutEffect } from 'react';
 
 type Props = google.maps.MarkerOptions & {
   onClick: (marker: google.maps.Marker) => void;
 };
 
 export const Marker: React.FC<Props> = ({ onClick, ...options }) => {
-  useEffect(() => {
+  useLayoutEffect(() => {
     let marker: google.maps.Marker | undefined = undefined;
     let listener: google.maps.MapsEventListener | undefined = undefined;
 
     if (!marker) {
-      marker = new google.maps.Marker({ ...options, icon: '/pin/red.svg' });
+      marker = new google.maps.Marker({
+        icon: '/pin/red.svg',
+        optimized: true,
+        ...options,
+      });
 
       listener = marker.addListener('click', () =>
         onClick(marker as google.maps.Marker)

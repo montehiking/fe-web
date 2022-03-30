@@ -3,9 +3,8 @@ import React, { useState } from 'react';
 import { Map } from 'src/components/molecules/Map';
 import { Sidebar } from 'src/components/molecules/Sidebar';
 import { Filters } from 'src/components/organisms/Filters';
-import { filtersState, points as originalPoints } from 'src/data/points';
+import { usePoints } from 'src/hooks/usePoints';
 import { getWithDecline } from 'src/i18n/Decline';
-import { Point } from 'src/types';
 
 import styles from 'src/components/organisms/MapView/styles.module.css';
 
@@ -14,8 +13,7 @@ type Props = {
 };
 
 export const MapView: React.FC<Props> = ({ isAdmin }) => {
-  const [points, setPoints] = useState<Point[]>(originalPoints);
-  const [filters, setFilters] = useState(filtersState);
+  const { points, setPoints, filters, setFilters } = usePoints(isAdmin);
   const [isSidebarVisible, setIsSidebarVisible] = useState(false);
 
   const filteredPoints = points.filter((m) => filters[m.type]?.checked);
@@ -25,23 +23,10 @@ export const MapView: React.FC<Props> = ({ isAdmin }) => {
     to: filteredPoints.length,
   };
 
-  const onClick = ({ latLng }: google.maps.MapMouseEvent) => {
-    if (latLng && isAdmin) {
-      const newPoint: Point = {
-        ...latLng.toJSON(),
-        type: '',
-        title: '',
-        description: '',
-      };
-
-      setPoints([...points, newPoint]);
-    }
-  };
-
   return (
     <div className={styles.wrapper} data-testid="page">
       <Map
-        onClick={onClick}
+        onClick={setPoints}
         points={filteredPoints}
         draggable={isAdmin}
         filter={{

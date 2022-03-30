@@ -1,9 +1,8 @@
 import { Meta, Story } from '@storybook/react/types-6-0';
-import { useState } from 'react';
 
 import { Filters as FiltersComponent } from 'src/components/organisms/Filters';
 import { decorators } from 'src/components/providers/StorybookProvider';
-import { filtersState } from 'src/data/points';
+import { usePoints } from 'src/hooks/usePoints';
 
 export default {
   title: 'Organisms/Filters',
@@ -12,7 +11,7 @@ export default {
 } as Meta;
 
 const Filters: Story = ({ isAdmin }) => {
-  const [filters, setFilters] = useState(filtersState);
+  const { filters, setFilters } = usePoints(isAdmin);
 
   return (
     <FiltersComponent
