@@ -1,0 +1,154 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.27125921448397, 18.846744833369705]
+      },
+      "properties": {
+        "title": "Crkva Svetog Nikole",
+        "description": "часовня крестоносцев"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.29803761094782, 18.844456806203493]
+      },
+      "properties": {
+        "title": "Manastir Podmaine (Podostrog)",
+        "description": "древний монастырь"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.48681897035983, 18.68867932258627]
+      },
+      "properties": {
+        "title": "Gospa od Škrpjela",
+        "description": "рукотворный остров"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.44536809066676, 19.26710129300291]
+      },
+      "properties": {
+        "title": "Crkva Svetog Đorđa",
+        "description": "церковь IX-XI вв."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.76615077592451, 19.390536546707153]
+      },
+      "properties": {
+        "title": "Manastir Morača",
+        "description": "древний монастырь"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.262384928245424, 18.89748103952347]
+      },
+      "properties": {
+        "title": "Manastir Praskvica",
+        "description": "древний монастырь"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.38813654053419, 18.92172564975118]
+      },
+      "properties": {
+        "title": "Cetinjski manastir",
+        "description": "древний монастырь"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.432165717248665, 18.707383275032043]
+      },
+      "properties": {
+        "title": "Crkva Sv. Antuna Padovanskog",
+        "description": "старинная церковь",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.45568974901303, 18.69837373495102]
+      },
+      "properties": {
+        "title": "Crkva Svetog Vida",
+        "description": "древняя церковь",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.47736871036033, 18.690285734085013]
+      },
+      "properties": {
+        "title": "Crkva Gospe od Anđela",
+        "description": "древняя церковь",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.40625235843973, 18.702483807680498]
+      },
+      "properties": {
+        "title": "Ruševine crkve Arhanđela Mihaila",
+        "description": "руины церкви VI в.",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.41071932549397, 18.678551278555904]
+      },
+      "properties": {
+        "title": "Gospa od milosrđa",
+        "description": "древний монастырь",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.44960266018683, 18.744559935570564]
+      },
+      "properties": {
+        "title": "Stara župna crkva",
+        "description": "древняя церковь",
+        "notVerified": true
+      }
+    }
+  ]
+}

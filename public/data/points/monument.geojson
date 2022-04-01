@@ -1,0 +1,104 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.27860666307504, 18.836129307746887]
+      },
+      "properties": {
+        "title": "Antička nekropola",
+        "description": "греко-римский некрополь"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.3938008811846, 19.141599125333922]
+      },
+      "properties": {
+        "title": "Barutana",
+        "description": "югославский мемориал"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.10087726917829, 19.091084003448486]
+      },
+      "properties": {
+        "title": "Praistorijski tumul",
+        "description": "курган бронзового века"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [41.924021333862484, 19.205785989761353]
+      },
+      "properties": {
+        "title": "Sloboda",
+        "description": "югославский мемориал"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.27751730160111, 18.835078033083207]
+      },
+      "properties": {
+        "title": "Balerina",
+        "description": "памятник"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.399914442570854, 18.8375186920166]
+      },
+      "properties": {
+        "title": "Njegošev mauzolej",
+        "description": "югославский мемориал"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.278120602985496, 18.837909570094425]
+      },
+      "properties": {
+        "title": "Rimski žrtvenik",
+        "description": "древнеримский алтарь"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.155900801539865, 19.12310872922712]
+      },
+      "properties": {
+        "title": "Spomenik palim borcima NOB-a",
+        "description": "югославский мемориал"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.355487599681254, 19.027730226516724]
+      },
+      "properties": {
+        "title": "Spomenik žrtvama fašizma",
+        "description": "югославский мемориал"
+      }
+    }
+  ]
+}

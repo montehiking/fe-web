@@ -1,0 +1,206 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.27815022203572, 18.837636709213257]
+      },
+      "properties": {
+        "title": "Stari Grad Budva",
+        "description": "старый город"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.255955333280376, 18.891446962014257]
+      },
+      "properties": {
+        "title": "Sveti Stefan",
+        "description": "старинное поселение"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.46789412201348, 19.266767864055097]
+      },
+      "properties": {
+        "title": "Duklja (Diokleja)",
+        "description": "древнеримский город"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.24640438189973, 19.090697453038924]
+      },
+      "properties": {
+        "title": "Virpazar",
+        "description": "старинное поселение"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.42735832676654, 18.556442581944513]
+      },
+      "properties": {
+        "title": "Rose",
+        "description": "старинное поселение"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.094208602985994, 19.1348991174308]
+      },
+      "properties": {
+        "title": "Stari Bar",
+        "description": "старинное поселение"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.42484107773738, 18.769734720940864]
+      },
+      "properties": {
+        "title": "Stari Grad Kotor",
+        "description": "старый город"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.42239174099881, 18.77593567526932]
+      },
+      "properties": {
+        "title": "Špiljari",
+        "description": "заброшенная деревня"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [41.92524501781725, 19.201881265020248]
+      },
+      "properties": {
+        "title": "Stari Grad Ulcinj",
+        "description": "старый город"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.48590121690976, 18.700078210404676]
+      },
+      "properties": {
+        "title": "Perast",
+        "description": "старинное поселение"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.45097856548306, 18.537604821289786]
+      },
+      "properties": {
+        "title": "Stari Grad Herceg Novi",
+        "description": "старый город"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.20643287507986, 18.938576051903784]
+      },
+      "properties": {
+        "title": "Petrovac",
+        "description": "старинное поселение"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.45368774812099, 18.707488544915012]
+      },
+      "properties": {
+        "title": "Gornja Lastva",
+        "description": "старинное поселение"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.38902924835446, 18.925625581658835]
+      },
+      "properties": {
+        "title": "Stari Grad Cetinje ",
+        "description": "старый город"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.356521666942875, 19.0230979783462]
+      },
+      "properties": {
+        "title": "Rijeka Crnojevića",
+        "description": "старинное поселение"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.47016880860117, 18.716346077860518]
+      },
+      "properties": {
+        "title": "Donji Stoliv",
+        "description": "старинное поселение",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.466564709089965, 18.715574081861472]
+      },
+      "properties": {
+        "title": "Gornji Stoliv",
+        "description": "старинное поселение",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.44922845827137, 18.753419464407482]
+      },
+      "properties": {
+        "title": "Prčanj",
+        "description": "старинное поселение",
+        "notVerified": true
+      }
+    }
+  ]
+}

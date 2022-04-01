@@ -1,0 +1,170 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.39074914393358, 18.711776919687182]
+      },
+      "properties": {
+        "title": "Solila",
+        "description": "парк природы"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.10078754208998, 19.091746110217937]
+      },
+      "properties": {
+        "title": "Dvorski park",
+        "description": "парк"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.28611186037201, 18.822779970220854]
+      },
+      "properties": {
+        "title": "Spas",
+        "description": "парк природы"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.42408896111287, 18.706616342017828]
+      },
+      "properties": {
+        "title": "Župa",
+        "description": "городской парк"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.91610470311226, 19.575072587335605]
+      },
+      "properties": {
+        "title": "Biogradska gora",
+        "description": "национальный парк"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.90047487237151, 19.596208032735717]
+      },
+      "properties": {
+        "title": "Biogradsko jezero",
+        "description": "озеро"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.717988169825944, 19.37002051595729]
+      },
+      "properties": {
+        "title": "Kanjon Mrtvice",
+        "description": "каньон"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.147244608464035, 19.096010247442177]
+      },
+      "properties": {
+        "title": "Crno jezero",
+        "description": "озеро"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.1538046493287, 19.101030925214022]
+      },
+      "properties": {
+        "title": "Durmitor",
+        "description": "национальный парк"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.12244183447552, 19.08104075446335]
+      },
+      "properties": {
+        "title": "Savin Kuk",
+        "description": "горная вершина"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.27215064062372, 18.840376555636954]
+      },
+      "properties": {
+        "title": "Pivsko jezero",
+        "description": "озеро"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.59616946678381, 19.93244754186229]
+      },
+      "properties": {
+        "title": "Plavsko jezero",
+        "description": "озеро"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.48482868753571, 19.54390525817871]
+      },
+      "properties": {
+        "title": "Grlo Sokolovo",
+        "description": "ущелье"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.38063117529631, 18.844720903797086]
+      },
+      "properties": {
+        "title": "Lovćen",
+        "description": "национальный парк"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.43930473055805, 18.692337552271965]
+      },
+      "properties": {
+        "title": "Park Doma Vojske",
+        "description": "городской парк"
+      }
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.297946797761924, 18.84341023914012]
+      },
+      "properties": {
+        "title": "Most na Grđevici",
+        "description": "старинный мост"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.24619402714383, 19.091258949410722]
+      },
+      "properties": {
+        "title": "Most na Crmnici",
+        "description": "старинный мост"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.725428368443445, 19.362528920173645]
+      },
+      "properties": {
+        "title": "Danilov most",
+        "description": "старинный мост"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.7289781067489, 19.34087575612702]
+      },
+      "properties": {
+        "title": "Ruševine starog mosta",
+        "description": "остатки старинного моста"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.26136992620115, 18.898009750156625]
+      },
+      "properties": {
+        "title": "Stari most",
+        "description": "старинный мост"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.26217188607564, 18.8994665011005]
+      },
+      "properties": {
+        "title": "Stari most",
+        "description": "старинный мост"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [43.15027563817881, 19.29499217361109]
+      },
+      "properties": {
+        "title": "Most na Đurđevića Tari",
+        "description": "мост через каньон"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.355804734252104, 19.024382829666138]
+      },
+      "properties": {
+        "title": "Most na Rijeke Crnojevića",
+        "description": "старинный мост"
+      }
+    }
+  ]
+}

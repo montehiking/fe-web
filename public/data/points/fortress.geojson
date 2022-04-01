@@ -1,0 +1,349 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.275133659000936, 18.826982975006104]
+      },
+      "properties": {
+        "title": "Tvrđava Mogren",
+        "description": "австро-венгерский форт"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.27712926575511, 18.838263198862933]
+      },
+      "properties": {
+        "title": "Tvrđava Svete Marije (Citadela)",
+        "description": "городская цитадель"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.42118354844844, 18.749308432526366]
+      },
+      "properties": {
+        "title": "Tvrđava Vrmac",
+        "description": "австро-венгерский форт"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.39580006812814, 18.764165868455795]
+      },
+      "properties": {
+        "title": "Tvrđava Goražda",
+        "description": "австро-венгерский форт"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.403142859039846, 18.762486468098057]
+      },
+      "properties": {
+        "title": "Tvrđava Trojica",
+        "description": "австро-венгерский форт"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.2052360221782, 18.9371158182621]
+      },
+      "properties": {
+        "title": "Tvrđava Kastelo",
+        "description": "венецианская крепость"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.13712533225962, 19.043902330881547]
+      },
+      "properties": {
+        "title": "Tvrđava Tabija",
+        "description": "турецкая крепость"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.15039215436781, 19.031547706428505]
+      },
+      "properties": {
+        "title": "Tvrđava Haj-Nehaj",
+        "description": "венецианская крепость"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.24422638563624, 19.09294394288587]
+      },
+      "properties": {
+        "title": "Tvrđava Besac",
+        "description": "турецкая крепость"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.42037183870199, 18.550161999504393]
+      },
+      "properties": {
+        "title": "Tvrđava Kabala",
+        "description": "австро-венгерский форт"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.4286327060343, 18.556340658001947]
+      },
+      "properties": {
+        "title": "Fort Rose",
+        "description": "венецианский форт"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.422141816711076, 18.774840831756592]
+      },
+      "properties": {
+        "title": "Tvrđava Svetog Ivana",
+        "description": "городская цитадель"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.45242465974347, 18.538098082400303]
+      },
+      "properties": {
+        "title": "Tvrđava Kanli Kula",
+        "description": "турецкая крепость-тюрьма"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.43359218808875, 19.268178146568587]
+      },
+      "properties": {
+        "title": "Tamnica Jusovača",
+        "description": "турецкая тюрьма"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.595625635934226, 19.946000576019287]
+      },
+      "properties": {
+        "title": "Kula Redžepagića",
+        "description": "средневековый дом-крепость"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.092712215907845, 19.135108928615224]
+      },
+      "properties": {
+        "title": "Sahat kula",
+        "description": "часовая башня"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.441905077120644, 18.68976246235343]
+      },
+      "properties": {
+        "title": "Blokhauz Donja Lastva",
+        "description": "австро-венгерский блокгауз",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.44393182889879, 18.692942641151447]
+      },
+      "properties": {
+        "title": "Blokhauz Ruljina",
+        "description": "австро-венгерский блокгауз",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.4398647598723, 18.699165567406542]
+      },
+      "properties": {
+        "title": "Blokhauz Podkuk",
+        "description": "австро-венгерский блокгауз",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.43837098011306, 18.70119868183983]
+      },
+      "properties": {
+        "title": "Blokhauz Nadkuk",
+        "description": "австро-венгерский блокгауз",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.43231526552022, 18.70210942438805]
+      },
+      "properties": {
+        "title": "Blokhauz Tripovići",
+        "description": "австро-венгерский блокгауз",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.434889042682556, 18.701154603020118]
+      },
+      "properties": {
+        "title": "Blokhauz Mažina",
+        "description": "австро-венгерский блокгауз",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.43148668473511, 18.696327209472656]
+      },
+      "properties": {
+        "title": "Palata Buća-Luković",
+        "description": "средневековый дворец-крепость",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.47584593286428, 18.69164293184655]
+      },
+      "properties": {
+        "title": "Tvrđava Verige",
+        "description": "австро-венгерский форт",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.472406838205806, 18.689567636566203]
+      },
+      "properties": {
+        "title": "Tvrđava Bijeli Pjesak",
+        "description": "австро-венгерский форт",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.409141259053634, 18.756779098086778]
+      },
+      "properties": {
+        "title": "Tvrđava Kavač",
+        "description": "австро-венгерская батарея",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.408781459286395, 18.760863636062343]
+      },
+      "properties": {
+        "title": "Tvrđava Škaljari",
+        "description": "австро-венгерская батарея",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.37168373700897, 18.713169493917952]
+      },
+      "properties": {
+        "title": "Tvrđava Grabovac",
+        "description": "австро-венгерский форт",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.395507661776286, 18.558057969561386]
+      },
+      "properties": {
+        "title": "Tvrđava Mamula",
+        "description": "австро-венгерский форт",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [42.391444881926006, 18.570526222215555]
+      },
+      "properties": {
+        "title": "Tvrđava Arza",
+        "description": "австро-венгерский форт",
+        "notVerified": true
+      }
+    }
+  ]
+}
