@@ -5,7 +5,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [42.292574304900405, 18.87504913460358]
+        "coordinates": [18.87504913460358, 42.292574304900405]
       },
       "properties": {
         "title": "Pećina Ivanovići",
@@ -16,7 +16,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [42.36710394637622, 18.953089730534305]
+        "coordinates": [18.953089730534305, 42.36710394637622]
       },
       "properties": {
         "title": "Lipska pećina",
@@ -27,7 +27,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [43.14370625468662, 19.091367718576958]
+        "coordinates": [19.091367718576958, 43.14370625468662]
       },
       "properties": {
         "title": "Titova pećina",

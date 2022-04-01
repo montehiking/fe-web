@@ -5,7 +5,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [42.27815022203572, 18.837636709213257]
+        "coordinates": [18.837636709213257, 42.27815022203572]
       },
       "properties": {
         "title": "Stari Grad Budva",
@@ -16,7 +16,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [42.255955333280376, 18.891446962014257]
+        "coordinates": [18.891446962014257, 42.255955333280376]
       },
       "properties": {
         "title": "Sveti Stefan",
@@ -27,7 +27,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [42.46789412201348, 19.266767864055097]
+        "coordinates": [19.266767864055097, 42.46789412201348]
       },
       "properties": {
         "title": "Duklja (Diokleja)",
@@ -38,7 +38,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [42.24640438189973, 19.090697453038924]
+        "coordinates": [19.090697453038924, 42.24640438189973]
       },
       "properties": {
         "title": "Virpazar",
@@ -49,7 +49,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [42.42735832676654, 18.556442581944513]
+        "coordinates": [18.556442581944513, 42.42735832676654]
       },
       "properties": {
         "title": "Rose",
@@ -60,7 +60,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [42.094208602985994, 19.1348991174308]
+        "coordinates": [19.1348991174308, 42.094208602985994]
       },
       "properties": {
         "title": "Stari Bar",
@@ -71,7 +71,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [42.42484107773738, 18.769734720940864]
+        "coordinates": [18.769734720940864, 42.42484107773738]
       },
       "properties": {
         "title": "Stari Grad Kotor",
@@ -82,7 +82,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [42.42239174099881, 18.77593567526932]
+        "coordinates": [18.77593567526932, 42.42239174099881]
       },
       "properties": {
         "title": "Špiljari",
@@ -93,7 +93,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [41.92524501781725, 19.201881265020248]
+        "coordinates": [19.201881265020248, 41.92524501781725]
       },
       "properties": {
         "title": "Stari Grad Ulcinj",
@@ -104,7 +104,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [42.48590121690976, 18.700078210404676]
+        "coordinates": [18.700078210404676, 42.48590121690976]
       },
       "properties": {
         "title": "Perast",
@@ -115,7 +115,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [42.45097856548306, 18.537604821289786]
+        "coordinates": [18.537604821289786, 42.45097856548306]
       },
       "properties": {
         "title": "Stari Grad Herceg Novi",
@@ -126,7 +126,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [42.20643287507986, 18.938576051903784]
+        "coordinates": [18.938576051903784, 42.20643287507986]
       },
       "properties": {
         "title": "Petrovac",
@@ -137,7 +137,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [42.45368774812099, 18.707488544915012]
+        "coordinates": [18.707488544915012, 42.45368774812099]
       },
       "properties": {
         "title": "Gornja Lastva",
@@ -148,7 +148,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [42.38902924835446, 18.925625581658835]
+        "coordinates": [18.925625581658835, 42.38902924835446]
       },
       "properties": {
         "title": "Stari Grad Cetinje ",
@@ -159,7 +159,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [42.356521666942875, 19.0230979783462]
+        "coordinates": [19.0230979783462, 42.356521666942875]
       },
       "properties": {
         "title": "Rijeka Crnojevića",
@@ -170,7 +170,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [42.47016880860117, 18.716346077860518]
+        "coordinates": [18.716346077860518, 42.47016880860117]
       },
       "properties": {
         "title": "Donji Stoliv",
@@ -182,7 +182,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [42.466564709089965, 18.715574081861472]
+        "coordinates": [18.715574081861472, 42.466564709089965]
       },
       "properties": {
         "title": "Gornji Stoliv",
@@ -194,7 +194,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [42.44922845827137, 18.753419464407482]
+        "coordinates": [18.753419464407482, 42.44922845827137]
       },
       "properties": {
         "title": "Prčanj",

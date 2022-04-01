@@ -5,7 +5,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [42.39074914393358, 18.711776919687182]
+        "coordinates": [18.711776919687182, 42.39074914393358]
       },
       "properties": {
         "title": "Solila",
@@ -16,7 +16,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [42.10078754208998, 19.091746110217937]
+        "coordinates": [19.091746110217937, 42.10078754208998]
       },
       "properties": {
         "title": "Dvorski park",
@@ -27,7 +27,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [42.28611186037201, 18.822779970220854]
+        "coordinates": [18.822779970220854, 42.28611186037201]
       },
       "properties": {
         "title": "Spas",
@@ -38,7 +38,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [42.42408896111287, 18.706616342017828]
+        "coordinates": [18.706616342017828, 42.42408896111287]
       },
       "properties": {
         "title": "Župa",
@@ -49,7 +49,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [42.91610470311226, 19.575072587335605]
+        "coordinates": [19.575072587335605, 42.91610470311226]
       },
       "properties": {
         "title": "Biogradska gora",
@@ -60,7 +60,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [42.90047487237151, 19.596208032735717]
+        "coordinates": [19.596208032735717, 42.90047487237151]
       },
       "properties": {
         "title": "Biogradsko jezero",
@@ -71,7 +71,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [42.717988169825944, 19.37002051595729]
+        "coordinates": [19.37002051595729, 42.717988169825944]
       },
       "properties": {
         "title": "Kanjon Mrtvice",
@@ -82,7 +82,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [43.147244608464035, 19.096010247442177]
+        "coordinates": [19.096010247442177, 43.147244608464035]
       },
       "properties": {
         "title": "Crno jezero",
@@ -93,7 +93,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [43.1538046493287, 19.101030925214022]
+        "coordinates": [19.101030925214022, 43.1538046493287]
       },
       "properties": {
         "title": "Durmitor",
@@ -104,7 +104,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [43.12244183447552, 19.08104075446335]
+        "coordinates": [19.08104075446335, 43.12244183447552]
       },
       "properties": {
         "title": "Savin Kuk",
@@ -115,7 +115,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [43.27215064062372, 18.840376555636954]
+        "coordinates": [18.840376555636954, 43.27215064062372]
       },
       "properties": {
         "title": "Pivsko jezero",
@@ -126,7 +126,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [42.59616946678381, 19.93244754186229]
+        "coordinates": [19.93244754186229, 42.59616946678381]
       },
       "properties": {
         "title": "Plavsko jezero",
@@ -137,7 +137,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [42.48482868753571, 19.54390525817871]
+        "coordinates": [19.54390525817871, 42.48482868753571]
       },
       "properties": {
         "title": "Grlo Sokolovo",
@@ -148,7 +148,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [42.38063117529631, 18.844720903797086]
+        "coordinates": [18.844720903797086, 42.38063117529631]
       },
       "properties": {
         "title": "Lovćen",
@@ -159,7 +159,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [42.43930473055805, 18.692337552271965]
+        "coordinates": [18.692337552271965, 42.43930473055805]
       },
       "properties": {
         "title": "Park Doma Vojske",

@@ -5,7 +5,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [41.95262753306175, 19.149699097352958]
+        "coordinates": [19.149699097352958, 41.95262753306175]
       },
       "properties": {
         "title": "Svetionik Mendra",
@@ -16,7 +16,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [42.43918827354297, 18.684660269783908]
+        "coordinates": [18.684660269783908, 42.43918827354297]
       },
       "properties": {
         "title": "Svetionik Ponta",
@@ -27,7 +27,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [42.47742212302048, 18.69019185676949]
+        "coordinates": [18.69019185676949, 42.47742212302048]
       },
       "properties": {
         "title": "Svetionik Verige",
@@ -39,7 +39,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [42.384264418634125, 18.66450812754341]
+        "coordinates": [18.66450812754341, 42.384264418634125]
       },
       "properties": {
         "title": "Svetionik Luštica Bay",
@@ -51,7 +51,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [42.44905231484165, 18.754079287825146]
+        "coordinates": [18.754079287825146, 42.44905231484165]
       },
       "properties": {
         "title": "Svetionik Prčanj",

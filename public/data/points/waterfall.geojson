@@ -5,7 +5,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [42.287052571960125, 18.885689892322766]
+        "coordinates": [18.885689892322766, 42.287052571960125]
       },
       "properties": {
         "title": "Vodopad",
@@ -16,7 +16,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [42.51378269755718, 18.681551579394878]
+        "coordinates": [18.681551579394878, 42.51378269755718]
       },
       "properties": {
         "title": "Vodopad Sopot",
@@ -27,7 +27,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [42.262136155407255, 18.899305568559605]
+        "coordinates": [18.899305568559605, 42.262136155407255]
       },
       "properties": {
         "title": "Vodopad",
@@ -38,7 +38,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [43.13692626480629, 19.30070079449733]
+        "coordinates": [19.30070079449733, 43.13692626480629]
       },
       "properties": {
         "title": "Ljutica vodopad",

@@ -5,7 +5,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [42.294409390923214, 18.87403428554535]
+        "coordinates": [18.87403428554535, 42.294409390923214]
       },
       "properties": {
         "title": "Velja Maslina",
@@ -16,7 +16,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [42.293835245820986, 18.875591026300892]
+        "coordinates": [18.875591026300892, 42.293835245820986]
       },
       "properties": {
         "title": "Stari mlin",
@@ -27,7 +27,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [42.094140467135325, 19.136201264742816]
+        "coordinates": [19.136201264742816, 42.094140467135325]
       },
       "properties": {
         "title": "Barski akvadukt",
@@ -38,7 +38,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [42.43607347565511, 18.764200508594513]
+        "coordinates": [18.764200508594513, 42.43607347565511]
       },
       "properties": {
         "title": "Boka Aquarium",
@@ -49,7 +49,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [42.40067480734931, 18.837052238037078]
+        "coordinates": [18.837052238037078, 42.40067480734931]
       },
       "properties": {
         "title": "Vidikovac",
@@ -60,7 +60,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [42.27731233872019, 18.8381751087869]
+        "coordinates": [18.8381751087869, 42.27731233872019]
       },
       "properties": {
         "title": "Ranohrišćanska bazilika i rimske terme",
@@ -71,7 +71,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [42.27335143895809, 18.88916038320632]
+        "coordinates": [18.88916038320632, 42.27335143895809]
       },
       "properties": {
         "title": "Napušteni hotel",
@@ -82,7 +82,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [42.43774262697601, 19.266270978250073]
+        "coordinates": [19.266270978250073, 42.43774262697601]
       },
       "properties": {
         "title": "Turski hamam",
@@ -93,7 +93,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [42.72576926655998, 19.36194901161591]
+        "coordinates": [19.36194901161591, 42.72576926655998]
       },
       "properties": {
         "title": "Stari mlin",
@@ -104,7 +104,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [42.73372472095865, 19.33338941048785]
+        "coordinates": [19.33338941048785, 42.73372472095865]
       },
       "properties": {
         "title": "Kapija želja",
@@ -115,7 +115,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [43.12234997471822, 19.103429201725607]
+        "coordinates": [19.103429201725607, 43.12234997471822]
       },
       "properties": {
         "title": "Lanovka Žabljak - Savin Kuk",
@@ -126,7 +126,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [43.15614281816168, 19.1076965685424]
+        "coordinates": [19.1076965685424, 43.15614281816168]
       },
       "properties": {
         "title": "Napuštena lanovka",
@@ -137,7 +137,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [43.1635079853255, 19.096701496780824]
+        "coordinates": [19.096701496780824, 43.1635079853255]
       },
       "properties": {
         "title": "Napuštena lanovka",
@@ -148,7 +148,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [43.2728068224189, 18.84226483078344]
+        "coordinates": [18.84226483078344, 43.2728068224189]
       },
       "properties": {
         "title": "Piva Dam",
@@ -159,7 +159,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [42.43764927431719, 18.693842630309966]
+        "coordinates": [18.693842630309966, 42.43764927431719]
       },
       "properties": {
         "title": "Zbirka pomorskog nasljeđa",
@@ -170,7 +170,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [42.596479000761796, 19.94430350575417]
+        "coordinates": [19.94430350575417, 42.596479000761796]
       },
       "properties": {
         "title": "Stara džamija",
@@ -181,7 +181,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [42.41144808577672, 18.690956875984707]
+        "coordinates": [18.690956875984707, 42.41144808577672]
       },
       "properties": {
         "title": "Ostrvo Sveti Marko (Stradioti)",
@@ -193,7 +193,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [42.39270082440593, 18.702947849040672]
+        "coordinates": [18.702947849040672, 42.39270082440593]
       },
       "properties": {
         "title": "Prva Bokeška Glinena Industrija",
