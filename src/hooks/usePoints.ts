@@ -1,6 +1,7 @@
 import { useLayoutEffect, useState } from 'react';
 
-import { FiltersState, Point } from 'src/types';
+import { DehydratedFiltersState, FiltersState, Point } from 'src/types';
+import { dehydrate, filterPoints, hydrate } from 'src/utils/filters';
 import { getItem, setItem } from 'src/utils/storage';
 
 type State = {
@@ -8,10 +9,7 @@ type State = {
   points: Point[];
 };
 
-const isPointAllowed = (point: Point, isAdmin: boolean) =>
-  !point.notVerified || isAdmin;
-
-const enabledFilters = getItem<Partial<FiltersState>>('filters');
+const enabledFilters = getItem<DehydratedFiltersState>('filters');
 
 export const usePoints = (isAdmin: boolean) => {
   const [state, setState] = useState<State>({
@@ -22,22 +20,11 @@ export const usePoints = (isAdmin: boolean) => {
   useLayoutEffect(() => {
     import('src/data/points').then(({ points }) => {
       setState({
-        filters: points.reduce<FiltersState>((acc, point) => {
-          if (isPointAllowed(point, isAdmin)) {
-            const { count, checked } = acc[point.type] ?? {
-              count: 0,
-              checked: enabledFilters[point.type]?.checked ?? true,
-            };
-            acc[point.type] = { checked, count: count + 1 };
-          }
-
-          return acc;
-        }, {} as never),
-        points: points.filter((point) => isPointAllowed(point, isAdmin)),
+        filters: hydrate(points, enabledFilters, isAdmin),
+        points: filterPoints(points, isAdmin),
       });
     });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [isAdmin]);
 
   const setPoints = ({ latLng }: google.maps.MapMouseEvent) => {
     if (latLng && isAdmin) {
@@ -62,7 +49,7 @@ export const usePoints = (isAdmin: boolean) => {
       points: state.points,
     });
 
-    setItem('filters', filtersState);
+    setItem('filters', dehydrate(filtersState));
   };
 
   return { ...state, setPoints, setFilters };

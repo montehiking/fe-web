@@ -30,3 +30,5 @@ export type Point = google.maps.LatLngLiteral & {
 export type FiltersState = Partial<
   Record<PointType, { checked: boolean; count: number }>
 >;
+
+export type DehydratedFiltersState = Partial<Record<PointType, boolean>>;
