@@ -29,12 +29,20 @@ export const usePoints = (isAdmin: boolean) => {
 
   const setPoints = ({ latLng }: google.maps.MapMouseEvent) => {
     if (latLng && isAdmin) {
+      const { lat, lng } = latLng.toJSON();
+
       const newPoint: Point = {
-        ...latLng.toJSON(),
-        type: '',
-        title: '',
-        description: '',
-        notVerified: true,
+        type: 'Feature',
+        properties: {
+          title: '',
+          description: '',
+          category: '',
+          notVerified: true,
+        },
+        geometry: {
+          type: 'Point',
+          coordinates: [lng, lat],
+        },
       };
 
       setState((state) => ({

@@ -15,14 +15,11 @@ type Props = {
 export const MarkersLayout: React.FC<Props> = ({ infoWindow, map, points }) => {
   const intl = useIntl();
 
-  const renderMarker = ({
-    notVerified,
-    title,
-    description,
-    lat,
-    lng,
-  }: Point) => {
-    const iconName = notVerified ? '/pin/yellow.svg' : '/pin/red.svg';
+  const renderMarker = ({ properties, geometry }: Point) => {
+    const iconName = properties.notVerified
+      ? '/pin/yellow.svg'
+      : '/pin/red.svg';
+    const [lng, lat] = geometry.coordinates;
 
     const onClick = (marker: google.maps.Marker) => {
       const oldPosition = infoWindow.getPosition();
@@ -47,8 +44,8 @@ export const MarkersLayout: React.FC<Props> = ({ infoWindow, map, points }) => {
 
         infoWindow.setContent(
           `<div class="poi-info-window gm-style">
-            <div class="title full-width">${title}</div>
-            <div class="point-description full-width">${description}</div>
+            <div class="title full-width">${properties.title}</div>
+            <div class="point-description full-width">${properties.description}</div>
             <div class="address">
               <a href="${url}" target="_blank">
                 <span>${text}</span>
@@ -67,7 +64,7 @@ export const MarkersLayout: React.FC<Props> = ({ infoWindow, map, points }) => {
         map={map}
         onClick={onClick}
         position={{ lat, lng }}
-        title={title}
+        title={properties.title}
       />
     );
   };

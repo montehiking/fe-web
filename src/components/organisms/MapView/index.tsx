@@ -16,7 +16,9 @@ export const MapView: React.FC<Props> = ({ isAdmin }) => {
   const { points, setPoints, filters, setFilters } = usePoints(isAdmin);
   const [isSidebarVisible, setIsSidebarVisible] = useState(false);
 
-  const filteredPoints = points.filter((m) => filters[m.type]?.checked);
+  const filteredPoints = points.filter(
+    (m) => filters[m.properties.category]?.checked
+  );
 
   const counter = {
     from: points.length,

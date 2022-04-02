@@ -20,11 +20,12 @@ export type Category =
   | 'palace'
   | 'waterfall';
 
-export type GeoJSONPoint = {
+type GeoJSONPoint<C> = {
   type: 'Feature';
   properties: {
     title: string;
     description: string;
+    category: C;
     notVerified?: true;
   };
   geometry: {
@@ -35,15 +36,10 @@ export type GeoJSONPoint = {
 
 export type GeoJSON = {
   type: 'FeatureCollection';
-  features: GeoJSONPoint[];
+  features: GeoJSONPoint<never>[];
 };
 
-export type Point = google.maps.LatLngLiteral & {
-  description: string;
-  notVerified?: boolean;
-  title: string;
-  type: Category;
-};
+export type Point = GeoJSONPoint<Category>;
 
 export type FiltersState = Partial<
   Record<Category, { checked: boolean; count: number }>

@@ -18,11 +18,13 @@ export const hydrate = (
   dehydrated: Category[] = []
 ): FiltersState =>
   points.reduce<FiltersState>((acc, point) => {
-    const { count, checked } = acc[point.type] ?? {
+    const { category } = point.properties;
+    const { count, checked } = acc[category] ?? {
       count: 0,
-      checked: !dehydrated.includes(point.type),
+      checked: !dehydrated.includes(category),
     };
-    acc[point.type] = { checked, count: count + 1 };
+
+    acc[category] = { checked, count: count + 1 };
 
     return acc;
   }, {});

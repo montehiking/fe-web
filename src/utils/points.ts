@@ -3,16 +3,14 @@ import { categories } from 'src/utils/filters';
 
 const parsePoints = (
   collection: GeoJSON,
-  type: Category,
+  category: Category,
   isAdmin: boolean
 ): Point[] =>
   collection.features
     .filter(({ properties }) => !properties.notVerified || isAdmin)
-    .map(({ geometry, properties }) => ({
-      lat: geometry.coordinates[1],
-      lng: geometry.coordinates[0],
-      type,
-      ...properties,
+    .map((point) => ({
+      ...point,
+      properties: { ...point.properties, category },
     }));
 
 const fetchPoints = async (

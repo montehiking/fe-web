@@ -3,25 +3,40 @@ import { dehydrate, hydrate } from 'src/utils/filters';
 
 const points: Point[] = [
   {
-    lat: 42.24619402714383,
-    lng: 19.091258949410722,
-    type: 'bridge',
-    title: 'Most na Crmnici',
-    description: 'старинный мост',
+    type: 'Feature',
+    geometry: {
+      type: 'Point',
+      coordinates: [19.091258949410722, 42.24619402714383],
+    },
+    properties: {
+      title: 'Most na Crmnici',
+      description: 'старинный мост',
+      category: 'bridge',
+    },
   },
   {
-    lat: 43.14370625468662,
-    lng: 19.091367718576958,
-    type: 'cave',
-    title: 'Titova pećina',
-    description: 'пещера',
+    type: 'Feature',
+    geometry: {
+      type: 'Point',
+      coordinates: [19.091367718576958, 43.14370625468662],
+    },
+    properties: {
+      title: 'Titova pećina',
+      description: 'пещера',
+      category: 'cave',
+    },
   },
   {
-    lat: 42.275133659000936,
-    lng: 18.826982975006104,
-    type: 'fortress',
-    title: 'Tvrđava Mogren',
-    description: 'австро-венгерский форт',
+    type: 'Feature',
+    geometry: {
+      type: 'Point',
+      coordinates: [18.826982975006104, 42.275133659000936],
+    },
+    properties: {
+      title: 'Tvrđava Mogren',
+      description: 'австро-венгерский форт',
+      category: 'fortress',
+    },
   },
 ];
 
