@@ -9,7 +9,7 @@ type State = {
   points: Point[];
 };
 
-const enabledFilters = getItem<DehydratedFiltersState>('filters');
+const hiddenFilters = getItem<DehydratedFiltersState>('filters', []);
 
 export const usePoints = (isAdmin: boolean) => {
   const [state, setState] = useState<State>({
@@ -20,7 +20,7 @@ export const usePoints = (isAdmin: boolean) => {
   useLayoutEffect(() => {
     import('src/data/points').then(({ points }) => {
       setState({
-        filters: hydrate(points, enabledFilters, isAdmin),
+        filters: hydrate(points, hiddenFilters, isAdmin),
         points: filterPoints(points, isAdmin),
       });
     });

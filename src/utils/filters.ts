@@ -12,22 +12,24 @@ export const dehydrate = (state: FiltersState): DehydratedFiltersState => {
   const pointTypes = Object.keys(state || {}) as PointType[];
 
   return pointTypes.reduce<DehydratedFiltersState>((acc, item) => {
-    acc[item] = state[item]?.checked;
+    if (state[item]?.checked === false) {
+      acc.push(item);
+    }
 
     return acc;
-  }, {});
+  }, []);
 };
 
 export const hydrate = (
   points: Point[],
-  dehydrated: DehydratedFiltersState = {},
+  dehydrated: DehydratedFiltersState = [],
   isAdmin: boolean
 ): FiltersState =>
   points.reduce<FiltersState>((acc, point) => {
     if (isPointAllowed(point, isAdmin)) {
       const { count, checked } = acc[point.type] ?? {
         count: 0,
-        checked: dehydrated[point.type] ?? true,
+        checked: !dehydrated.includes(point.type),
       };
       acc[point.type] = { checked, count: count + 1 };
     }

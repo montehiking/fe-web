@@ -31,4 +31,4 @@ export type FiltersState = Partial<
   Record<PointType, { checked: boolean; count: number }>
 >;
 
-export type DehydratedFiltersState = Partial<Record<PointType, boolean>>;
+export type DehydratedFiltersState = PointType[];

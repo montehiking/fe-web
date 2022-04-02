@@ -78,11 +78,11 @@ describe('Is point allowed', () => {
 
 describe('Dehydrate filters state', () => {
   test('An undefined value will return an empty object', () => {
-    expect(dehydrate(undefined as never)).toEqual({});
+    expect(dehydrate(undefined as never)).toEqual([]);
   });
 
   test('An empty value will return an empty object', () => {
-    expect(dehydrate({})).toEqual({});
+    expect(dehydrate({})).toEqual([]);
   });
 
   test('a normal value will return a normalized object', () => {
@@ -92,7 +92,7 @@ describe('Dehydrate filters state', () => {
         cave: { checked: false, count: 2 },
         fortress: { checked: true, count: 1 },
       })
-    ).toEqual({ bridge: true, cave: false, fortress: true });
+    ).toEqual(['cave']);
   });
 });
 
@@ -115,7 +115,7 @@ describe('Hydrate filters state', () => {
   });
 
   test('[user] An empty value will recalculate the state', () => {
-    expect(hydrate(points, {}, false)).toEqual({
+    expect(hydrate(points, [], false)).toEqual({
       bridge: { checked: true, count: 1 },
       cave: { checked: true, count: 1 },
       fortress: { checked: true, count: 1 },
@@ -123,7 +123,7 @@ describe('Hydrate filters state', () => {
   });
 
   test('[admin] An empty value will recalculate the state', () => {
-    expect(hydrate(points, {}, true)).toEqual({
+    expect(hydrate(points, [], true)).toEqual({
       bridge: { checked: true, count: 1 },
       cave: { checked: true, count: 2 },
       fortress: { checked: true, count: 1 },
@@ -132,7 +132,7 @@ describe('Hydrate filters state', () => {
   });
 
   test('[user] The dehydrogenated value will be merged with the calculated state', () => {
-    expect(hydrate(points, { cave: false }, false)).toEqual({
+    expect(hydrate(points, ['cave'], false)).toEqual({
       bridge: { checked: true, count: 1 },
       cave: { checked: false, count: 1 },
       fortress: { checked: true, count: 1 },
@@ -140,7 +140,7 @@ describe('Hydrate filters state', () => {
   });
 
   test('[admin] The dehydrogenated value will be merged with the calculated state', () => {
-    expect(hydrate(points, { cave: false }, true)).toEqual({
+    expect(hydrate(points, ['cave'], true)).toEqual({
       bridge: { checked: true, count: 1 },
       cave: { checked: false, count: 2 },
       fortress: { checked: true, count: 1 },
