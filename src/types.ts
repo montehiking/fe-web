@@ -6,7 +6,7 @@ export type Coordinate = number;
 
 export type valueof<T> = T[keyof T];
 
-export type PointType =
+export type Category =
   | ''
   | 'bridge'
   | 'cave'
@@ -20,15 +20,31 @@ export type PointType =
   | 'palace'
   | 'waterfall';
 
+export type GeoJSONPoint = {
+  type: 'Feature';
+  properties: {
+    title: string;
+    description: string;
+    notVerified?: true;
+  };
+  geometry: {
+    type: 'Point';
+    coordinates: [number, number];
+  };
+};
+
+export type GeoJSON = {
+  type: 'FeatureCollection';
+  features: GeoJSONPoint[];
+};
+
 export type Point = google.maps.LatLngLiteral & {
   description: string;
   notVerified?: boolean;
   title: string;
-  type: PointType;
+  type: Category;
 };
 
 export type FiltersState = Partial<
-  Record<PointType, { checked: boolean; count: number }>
+  Record<Category, { checked: boolean; count: number }>
 >;
-
-export type DehydratedFiltersState = PointType[];

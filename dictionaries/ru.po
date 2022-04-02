@@ -11,54 +11,6 @@ msgid "components.molecules.MarkersLayout.tooltip.showOnGoogleMaps"
 msgstr "Показать на Google Картах"
 
 msgctxt "base"
-msgid "components.organisms.Filters.filters.empty"
-msgstr "Без категории"
-
-msgctxt "base"
-msgid "components.organisms.Filters.filters.old_town"
-msgstr "Старинные поселения"
-
-msgctxt "base"
-msgid "components.organisms.Filters.filters.fortress"
-msgstr "Форты и крепости"
-
-msgctxt "base"
-msgid "components.organisms.Filters.filters.palace"
-msgstr "Дворцы"
-
-msgctxt "base"
-msgid "components.organisms.Filters.filters.christian"
-msgstr "Часовни и монастыри"
-
-msgctxt "base"
-msgid "components.organisms.Filters.filters.cave"
-msgstr "Пещеры"
-
-msgctxt "base"
-msgid "components.organisms.Filters.filters.waterfall"
-msgstr "Водопады"
-
-msgctxt "base"
-msgid "components.organisms.Filters.filters.nature"
-msgstr "Озера, парки и природные зоны"
-
-msgctxt "base"
-msgid "components.organisms.Filters.filters.lighthouse"
-msgstr "Маяки"
-
-msgctxt "base"
-msgid "components.organisms.Filters.filters.bridge"
-msgstr "Мосты"
-
-msgctxt "base"
-msgid "components.organisms.Filters.filters.monument"
-msgstr "Монументы и памятники"
-
-msgctxt "base"
-msgid "components.organisms.Filters.filters.other"
-msgstr "Разное"
-
-msgctxt "base"
 msgid "components.organisms.Filters.subLabel.0"
 msgstr "нет локаций"
 
@@ -93,3 +45,51 @@ msgstr "{to} локации из {from}"
 msgctxt "base"
 msgid "components.organisms.MapView.filters.3"
 msgstr "{to} локаций из {from}"
+
+msgctxt "base"
+msgid "constants.filters.labels.empty"
+msgstr "Без категории"
+
+msgctxt "base"
+msgid "constants.filters.labels.old_town"
+msgstr "Старинные поселения"
+
+msgctxt "base"
+msgid "constants.filters.labels.fortress"
+msgstr "Форты и крепости"
+
+msgctxt "base"
+msgid "constants.filters.labels.palace"
+msgstr "Дворцы"
+
+msgctxt "base"
+msgid "constants.filters.labels.christian"
+msgstr "Часовни и монастыри"
+
+msgctxt "base"
+msgid "constants.filters.labels.cave"
+msgstr "Пещеры"
+
+msgctxt "base"
+msgid "constants.filters.labels.waterfall"
+msgstr "Водопады"
+
+msgctxt "base"
+msgid "constants.filters.labels.nature"
+msgstr "Озера, парки и природные зоны"
+
+msgctxt "base"
+msgid "constants.filters.labels.lighthouse"
+msgstr "Маяки"
+
+msgctxt "base"
+msgid "constants.filters.labels.bridge"
+msgstr "Мосты"
+
+msgctxt "base"
+msgid "constants.filters.labels.monument"
+msgstr "Монументы и памятники"
+
+msgctxt "base"
+msgid "constants.filters.labels.other"
+msgstr "Разное"

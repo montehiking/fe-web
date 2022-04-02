@@ -5,19 +5,6 @@ export const base = {
   'components.molecules.MarkersLayout.tooltip.showOnGoogleMaps':
     'Показать на Google Картах',
 
-  'components.organisms.Filters.filters.empty': 'Без категории',
-  'components.organisms.Filters.filters.old_town': 'Старинные поселения',
-  'components.organisms.Filters.filters.fortress': 'Форты и крепости',
-  'components.organisms.Filters.filters.palace': 'Дворцы',
-  'components.organisms.Filters.filters.christian': 'Часовни и монастыри',
-  'components.organisms.Filters.filters.cave': 'Пещеры',
-  'components.organisms.Filters.filters.waterfall': 'Водопады',
-  'components.organisms.Filters.filters.nature':
-    'Озера, парки и природные зоны',
-  'components.organisms.Filters.filters.lighthouse': 'Маяки',
-  'components.organisms.Filters.filters.bridge': 'Мосты',
-  'components.organisms.Filters.filters.monument': 'Монументы и памятники',
-  'components.organisms.Filters.filters.other': 'Разное',
   'components.organisms.Filters.subLabel.0': 'нет локаций',
   'components.organisms.Filters.subLabel.1': '{count} локация',
   'components.organisms.Filters.subLabel.2': '{count} локации',
@@ -28,4 +15,17 @@ export const base = {
   'components.organisms.MapView.filters.1': '{to} локация из {from}',
   'components.organisms.MapView.filters.2': '{to} локации из {from}',
   'components.organisms.MapView.filters.3': '{to} локаций из {from}',
+
+  'constants.filters.labels.empty': 'Без категории',
+  'constants.filters.labels.old_town': 'Старинные поселения',
+  'constants.filters.labels.fortress': 'Форты и крепости',
+  'constants.filters.labels.palace': 'Дворцы',
+  'constants.filters.labels.christian': 'Часовни и монастыри',
+  'constants.filters.labels.cave': 'Пещеры',
+  'constants.filters.labels.waterfall': 'Водопады',
+  'constants.filters.labels.nature': 'Озера, парки и природные зоны',
+  'constants.filters.labels.lighthouse': 'Маяки',
+  'constants.filters.labels.bridge': 'Мосты',
+  'constants.filters.labels.monument': 'Монументы и памятники',
+  'constants.filters.labels.other': 'Разное',
 };
