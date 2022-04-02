@@ -29,8 +29,10 @@ export const hydrate = (
     return acc;
   }, {});
 
-const adminCategories = Object.keys(labels) as Category[];
-export const categories = adminCategories.filter((category) => category !== '');
+const extendedCategories = Object.keys(labels) as Category[];
+export const categories = extendedCategories.filter(
+  (category) => category !== ''
+);
 
-export const getCategories = (isAdmin: boolean): Category[] =>
-  isAdmin ? adminCategories : categories;
+export const getCategories = (isEditor: boolean): Category[] =>
+  isEditor ? extendedCategories : categories;

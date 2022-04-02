@@ -12,23 +12,23 @@ type State = {
 
 const hiddenFilters = getItem<Category[]>('filters', []);
 
-export const usePoints = (isAdmin: boolean) => {
+export const usePoints = (isEditor: boolean) => {
   const [state, setState] = useState<State>({
     filters: {},
     points: [],
   });
 
   useLayoutEffect(() => {
-    getPoints(isAdmin).then((points) => {
+    getPoints(isEditor).then((points) => {
       setState({
         filters: hydrate(points, hiddenFilters),
         points,
       });
     });
-  }, [isAdmin]);
+  }, [isEditor]);
 
   const setPoints = ({ latLng }: google.maps.MapMouseEvent) => {
-    if (latLng && isAdmin) {
+    if (latLng && isEditor) {
       const { lat, lng } = latLng.toJSON();
 
       const newPoint: Point = {

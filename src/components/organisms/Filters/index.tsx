@@ -12,7 +12,7 @@ import styles from 'src/components/organisms/Filters/styles.module.css';
 type Props = {
   filters: FiltersState;
   onChange: (value: FiltersState) => void;
-  isAdmin: boolean;
+  isEditor: boolean;
 };
 
 const defaultState = {
@@ -20,9 +20,9 @@ const defaultState = {
   count: 0,
 };
 
-export const Filters: React.FC<Props> = ({ filters, onChange, isAdmin }) => (
+export const Filters: React.FC<Props> = ({ filters, onChange, isEditor }) => (
   <List
-    dataSource={getCategories(isAdmin)}
+    dataSource={getCategories(isEditor)}
     renderItem={(category: Category) => {
       const { checked, count } = filters[category] ?? defaultState;
       const values = { count };

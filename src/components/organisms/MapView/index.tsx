@@ -9,11 +9,11 @@ import { getWithDecline } from 'src/i18n/Decline';
 import styles from 'src/components/organisms/MapView/styles.module.css';
 
 type Props = {
-  isAdmin: boolean;
+  isEditor: boolean;
 };
 
-export const MapView: React.FC<Props> = ({ isAdmin }) => {
-  const { points, setPoints, filters, setFilters } = usePoints(isAdmin);
+export const MapView: React.FC<Props> = ({ isEditor }) => {
+  const { points, setPoints, filters, setFilters } = usePoints(isEditor);
   const [isSidebarVisible, setIsSidebarVisible] = useState(false);
 
   const filteredPoints = points.filter(
@@ -47,9 +47,9 @@ export const MapView: React.FC<Props> = ({ isAdmin }) => {
           { id: 'components.organisms.MapView.filters.3', values: counter },
         ])}
       >
-        <Filters filters={filters} onChange={setFilters} isAdmin={isAdmin} />
+        <Filters filters={filters} onChange={setFilters} isEditor={isEditor} />
 
-        {isAdmin && (
+        {isEditor && (
           <pre className={styles.code}>
             {JSON.stringify(points.filter((m) => !m.type)[0], null, 2)}
           </pre>

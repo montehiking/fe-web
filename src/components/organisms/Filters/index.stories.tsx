@@ -10,24 +10,24 @@ export default {
   decorators,
 } as Meta;
 
-const Filters: Story = ({ isAdmin }) => {
-  const { filters, setFilters } = usePoints(isAdmin);
+const Filters: Story = ({ isEditor }) => {
+  const { filters, setFilters } = usePoints(isEditor);
 
   return (
     <FiltersComponent
       filters={filters}
       onChange={setFilters}
-      isAdmin={isAdmin}
+      isEditor={isEditor}
     />
   );
 };
 
-export const FiltersWithoutAdmin = Filters.bind({});
-FiltersWithoutAdmin.args = {
-  isAdmin: false,
+export const FiltersWithoutEditor = Filters.bind({});
+FiltersWithoutEditor.args = {
+  isEditor: false,
 };
 
-export const FiltersWithAdmin = Filters.bind({});
-FiltersWithAdmin.args = {
-  isAdmin: true,
+export const FiltersWithEditor = Filters.bind({});
+FiltersWithEditor.args = {
+  isEditor: true,
 };
