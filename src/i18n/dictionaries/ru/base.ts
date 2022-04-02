@@ -9,6 +9,10 @@ export const base = {
   'components.organisms.Filters.subLabel.1': '{count} локация',
   'components.organisms.Filters.subLabel.2': '{count} локации',
   'components.organisms.Filters.subLabel.3': '{count} локаций',
+  'components.organisms.Filters.subLabel.4': 'нет маршрутов',
+  'components.organisms.Filters.subLabel.5': '{count} маршрут',
+  'components.organisms.Filters.subLabel.6': '{count} маршрута',
+  'components.organisms.Filters.subLabel.7': '{count} маршрутов',
 
   'components.organisms.MapView.filters': 'Фильтры',
   'components.organisms.MapView.filters.0': 'ничего не выбрано',
@@ -16,6 +20,7 @@ export const base = {
   'components.organisms.MapView.filters.2': '{to} локации из {from}',
   'components.organisms.MapView.filters.3': '{to} локаций из {from}',
 
+  'constants.filters.labels.routes': 'Маршруты',
   'constants.filters.labels.empty': 'Без категории',
   'constants.filters.labels.old_town': 'Старинные поселения',
   'constants.filters.labels.fortress': 'Форты и крепости',

@@ -8,6 +8,7 @@ export type valueof<T> = T[keyof T];
 
 export type Category =
   | ''
+  | 'routes'
   | 'bridge'
   | 'cave'
   | 'christian'
@@ -41,6 +42,7 @@ export type GeoJSON = {
 
 export type Point = GeoJSONPoint<Category>;
 
-export type FiltersState = Partial<
-  Record<Category, { checked: boolean; count: number }>
+export type FiltersState = Record<
+  Category,
+  { checked: boolean; count: number }
 >;

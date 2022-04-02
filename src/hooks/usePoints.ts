@@ -6,7 +6,7 @@ import { getPoints } from 'src/utils/points';
 import { getItem, setItem } from 'src/utils/storage';
 
 type State = {
-  filters: FiltersState;
+  filters?: FiltersState;
   points: Point[];
 };
 
@@ -14,7 +14,7 @@ const hiddenFilters = getItem<Category[]>('filters', []);
 
 export const usePoints = (isEditor: boolean) => {
   const [state, setState] = useState<State>({
-    filters: {},
+    filters: undefined,
     points: [],
   });
 

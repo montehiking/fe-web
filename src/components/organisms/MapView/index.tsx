@@ -16,9 +16,9 @@ export const MapView: React.FC<Props> = ({ isEditor }) => {
   const { points, setPoints, filters, setFilters } = usePoints(isEditor);
   const [isSidebarVisible, setIsSidebarVisible] = useState(false);
 
-  const filteredPoints = points.filter(
-    (m) => filters[m.properties.category]?.checked
-  );
+  const filteredPoints = filters
+    ? points.filter((m) => filters[m.properties.category].checked)
+    : [];
 
   const counter = {
     from: points.length,

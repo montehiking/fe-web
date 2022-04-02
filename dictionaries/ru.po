@@ -27,6 +27,22 @@ msgid "components.organisms.Filters.subLabel.3"
 msgstr "{count} локаций"
 
 msgctxt "base"
+msgid "components.organisms.Filters.subLabel.4"
+msgstr "нет маршрутов"
+
+msgctxt "base"
+msgid "components.organisms.Filters.subLabel.5"
+msgstr "{count} маршрут"
+
+msgctxt "base"
+msgid "components.organisms.Filters.subLabel.6"
+msgstr "{count} маршрута"
+
+msgctxt "base"
+msgid "components.organisms.Filters.subLabel.7"
+msgstr "{count} маршрутов"
+
+msgctxt "base"
 msgid "components.organisms.MapView.filters"
 msgstr "Фильтры"
 
@@ -45,6 +61,10 @@ msgstr "{to} локации из {from}"
 msgctxt "base"
 msgid "components.organisms.MapView.filters.3"
 msgstr "{to} локаций из {from}"
+
+msgctxt "base"
+msgid "constants.filters.labels.routes"
+msgstr "Маршруты"
 
 msgctxt "base"
 msgid "constants.filters.labels.empty"

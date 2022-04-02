@@ -1,3 +1,4 @@
+import { POINT_ROUTES } from 'src/constants';
 import { Category, GeoJSON, Point } from 'src/types';
 import { categories } from 'src/utils/filters';
 
@@ -18,7 +19,12 @@ const fetchPoints = async (
   isEditor: boolean
 ): Promise<Point[]> => {
   try {
-    const data = await fetch(`/data/points/${category}.geojson`);
+    const path =
+      category === POINT_ROUTES
+        ? '/data/routes.geojson'
+        : `/data/points/${category}.geojson`;
+
+    const data = await fetch(path);
     const collection: GeoJSON = await data.json();
 
     return parsePoints(collection, category, isEditor);

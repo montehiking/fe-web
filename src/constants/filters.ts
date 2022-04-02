@@ -2,6 +2,7 @@ import { DictionaryKey } from 'src/i18n';
 import { Category } from 'src/types';
 
 export const labels: Record<Category, DictionaryKey> = {
+  routes: 'constants.filters.labels.routes',
   '': 'constants.filters.labels.empty',
   old_town: 'constants.filters.labels.old_town',
   fortress: 'constants.filters.labels.fortress',
