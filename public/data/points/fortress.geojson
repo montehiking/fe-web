@@ -364,6 +364,102 @@
         "description": "развалины замка",
         "notVerified": true
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.202245473861694, 42.462101162771525]
+      },
+      "properties": {
+        "title": "Tvrđava Crvena Stijena (Grad)",
+        "description": "турецкая крепость",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.19722849001985, 42.514150079725034]
+      },
+      "properties": {
+        "title": "Tvrđava Spuž",
+        "description": "турецкая крепость",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.258750799462504, 42.438910028859986]
+      },
+      "properties": {
+        "title": "Tvrđava Depedogen (Ribnica)",
+        "description": "турецкая крепость",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.260085008791442, 42.435592498629376]
+      },
+      "properties": {
+        "title": "Sahat kula",
+        "description": "часовая башня",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.90023946762085, 42.301301503824796]
+      },
+      "properties": {
+        "title": "Tvrđava Kosmač",
+        "description": "австро-венгерский форт",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.119721949100494, 42.271483821614275]
+      },
+      "properties": {
+        "title": "Tvrđava Lesendro",
+        "description": "черногорская крепость",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.7251542850063, 42.50436583541206]
+      },
+      "properties": {
+        "title": "Tvrđava Šanik",
+        "description": "австро-венгерский форт",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.728288412094116, 42.4950897704194]
+      },
+      "properties": {
+        "title": "Tvrđava sv. Andrija",
+        "description": "австро-венгерский форт",
+        "notVerified": true
+      }
     }
   ]
 }

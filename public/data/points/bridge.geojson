@@ -100,6 +100,18 @@
         "description": "старинный мост",
         "notVerified": true
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.258835496891496, 42.43948514953294]
+      },
+      "properties": {
+        "title": "Most Ribnica",
+        "description": "старинный мост",
+        "notVerified": true
+      }
     }
   ]
 }

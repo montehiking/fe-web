@@ -211,6 +211,30 @@
         "title": "Sunčani časovnik",
         "description": "солнечные часы"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.939708173274994, 42.208534070749174]
+      },
+      "properties": {
+        "title": "Rimski mozaici",
+        "description": "римские мозаики",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.697051510464078, 42.512895255146155]
+      },
+      "properties": {
+        "title": "Rimski mozaici",
+        "description": "римские мозаики",
+        "notVerified": true
+      }
     }
   ]
 }

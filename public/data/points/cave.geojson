@@ -33,6 +33,18 @@
         "title": "Titova pećina",
         "description": "пещера"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.20321645663744, 42.45890513409661]
+      },
+      "properties": {
+        "title": "Pećina Magara",
+        "description": "пещера",
+        "notVerified": true
+      }
     }
   ]
 }
