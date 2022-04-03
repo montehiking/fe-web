@@ -2,7 +2,7 @@ import { Meta, Story } from '@storybook/react/types-6-0';
 
 import { Filters as FiltersComponent } from 'src/components/organisms/Filters';
 import { decorators } from 'src/components/providers/StorybookProvider';
-import { useData } from 'src/hooks/useData';
+import { useMapState } from 'src/hooks/useMapState';
 
 export default {
   title: 'Organisms/Filters',
@@ -11,7 +11,7 @@ export default {
 } as Meta;
 
 const Filters: Story = ({ isEditor }) => {
-  const { filters, setFilters } = useData(isEditor);
+  const { filters, setFilters } = useMapState(isEditor);
 
   return (
     <FiltersComponent

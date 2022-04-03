@@ -50,6 +50,11 @@ export type GeoJSON = {
 export type Point = GeoJSONPoint<Category, GeoJSONPointField>;
 export type Route = GeoJSONPoint<Category, GeoJSONRouteField>;
 
+export type MapState = {
+  points: Point[];
+  routes: Route[];
+};
+
 export type FiltersState = Record<
   Category,
   { checked: boolean; count: number }

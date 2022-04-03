@@ -1,19 +1,17 @@
 import { useLayoutEffect, useState } from 'react';
 
-import { Category, FiltersState, Point, Route } from 'src/types';
+import { Category, FiltersState, MapState, Point } from 'src/types';
 import { dehydrate, filterData, hydrate } from 'src/utils/filters';
 import { getData } from 'src/utils/geoJSON';
 import { getItem, setItem } from 'src/utils/storage';
 
 type State = {
   filters?: FiltersState;
-  points: Point[];
-  routes: Route[];
-};
+} & MapState;
 
 const hiddenFilters = getItem<Category[]>('filters', []);
 
-export const useData = (isEditor: boolean) => {
+export const useMapState = (isEditor: boolean) => {
   const [state, setState] = useState<State>({
     filters: undefined,
     points: [],
@@ -63,7 +61,7 @@ export const useData = (isEditor: boolean) => {
   return {
     added: JSON.stringify(state.points.filter((m) => !m.type)[0], null, 2),
     filters: state.filters,
-    data: {
+    mapState: {
       points: filteredPoints,
       routes: filteredRoutes,
     },

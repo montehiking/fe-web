@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { Map } from 'src/components/molecules/Map';
 import { Sidebar } from 'src/components/molecules/Sidebar';
 import { Filters } from 'src/components/organisms/Filters';
-import { useData } from 'src/hooks/useData';
+import { useMapState } from 'src/hooks/useMapState';
 import { getWithDecline } from 'src/i18n/Decline';
 
 import styles from 'src/components/organisms/MapView/styles.module.css';
@@ -13,15 +13,15 @@ type Props = {
 };
 
 export const MapView: React.FC<Props> = ({ isEditor }) => {
-  const { added, counter, data, filters, setFilters, setPoints } =
-    useData(isEditor);
+  const { added, counter, mapState, filters, setFilters, setPoints } =
+    useMapState(isEditor);
   const [isSidebarVisible, setIsSidebarVisible] = useState(false);
 
   return (
     <div className={styles.wrapper} data-testid="page">
       <Map
         onClick={setPoints}
-        points={data.points}
+        state={mapState}
         filter={{
           ...counter,
           onClick: () => setIsSidebarVisible(!isSidebarVisible),
