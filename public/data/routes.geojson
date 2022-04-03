@@ -1,4 +1,19 @@
 {
   "type": "FeatureCollection",
-  "features": []
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [18.826982975006104, 42.275133659000936],
+          [18.764165868455795, 42.39580006812814]
+        ]
+      },
+      "properties": {
+        "title": "Test",
+        "description": "проверка работоспособности"
+      }
+    }
+  ]
 }
