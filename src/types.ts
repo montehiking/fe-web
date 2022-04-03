@@ -21,7 +21,17 @@ export type Category =
   | 'palace'
   | 'waterfall';
 
-type GeoJSONPoint<C> = {
+type GeoJSONPointField = {
+  type: 'Point';
+  coordinates: [number, number];
+};
+
+type GeoJSONRouteField = {
+  type: 'LineString';
+  coordinates: [number, number][];
+};
+
+type GeoJSONPoint<C, G> = {
   type: 'Feature';
   properties: {
     title: string;
@@ -29,18 +39,16 @@ type GeoJSONPoint<C> = {
     category: C;
     notVerified?: true;
   };
-  geometry: {
-    type: 'Point';
-    coordinates: [number, number];
-  };
+  geometry: G;
 };
 
 export type GeoJSON = {
   type: 'FeatureCollection';
-  features: GeoJSONPoint<never>[];
+  features: GeoJSONPoint<never, GeoJSONPointField | GeoJSONRouteField>[];
 };
 
-export type Point = GeoJSONPoint<Category>;
+export type Point = GeoJSONPoint<Category, GeoJSONPointField>;
+export type Route = GeoJSONPoint<Category, GeoJSONRouteField>;
 
 export type FiltersState = Record<
   Category,

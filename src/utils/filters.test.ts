@@ -1,5 +1,21 @@
-import { Point } from 'src/types';
+import { FiltersState, Point, Route } from 'src/types';
 import { dehydrate, hydrate } from 'src/utils/filters';
+
+const initialFiltersState: FiltersState = {
+  routes: { checked: false, count: 1 },
+  '': { checked: true, count: 0 },
+  bridge: { checked: true, count: 1 },
+  cave: { checked: true, count: 1 },
+  christian: { checked: true, count: 0 },
+  fortress: { checked: true, count: 1 },
+  lighthouse: { checked: true, count: 0 },
+  monument: { checked: true, count: 0 },
+  nature: { checked: true, count: 0 },
+  old_town: { checked: true, count: 0 },
+  other: { checked: true, count: 0 },
+  palace: { checked: true, count: 0 },
+  waterfall: { checked: true, count: 0 },
+};
 
 const points: Point[] = [
   {
@@ -40,6 +56,24 @@ const points: Point[] = [
   },
 ];
 
+const routes: Route[] = [
+  {
+    type: 'Feature',
+    geometry: {
+      type: 'LineString',
+      coordinates: [
+        [18.826982975006104, 42.275133659000936],
+        [18.764165868455795, 42.39580006812814],
+      ],
+    },
+    properties: {
+      title: 'Test',
+      description: 'проверка работоспособности',
+      category: 'routes',
+    },
+  },
+];
+
 describe('Dehydrate filters state', () => {
   test('An undefined value will return an empty object', () => {
     expect(dehydrate(undefined as never)).toEqual([]);
@@ -63,56 +97,20 @@ describe('Dehydrate filters state', () => {
 
 describe('Hydrate filters state', () => {
   test('An undefined value will recalculate the state', () => {
-    expect(hydrate(points, undefined as never)).toEqual({
-      routes: { checked: false, count: 0 },
-      '': { checked: true, count: 0 },
-      bridge: { checked: true, count: 1 },
-      cave: { checked: true, count: 1 },
-      christian: { checked: true, count: 0 },
-      fortress: { checked: true, count: 1 },
-      lighthouse: { checked: true, count: 0 },
-      monument: { checked: true, count: 0 },
-      nature: { checked: true, count: 0 },
-      old_town: { checked: true, count: 0 },
-      other: { checked: true, count: 0 },
-      palace: { checked: true, count: 0 },
-      waterfall: { checked: true, count: 0 },
-    });
+    expect(hydrate(points, routes, undefined as never)).toEqual(
+      initialFiltersState
+    );
   });
 
   test('An empty value will recalculate the state', () => {
-    expect(hydrate(points, [])).toEqual({
-      routes: { checked: false, count: 0 },
-      '': { checked: true, count: 0 },
-      bridge: { checked: true, count: 1 },
-      cave: { checked: true, count: 1 },
-      christian: { checked: true, count: 0 },
-      fortress: { checked: true, count: 1 },
-      lighthouse: { checked: true, count: 0 },
-      monument: { checked: true, count: 0 },
-      nature: { checked: true, count: 0 },
-      old_town: { checked: true, count: 0 },
-      other: { checked: true, count: 0 },
-      palace: { checked: true, count: 0 },
-      waterfall: { checked: true, count: 0 },
-    });
+    expect(hydrate(points, routes, [])).toEqual(initialFiltersState);
   });
 
   test('The dehydrogenated value will be merged with the calculated state', () => {
-    expect(hydrate(points, ['cave', 'routes'])).toEqual({
-      routes: { checked: true, count: 0 },
-      '': { checked: true, count: 0 },
-      bridge: { checked: true, count: 1 },
+    expect(hydrate(points, routes, ['cave', 'routes'])).toEqual({
+      ...initialFiltersState,
+      routes: { checked: true, count: 1 },
       cave: { checked: false, count: 1 },
-      christian: { checked: true, count: 0 },
-      fortress: { checked: true, count: 1 },
-      lighthouse: { checked: true, count: 0 },
-      monument: { checked: true, count: 0 },
-      nature: { checked: true, count: 0 },
-      old_town: { checked: true, count: 0 },
-      other: { checked: true, count: 0 },
-      palace: { checked: true, count: 0 },
-      waterfall: { checked: true, count: 0 },
     });
   });
 });

@@ -16,9 +16,9 @@ export const base = {
 
   'components.organisms.MapView.filters': 'Фильтры',
   'components.organisms.MapView.filters.0': 'ничего не выбрано',
-  'components.organisms.MapView.filters.1': '{to} локация из {from}',
-  'components.organisms.MapView.filters.2': '{to} локации из {from}',
-  'components.organisms.MapView.filters.3': '{to} локаций из {from}',
+  'components.organisms.MapView.filters.1': '{to} объект из {from}',
+  'components.organisms.MapView.filters.2': '{to} объекта из {from}',
+  'components.organisms.MapView.filters.3': '{to} объектов из {from}',
 
   'constants.filters.labels.routes': 'Маршруты',
   'constants.filters.labels.empty': 'Без категории',

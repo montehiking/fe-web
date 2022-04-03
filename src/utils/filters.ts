@@ -1,6 +1,6 @@
 import { POINT_EDITOR, POINT_ROUTES } from 'src/constants';
 import { labels } from 'src/constants/filters';
-import { Category, FiltersState, Point } from 'src/types';
+import { Category, FiltersState, Point, Route } from 'src/types';
 
 const extendedCategories = Object.keys(labels) as Category[];
 export const categories = extendedCategories.filter(
@@ -21,6 +21,7 @@ export const dehydrate = (state: FiltersState): Category[] => {
 
 export const hydrate = (
   points: Point[],
+  routes: Route[],
   dehydrated: Category[] = []
 ): FiltersState => {
   const state = extendedCategories.reduce<FiltersState>((acc, category) => {
@@ -34,7 +35,7 @@ export const hydrate = (
     return acc;
   }, {} as FiltersState);
 
-  points.forEach((point) => {
+  [...points, ...routes].forEach((point) => {
     const { category } = point.properties;
 
     if (state[category]) {
@@ -47,3 +48,9 @@ export const hydrate = (
 
 export const getCategories = (isEditor: boolean): Category[] =>
   isEditor ? extendedCategories : categories;
+
+export const filterData = <T extends Point | Route>(
+  data: T[],
+  filters?: FiltersState
+): T[] =>
+  filters ? data.filter((m) => filters[m.properties.category].checked) : [];

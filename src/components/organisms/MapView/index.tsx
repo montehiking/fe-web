@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { Map } from 'src/components/molecules/Map';
 import { Sidebar } from 'src/components/molecules/Sidebar';
 import { Filters } from 'src/components/organisms/Filters';
-import { usePoints } from 'src/hooks/usePoints';
+import { useData } from 'src/hooks/useData';
 import { getWithDecline } from 'src/i18n/Decline';
 
 import styles from 'src/components/organisms/MapView/styles.module.css';
@@ -13,23 +13,15 @@ type Props = {
 };
 
 export const MapView: React.FC<Props> = ({ isEditor }) => {
-  const { points, setPoints, filters, setFilters } = usePoints(isEditor);
+  const { added, counter, data, filters, setFilters, setPoints } =
+    useData(isEditor);
   const [isSidebarVisible, setIsSidebarVisible] = useState(false);
-
-  const filteredPoints = filters
-    ? points.filter((m) => filters[m.properties.category].checked)
-    : [];
-
-  const counter = {
-    from: points.length,
-    to: filteredPoints.length,
-  };
 
   return (
     <div className={styles.wrapper} data-testid="page">
       <Map
         onClick={setPoints}
-        points={filteredPoints}
+        points={data.points}
         filter={{
           ...counter,
           onClick: () => setIsSidebarVisible(!isSidebarVisible),
@@ -40,7 +32,7 @@ export const MapView: React.FC<Props> = ({ isEditor }) => {
         isVisible={isSidebarVisible}
         onClose={() => setIsSidebarVisible(false)}
         title={{ id: 'components.organisms.MapView.filters' }}
-        subTitle={getWithDecline(filteredPoints.length, [
+        subTitle={getWithDecline(counter.to, [
           { id: 'components.organisms.MapView.filters.0' },
           { id: 'components.organisms.MapView.filters.1', values: counter },
           { id: 'components.organisms.MapView.filters.2', values: counter },
@@ -49,11 +41,7 @@ export const MapView: React.FC<Props> = ({ isEditor }) => {
       >
         <Filters filters={filters} onChange={setFilters} isEditor={isEditor} />
 
-        {isEditor && (
-          <pre className={styles.code}>
-            {JSON.stringify(points.filter((m) => !m.type)[0], null, 2)}
-          </pre>
-        )}
+        {isEditor && <pre className={styles.code}>{added}</pre>}
       </Sidebar>
     </div>
   );
