@@ -58,6 +58,17 @@
         "description": "маяк",
         "notVerified": true
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.695156976035822, 42.430233389941485]
+      },
+      "properties": {
+        "title": "Svetionik Pine",
+        "description": "маяк"
+      }
     }
   ]
 }

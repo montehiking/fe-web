@@ -233,8 +233,7 @@
       },
       "properties": {
         "title": "Blokhauz Tripovići",
-        "description": "австро-венгерский блокгауз",
-        "notVerified": true
+        "description": "австро-венгерский блокгауз"
       }
     },
     {
@@ -245,8 +244,7 @@
       },
       "properties": {
         "title": "Blokhauz Mažina",
-        "description": "австро-венгерский блокгауз",
-        "notVerified": true
+        "description": "австро-венгерский блокгауз"
       }
     },
     {
@@ -257,8 +255,7 @@
       },
       "properties": {
         "title": "Palata Buća-Luković",
-        "description": "средневековый дворец-крепость",
-        "notVerified": true
+        "description": "средневековый дворец-крепость"
       }
     },
     {
@@ -342,6 +339,29 @@
       "properties": {
         "title": "Tvrđava Arza",
         "description": "австро-венгерский форт",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.69562178850174, 42.43055226061956]
+      },
+      "properties": {
+        "title": "Sat kula",
+        "description": "часовая башня"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.970904559284172, 42.724357496536435]
+      },
+      "properties": {
+        "title": "Pandurica",
+        "description": "развалины замка",
         "notVerified": true
       }
     }

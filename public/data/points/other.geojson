@@ -200,6 +200,17 @@
         "description": "руины старого кирпичного завода",
         "notVerified": true
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.69547078509772, 42.429819467252265]
+      },
+      "properties": {
+        "title": "Sunčani časovnik",
+        "description": "солнечные часы"
+      }
     }
   ]
 }

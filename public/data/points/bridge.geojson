@@ -88,6 +88,18 @@
         "title": "Most na Rijeke Crnojevića",
         "description": "старинный мост"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.960340713537292, 42.73038604754991]
+      },
+      "properties": {
+        "title": "Carev most",
+        "description": "старинный мост",
+        "notVerified": true
+      }
     }
   ]
 }

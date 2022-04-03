@@ -1,5 +1,6 @@
 import { useLayoutEffect, useState } from 'react';
 
+import { POINT_EDITOR } from 'src/constants';
 import { Category, FiltersState, MapState, Point } from 'src/types';
 import { dehydrate, filterData, hydrate } from 'src/utils/filters';
 import { getData } from 'src/utils/geoJSON';
@@ -34,15 +35,15 @@ export const useMapState = (isEditor: boolean) => {
 
       const newPoint: Point = {
         type: 'Feature',
+        geometry: {
+          type: 'Point',
+          coordinates: [lng, lat],
+        },
         properties: {
           title: '',
           description: '',
           category: '',
           notVerified: true,
-        },
-        geometry: {
-          type: 'Point',
-          coordinates: [lng, lat],
         },
       };
 
@@ -59,7 +60,11 @@ export const useMapState = (isEditor: boolean) => {
   const filteredRoutes = filterData(state.routes, state.filters);
 
   return {
-    added: JSON.stringify(state.points.filter((m) => !m.type)[0], null, 2),
+    added: JSON.stringify(
+      state.points.filter((m) => m.properties.category === POINT_EDITOR)[0],
+      null,
+      2
+    ),
     filters: state.filters,
     mapState: {
       points: filteredPoints,

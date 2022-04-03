@@ -99,6 +99,50 @@
         "title": "Spomenik žrtvama fašizma",
         "description": "югославский мемориал"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.69898796081543, 42.43226272129293]
+      },
+      "properties": {
+        "title": "Spomenik palim borcima",
+        "description": "югославский мемориал"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.699523871118405, 42.432311824887556]
+      },
+      "properties": {
+        "title": "Spomenik palim borcima",
+        "description": "югославский мемориал"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.69787728688552, 42.43185603660826]
+      },
+      "properties": {
+        "title": "Icarus",
+        "description": "памятник"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.722681842014918, 42.44507602617566]
+      },
+      "properties": {
+        "title": "Spomenik žrtvama fašizma",
+        "description": "югославский мемориал"
+      }
     }
   ]
 }
