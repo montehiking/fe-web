@@ -165,6 +165,61 @@
         "title": "Park Doma Vojske",
         "description": "городской парк"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.925277195695877, 42.38562939336716]
+      },
+      "properties": {
+        "title": "Njegošev park",
+        "description": "городской парк"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.276627756451802, 42.4512073095172]
+      },
+      "properties": {
+        "title": "Park Gorica",
+        "description": "городской парк"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.211654663085938, 42.248788166100866]
+      },
+      "properties": {
+        "title": "Skadarsko jezero",
+        "description": "национальный парк"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.913571098479146, 42.53068469711943]
+      },
+      "properties": {
+        "title": "Prokletije",
+        "description": "национальный парк"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.070518520824667, 43.15562876580869]
+      },
+      "properties": {
+        "title": "Zminje jezero",
+        "description": "озеро"
+      }
     }
   ]
 }

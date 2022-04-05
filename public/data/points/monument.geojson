@@ -143,6 +143,17 @@
         "title": "Spomenik žrtvama fašizma",
         "description": "югославский мемориал"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.091760771673147, 42.24606317361818]
+      },
+      "properties": {
+        "title": "Spomenik palim borcima NOB-a",
+        "description": "югославский мемориал"
+      }
     }
   ]
 }

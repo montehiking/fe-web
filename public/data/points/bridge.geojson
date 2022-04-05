@@ -112,6 +112,28 @@
         "description": "старинный мост",
         "notVerified": true
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.14221812495832, 42.10018001012829]
+      },
+      "properties": {
+        "title": "Most Menke",
+        "description": "старинный мост"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.14212383553045, 42.10048007062716]
+      },
+      "properties": {
+        "title": "Most Turčini",
+        "description": "старинный мост"
+      }
     }
   ]
 }

@@ -148,6 +148,17 @@
         "description": "древняя церковь",
         "notVerified": true
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.837328255176544, 42.277359380495355]
+      },
+      "properties": {
+        "title": "Santa Marija in Punta",
+        "description": "церковь IX в."
+      }
     }
   ]
 }

@@ -69,6 +69,17 @@
         "title": "Svetionik Pine",
         "description": "маяк"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.68825143171881, 42.48724684103894]
+      },
+      "properties": {
+        "title": "Svetionik Gospa od Škrpjela",
+        "description": "маяк"
+      }
     }
   ]
 }

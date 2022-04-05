@@ -460,6 +460,17 @@
         "description": "австро-венгерский форт",
         "notVerified": true
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.53594623573269, 42.45000762000502]
+      },
+      "properties": {
+        "title": "Morska Kula (Forte Mare)",
+        "description": "боснийская крепость"
+      }
     }
   ]
 }

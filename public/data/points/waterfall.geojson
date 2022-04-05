@@ -56,6 +56,40 @@
         "description": "водопад",
         "notVerified": true
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.141875619285656, 42.100589380092664]
+      },
+      "properties": {
+        "title": "Vodopad",
+        "description": "водопад"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.149835109710693, 42.10514789445141]
+      },
+      "properties": {
+        "title": "Vodopad Vrteljak",
+        "description": "водопад",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.821135198156348, 42.31854842500129]
+      },
+      "properties": {
+        "title": "Vodopad Krapina",
+        "description": "водопад"
+      }
     }
   ]
 }

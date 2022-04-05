@@ -235,6 +235,29 @@
         "description": "римские мозаики",
         "notVerified": true
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.129387219975303, 42.080148423000544]
+      },
+      "properties": {
+        "title": "Velja Maslina",
+        "description": "памятник природы",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.134246110916138, 42.09450860776335]
+      },
+      "properties": {
+        "title": "Omerbašića džamija",
+        "description": "старинная мечеть"
+      }
     }
   ]
 }
