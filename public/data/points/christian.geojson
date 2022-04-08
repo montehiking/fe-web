@@ -192,6 +192,42 @@
         "title": "Crkva Svetog Nikole",
         "description": "храм XVII в."
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.23247128725052, 42.40393710368471]
+      },
+      "properties": {
+        "title": "Manastir Dajbabe",
+        "description": "монастырь в катакомбах",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.128006992444913, 42.310004506991106]
+      },
+      "properties": {
+        "title": "Manastir Kom",
+        "description": "монастырь XV в.",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.030534476041794, 42.67478650128153]
+      },
+      "properties": {
+        "title": "Manastir Ostrog",
+        "description": "монастырь в скале",
+        "notVerified": true
+      }
     }
   ]
 }

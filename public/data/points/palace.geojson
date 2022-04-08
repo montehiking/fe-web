@@ -55,6 +55,18 @@
         "title": "Dvorac kralja Nikole",
         "description": "музей"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.250112175941467, 42.43801142755777]
+      },
+      "properties": {
+        "title": "Dvorac Petrovića",
+        "description": "музей",
+        "notVerified": true
+      }
     }
   ]
 }
