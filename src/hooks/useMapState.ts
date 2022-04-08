@@ -11,7 +11,7 @@ type State = {
 
 const hiddenFilters = getItem<Category[]>('filters', []);
 
-export const useMapState = (isEditor: boolean) => {
+export const useMapState = (isOwner: boolean, isEditor: boolean) => {
   const [state, setState] = useState<State>({
     filters: undefined,
     points: [],
@@ -19,14 +19,14 @@ export const useMapState = (isEditor: boolean) => {
   });
 
   useLayoutEffect(() => {
-    getData(isEditor).then(({ points, routes }) => {
+    getData(isOwner || isEditor).then(({ points, routes }) => {
       setState({
         filters: hydrate(points, routes, hiddenFilters),
         points,
         routes,
       });
     });
-  }, [isEditor]);
+  }, [isOwner, isEditor]);
 
   const setPoints = ({ latLng }: google.maps.MapMouseEvent) => {
     if (latLng && isEditor) {
