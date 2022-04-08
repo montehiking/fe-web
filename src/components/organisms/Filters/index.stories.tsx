@@ -13,13 +13,7 @@ export default {
 const Filters: Story = ({ isEditor }) => {
   const { filters, setFilters } = useMapState(isEditor);
 
-  return (
-    <FiltersComponent
-      filters={filters}
-      onChange={setFilters}
-      isEditor={isEditor}
-    />
-  );
+  return <FiltersComponent filters={filters} onChange={setFilters} />;
 };
 
 export const FiltersWithoutEditor = Filters.bind({});

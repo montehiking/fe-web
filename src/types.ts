@@ -7,7 +7,6 @@ export type Coordinate = number;
 export type valueof<T> = T[keyof T];
 
 export type Category =
-  | ''
   | 'routes'
   | 'bridge'
   | 'cave'

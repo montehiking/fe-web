@@ -67,10 +67,6 @@ msgid "constants.filters.labels.routes"
 msgstr "Маршруты"
 
 msgctxt "base"
-msgid "constants.filters.labels.empty"
-msgstr "Без категории"
-
-msgctxt "base"
 msgid "constants.filters.labels.old_town"
 msgstr "Старинные поселения"
 

@@ -37,7 +37,7 @@ export const MapView: React.FC = () => {
           { id: 'components.organisms.MapView.filters.3', values: counter },
         ])}
       >
-        <Filters filters={filters} onChange={setFilters} isEditor={isEditor} />
+        <Filters filters={filters} onChange={setFilters} />
 
         {isEditor && <pre className={styles.code}>{added}</pre>}
       </Sidebar>
