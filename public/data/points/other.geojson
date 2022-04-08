@@ -1,0 +1,263 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.87403428554535, 42.294409390923214]
+      },
+      "properties": {
+        "title": "Velja Maslina",
+        "description": "памятник природы"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.875591026300892, 42.293835245820986]
+      },
+      "properties": {
+        "title": "Stari mlin",
+        "description": "разрушенная мельница"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.136201264742816, 42.094140467135325]
+      },
+      "properties": {
+        "title": "Barski akvadukt",
+        "description": "турецкий акведук"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.764200508594513, 42.43607347565511]
+      },
+      "properties": {
+        "title": "Boka Aquarium",
+        "description": "океанариум"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.837052238037078, 42.40067480734931]
+      },
+      "properties": {
+        "title": "Vidikovac",
+        "description": "смотровая площадка"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.8381751087869, 42.27731233872019]
+      },
+      "properties": {
+        "title": "Ranohrišćanska bazilika i rimske terme",
+        "description": "руины базилики V в. и римских бань"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.88916038320632, 42.27335143895809]
+      },
+      "properties": {
+        "title": "Napušteni hotel",
+        "description": "заброшенный отель"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.266270978250073, 42.43774262697601]
+      },
+      "properties": {
+        "title": "Turski hamam",
+        "description": "бывшие турецкие бани"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.36194901161591, 42.72576926655998]
+      },
+      "properties": {
+        "title": "Stari mlin",
+        "description": "разрушенная мельница"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.33338941048785, 42.73372472095865]
+      },
+      "properties": {
+        "title": "Kapija želja",
+        "description": "природная достопримечательность"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.103429201725607, 43.12234997471822]
+      },
+      "properties": {
+        "title": "Lanovka Žabljak - Savin Kuk",
+        "description": "канатная дорога"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.1076965685424, 43.15614281816168]
+      },
+      "properties": {
+        "title": "Napuštena lanovka",
+        "description": "заброшенная канатная дорога"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.096701496780824, 43.1635079853255]
+      },
+      "properties": {
+        "title": "Napuštena lanovka",
+        "description": "заброшенная канатная дорога"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.84226483078344, 43.2728068224189]
+      },
+      "properties": {
+        "title": "Piva Dam",
+        "description": "дамба ГЭС"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.693842630309966, 42.43764927431719]
+      },
+      "properties": {
+        "title": "Zbirka pomorskog nasljeđa",
+        "description": "музей морского наследия"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.94430350575417, 42.596479000761796]
+      },
+      "properties": {
+        "title": "Stara džamija",
+        "description": "деревянная мечеть XV в."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.690956875984707, 42.41144808577672]
+      },
+      "properties": {
+        "title": "Ostrvo Sveti Marko (Stradioti)",
+        "description": "заброшенный отель",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.702947849040672, 42.39270082440593]
+      },
+      "properties": {
+        "title": "Prva Bokeška Glinena Industrija",
+        "description": "руины старого кирпичного завода",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.69547078509772, 42.429819467252265]
+      },
+      "properties": {
+        "title": "Sunčani časovnik",
+        "description": "солнечные часы"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.939708173274994, 42.208534070749174]
+      },
+      "properties": {
+        "title": "Rimski mozaici",
+        "description": "римские мозаики",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.697051510464078, 42.512895255146155]
+      },
+      "properties": {
+        "title": "Rimski mozaici",
+        "description": "римские мозаики",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.129387219975303, 42.080148423000544]
+      },
+      "properties": {
+        "title": "Velja Maslina",
+        "description": "памятник природы",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.134246110916138, 42.09450860776335]
+      },
+      "properties": {
+        "title": "Omerbašića džamija",
+        "description": "старинная мечеть"
+      }
+    }
+  ]
+}

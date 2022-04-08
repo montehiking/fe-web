@@ -1,9 +1,8 @@
 import { Meta, Story } from '@storybook/react/types-6-0';
-import { useState } from 'react';
 
 import { Filters as FiltersComponent } from 'src/components/organisms/Filters';
 import { decorators } from 'src/components/providers/StorybookProvider';
-import { filtersState } from 'src/constants/filters';
+import { useMapState } from 'src/hooks/useMapState';
 
 export default {
   title: 'Organisms/Filters',
@@ -11,24 +10,24 @@ export default {
   decorators,
 } as Meta;
 
-const Filters: Story = ({ isAdmin }) => {
-  const [filters, setFilters] = useState(filtersState);
+const Filters: Story = ({ isEditor }) => {
+  const { filters, setFilters } = useMapState(isEditor);
 
   return (
     <FiltersComponent
       filters={filters}
       onChange={setFilters}
-      isAdmin={isAdmin}
+      isEditor={isEditor}
     />
   );
 };
 
-export const FiltersWithoutAdmin = Filters.bind({});
-FiltersWithoutAdmin.args = {
-  isAdmin: false,
+export const FiltersWithoutEditor = Filters.bind({});
+FiltersWithoutEditor.args = {
+  isEditor: false,
 };
 
-export const FiltersWithAdmin = Filters.bind({});
-FiltersWithAdmin.args = {
-  isAdmin: true,
+export const FiltersWithEditor = Filters.bind({});
+FiltersWithEditor.args = {
+  isEditor: true,
 };

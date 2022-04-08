@@ -1,16 +1,16 @@
-import React, { useEffect, useMemo } from 'react';
+import React, { useLayoutEffect, useMemo } from 'react';
 import ReactDOM from 'react-dom';
 
 type Props = {
   map: google.maps.Map;
   width: string;
   height: string;
-  position: google.maps.ControlPosition;
+  position?: google.maps.ControlPosition;
 };
 
 export const MapControl: React.FC<Props> = ({
   map,
-  position,
+  position = google.maps.ControlPosition.RIGHT_BOTTOM,
   width,
   height,
   children,
@@ -24,7 +24,7 @@ export const MapControl: React.FC<Props> = ({
     return div;
   }, [width, height]);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const controls = map.controls[position];
     const index = controls.push(controlDiv);
 

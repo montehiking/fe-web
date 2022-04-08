@@ -17,6 +17,7 @@ module.exports = {
     '@typescript-eslint/no-namespace': 'off',
     '@typescript-eslint/no-unused-vars': ['error'],
     'jsx-a11y/anchor-is-valid': 'off',
+    'no-duplicate-imports': ['error'],
     'no-extra-boolean-cast': 'off',
     'no-useless-escape': 'off',
   },

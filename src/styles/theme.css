@@ -5,7 +5,6 @@
 
   --COLOR_WHITE: #ffffff;
 
-  --COLOR_GRAY_0: #f8f8f8;
   --COLOR_GRAY_1: #999999;
   --COLOR_GRAY_2: #666666;
   --COLOR_GRAY_3: #333333;
@@ -21,4 +20,6 @@
   --TRANSITION_SIDEBAR: 0.25s;
 
   --RADIUS_MAP_CONTROL: 2px;
+
+  --SHADOW: rgb(0 0 0 / 30%) 0px 1px 4px -1px;
 }

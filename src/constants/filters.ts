@@ -1,13 +1,18 @@
-import { PointType, points } from 'src/points';
+import { DictionaryKey } from 'src/i18n';
+import { Category } from 'src/types';
 
-export type FiltersState = Record<
-  PointType,
-  { checked: boolean; count: number }
->;
-
-export const filtersState = points.reduce<FiltersState>((acc, point) => {
-  const { count } = acc[point.type] ?? { count: 0 };
-  acc[point.type] = { checked: true, count: count + 1 };
-
-  return acc;
-}, {} as never);
+export const labels: Record<Category, DictionaryKey> = {
+  routes: 'constants.filters.labels.routes',
+  '': 'constants.filters.labels.empty',
+  old_town: 'constants.filters.labels.old_town',
+  fortress: 'constants.filters.labels.fortress',
+  palace: 'constants.filters.labels.palace',
+  christian: 'constants.filters.labels.christian',
+  cave: 'constants.filters.labels.cave',
+  waterfall: 'constants.filters.labels.waterfall',
+  nature: 'constants.filters.labels.nature',
+  lighthouse: 'constants.filters.labels.lighthouse',
+  bridge: 'constants.filters.labels.bridge',
+  monument: 'constants.filters.labels.monument',
+  other: 'constants.filters.labels.other',
+};

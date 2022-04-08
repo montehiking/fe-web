@@ -1,0 +1,95 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.885689892322766, 42.287052571960125]
+      },
+      "properties": {
+        "title": "Vodopad",
+        "description": "водопад"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.681551579394878, 42.51378269755718]
+      },
+      "properties": {
+        "title": "Vodopad Sopot",
+        "description": "водопад"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.899305568559605, 42.262136155407255]
+      },
+      "properties": {
+        "title": "Vodopad",
+        "description": "водопад"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.30070079449733, 43.13692626480629]
+      },
+      "properties": {
+        "title": "Ljutica vodopad",
+        "description": "водопад"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.035336952867528, 42.252274916923795]
+      },
+      "properties": {
+        "title": "Vodopad",
+        "description": "водопад",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.141875619285656, 42.100589380092664]
+      },
+      "properties": {
+        "title": "Vodopad",
+        "description": "водопад"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.149835109710693, 42.10514789445141]
+      },
+      "properties": {
+        "title": "Vodopad Vrteljak",
+        "description": "водопад",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.821135198156348, 42.31854842500129]
+      },
+      "properties": {
+        "title": "Vodopad Krapina",
+        "description": "водопад"
+      }
+    }
+  ]
+}

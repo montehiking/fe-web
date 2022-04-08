@@ -1,5 +1,7 @@
 import { Coordinate, Zoom } from 'src/types';
 
+export const getInitialZoom = (): Zoom => (window.innerWidth > 700 ? 9 : 8);
+
 const convertToSexagesimal = (
   value: Coordinate,
   suffix: 'N' | 'S' | 'E' | 'W'

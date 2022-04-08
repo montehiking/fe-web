@@ -1,0 +1,60 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.091215032832988, 42.100676095855995]
+      },
+      "properties": {
+        "title": "Dvorac kralja Nikole",
+        "description": "музей"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.704336285591125, 42.423092205901625]
+      },
+      "properties": {
+        "title": "Kompleks Bizanti",
+        "description": "развалины виллы"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.70025396347046, 42.48523220061461]
+      },
+      "properties": {
+        "title": "Palata Visković",
+        "description": "музей"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.705764963993825, 42.420842967144296]
+      },
+      "properties": {
+        "title": "Palata Verona",
+        "description": "развалины виллы"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.924387795282, 42.38737579348151]
+      },
+      "properties": {
+        "title": "Dvorac kralja Nikole",
+        "description": "музей"
+      }
+    }
+  ]
+}

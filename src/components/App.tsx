@@ -5,6 +5,6 @@ import { Provider } from 'src/components/providers/Provider';
 
 export const App: React.FC = () => (
   <Provider>
-    <MapView isAdmin={false} />
+    <MapView />
   </Provider>
 );
