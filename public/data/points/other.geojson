@@ -258,6 +258,30 @@
         "title": "Omerbašića džamija",
         "description": "старинная мечеть"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.25903856754303, 42.437653138616675]
+      },
+      "properties": {
+        "title": "Starodoganjska džamija",
+        "description": "мечеть XV в.",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.32024121284485, 42.37527769398803]
+      },
+      "properties": {
+        "title": "Šipčanik (Plantaže)",
+        "description": "винодельня Плантаже",
+        "notVerified": true
+      }
     }
   ]
 }

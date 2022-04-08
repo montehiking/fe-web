@@ -3,7 +3,6 @@ import { dehydrate, hydrate } from 'src/utils/filters';
 
 const initialFiltersState: FiltersState = {
   routes: { checked: false, count: 1 },
-  '': { checked: true, count: 0 },
   bridge: { checked: true, count: 1 },
   cave: { checked: true, count: 1 },
   christian: { checked: true, count: 0 },

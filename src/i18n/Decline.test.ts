@@ -5,8 +5,7 @@ const config: DeclinePhrases = [
   'запись',
   'записи',
   'записей',
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-] as any;
+] as never;
 
 describe('Check decliner', () => {
   test('counter is zero', () => {

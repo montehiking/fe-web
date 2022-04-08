@@ -1,6 +1,5 @@
 import { useLayoutEffect, useState } from 'react';
 
-import { POINT_EDITOR } from 'src/constants';
 import { Category, FiltersState, MapState, Point } from 'src/types';
 import { dehydrate, filterData, hydrate } from 'src/utils/filters';
 import { getData } from 'src/utils/geoJSON';
@@ -12,7 +11,7 @@ type State = {
 
 const hiddenFilters = getItem<Category[]>('filters', []);
 
-export const useMapState = (isEditor: boolean) => {
+export const useMapState = (isOwner: boolean, isEditor: boolean) => {
   const [state, setState] = useState<State>({
     filters: undefined,
     points: [],
@@ -20,14 +19,14 @@ export const useMapState = (isEditor: boolean) => {
   });
 
   useLayoutEffect(() => {
-    getData(isEditor).then(({ points, routes }) => {
+    getData(isOwner || isEditor).then(({ points, routes }) => {
       setState({
         filters: hydrate(points, routes, hiddenFilters),
         points,
         routes,
       });
     });
-  }, [isEditor]);
+  }, [isOwner, isEditor]);
 
   const setPoints = ({ latLng }: google.maps.MapMouseEvent) => {
     if (latLng && isEditor) {
@@ -45,7 +44,7 @@ export const useMapState = (isEditor: boolean) => {
           category: '',
           notVerified: true,
         },
-      };
+      } as never;
 
       setState((state) => ({ ...state, points: [newPoint, ...state.points] }));
     }
@@ -61,7 +60,7 @@ export const useMapState = (isEditor: boolean) => {
 
   return {
     added: JSON.stringify(
-      state.points.filter((m) => m.properties.category === POINT_EDITOR)[0],
+      state.points.filter((m) => (m.properties.category as never) === '')[0],
       null,
       2
     ),

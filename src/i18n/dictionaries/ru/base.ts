@@ -21,7 +21,6 @@ export const base = {
   'components.organisms.MapView.filters.3': '{to} объектов из {from}',
 
   'constants.filters.labels.routes': 'Маршруты',
-  'constants.filters.labels.empty': 'Без категории',
   'constants.filters.labels.old_town': 'Старинные поселения',
   'constants.filters.labels.fortress': 'Форты и крепости',
   'constants.filters.labels.palace': 'Дворцы',

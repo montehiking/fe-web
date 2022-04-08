@@ -6,17 +6,16 @@ import { POINT_ROUTES } from 'src/constants';
 import { labels } from 'src/constants/filters';
 import { getWithDecline } from 'src/i18n/Decline';
 import { Category, FiltersState } from 'src/types';
-import { getCategories } from 'src/utils/filters';
+import { categories } from 'src/utils/filters';
 
 import styles from 'src/components/organisms/Filters/styles.module.css';
 
 type Props = {
   filters?: FiltersState;
   onChange: (value: FiltersState) => void;
-  isEditor: boolean;
 };
 
-export const Filters: React.FC<Props> = ({ filters, onChange, isEditor }) => {
+export const Filters: React.FC<Props> = ({ filters, onChange }) => {
   if (!filters) {
     return null;
   }
@@ -56,5 +55,5 @@ export const Filters: React.FC<Props> = ({ filters, onChange, isEditor }) => {
     );
   };
 
-  return <List dataSource={getCategories(isEditor)} renderItem={renderItem} />;
+  return <List dataSource={categories} renderItem={renderItem} />;
 };

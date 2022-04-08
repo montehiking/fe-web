@@ -9,10 +9,13 @@ import { getWithDecline } from 'src/i18n/Decline';
 import styles from 'src/components/organisms/MapView/styles.module.css';
 
 export const MapView: React.FC = () => {
-  const isEditor = window.location.search.replace('?', '') === 'editor';
+  const searchString = window.location.search.replace('?', '');
+
+  const isOwner = searchString === 'owner';
+  const isEditor = searchString === 'editor';
 
   const { added, counter, mapState, filters, setFilters, setPoints } =
-    useMapState(isEditor);
+    useMapState(isOwner, isEditor);
   const [isSidebarVisible, setIsSidebarVisible] = useState(false);
 
   return (
@@ -37,7 +40,7 @@ export const MapView: React.FC = () => {
           { id: 'components.organisms.MapView.filters.3', values: counter },
         ])}
       >
-        <Filters filters={filters} onChange={setFilters} isEditor={isEditor} />
+        <Filters filters={filters} onChange={setFilters} />
 
         {isEditor && <pre className={styles.code}>{added}</pre>}
       </Sidebar>

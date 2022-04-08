@@ -482,6 +482,30 @@
         "title": "Sahat kula",
         "description": "часовая башня"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.3660868704319, 42.470415234559916]
+      },
+      "properties": {
+        "title": "Medun",
+        "description": "иллирийский город-крепость",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.156352877616882, 42.316987472918996]
+      },
+      "properties": {
+        "title": "Žabljak Crnojevića",
+        "description": "черногорский город-крепость",
+        "notVerified": true
+      }
     }
   ]
 }

@@ -1,4 +1,4 @@
-"Project-Id-Version: 0.0.12\n"
+"Project-Id-Version: 0.0.13\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -65,10 +65,6 @@ msgstr "{to} объектов из {from}"
 msgctxt "base"
 msgid "constants.filters.labels.routes"
 msgstr "Маршруты"
-
-msgctxt "base"
-msgid "constants.filters.labels.empty"
-msgstr "Без категории"
 
 msgctxt "base"
 msgid "constants.filters.labels.old_town"

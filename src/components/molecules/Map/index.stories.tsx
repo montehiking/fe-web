@@ -11,7 +11,7 @@ export default {
 } as Meta;
 
 export const Map: Story = () => {
-  const { mapState } = useMapState(false);
+  const { mapState } = useMapState(false, false);
 
   return (
     <MapComponent
