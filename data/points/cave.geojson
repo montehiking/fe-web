@@ -1,0 +1,50 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.87504913460358, 42.292574304900405]
+      },
+      "properties": {
+        "title": "Pećina Ivanovići",
+        "description": "пещера"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.953089730534305, 42.36710394637622]
+      },
+      "properties": {
+        "title": "Lipska pećina",
+        "description": "пещера"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.091367718576958, 43.14370625468662]
+      },
+      "properties": {
+        "title": "Titova pećina",
+        "description": "пещера"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.20321645663744, 42.45890513409661]
+      },
+      "properties": {
+        "title": "Pećina Magara",
+        "description": "пещера",
+        "notVerified": true
+      }
+    }
+  ]
+}
