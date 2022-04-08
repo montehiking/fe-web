@@ -8,11 +8,9 @@ import { getWithDecline } from 'src/i18n/Decline';
 
 import styles from 'src/components/organisms/MapView/styles.module.css';
 
-type Props = {
-  isEditor: boolean;
-};
+export const MapView: React.FC = () => {
+  const isEditor = window.location.search.replace('?', '') === 'editor';
 
-export const MapView: React.FC<Props> = ({ isEditor }) => {
   const { added, counter, mapState, filters, setFilters, setPoints } =
     useMapState(isEditor);
   const [isSidebarVisible, setIsSidebarVisible] = useState(false);
