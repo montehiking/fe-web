@@ -163,7 +163,8 @@
       },
       "properties": {
         "title": "Park Doma Vojske",
-        "description": "городской парк"
+        "description": "городской парк",
+        "notVerified": true
       }
     },
     {
@@ -230,6 +231,53 @@
       "properties": {
         "title": "Sveti Nikola",
         "description": "природная зона"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.69561454284023, 42.43415137162696]
+      },
+      "properties": {
+        "title": "Veliki gradski park",
+        "description": "городской парк"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.556945236863918, 42.604723758957135]
+      },
+      "properties": {
+        "title": "Bukuminsko jezero",
+        "description": "озеро",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.368445873260498, 42.67486340903166]
+      },
+      "properties": {
+        "title": "Kanjon Morače",
+        "description": "каньон",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.258938425910642, 42.44227657613145]
+      },
+      "properties": {
+        "title": "Njegošev Park",
+        "description": "городской парк",
+        "notVerified": true
       }
     }
   ]

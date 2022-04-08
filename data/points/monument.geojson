@@ -154,6 +154,66 @@
         "title": "Spomenik palim borcima NOB-a",
         "description": "югославский мемориал"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.256975075345316, 42.4441904611713]
+      },
+      "properties": {
+        "title": "Spomenik Vladimiru Visockomu",
+        "description": "памятник",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.260536581277847, 42.43916743978628]
+      },
+      "properties": {
+        "title": "Spomenik kralju Nikoli",
+        "description": "памятник",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.260902539701533, 42.439595731752185]
+      },
+      "properties": {
+        "title": "Spomenik Aleksandru Puškinu i Nataliji Gončarovoj",
+        "description": "памятник",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.25986075009583, 42.442168221281094]
+      },
+      "properties": {
+        "title": "Spomenik Petru Petroviću Njegošu",
+        "description": "памятник",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.266063272953033, 42.44961017264718]
+      },
+      "properties": {
+        "title": "Spomenik palim borcima NOB-a",
+        "description": "югославский мемориал",
+        "notVerified": true
+      }
     }
   ]
 }

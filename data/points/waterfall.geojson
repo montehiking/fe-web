@@ -90,6 +90,18 @@
         "title": "Vodopad Krapina",
         "description": "водопад"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.27926242351532, 42.38355375622302]
+      },
+      "properties": {
+        "title": "Nijagara",
+        "description": "водопад",
+        "notVerified": true
+      }
     }
   ]
 }
