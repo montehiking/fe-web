@@ -159,6 +159,39 @@
         "title": "Santa Marija in Punta",
         "description": "церковь IX в."
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.8382026553154, 42.27746456200016]
+      },
+      "properties": {
+        "title": "Crkva Svetog Ivana",
+        "description": "собор XII в."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.811957240104675, 42.315010081886435]
+      },
+      "properties": {
+        "title": "Crkva Svetog Ilije",
+        "description": "церковь XII в."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.698633909225464, 42.48614602943655]
+      },
+      "properties": {
+        "title": "Crkva Svetog Nikole",
+        "description": "храм XVII в."
+      }
     }
   ]
 }

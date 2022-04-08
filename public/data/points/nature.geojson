@@ -220,6 +220,17 @@
         "title": "Zminje jezero",
         "description": "озеро"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.847005607485563, 42.2703665039242]
+      },
+      "properties": {
+        "title": "Sveti Nikola",
+        "description": "природная зона"
+      }
     }
   ]
 }

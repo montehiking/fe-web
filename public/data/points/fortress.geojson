@@ -471,6 +471,17 @@
         "title": "Morska Kula (Forte Mare)",
         "description": "боснийская крепость"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.537183701992035, 42.45169910405725]
+      },
+      "properties": {
+        "title": "Sahat kula",
+        "description": "часовая башня"
+      }
     }
   ]
 }
