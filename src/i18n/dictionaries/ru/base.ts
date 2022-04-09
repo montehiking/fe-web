@@ -25,6 +25,7 @@ export const base = {
   'constants.filters.labels.fortress': 'Форты и крепости',
   'constants.filters.labels.palace': 'Дворцы',
   'constants.filters.labels.christian': 'Часовни и монастыри',
+  'constants.filters.labels.islamic': 'Мечети',
   'constants.filters.labels.cave': 'Пещеры',
   'constants.filters.labels.waterfall': 'Водопады',
   'constants.filters.labels.nature': 'Озера, парки и природные зоны',

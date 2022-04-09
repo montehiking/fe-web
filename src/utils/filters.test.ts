@@ -6,6 +6,7 @@ const initialFiltersState: FiltersState = {
   bridge: { checked: true, count: 1 },
   cave: { checked: true, count: 1 },
   christian: { checked: true, count: 0 },
+  islamic: { checked: true, count: 0 },
   fortress: { checked: true, count: 1 },
   lighthouse: { checked: true, count: 0 },
   monument: { checked: true, count: 0 },

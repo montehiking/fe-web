@@ -12,6 +12,7 @@ export type Category =
   | 'cave'
   | 'christian'
   | 'fortress'
+  | 'islamic'
   | 'lighthouse'
   | 'monument'
   | 'nature'

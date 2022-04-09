@@ -83,6 +83,10 @@ msgid "constants.filters.labels.christian"
 msgstr "Часовни и монастыри"
 
 msgctxt "base"
+msgid "constants.filters.labels.islamic"
+msgstr "Мечети"
+
+msgctxt "base"
 msgid "constants.filters.labels.cave"
 msgstr "Пещеры"
 

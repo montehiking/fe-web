@@ -170,17 +170,6 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.94430350575417, 42.596479000761796]
-      },
-      "properties": {
-        "title": "Stara džamija",
-        "description": "деревянная мечеть XV в."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
         "coordinates": [18.690956875984707, 42.41144808577672]
       },
       "properties": {
@@ -245,29 +234,6 @@
       "properties": {
         "title": "Velja Maslina",
         "description": "памятник природы",
-        "notVerified": true
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [19.134246110916138, 42.09450860776335]
-      },
-      "properties": {
-        "title": "Omerbašića džamija",
-        "description": "старинная мечеть"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [19.25903856754303, 42.437653138616675]
-      },
-      "properties": {
-        "title": "Starodoganjska džamija",
-        "description": "мечеть XV в.",
         "notVerified": true
       }
     },

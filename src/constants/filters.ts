@@ -7,6 +7,7 @@ export const labels: Record<Category, DictionaryKey> = {
   fortress: 'constants.filters.labels.fortress',
   palace: 'constants.filters.labels.palace',
   christian: 'constants.filters.labels.christian',
+  islamic: 'constants.filters.labels.islamic',
   cave: 'constants.filters.labels.cave',
   waterfall: 'constants.filters.labels.waterfall',
   nature: 'constants.filters.labels.nature',
