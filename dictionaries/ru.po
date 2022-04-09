@@ -96,7 +96,7 @@ msgstr "Водопады"
 
 msgctxt "base"
 msgid "constants.filters.labels.nature"
-msgstr "Озера, парки и природные зоны"
+msgstr "Озера, парки, природные зоны"
 
 msgctxt "base"
 msgid "constants.filters.labels.lighthouse"

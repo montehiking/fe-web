@@ -28,7 +28,7 @@ export const base = {
   'constants.filters.labels.islamic': 'Мечети',
   'constants.filters.labels.cave': 'Пещеры',
   'constants.filters.labels.waterfall': 'Водопады',
-  'constants.filters.labels.nature': 'Озера, парки и природные зоны',
+  'constants.filters.labels.nature': 'Озера, парки, природные зоны',
   'constants.filters.labels.lighthouse': 'Маяки',
   'constants.filters.labels.bridge': 'Мосты',
   'constants.filters.labels.monument': 'Монументы и памятники',
