@@ -9,7 +9,6 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'react-app',
     'prettier',
-    'plugin:storybook/recommended',
   ],
   rules: {
     '@typescript-eslint/ban-types': ['error', { types: { '{}': false } }],
@@ -17,6 +16,7 @@ module.exports = {
     '@typescript-eslint/no-namespace': 'off',
     '@typescript-eslint/no-unused-vars': ['error'],
     'jsx-a11y/anchor-is-valid': 'off',
+    'jsx-a11y/no-static-element-interactions': ['error'],
     'no-duplicate-imports': ['error'],
     'no-extra-boolean-cast': 'off',
     'no-useless-escape': 'off',

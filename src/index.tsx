@@ -4,6 +4,8 @@ import ReactDOM from 'react-dom';
 import { App } from 'src/components/App';
 import { reportWebVitals } from 'src/utils/reportWebVitals';
 
+// Don't use createRoot!
+// See https://github.com/facebook/react/issues/22839
 ReactDOM.render(
   <React.StrictMode>
     <App />
