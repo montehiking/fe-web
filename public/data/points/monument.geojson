@@ -163,8 +163,7 @@
       },
       "properties": {
         "title": "Spomenik Vladimiru Visockomu",
-        "description": "памятник",
-        "notVerified": true
+        "description": "памятник"
       }
     },
     {
@@ -175,8 +174,7 @@
       },
       "properties": {
         "title": "Spomenik kralju Nikoli",
-        "description": "памятник",
-        "notVerified": true
+        "description": "памятник"
       }
     },
     {
@@ -187,8 +185,7 @@
       },
       "properties": {
         "title": "Spomenik Aleksandru Puškinu i Nataliji Gončarovoj",
-        "description": "памятник",
-        "notVerified": true
+        "description": "памятник"
       }
     },
     {
@@ -199,8 +196,7 @@
       },
       "properties": {
         "title": "Spomenik Petru Petroviću Njegošu",
-        "description": "памятник",
-        "notVerified": true
+        "description": "памятник"
       }
     },
     {
@@ -213,6 +209,17 @@
         "title": "Spomenik palim borcima NOB-a",
         "description": "югославский мемориал",
         "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.20458590356761, 42.41528494221949]
+      },
+      "properties": {
+        "title": "Crnogorsko oro",
+        "description": "скульптурная группа"
       }
     }
   ]
