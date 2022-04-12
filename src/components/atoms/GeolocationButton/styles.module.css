@@ -1,11 +1,7 @@
 .button {
   align-items: center;
   appearance: none;
-  background: var(--COLOR_WHITE);
-  border-radius: var(--RADIUS_MAP_CONTROL);
   border: none;
-  box-shadow: var(--SHADOW);
-  cursor: pointer;
   display: flex;
   height: 40px;
   justify-content: center;

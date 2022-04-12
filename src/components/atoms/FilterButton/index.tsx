@@ -15,6 +15,7 @@ export const FilterButton: React.FC<Props> = ({ from, to, onClick }) => (
       [styles.active]: from !== to,
     })}
     onClick={onClick}
+    type="button"
   >
     <span>{from}</span>
     <svg

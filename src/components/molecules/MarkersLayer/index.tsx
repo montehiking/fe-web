@@ -15,7 +15,7 @@ export const MarkersLayer: React.FC<Props> = ({ onClick, points }) => {
   const [zoom, setZoom] = useState(getInitialZoom());
 
   useMapEvents({
-    zoom: (event) => setZoom(event.target._zoom),
+    zoomend: (event) => setZoom(event.target._zoom),
     click: (event) => onClick(event.latlng),
   });
 

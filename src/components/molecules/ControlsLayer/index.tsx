@@ -1,4 +1,5 @@
-import React from 'react';
+import { DomEvent } from 'leaflet';
+import React, { useEffect, useRef } from 'react';
 
 import {
   FilterButton,
@@ -10,14 +11,26 @@ type Props = {
   filter: FilterButtonProps;
 };
 
-export const ControlsLayer: React.FC<Props> = ({ filter }) => (
-  <div className="leaflet-bottom leaflet-right leaflet-custom-controls">
-    <div className="leaflet-control leaflet-bar">
-      <GeolocationButton />
-    </div>
+export const ControlsLayer: React.FC<Props> = ({ filter }) => {
+  const ref = useRef<HTMLDivElement>(null);
 
-    <div className="leaflet-control leaflet-bar">
-      <FilterButton {...filter} />
+  useEffect(() => {
+    if (ref.current) {
+      DomEvent.disableClickPropagation(ref.current);
+    }
+  });
+
+  return (
+    <div className="leaflet-control-container" ref={ref}>
+      <div className="leaflet-bottom leaflet-right leaflet-custom-controls">
+        <div className="leaflet-bar leaflet-control">
+          <GeolocationButton />
+        </div>
+
+        <div className="leaflet-bar leaflet-control">
+          <FilterButton {...filter} />
+        </div>
+      </div>
     </div>
-  </div>
-);
+  );
+};

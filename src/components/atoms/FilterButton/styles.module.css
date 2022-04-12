@@ -1,11 +1,7 @@
 .button {
   align-items: center;
   appearance: none;
-  background: var(--COLOR_WHITE);
-  border-radius: var(--RADIUS_MAP_CONTROL);
   border: none;
-  box-shadow: var(--SHADOW);
-  cursor: pointer;
   display: flex;
   flex-direction: column;
   height: 70px;
@@ -28,7 +24,7 @@
 .button span {
   color: var(--COLOR_GRAY_1);
   font-size: var(--FONT_SIZE_SMALL);
-  font-weight: 800;
+  font-weight: 600;
   line-height: 16px;
   transition: color var(--TRANSITION_CONTROLS);
 }

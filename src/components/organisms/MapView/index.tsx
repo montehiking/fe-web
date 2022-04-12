@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+import { Spin } from 'src/components/atoms/Spin';
 import { Map } from 'src/components/molecules/Map';
 import { Sidebar } from 'src/components/molecules/Sidebar';
 import { Filters } from 'src/components/organisms/Filters';
@@ -17,6 +18,14 @@ export const MapView: React.FC = () => {
   const { added, counter, mapState, filters, setFilters, setPoints } =
     useMapState(isOwner, isEditor);
   const [isSidebarVisible, setIsSidebarVisible] = useState(false);
+
+  if (!filters) {
+    return (
+      <div className={styles.wrapper} data-testid="page">
+        <Spin size="large" />
+      </div>
+    );
+  }
 
   return (
     <div className={styles.wrapper} data-testid="page">

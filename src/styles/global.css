@@ -26,3 +26,31 @@ code {
 .leaflet-bottom.leaflet-custom-controls {
   margin-bottom: 14px;
 }
+
+.leaflet-bar.leaflet-control {
+  border-radius: var(--RADIUS_MAP_CONTROL);
+  border: none;
+  box-shadow: var(--SHADOW);
+  user-select: none;
+}
+
+.leaflet-bar.leaflet-control .leaflet-control-zoom-in,
+.leaflet-bar.leaflet-control .leaflet-control-zoom-out {
+  line-height: 26px;
+}
+
+.leaflet-bar.leaflet-control a,
+.leaflet-bar.leaflet-control button {
+  background-color: var(--COLOR_WHITE);
+  transition: background-color var(--TRANSITION_CONTROLS);
+}
+
+.leaflet-bar.leaflet-control button {
+  cursor: pointer;
+  border-radius: var(--RADIUS_MAP_CONTROL);
+}
+
+.leaflet-bar.leaflet-control a:hover,
+.leaflet-bar.leaflet-control button:hover {
+  background-color: var(--COLOR_GRAY_LIGHT);
+}
