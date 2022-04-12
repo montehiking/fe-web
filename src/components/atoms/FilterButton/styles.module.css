@@ -10,7 +10,6 @@
   flex-direction: column;
   height: 70px;
   justify-content: center;
-  margin: var(--SPACING_NORMAL);
   padding: 0px;
   text-transform: none;
   user-select: none;

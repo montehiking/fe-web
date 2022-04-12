@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 import React from 'react';
 
-import styles from 'src/components/molecules/FilterButton/styles.module.css';
+import styles from 'src/components/atoms/FilterButton/styles.module.css';
 
 export type Props = {
   from: number;

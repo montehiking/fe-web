@@ -4,6 +4,11 @@ export type DateTime = number;
 export type Zoom = number;
 export type Coordinate = number;
 
+export type LatLng = {
+  lat: Coordinate;
+  lng: Coordinate;
+};
+
 export type valueof<T> = T[keyof T];
 
 export type Category =

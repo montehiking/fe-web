@@ -1,6 +1,6 @@
 import { Meta, Story } from '@storybook/react/types-6-0';
 
-import { GeolocationButton as GeolocationButtonComponent } from 'src/components/molecules/GeolocationButton';
+import { GeolocationButton as GeolocationButtonComponent } from 'src/components/atoms/GeolocationButton';
 import { decorators } from 'src/components/providers/StorybookProvider';
 
 export default {

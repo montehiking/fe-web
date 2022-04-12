@@ -1,43 +1,43 @@
+import { LatLngLiteral } from 'leaflet';
 import React from 'react';
+import { MapContainer, TileLayer } from 'react-leaflet';
 
-import { ControlsLayout } from 'src/components/molecules/ControlsLayout';
-import { Props as FilterButtonProps } from 'src/components/molecules/FilterButton';
-import { MarkersLayout } from 'src/components/molecules/MarkersLayout';
-import { RoutesLayout } from 'src/components/molecules/RoutesLayout';
-import { Props as MapProps, useMap } from 'src/hooks/useMap';
-import { MapState } from 'src/types';
+import { Props as FilterButtonProps } from 'src/components/atoms/FilterButton';
+import { ControlsLayer } from 'src/components/molecules/ControlsLayer';
+import { MarkersLayer } from 'src/components/molecules/MarkersLayer';
+import { RoutesLayer } from 'src/components/molecules/RoutesLayer';
+import { LatLng, MapState } from 'src/types';
+import { getInitialZoom } from 'src/utils/maps';
 
 import styles from 'src/components/molecules/Map/styles.module.css';
 
-type Props = MapProps & {
+const INITIAL_CENTER: LatLngLiteral = {
+  lat: 42.729601871834504,
+  lng: 19.28824681389678,
+};
+
+type Props = {
   filter: FilterButtonProps;
+  onClick: (latLng: LatLng) => void;
   state: MapState;
 };
 
-export const Map: React.FC<Props> = ({ filter, state, ...options }) => {
-  const { ref, map, infoWindow } = useMap(options);
-
+export const Map: React.FC<Props> = ({ filter, onClick, state }) => {
   return (
-    <>
-      <div ref={ref} className={styles.map} />
-
-      {!!map && (
-        <>
-          <ControlsLayout filter={filter} map={map} />
-
-          <MarkersLayout
-            infoWindow={infoWindow}
-            map={map}
-            points={state.points}
-          />
-
-          <RoutesLayout
-            infoWindow={infoWindow}
-            map={map}
-            routes={state.routes}
-          />
-        </>
-      )}
-    </>
+    <MapContainer
+      center={INITIAL_CENTER}
+      zoom={getInitialZoom()}
+      className={styles.map}
+    >
+      <TileLayer
+        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        tileSize={128}
+        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        zoomOffset={1}
+      />
+      <MarkersLayer points={state.points} onClick={onClick} />
+      <RoutesLayer routes={state.routes} />
+      <ControlsLayer filter={filter} />
+    </MapContainer>
   );
 };

@@ -23,17 +23,6 @@ code {
   height: 100vh;
 }
 
-.poi-info-window *,
-.gm-ui-hover-effect {
-  outline: none !important;
-}
-
-.point-description {
-  color: var(--COLOR_GRAY_1) !important;
-  font-size: var(--FONT_SIZE_SMALL) !important;
-  padding-bottom: var(--SPACING_NORMAL);
-}
-
-.gm-style-mtc li img {
-  vertical-align: baseline;
+.leaflet-bottom.leaflet-custom-controls {
+  margin-bottom: 14px;
 }
