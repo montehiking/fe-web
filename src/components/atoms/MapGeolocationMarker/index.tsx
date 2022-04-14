@@ -9,7 +9,7 @@ const icon = new Icon({
   iconSize: new Point(20, 20),
 });
 
-export const MapLocationMarker: React.FC = () => {
+export const MapGeolocationMarker: React.FC = () => {
   const [position, setPosition] = useState<LatLng | null>(null);
 
   useMapEvent('locationfound', (e) => setPosition(e.latlng));

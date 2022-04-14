@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import { Polyline } from 'react-leaflet';
 
-import { MapRoute } from 'src/components/molecules/MapRoute';
+import { MapMarker } from 'src/components/atoms/MapMarker';
 import { LatLng, Route } from 'src/types';
 
 type Props = {
@@ -18,12 +19,27 @@ export const MapRoutesLayer: React.FC<Props> = ({ routes }) => (
       );
 
       return (
-        <MapRoute
+        <Fragment
           key={`${geometry.coordinates[0][0]}${geometry.coordinates[0][1]}`}
-          title={properties.title}
-          description={properties.description}
-          coordinates={coordinates}
-        />
+        >
+          <Polyline
+            pathOptions={{ color: '#1890ff' }}
+            positions={coordinates}
+          />
+
+          <MapMarker
+            icon="blue"
+            latLng={coordinates[0]}
+            title={properties.title}
+            description={properties.description}
+          />
+          <MapMarker
+            icon="blue"
+            latLng={coordinates[coordinates.length - 1]}
+            title={properties.title}
+            description={properties.description}
+          />
+        </Fragment>
       );
     })}
   </>

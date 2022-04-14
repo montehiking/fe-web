@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useMapEvents } from 'react-leaflet';
 
-import { MapLocationMarker } from 'src/components/atoms/MapLocationMarker';
+import { MapGeolocationMarker } from 'src/components/atoms/MapGeolocationMarker';
 import { MapMarker } from 'src/components/atoms/MapMarker';
 import { LatLng, Point } from 'src/types';
 import { getInitialZoom } from 'src/utils/maps';
@@ -36,7 +36,7 @@ export const MapMarkersLayer: React.FC<Props> = ({ onClick, points }) => {
         );
       })}
 
-      <MapLocationMarker />
+      <MapGeolocationMarker />
     </>
   );
 };

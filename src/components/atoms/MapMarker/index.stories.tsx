@@ -12,41 +12,36 @@ export default {
   decorators: [...decorators, mapDecorator],
 } as Meta;
 
-export const MapMarkerBlue: Story = () => (
+const MapMarker: Story = ({ icon, zoom }) => (
   <MapMarkerComponent
     description="description"
-    icon="blue"
+    icon={icon}
     latLng={{ lat: 0, lng: 0 }}
     title="title"
-    zoom={1}
+    zoom={zoom}
   />
 );
 
-export const MapMarkerRed: Story = () => (
-  <MapMarkerComponent
-    description="description"
-    icon="red"
-    latLng={{ lat: 0, lng: 0 }}
-    title="title"
-    zoom={1}
-  />
-);
+export const MapMarkerBlue = MapMarker.bind({});
+MapMarkerBlue.args = {
+  icon: 'blue',
+  zoom: 1,
+};
 
-export const MapMarkerYellow: Story = () => (
-  <MapMarkerComponent
-    description="description"
-    icon="yellow"
-    latLng={{ lat: 0, lng: 0 }}
-    title="title"
-    zoom={1}
-  />
-);
+export const MapMarkerRed = MapMarker.bind({});
+MapMarkerRed.args = {
+  icon: 'red',
+  zoom: 1,
+};
 
-export const MapWithoutLink: Story = () => (
-  <MapMarkerComponent
-    description="description"
-    icon="red"
-    latLng={{ lat: 0, lng: 0 }}
-    title="title"
-  />
-);
+export const MapMarkerYellow = MapMarker.bind({});
+MapMarkerYellow.args = {
+  icon: 'yellow',
+  zoom: 1,
+};
+
+export const MapWithoutLink = MapMarker.bind({});
+MapWithoutLink.args = {
+  icon: 'red',
+  zoom: null,
+};
