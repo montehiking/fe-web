@@ -248,6 +248,40 @@
         "description": "винодельня Плантаже",
         "notVerified": true
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.70684146881104, 42.40660091013178]
+      },
+      "properties": {
+        "title": "Potopljeni brod",
+        "description": "затонувший корабль"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.770871162414554, 42.4216982968253]
+      },
+      "properties": {
+        "title": "Campo Santo",
+        "description": "средневековое кладбище",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.69433701038361, 42.51708173926494]
+      },
+      "properties": {
+        "title": "Carine",
+        "description": "археологический памятник"
+      }
     }
   ]
 }

@@ -504,6 +504,17 @@
         "description": "черногорский город-крепость",
         "notVerified": true
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.689675331115726, 42.52857095801026]
+      },
+      "properties": {
+        "title": "Rizon",
+        "description": "иллирийская крепость"
+      }
     }
   ]
 }
