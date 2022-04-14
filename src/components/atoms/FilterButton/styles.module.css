@@ -9,28 +9,20 @@
   padding: 0px;
   text-transform: none;
   user-select: none;
-  width: 40px;
+  width: var(--WIDTH_CONTROL);
 }
 
 .button svg {
   fill: var(--COLOR_GRAY_2);
-  transition: fill var(--TRANSITION_CONTROLS);
-}
-
-.button:hover svg {
-  fill: var(--COLOR_GRAY_3);
+  transition: fill var(--TRANSITION_CONTROL);
 }
 
 .button span {
   color: var(--COLOR_GRAY_1);
   font-size: var(--FONT_SIZE_SMALL);
-  font-weight: 600;
+  font-weight: var(--FONT_WEIGHT_BOLD);
   line-height: 16px;
-  transition: color var(--TRANSITION_CONTROLS);
-}
-
-.button:hover span {
-  color: var(--COLOR_GRAY_2);
+  transition: color var(--TRANSITION_CONTROL);
 }
 
 .active svg {

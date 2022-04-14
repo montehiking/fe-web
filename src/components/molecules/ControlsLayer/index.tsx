@@ -1,5 +1,6 @@
 import { DomEvent } from 'leaflet';
 import React, { useEffect, useRef } from 'react';
+import { ZoomControl } from 'react-leaflet';
 
 import {
   FilterButton,
@@ -22,6 +23,8 @@ export const ControlsLayer: React.FC<Props> = ({ filter }) => {
 
   return (
     <div className="leaflet-control-container" ref={ref}>
+      <ZoomControl position="topright" />
+
       <div className="leaflet-bottom leaflet-right leaflet-custom-controls">
         <div className="leaflet-bar leaflet-control">
           <GeolocationButton />

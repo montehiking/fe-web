@@ -1,0 +1,80 @@
+.leaflet-bottom.leaflet-custom-controls {
+  margin-bottom: var(--SPACING_MEDIUM);
+}
+
+.leaflet-bar.leaflet-control,
+.leaflet-control-layers.leaflet-control {
+  border-radius: var(--RADIUS_MAP_CONTROL);
+  border: none;
+  box-shadow: var(--SHADOW);
+  user-select: none;
+}
+
+.leaflet-control-layers-toggle {
+  display: none;
+}
+
+.leaflet-control-layers.leaflet-control.leaflet-control-layers-expanded {
+  padding: 0;
+}
+
+.leaflet-control-layers.leaflet-control .leaflet-control-layers-list {
+  display: block;
+  position: relative;
+}
+
+.leaflet-control-layers.leaflet-control .leaflet-control-layers-base {
+  display: flex;
+  flex-direction: row;
+}
+
+.leaflet-control-layers.leaflet-control label {
+  padding: var(--SPACING_NORMAL) var(--SPACING_MEDIUM);
+  cursor: pointer;
+  border-radius: var(--RADIUS_MAP_CONTROL);
+}
+
+.leaflet-control-layers.leaflet-control input {
+  display: none;
+}
+
+.leaflet-control-layers.leaflet-control input:checked ~ span {
+  font-weight: var(--FONT_WEIGHT_BOLD);
+}
+
+.leaflet-control-layers.leaflet-control span {
+  font-size: var(--FONT_SIZE_BIG);
+}
+
+.leaflet-bar.leaflet-control .leaflet-control-zoom-in,
+.leaflet-bar.leaflet-control .leaflet-control-zoom-out {
+  line-height: calc(var(--WIDTH_CONTROL) - 4px);
+  width: var(--WIDTH_CONTROL);
+  height: var(--WIDTH_CONTROL);
+}
+
+.leaflet-bar.leaflet-control button {
+  cursor: pointer;
+  border-radius: var(--RADIUS_MAP_CONTROL);
+}
+
+.leaflet-bar.leaflet-control a,
+.leaflet-bar.leaflet-control button,
+.leaflet-control-layers.leaflet-control label {
+  background-color: var(--COLOR_WHITE);
+  transition: background-color var(--TRANSITION_CONTROL);
+}
+
+.leaflet-bar.leaflet-control a:hover,
+.leaflet-bar.leaflet-control button:hover,
+.leaflet-control-layers.leaflet-control label:hover {
+  background-color: var(--COLOR_GRAY_0);
+}
+
+.leaflet-bar.leaflet-control a:first-child {
+  border-bottom: 1px solid var(--COLOR_GRAY_0);
+}
+
+.leaflet-control-layers.leaflet-control label:first-child {
+  border-right: 1px solid var(--COLOR_GRAY_0);
+}

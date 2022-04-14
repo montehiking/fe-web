@@ -1,11 +1,12 @@
 import { LatLngLiteral, latLngBounds } from 'leaflet';
 import React from 'react';
-import { MapContainer, TileLayer } from 'react-leaflet';
+import { MapContainer } from 'react-leaflet';
 
 import { Props as FilterButtonProps } from 'src/components/atoms/FilterButton';
 import { ControlsLayer } from 'src/components/molecules/ControlsLayer';
 import { MarkersLayer } from 'src/components/molecules/MarkersLayer';
 import { RoutesLayer } from 'src/components/molecules/RoutesLayer';
+import { TilesLayer } from 'src/components/molecules/TilesLayer';
 import { LatLng, MapState } from 'src/types';
 import { getInitialZoom } from 'src/utils/maps';
 
@@ -34,14 +35,9 @@ export const Map: React.FC<Props> = ({ filter, onClick, state }) => (
     maxBounds={bounds}
     maxBoundsViscosity={1.0}
     zoom={getInitialZoom()}
+    zoomControl={false}
   >
-    <TileLayer
-      attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-      tileSize={128}
-      url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-      zoomOffset={1}
-    />
-
+    <TilesLayer />
     <MarkersLayer points={state.points} onClick={onClick} />
     <RoutesLayer routes={state.routes} />
     <ControlsLayer filter={filter} />
