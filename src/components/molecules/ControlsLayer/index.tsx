@@ -3,13 +3,13 @@ import React, { useEffect, useRef } from 'react';
 import { ZoomControl } from 'react-leaflet';
 
 import {
-  FilterButton,
-  Props as FilterButtonProps,
-} from 'src/components/atoms/FilterButton';
-import { GeolocationButton } from 'src/components/atoms/GeolocationButton';
+  MapFilterButton,
+  Props as MapFilterButtonProps,
+} from 'src/components/atoms/MapFilterButton';
+import { MapGeolocationButton } from 'src/components/atoms/MapGeolocationButton';
 
 type Props = {
-  filter: FilterButtonProps;
+  filter: MapFilterButtonProps;
 };
 
 export const ControlsLayer: React.FC<Props> = ({ filter }) => {
@@ -27,11 +27,11 @@ export const ControlsLayer: React.FC<Props> = ({ filter }) => {
 
       <div className="leaflet-bottom leaflet-right leaflet-custom-controls">
         <div className="leaflet-bar leaflet-control">
-          <GeolocationButton />
+          <MapGeolocationButton />
         </div>
 
         <div className="leaflet-bar leaflet-control">
-          <FilterButton {...filter} />
+          <MapFilterButton {...filter} />
         </div>
       </div>
     </div>

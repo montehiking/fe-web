@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 import React from 'react';
 
-import styles from 'src/components/atoms/FilterButton/styles.module.css';
+import styles from 'src/components/atoms/MapFilterButton/styles.module.css';
 
 export type Props = {
   from: number;
@@ -9,7 +9,7 @@ export type Props = {
   onClick: () => void;
 };
 
-export const FilterButton: React.FC<Props> = ({ from, to, onClick }) => (
+export const MapFilterButton: React.FC<Props> = ({ from, to, onClick }) => (
   <button
     className={classNames(styles.button, {
       [styles.active]: from !== to,

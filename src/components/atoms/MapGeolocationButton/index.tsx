@@ -2,9 +2,9 @@ import classNames from 'classnames';
 import React, { useLayoutEffect, useState } from 'react';
 import { useMap } from 'react-leaflet';
 
-import styles from 'src/components/atoms/GeolocationButton/styles.module.css';
+import styles from 'src/components/atoms/MapGeolocationButton/styles.module.css';
 
-export const GeolocationButton: React.FC = () => {
+export const MapGeolocationButton: React.FC = () => {
   const [enabled, setEnabled] = useState<boolean>(false);
 
   const map = useMap();

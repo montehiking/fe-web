@@ -22,7 +22,6 @@
   font-size: var(--FONT_SIZE_SMALL);
   font-weight: var(--FONT_WEIGHT_BOLD);
   line-height: 16px;
-  transition: color var(--TRANSITION_CONTROL);
 }
 
 .active svg {
