@@ -1,0 +1,21 @@
+.button {
+  align-items: center;
+  appearance: none;
+  border: none;
+  display: flex;
+  height: var(--WIDTH_MAP_CONTROL);
+  justify-content: center;
+  padding: 0px;
+  text-transform: none;
+  user-select: none;
+  width: var(--WIDTH_MAP_CONTROL);
+}
+
+.button svg {
+  fill: var(--COLOR_GRAY_2);
+  transition: fill var(--TRANSITION_MAP_CONTROL);
+}
+
+.active svg {
+  fill: var(--COLOR_BLUE);
+}

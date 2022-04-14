@@ -2,7 +2,7 @@
 // If you want to change the content of this file, you need to edit
 // file '/dictionaries/ru.po' and run '.po' extractor
 export const base = {
-  'components.molecules.MarkersLayout.tooltip.showOnGoogleMaps':
+  'components.atoms.MapPopup.tooltip.showOnGoogleMaps':
     'Показать на Google Картах',
 
   'components.organisms.Filters.subLabel.0': 'нет локаций',
@@ -19,6 +19,9 @@ export const base = {
   'components.organisms.MapView.filters.1': '{to} объект из {from}',
   'components.organisms.MapView.filters.2': '{to} объекта из {from}',
   'components.organisms.MapView.filters.3': '{to} объектов из {from}',
+
+  'components.molecules.MapTilesLayer.map': 'Карта',
+  'components.molecules.MapTilesLayer.satellite': 'Спутник',
 
   'constants.filters.labels.routes': 'Маршруты',
   'constants.filters.labels.old_town': 'Старинные поселения',

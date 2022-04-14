@@ -43,6 +43,7 @@ export const hydrate = (
   return state;
 };
 
+// TODO: add tests
 export const filterData = <T extends Point | Route>(
   data: T[],
   filters?: FiltersState

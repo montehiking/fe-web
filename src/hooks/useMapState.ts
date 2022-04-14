@@ -1,6 +1,6 @@
 import { useLayoutEffect, useState } from 'react';
 
-import { Category, FiltersState, MapState, Point } from 'src/types';
+import { Category, FiltersState, LatLng, MapState, Point } from 'src/types';
 import { dehydrate, filterData, hydrate } from 'src/utils/filters';
 import { getData } from 'src/utils/geoJSON';
 import { getItem, setItem } from 'src/utils/storage';
@@ -28,10 +28,8 @@ export const useMapState = (isOwner: boolean, isEditor: boolean) => {
     });
   }, [isOwner, isEditor]);
 
-  const setPoints = ({ latLng }: google.maps.MapMouseEvent) => {
-    if (latLng && isEditor) {
-      const { lat, lng } = latLng.toJSON();
-
+  const setPoints = ({ lat, lng }: LatLng) => {
+    if (isEditor) {
       const newPoint: Point = {
         type: 'Feature',
         geometry: {
