@@ -18,5 +18,5 @@ export const MapGeolocationMarker: React.FC = () => {
     return null;
   }
 
-  return <Marker icon={icon} position={position} />;
+  return <Marker icon={icon} position={position} zIndexOffset={999} />;
 };
