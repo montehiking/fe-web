@@ -3,10 +3,10 @@ import React from 'react';
 import { MapContainer } from 'react-leaflet';
 
 import { Props as MapFilterButtonProps } from 'src/components/atoms/MapFilterButton';
-import { ControlsLayer } from 'src/components/molecules/ControlsLayer';
-import { MarkersLayer } from 'src/components/molecules/MarkersLayer';
-import { RoutesLayer } from 'src/components/molecules/RoutesLayer';
-import { TilesLayer } from 'src/components/molecules/TilesLayer';
+import { MapControlsLayer } from 'src/components/molecules/MapControlsLayer';
+import { MapMarkersLayer } from 'src/components/molecules/MapMarkersLayer';
+import { MapRoutesLayer } from 'src/components/molecules/MapRoutesLayer';
+import { MapTilesLayer } from 'src/components/molecules/MapTilesLayer';
 import { LatLng, MapState } from 'src/types';
 import { getInitialZoom } from 'src/utils/maps';
 
@@ -37,9 +37,9 @@ export const Map: React.FC<Props> = ({ filter, onClick, state }) => (
     zoom={getInitialZoom()}
     zoomControl={false}
   >
-    <TilesLayer />
-    <MarkersLayer points={state.points} onClick={onClick} />
-    <RoutesLayer routes={state.routes} />
-    <ControlsLayer filter={filter} />
+    <MapTilesLayer />
+    <MapMarkersLayer points={state.points} onClick={onClick} />
+    <MapRoutesLayer routes={state.routes} />
+    <MapControlsLayer filter={filter} />
   </MapContainer>
 );

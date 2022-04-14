@@ -20,8 +20,8 @@ export const base = {
   'components.organisms.MapView.filters.2': '{to} объекта из {from}',
   'components.organisms.MapView.filters.3': '{to} объектов из {from}',
 
-  'components.molecules.TilesLayer.map': 'Карта',
-  'components.molecules.TilesLayer.satellite': 'Спутник',
+  'components.molecules.MapTilesLayer.map': 'Карта',
+  'components.molecules.MapTilesLayer.satellite': 'Спутник',
 
   'constants.filters.labels.routes': 'Маршруты',
   'constants.filters.labels.old_town': 'Старинные поселения',

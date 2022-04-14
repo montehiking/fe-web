@@ -12,7 +12,7 @@ type Props = {
   filter: MapFilterButtonProps;
 };
 
-export const ControlsLayer: React.FC<Props> = ({ filter }) => {
+export const MapControlsLayer: React.FC<Props> = ({ filter }) => {
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {

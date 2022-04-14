@@ -7,7 +7,7 @@ type Props = {
   routes: Route[];
 };
 
-export const RoutesLayer: React.FC<Props> = ({ routes }) => (
+export const MapRoutesLayer: React.FC<Props> = ({ routes }) => (
   <>
     {routes.map(({ properties, geometry }: Route) => {
       const coordinates = geometry.coordinates.map(

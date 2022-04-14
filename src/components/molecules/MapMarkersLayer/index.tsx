@@ -11,7 +11,7 @@ type Props = {
   points: Point[];
 };
 
-export const MarkersLayer: React.FC<Props> = ({ onClick, points }) => {
+export const MapMarkersLayer: React.FC<Props> = ({ onClick, points }) => {
   const [zoom, setZoom] = useState(getInitialZoom());
 
   useMapEvents({

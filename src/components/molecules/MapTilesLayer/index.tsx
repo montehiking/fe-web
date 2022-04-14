@@ -7,13 +7,13 @@ import { msg } from 'src/i18n/Msg';
 const osmAttribution =
   '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
 
-export const TilesLayer: React.FC = () => {
+export const MapTilesLayer: React.FC = () => {
   const intl = useIntl();
 
   return (
     <LayersControl position="topleft">
       <LayersControl.BaseLayer
-        name={msg(intl, { id: 'components.molecules.TilesLayer.map' })}
+        name={msg(intl, { id: 'components.molecules.MapTilesLayer.map' })}
         checked
       >
         <TileLayer
@@ -27,7 +27,7 @@ export const TilesLayer: React.FC = () => {
       </LayersControl.BaseLayer>
 
       <LayersControl.BaseLayer
-        name={msg(intl, { id: 'components.molecules.TilesLayer.satellite' })}
+        name={msg(intl, { id: 'components.molecules.MapTilesLayer.satellite' })}
       >
         <LayerGroup>
           <TileLayer

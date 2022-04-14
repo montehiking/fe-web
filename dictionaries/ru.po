@@ -63,11 +63,11 @@ msgid "components.organisms.MapView.filters.3"
 msgstr "{to} объектов из {from}"
 
 msgctxt "base"
-msgid "components.molecules.TilesLayer.map"
+msgid "components.molecules.MapTilesLayer.map"
 msgstr "Карта"
 
 msgctxt "base"
-msgid "components.molecules.TilesLayer.satellite"
+msgid "components.molecules.MapTilesLayer.satellite"
 msgstr "Спутник"
 
 msgctxt "base"
