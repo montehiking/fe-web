@@ -90,5 +90,10 @@
   "engines": {
     "node": "14.*",
     "yarn": "1.22.*"
+  },
+  "jest": {
+    "transformIgnorePatterns": [
+      "node_modules/?!(react-leaflet)"
+    ]
   }
 }
