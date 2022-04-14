@@ -1,13 +1,13 @@
 import { Meta, Story } from '@storybook/react/types-6-0';
 
-import { MapMarker as MapMarkerComponent } from 'src/components/atoms/MapMarker';
+import { MapMarker as MapMarkerComponent } from 'src/components/molecules/MapMarker';
 import {
   decorators,
   mapDecorator,
 } from 'src/components/providers/StorybookProvider';
 
 export default {
-  title: 'Atoms/MapMarker',
+  title: 'Molecules/MapMarker',
   component: MapMarkerComponent,
   decorators: [...decorators, mapDecorator],
 } as Meta;

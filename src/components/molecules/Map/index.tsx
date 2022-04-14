@@ -1,4 +1,4 @@
-import { LatLngLiteral, latLngBounds } from 'leaflet';
+import { LatLngLiteral } from 'leaflet';
 import React from 'react';
 import { MapContainer } from 'react-leaflet';
 
@@ -23,16 +23,10 @@ const INITIAL_CENTER: LatLngLiteral = {
   lng: 19.28824681389678,
 };
 
-const bounds = latLngBounds(
-  { lat: 43.62633853568137, lng: 18.419542768970132 },
-  { lat: 41.58987278240003, lng: 20.446609323844317 }
-);
-
 export const Map: React.FC<Props> = ({ filter, onClick, state }) => (
   <MapContainer
     center={INITIAL_CENTER}
     className={styles.map}
-    maxBounds={bounds}
     maxBoundsViscosity={1.0}
     zoom={getInitialZoom()}
     zoomControl={false}

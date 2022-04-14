@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useMapEvents } from 'react-leaflet';
 
 import { MapGeolocationMarker } from 'src/components/atoms/MapGeolocationMarker';
-import { MapMarker } from 'src/components/atoms/MapMarker';
+import { MapMarker } from 'src/components/molecules/MapMarker';
 import { LatLng, Point } from 'src/types';
 import { getInitialZoom } from 'src/utils/maps';
 
