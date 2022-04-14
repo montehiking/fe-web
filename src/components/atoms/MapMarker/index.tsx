@@ -35,10 +35,10 @@ export const MapMarker: React.FC<Props> = ({
   <Marker icon={mapIcons[icon]} position={latLng} title={title}>
     <Popup>
       <h3>{title}</h3>
-      <p>{description}</p>
+      <p className="popup-description">{description}</p>
 
       {zoom && (
-        <p>
+        <p className="popup-link">
           <a
             href={createGoogleMapsURL(latLng.lat, latLng.lng, zoom)}
             rel="noreferrer"

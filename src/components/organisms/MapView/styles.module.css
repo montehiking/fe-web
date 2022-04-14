@@ -6,6 +6,6 @@
 }
 
 .code {
-  font-size: var(--FONT_SIZE_SMALL);
+  font-size: var(--FONT_SIZE_LITTLE);
   min-height: 260px;
 }
