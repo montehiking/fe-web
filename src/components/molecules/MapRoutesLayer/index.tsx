@@ -23,6 +23,7 @@ export const MapRoutesLayer: React.FC<Props> = ({ routes }) => (
           description={properties.description}
           key={`${geometry.coordinates[0][0]}${geometry.coordinates[0][1]}`}
           title={properties.title}
+          notVerified={properties.notVerified}
         />
       );
     })}

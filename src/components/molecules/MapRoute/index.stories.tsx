@@ -12,13 +12,24 @@ export default {
   decorators: [...decorators, mapDecorator],
 } as Meta;
 
-export const MapRoute: Story = () => (
+const MapRoute: Story = ({ notVerified }) => (
   <MapRouteComponent
     description="description"
     coordinates={[
       { lng: 18.893336946167118, lat: 42.26640324517598 },
       { lng: 18.926866507872543, lat: 42.20901835902516 },
     ]}
+    notVerified={notVerified}
     title="title"
   />
 );
+
+export const MapRouteVerified = MapRoute.bind({});
+MapRouteVerified.args = {
+  notVerified: false,
+};
+
+export const MapRouteNotVerified = MapRoute.bind({});
+MapRouteNotVerified.args = {
+  notVerified: true,
+};
