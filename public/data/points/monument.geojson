@@ -221,6 +221,28 @@
         "title": "Crnogorsko oro",
         "description": "скульптурная группа"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.790054321289066, 42.34311413817623]
+      },
+      "properties": {
+        "title": "Spomenik palim borcima NOB-a",
+        "description": "югославский мемориал"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.028095006942753, 42.35580077007984]
+      },
+      "properties": {
+        "title": "Spomenik žrtvama fašizma",
+        "description": "югославский мемориал"
+      }
     }
   ]
 }

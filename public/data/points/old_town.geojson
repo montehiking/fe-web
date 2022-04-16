@@ -201,6 +201,17 @@
         "description": "старинное поселение",
         "notVerified": true
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.783391714096073, 42.35912265873595]
+      },
+      "properties": {
+        "title": "Šišići",
+        "description": "старинное поселение"
+      }
     }
   ]
 }

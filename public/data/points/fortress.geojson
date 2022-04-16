@@ -515,6 +515,18 @@
         "title": "Rizon",
         "description": "иллирийская крепость"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.02342796325684, 42.353798831140914]
+      },
+      "properties": {
+        "title": "Obod",
+        "description": "несохранившаяся крепость Ивана Чрноевича",
+        "notVerified": true
+      }
     }
   ]
 }

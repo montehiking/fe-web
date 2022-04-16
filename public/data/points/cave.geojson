@@ -45,6 +45,17 @@
         "description": "пещера",
         "notVerified": true
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.005210399627686, 42.35211794603127]
+      },
+      "properties": {
+        "title": "Obodska pećina",
+        "description": "пещера"
+      }
     }
   ]
 }

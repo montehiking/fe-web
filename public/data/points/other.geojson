@@ -282,6 +282,50 @@
         "title": "Carine",
         "description": "археологический памятник"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.02840077877045, 42.356411249661676]
+      },
+      "properties": {
+        "title": "Stara Fabrica ribe",
+        "description": "Заброшенный завод по изготовлению жемчуга из рыбьей чешуи"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.01863753795624, 42.35547967129649]
+      },
+      "properties": {
+        "title": "Stari Mlin",
+        "description": "заброшенная мельница"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.00943, 42.353241]
+      },
+      "properties": {
+        "title": "Stari Mlin",
+        "description": "заброшенная мельница"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.009003043174747, 42.352316165952985]
+      },
+      "properties": {
+        "title": "Stari Mlin",
+        "description": "заброшенная мельница"
+      }
     }
   ]
 }

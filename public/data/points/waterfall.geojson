@@ -102,6 +102,17 @@
         "description": "водопад",
         "notVerified": true
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.78349363803864, 42.364854287564576]
+      },
+      "properties": {
+        "title": "Vodopad",
+        "description": "небольшой водопад"
+      }
     }
   ]
 }

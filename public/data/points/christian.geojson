@@ -227,6 +227,40 @@
         "description": "монастырь в скале",
         "notVerified": true
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.807542324066166, 42.30692732113816]
+      },
+      "properties": {
+        "title": "Manastir Podlastva",
+        "description": "монастырь XIV в."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.783059120178226, 42.359019595617745]
+      },
+      "properties": {
+        "title": "Crkva Sv. Đorđa",
+        "description": "церковь XVI в."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.769798278808597, 42.27364120074085]
+      },
+      "properties": {
+        "title": "Sveti Nikola na hridi",
+        "description": "старинная часовня на острове",
+        "notVerified": true
+      }
     }
   ]
 }
