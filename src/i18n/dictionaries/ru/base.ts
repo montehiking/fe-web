@@ -5,6 +5,10 @@ export const base = {
   'components.atoms.MapPopup.tooltip.showOnGoogleMaps':
     'Показать на Google Картах',
 
+  'components.organisms.ExportButton.text': 'Экспортировать выбранные объекты:',
+  'components.organisms.ExportButton.kmz': '.kmz',
+  'components.organisms.ExportButton.geojson': '.geojson',
+
   'components.organisms.Filters.subLabel.0': 'нет локаций',
   'components.organisms.Filters.subLabel.1': '{count} локация',
   'components.organisms.Filters.subLabel.2': '{count} локации',

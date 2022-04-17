@@ -11,6 +11,18 @@ msgid "components.atoms.MapPopup.tooltip.showOnGoogleMaps"
 msgstr "Показать на Google Картах"
 
 msgctxt "base"
+msgid "components.organisms.ExportButton.text"
+msgstr "Экспортировать выбранные объекты:"
+
+msgctxt "base"
+msgid "components.organisms.ExportButton.kmz"
+msgstr ".kmz"
+
+msgctxt "base"
+msgid "components.organisms.ExportButton.geojson"
+msgstr ".geojson"
+
+msgctxt "base"
 msgid "components.organisms.Filters.subLabel.0"
 msgstr "нет локаций"
 
