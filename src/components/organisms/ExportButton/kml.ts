@@ -16,19 +16,28 @@ export const renderFile = (
   provider: 'mapsme' | 'organicmaps',
   mapState: MapState
 ): string => {
-  const styles = ['placemark-red', 'placemark-blue', 'placemark-yellow'].map(
-    (id) =>
-      createElement('Style', {
-        id,
-        key: id,
-        children: createElement('IconStyle', {
-          children: createElement('Icon', {
-            children: createElement('href', {
-              children: `https://${providerToDomain[provider]}/placemarks/${id}.png`,
-            }),
+  const backup = console.error;
+
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  console.error = (...args: any[]) => {
+    if (args[0].includes('Use PascalCase')) {
+      return;
+    }
+    backup.call(console, ...args);
+  };
+
+  const styles = ['placemark-red', 'placemark-yellow'].map((id) =>
+    createElement('Style', {
+      id,
+      key: id,
+      children: createElement('IconStyle', {
+        children: createElement('Icon', {
+          children: createElement('href', {
+            children: `https://${providerToDomain[provider]}/placemarks/${id}.png`,
           }),
         }),
-      })
+      }),
+    })
   );
 
   const name = createElement('name', { children: 'MonteHiking' });
@@ -105,5 +114,9 @@ export const renderFile = (
     }),
   });
 
-  return xml + renderToStaticMarkup(xmlDoc);
+  const result = renderToStaticMarkup(xmlDoc);
+
+  console.error = backup;
+
+  return xml + result;
 };
