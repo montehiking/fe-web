@@ -2,9 +2,9 @@ import { DownloadOutlined } from '@ant-design/icons';
 import { saveAs } from 'file-saver';
 import JSZip from 'jszip';
 import React from 'react';
-import tokml from 'tokml';
 
 import { Button } from 'src/components/atoms/Button';
+import { renderFile } from 'src/components/organisms/ExportButton/kml';
 import { Msg } from 'src/i18n/Msg';
 import { MapState } from 'src/types';
 
@@ -21,39 +21,36 @@ const buttonProps = {
 } as const;
 
 const ExportButton: React.FC<Props> = ({ mapState }) => {
-  const data = {
-    type: 'FeatureCollection',
-    features: [...mapState.routes, ...mapState.points].map((item) => ({
-      ...item,
-      properties: {
-        name: item.properties.name,
-        description: item.properties.description,
-        ...(item.properties.category === 'routes'
-          ? {
-              stroke: item.properties.notVerified ? 'yellow' : 'blue',
-            }
-          : {
-              'marker-color': item.properties.notVerified ? 'yellow' : 'red',
-            }),
-      },
-    })),
-  };
-
   const exportKMZ = () => {
     const zip = new JSZip();
 
     zip
-      .file('montehiking.kml', tokml(data))
+      .file('MonteHiking.kml', renderFile('mapsme', mapState))
       .generateAsync({ type: 'blob' })
-      .then((content) => saveAs(content, 'montehiking.kmz'));
+      .then((content) => saveAs(content, 'MonteHiking.kmz'));
   };
 
   const exportGeoJson = () => {
+    const data = {
+      type: 'FeatureCollection',
+      name: 'MonteHiking',
+      features: [...mapState.routes, ...mapState.points].map((item) => ({
+        ...item,
+        properties: {
+          name: item.properties.name,
+          description: item.properties.description,
+          ...(item.properties.category === 'routes'
+            ? { stroke: item.properties.notVerified ? 'yellow' : 'blue' }
+            : { fill: item.properties.notVerified ? 'yellow' : 'red' }),
+        },
+      })),
+    };
+
     const content = new Blob([JSON.stringify(data)], {
       type: 'text/json;charset=utf-8',
     });
 
-    saveAs(content, 'montehiking.geojson');
+    saveAs(content, 'MonteHiking.geojson');
   };
 
   return (
