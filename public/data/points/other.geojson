@@ -8,7 +8,7 @@
         "coordinates": [18.87403428554535, 42.294409390923214]
       },
       "properties": {
-        "title": "Velja Maslina",
+        "name": "Velja Maslina",
         "description": "памятник природы"
       }
     },
@@ -19,7 +19,7 @@
         "coordinates": [18.875591026300892, 42.293835245820986]
       },
       "properties": {
-        "title": "Stari mlin",
+        "name": "Stari mlin",
         "description": "разрушенная мельница"
       }
     },
@@ -30,7 +30,7 @@
         "coordinates": [19.136201264742816, 42.094140467135325]
       },
       "properties": {
-        "title": "Barski akvadukt",
+        "name": "Barski akvadukt",
         "description": "турецкий акведук"
       }
     },
@@ -41,7 +41,7 @@
         "coordinates": [18.764200508594513, 42.43607347565511]
       },
       "properties": {
-        "title": "Boka Aquarium",
+        "name": "Boka Aquarium",
         "description": "океанариум"
       }
     },
@@ -52,7 +52,7 @@
         "coordinates": [18.837052238037078, 42.40067480734931]
       },
       "properties": {
-        "title": "Vidikovac",
+        "name": "Vidikovac",
         "description": "смотровая площадка"
       }
     },
@@ -63,7 +63,7 @@
         "coordinates": [18.8381751087869, 42.27731233872019]
       },
       "properties": {
-        "title": "Ranohrišćanska bazilika i rimske terme",
+        "name": "Ranohrišćanska bazilika i rimske terme",
         "description": "руины базилики V в. и римских бань"
       }
     },
@@ -74,7 +74,7 @@
         "coordinates": [18.88916038320632, 42.27335143895809]
       },
       "properties": {
-        "title": "Napušteni hotel",
+        "name": "Napušteni hotel",
         "description": "заброшенный отель"
       }
     },
@@ -85,7 +85,7 @@
         "coordinates": [19.266270978250073, 42.43774262697601]
       },
       "properties": {
-        "title": "Turski hamam",
+        "name": "Turski hamam",
         "description": "бывшие турецкие бани"
       }
     },
@@ -96,7 +96,7 @@
         "coordinates": [19.36194901161591, 42.72576926655998]
       },
       "properties": {
-        "title": "Stari mlin",
+        "name": "Stari mlin",
         "description": "разрушенная мельница"
       }
     },
@@ -107,7 +107,7 @@
         "coordinates": [19.33338941048785, 42.73372472095865]
       },
       "properties": {
-        "title": "Kapija želja",
+        "name": "Kapija želja",
         "description": "природная достопримечательность"
       }
     },
@@ -118,7 +118,7 @@
         "coordinates": [19.103429201725607, 43.12234997471822]
       },
       "properties": {
-        "title": "Lanovka Žabljak - Savin Kuk",
+        "name": "Lanovka Žabljak - Savin Kuk",
         "description": "канатная дорога"
       }
     },
@@ -129,7 +129,7 @@
         "coordinates": [19.1076965685424, 43.15614281816168]
       },
       "properties": {
-        "title": "Napuštena lanovka",
+        "name": "Napuštena lanovka",
         "description": "заброшенная канатная дорога"
       }
     },
@@ -140,7 +140,7 @@
         "coordinates": [19.096701496780824, 43.1635079853255]
       },
       "properties": {
-        "title": "Napuštena lanovka",
+        "name": "Napuštena lanovka",
         "description": "заброшенная канатная дорога"
       }
     },
@@ -151,7 +151,7 @@
         "coordinates": [18.84226483078344, 43.2728068224189]
       },
       "properties": {
-        "title": "Piva Dam",
+        "name": "Piva Dam",
         "description": "дамба ГЭС"
       }
     },
@@ -162,7 +162,7 @@
         "coordinates": [18.693842630309966, 42.43764927431719]
       },
       "properties": {
-        "title": "Zbirka pomorskog nasljeđa",
+        "name": "Zbirka pomorskog nasljeđa",
         "description": "музей морского наследия"
       }
     },
@@ -173,7 +173,7 @@
         "coordinates": [18.690956875984707, 42.41144808577672]
       },
       "properties": {
-        "title": "Ostrvo Sveti Marko (Stradioti)",
+        "name": "Ostrvo Sveti Marko (Stradioti)",
         "description": "заброшенный отель",
         "notVerified": true
       }
@@ -185,7 +185,7 @@
         "coordinates": [18.702947849040672, 42.39270082440593]
       },
       "properties": {
-        "title": "Prva Bokeška Glinena Industrija",
+        "name": "Prva Bokeška Glinena Industrija",
         "description": "руины старого кирпичного завода",
         "notVerified": true
       }
@@ -197,7 +197,7 @@
         "coordinates": [18.69547078509772, 42.429819467252265]
       },
       "properties": {
-        "title": "Sunčani časovnik",
+        "name": "Sunčani časovnik",
         "description": "солнечные часы"
       }
     },
@@ -208,7 +208,7 @@
         "coordinates": [18.939708173274994, 42.208534070749174]
       },
       "properties": {
-        "title": "Rimski mozaici",
+        "name": "Rimski mozaici",
         "description": "римские мозаики",
         "notVerified": true
       }
@@ -220,7 +220,7 @@
         "coordinates": [18.697051510464078, 42.512895255146155]
       },
       "properties": {
-        "title": "Rimski mozaici",
+        "name": "Rimski mozaici",
         "description": "римские мозаики",
         "notVerified": true
       }
@@ -232,7 +232,7 @@
         "coordinates": [19.129387219975303, 42.080148423000544]
       },
       "properties": {
-        "title": "Velja Maslina",
+        "name": "Velja Maslina",
         "description": "памятник природы",
         "notVerified": true
       }
@@ -244,7 +244,7 @@
         "coordinates": [19.32024121284485, 42.37527769398803]
       },
       "properties": {
-        "title": "Šipčanik (Plantaže)",
+        "name": "Šipčanik (Plantaže)",
         "description": "винодельня Плантаже",
         "notVerified": true
       }
@@ -256,7 +256,7 @@
         "coordinates": [18.70684146881104, 42.40660091013178]
       },
       "properties": {
-        "title": "Potopljeni brod",
+        "name": "Potopljeni brod",
         "description": "затонувший корабль"
       }
     },
@@ -267,7 +267,7 @@
         "coordinates": [18.770871162414554, 42.4216982968253]
       },
       "properties": {
-        "title": "Campo Santo",
+        "name": "Campo Santo",
         "description": "средневековое кладбище",
         "notVerified": true
       }
@@ -279,7 +279,7 @@
         "coordinates": [18.69433701038361, 42.51708173926494]
       },
       "properties": {
-        "title": "Carine",
+        "name": "Carine",
         "description": "археологический памятник"
       }
     },
@@ -290,7 +290,7 @@
         "coordinates": [19.02840077877045, 42.356411249661676]
       },
       "properties": {
-        "title": "Stara Fabrica ribe",
+        "name": "Stara Fabrica ribe",
         "description": "Заброшенный завод по изготовлению жемчуга из рыбьей чешуи"
       }
     },
@@ -301,7 +301,7 @@
         "coordinates": [19.01863753795624, 42.35547967129649]
       },
       "properties": {
-        "title": "Stari Mlin",
+        "name": "Stari Mlin",
         "description": "заброшенная мельница"
       }
     },
@@ -312,7 +312,7 @@
         "coordinates": [19.00943, 42.353241]
       },
       "properties": {
-        "title": "Stari Mlin",
+        "name": "Stari Mlin",
         "description": "заброшенная мельница"
       }
     },
@@ -323,7 +323,7 @@
         "coordinates": [19.009003043174747, 42.352316165952985]
       },
       "properties": {
-        "title": "Stari Mlin",
+        "name": "Stari Mlin",
         "description": "заброшенная мельница"
       }
     }

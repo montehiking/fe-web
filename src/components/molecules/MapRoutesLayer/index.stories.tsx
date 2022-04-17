@@ -24,7 +24,7 @@ const routes: Route[] = [
       ],
     },
     properties: {
-      title: 'Pržno - Manastir Praskvica',
+      name: 'Pržno - Manastir Praskvica',
       description: 'тропа',
       category: 'routes',
     },

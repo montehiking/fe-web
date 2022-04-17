@@ -8,7 +8,7 @@
         "coordinates": [18.836129307746887, 42.27860666307504]
       },
       "properties": {
-        "title": "Antička nekropola",
+        "name": "Antička nekropola",
         "description": "греко-римский некрополь"
       }
     },
@@ -19,7 +19,7 @@
         "coordinates": [19.141599125333922, 42.3938008811846]
       },
       "properties": {
-        "title": "Barutana",
+        "name": "Barutana",
         "description": "югославский мемориал"
       }
     },
@@ -30,7 +30,7 @@
         "coordinates": [19.091084003448486, 42.10087726917829]
       },
       "properties": {
-        "title": "Praistorijski tumul",
+        "name": "Praistorijski tumul",
         "description": "курган бронзового века"
       }
     },
@@ -41,7 +41,7 @@
         "coordinates": [19.205785989761353, 41.924021333862484]
       },
       "properties": {
-        "title": "Sloboda",
+        "name": "Sloboda",
         "description": "югославский мемориал"
       }
     },
@@ -52,7 +52,7 @@
         "coordinates": [18.835078033083207, 42.27751730160111]
       },
       "properties": {
-        "title": "Balerina",
+        "name": "Balerina",
         "description": "скульптура"
       }
     },
@@ -63,7 +63,7 @@
         "coordinates": [18.8375186920166, 42.399914442570854]
       },
       "properties": {
-        "title": "Njegošev mauzolej",
+        "name": "Njegošev mauzolej",
         "description": "югославский мемориал"
       }
     },
@@ -74,7 +74,7 @@
         "coordinates": [18.837909570094425, 42.278120602985496]
       },
       "properties": {
-        "title": "Rimski žrtvenik",
+        "name": "Rimski žrtvenik",
         "description": "древнеримский алтарь"
       }
     },
@@ -85,7 +85,7 @@
         "coordinates": [19.12310872922712, 43.155900801539865]
       },
       "properties": {
-        "title": "Spomenik palim borcima NOB-a",
+        "name": "Spomenik palim borcima NOB-a",
         "description": "югославский мемориал"
       }
     },
@@ -96,7 +96,7 @@
         "coordinates": [19.027730226516724, 42.355487599681254]
       },
       "properties": {
-        "title": "Spomenik žrtvama fašizma",
+        "name": "Spomenik žrtvama fašizma",
         "description": "югославский мемориал"
       }
     },
@@ -107,7 +107,7 @@
         "coordinates": [18.69898796081543, 42.43226272129293]
       },
       "properties": {
-        "title": "Spomenik palim borcima",
+        "name": "Spomenik palim borcima",
         "description": "югославский мемориал"
       }
     },
@@ -118,7 +118,7 @@
         "coordinates": [18.699523871118405, 42.432311824887556]
       },
       "properties": {
-        "title": "Spomenik palim borcima",
+        "name": "Spomenik palim borcima",
         "description": "югославский мемориал"
       }
     },
@@ -129,7 +129,7 @@
         "coordinates": [18.69787728688552, 42.43185603660826]
       },
       "properties": {
-        "title": "Icarus",
+        "name": "Icarus",
         "description": "скульптура"
       }
     },
@@ -140,7 +140,7 @@
         "coordinates": [18.722681842014918, 42.44507602617566]
       },
       "properties": {
-        "title": "Spomenik žrtvama fašizma",
+        "name": "Spomenik žrtvama fašizma",
         "description": "югославский мемориал"
       }
     },
@@ -151,7 +151,7 @@
         "coordinates": [19.091760771673147, 42.24606317361818]
       },
       "properties": {
-        "title": "Spomenik palim borcima NOB-a",
+        "name": "Spomenik palim borcima NOB-a",
         "description": "югославский мемориал"
       }
     },
@@ -162,7 +162,7 @@
         "coordinates": [19.256975075345316, 42.4441904611713]
       },
       "properties": {
-        "title": "Spomenik Vladimiru Visockomu",
+        "name": "Spomenik Vladimiru Visockomu",
         "description": "памятник"
       }
     },
@@ -173,7 +173,7 @@
         "coordinates": [19.260536581277847, 42.43916743978628]
       },
       "properties": {
-        "title": "Spomenik kralju Nikoli",
+        "name": "Spomenik kralju Nikoli",
         "description": "памятник"
       }
     },
@@ -184,7 +184,7 @@
         "coordinates": [19.260902539701533, 42.439595731752185]
       },
       "properties": {
-        "title": "Spomenik Aleksandru Puškinu i Nataliji Gončarovoj",
+        "name": "Spomenik Aleksandru Puškinu i Nataliji Gončarovoj",
         "description": "памятник"
       }
     },
@@ -195,7 +195,7 @@
         "coordinates": [19.25986075009583, 42.442168221281094]
       },
       "properties": {
-        "title": "Spomenik Petru Petroviću Njegošu",
+        "name": "Spomenik Petru Petroviću Njegošu",
         "description": "памятник"
       }
     },
@@ -206,7 +206,7 @@
         "coordinates": [19.266063272953033, 42.44961017264718]
       },
       "properties": {
-        "title": "Spomenik palim borcima NOB-a",
+        "name": "Spomenik palim borcima NOB-a",
         "description": "югославский мемориал",
         "notVerified": true
       }
@@ -218,7 +218,7 @@
         "coordinates": [19.20458590356761, 42.41528494221949]
       },
       "properties": {
-        "title": "Crnogorsko oro",
+        "name": "Crnogorsko oro",
         "description": "скульптурная группа"
       }
     },
@@ -229,7 +229,7 @@
         "coordinates": [18.790054321289066, 42.34311413817623]
       },
       "properties": {
-        "title": "Spomenik palim borcima NOB-a",
+        "name": "Spomenik palim borcima NOB-a",
         "description": "югославский мемориал"
       }
     },
@@ -240,7 +240,7 @@
         "coordinates": [19.028095006942753, 42.35580077007984]
       },
       "properties": {
-        "title": "Spomenik žrtvama fašizma",
+        "name": "Spomenik žrtvama fašizma",
         "description": "югославский мемориал"
       }
     }

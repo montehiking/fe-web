@@ -8,18 +8,18 @@ import { createGoogleMapsURL } from 'src/utils/maps';
 export type Props = {
   description: string;
   latLng?: LatLng;
-  title: string;
+  name: string;
   zoom?: Zoom;
 };
 
 export const MapPopup: React.FC<Props> = ({
   description,
   latLng,
-  title,
+  name,
   zoom,
 }) => (
   <Popup>
-    <h3>{title}</h3>
+    <h3>{name}</h3>
 
     <p className="popup-description">{description}</p>
 

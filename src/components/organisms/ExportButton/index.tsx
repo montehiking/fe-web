@@ -23,7 +23,20 @@ const buttonProps = {
 const ExportButton: React.FC<Props> = ({ mapState }) => {
   const data = {
     type: 'FeatureCollection',
-    features: [...mapState.routes, ...mapState.points],
+    features: [...mapState.routes, ...mapState.points].map((item) => ({
+      ...item,
+      properties: {
+        name: item.properties.name,
+        description: item.properties.description,
+        ...(item.properties.category === 'routes'
+          ? {
+              stroke: item.properties.notVerified ? 'yellow' : 'blue',
+            }
+          : {
+              'marker-color': item.properties.notVerified ? 'yellow' : 'red',
+            }),
+      },
+    })),
   };
 
   const exportKMZ = () => {

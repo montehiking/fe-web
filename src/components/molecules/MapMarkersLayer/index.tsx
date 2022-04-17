@@ -30,7 +30,7 @@ export const MapMarkersLayer: React.FC<Props> = ({ onClick, points }) => {
             icon={properties.notVerified ? 'yellow' : 'red'}
             key={`${lat}${lng}`}
             latLng={{ lng, lat }}
-            title={properties.title}
+            name={properties.name}
             zoom={zoom}
           />
         );

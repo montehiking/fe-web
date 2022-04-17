@@ -8,7 +8,7 @@
         "coordinates": [18.837636709213257, 42.27815022203572]
       },
       "properties": {
-        "title": "Stari Grad Budva",
+        "name": "Stari Grad Budva",
         "description": "старый город"
       }
     },
@@ -19,7 +19,7 @@
         "coordinates": [18.891446962014257, 42.255955333280376]
       },
       "properties": {
-        "title": "Sveti Stefan",
+        "name": "Sveti Stefan",
         "description": "старинное поселение"
       }
     },
@@ -30,7 +30,7 @@
         "coordinates": [19.266767864055097, 42.46789412201348]
       },
       "properties": {
-        "title": "Duklja (Diokleja)",
+        "name": "Duklja (Diokleja)",
         "description": "древнеримский город"
       }
     },
@@ -41,7 +41,7 @@
         "coordinates": [19.090697453038924, 42.24640438189973]
       },
       "properties": {
-        "title": "Virpazar",
+        "name": "Virpazar",
         "description": "старинное поселение"
       }
     },
@@ -52,7 +52,7 @@
         "coordinates": [18.556442581944513, 42.42735832676654]
       },
       "properties": {
-        "title": "Rose",
+        "name": "Rose",
         "description": "старинное поселение"
       }
     },
@@ -63,7 +63,7 @@
         "coordinates": [19.1348991174308, 42.094208602985994]
       },
       "properties": {
-        "title": "Stari Bar",
+        "name": "Stari Bar",
         "description": "старинное поселение"
       }
     },
@@ -74,7 +74,7 @@
         "coordinates": [18.769734720940864, 42.42484107773738]
       },
       "properties": {
-        "title": "Stari Grad Kotor",
+        "name": "Stari Grad Kotor",
         "description": "старый город"
       }
     },
@@ -85,7 +85,7 @@
         "coordinates": [18.77593567526932, 42.42239174099881]
       },
       "properties": {
-        "title": "Špiljari",
+        "name": "Špiljari",
         "description": "заброшенная деревня"
       }
     },
@@ -96,7 +96,7 @@
         "coordinates": [19.201881265020248, 41.92524501781725]
       },
       "properties": {
-        "title": "Stari Grad Ulcinj",
+        "name": "Stari Grad Ulcinj",
         "description": "старый город"
       }
     },
@@ -107,7 +107,7 @@
         "coordinates": [18.700078210404676, 42.48590121690976]
       },
       "properties": {
-        "title": "Perast",
+        "name": "Perast",
         "description": "старинное поселение"
       }
     },
@@ -118,7 +118,7 @@
         "coordinates": [18.537604821289786, 42.45097856548306]
       },
       "properties": {
-        "title": "Stari Grad Herceg Novi",
+        "name": "Stari Grad Herceg Novi",
         "description": "старый город"
       }
     },
@@ -129,7 +129,7 @@
         "coordinates": [18.938576051903784, 42.20643287507986]
       },
       "properties": {
-        "title": "Petrovac",
+        "name": "Petrovac",
         "description": "старинное поселение"
       }
     },
@@ -140,7 +140,7 @@
         "coordinates": [18.707488544915012, 42.45368774812099]
       },
       "properties": {
-        "title": "Gornja Lastva",
+        "name": "Gornja Lastva",
         "description": "старинное поселение"
       }
     },
@@ -151,7 +151,7 @@
         "coordinates": [18.925625581658835, 42.38902924835446]
       },
       "properties": {
-        "title": "Stari Grad Cetinje ",
+        "name": "Stari Grad Cetinje ",
         "description": "старый город"
       }
     },
@@ -162,7 +162,7 @@
         "coordinates": [19.0230979783462, 42.356521666942875]
       },
       "properties": {
-        "title": "Rijeka Crnojevića",
+        "name": "Rijeka Crnojevića",
         "description": "старинное поселение"
       }
     },
@@ -173,7 +173,7 @@
         "coordinates": [18.716346077860518, 42.47016880860117]
       },
       "properties": {
-        "title": "Donji Stoliv",
+        "name": "Donji Stoliv",
         "description": "старинное поселение",
         "notVerified": true
       }
@@ -185,7 +185,7 @@
         "coordinates": [18.715574081861472, 42.466564709089965]
       },
       "properties": {
-        "title": "Gornji Stoliv",
+        "name": "Gornji Stoliv",
         "description": "старинное поселение",
         "notVerified": true
       }
@@ -197,7 +197,7 @@
         "coordinates": [18.753419464407482, 42.44922845827137]
       },
       "properties": {
-        "title": "Prčanj",
+        "name": "Prčanj",
         "description": "старинное поселение",
         "notVerified": true
       }
@@ -209,7 +209,7 @@
         "coordinates": [18.783391714096073, 42.35912265873595]
       },
       "properties": {
-        "title": "Šišići",
+        "name": "Šišići",
         "description": "старинное поселение"
       }
     }

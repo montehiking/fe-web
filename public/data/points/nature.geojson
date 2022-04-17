@@ -8,7 +8,7 @@
         "coordinates": [18.711776919687182, 42.39074914393358]
       },
       "properties": {
-        "title": "Solila",
+        "name": "Solila",
         "description": "парк природы"
       }
     },
@@ -19,7 +19,7 @@
         "coordinates": [19.091746110217937, 42.10078754208998]
       },
       "properties": {
-        "title": "Dvorski park",
+        "name": "Dvorski park",
         "description": "парк"
       }
     },
@@ -30,7 +30,7 @@
         "coordinates": [18.822779970220854, 42.28611186037201]
       },
       "properties": {
-        "title": "Spas",
+        "name": "Spas",
         "description": "парк природы"
       }
     },
@@ -41,7 +41,7 @@
         "coordinates": [18.706616342017828, 42.42408896111287]
       },
       "properties": {
-        "title": "Župa",
+        "name": "Župa",
         "description": "городской парк"
       }
     },
@@ -52,7 +52,7 @@
         "coordinates": [19.575072587335605, 42.91610470311226]
       },
       "properties": {
-        "title": "Biogradska gora",
+        "name": "Biogradska gora",
         "description": "национальный парк"
       }
     },
@@ -63,7 +63,7 @@
         "coordinates": [19.596208032735717, 42.90047487237151]
       },
       "properties": {
-        "title": "Biogradsko jezero",
+        "name": "Biogradsko jezero",
         "description": "озеро"
       }
     },
@@ -74,7 +74,7 @@
         "coordinates": [19.37002051595729, 42.717988169825944]
       },
       "properties": {
-        "title": "Kanjon Mrtvice",
+        "name": "Kanjon Mrtvice",
         "description": "каньон"
       }
     },
@@ -85,7 +85,7 @@
         "coordinates": [19.096010247442177, 43.147244608464035]
       },
       "properties": {
-        "title": "Crno jezero",
+        "name": "Crno jezero",
         "description": "озеро"
       }
     },
@@ -96,7 +96,7 @@
         "coordinates": [19.101030925214022, 43.1538046493287]
       },
       "properties": {
-        "title": "Durmitor",
+        "name": "Durmitor",
         "description": "национальный парк"
       }
     },
@@ -107,7 +107,7 @@
         "coordinates": [19.08104075446335, 43.12244183447552]
       },
       "properties": {
-        "title": "Savin Kuk",
+        "name": "Savin Kuk",
         "description": "горная вершина"
       }
     },
@@ -118,7 +118,7 @@
         "coordinates": [18.840376555636954, 43.27215064062372]
       },
       "properties": {
-        "title": "Pivsko jezero",
+        "name": "Pivsko jezero",
         "description": "озеро"
       }
     },
@@ -129,7 +129,7 @@
         "coordinates": [19.93244754186229, 42.59616946678381]
       },
       "properties": {
-        "title": "Plavsko jezero",
+        "name": "Plavsko jezero",
         "description": "озеро"
       }
     },
@@ -140,7 +140,7 @@
         "coordinates": [19.54390525817871, 42.48482868753571]
       },
       "properties": {
-        "title": "Grlo Sokolovo",
+        "name": "Grlo Sokolovo",
         "description": "ущелье"
       }
     },
@@ -151,7 +151,7 @@
         "coordinates": [18.844720903797086, 42.38063117529631]
       },
       "properties": {
-        "title": "Lovćen",
+        "name": "Lovćen",
         "description": "национальный парк"
       }
     },
@@ -162,7 +162,7 @@
         "coordinates": [18.692337552271965, 42.43930473055805]
       },
       "properties": {
-        "title": "Park Doma Vojske",
+        "name": "Park Doma Vojske",
         "description": "городской парк",
         "notVerified": true
       }
@@ -174,7 +174,7 @@
         "coordinates": [18.925277195695877, 42.38562939336716]
       },
       "properties": {
-        "title": "Njegošev park",
+        "name": "Njegošev park",
         "description": "городской парк"
       }
     },
@@ -185,7 +185,7 @@
         "coordinates": [19.276627756451802, 42.4512073095172]
       },
       "properties": {
-        "title": "Park Gorica",
+        "name": "Park Gorica",
         "description": "городской парк"
       }
     },
@@ -196,7 +196,7 @@
         "coordinates": [19.211654663085938, 42.248788166100866]
       },
       "properties": {
-        "title": "Skadarsko jezero",
+        "name": "Skadarsko jezero",
         "description": "национальный парк"
       }
     },
@@ -207,7 +207,7 @@
         "coordinates": [19.913571098479146, 42.53068469711943]
       },
       "properties": {
-        "title": "Prokletije",
+        "name": "Prokletije",
         "description": "национальный парк"
       }
     },
@@ -218,7 +218,7 @@
         "coordinates": [19.070518520824667, 43.15562876580869]
       },
       "properties": {
-        "title": "Zminje jezero",
+        "name": "Zminje jezero",
         "description": "озеро"
       }
     },
@@ -229,7 +229,7 @@
         "coordinates": [18.847005607485563, 42.2703665039242]
       },
       "properties": {
-        "title": "Sveti Nikola",
+        "name": "Sveti Nikola",
         "description": "природная зона"
       }
     },
@@ -240,7 +240,7 @@
         "coordinates": [18.69561454284023, 42.43415137162696]
       },
       "properties": {
-        "title": "Veliki gradski park",
+        "name": "Veliki gradski park",
         "description": "городской парк"
       }
     },
@@ -251,7 +251,7 @@
         "coordinates": [19.556945236863918, 42.604723758957135]
       },
       "properties": {
-        "title": "Bukuminsko jezero",
+        "name": "Bukuminsko jezero",
         "description": "озеро",
         "notVerified": true
       }
@@ -263,7 +263,7 @@
         "coordinates": [19.368445873260498, 42.67486340903166]
       },
       "properties": {
-        "title": "Kanjon Morače",
+        "name": "Kanjon Morače",
         "description": "каньон"
       }
     },
@@ -274,7 +274,7 @@
         "coordinates": [19.258938425910642, 42.44227657613145]
       },
       "properties": {
-        "title": "Njegošev Park",
+        "name": "Njegošev Park",
         "description": "городской парк"
       }
     }

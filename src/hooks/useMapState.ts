@@ -37,7 +37,7 @@ export const useMapState = (isOwner: boolean, isEditor: boolean) => {
           coordinates: [lng, lat],
         },
         properties: {
-          title: '',
+          name: '',
           description: '',
           category: '',
           notVerified: true,

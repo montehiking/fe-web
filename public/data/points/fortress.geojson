@@ -8,7 +8,7 @@
         "coordinates": [18.826982975006104, 42.275133659000936]
       },
       "properties": {
-        "title": "Tvrđava Mogren",
+        "name": "Tvrđava Mogren",
         "description": "австро-венгерский форт"
       }
     },
@@ -19,7 +19,7 @@
         "coordinates": [18.838263198862933, 42.27712926575511]
       },
       "properties": {
-        "title": "Tvrđava Svete Marije (Citadela)",
+        "name": "Tvrđava Svete Marije (Citadela)",
         "description": "городская цитадель"
       }
     },
@@ -30,7 +30,7 @@
         "coordinates": [18.749308432526366, 42.42118354844844]
       },
       "properties": {
-        "title": "Tvrđava Vrmac",
+        "name": "Tvrđava Vrmac",
         "description": "австро-венгерский форт"
       }
     },
@@ -41,7 +41,7 @@
         "coordinates": [18.764165868455795, 42.39580006812814]
       },
       "properties": {
-        "title": "Tvrđava Goražda",
+        "name": "Tvrđava Goražda",
         "description": "австро-венгерский форт"
       }
     },
@@ -52,7 +52,7 @@
         "coordinates": [18.762486468098057, 42.403142859039846]
       },
       "properties": {
-        "title": "Tvrđava Trojica",
+        "name": "Tvrđava Trojica",
         "description": "австро-венгерский форт"
       }
     },
@@ -63,7 +63,7 @@
         "coordinates": [18.9371158182621, 42.2052360221782]
       },
       "properties": {
-        "title": "Tvrđava Kastelo",
+        "name": "Tvrđava Kastelo",
         "description": "венецианская крепость"
       }
     },
@@ -74,7 +74,7 @@
         "coordinates": [19.043902330881547, 42.13712533225962]
       },
       "properties": {
-        "title": "Tvrđava Tabija",
+        "name": "Tvrđava Tabija",
         "description": "турецкая крепость"
       }
     },
@@ -85,7 +85,7 @@
         "coordinates": [19.031547706428505, 42.15039215436781]
       },
       "properties": {
-        "title": "Tvrđava Haj-Nehaj",
+        "name": "Tvrđava Haj-Nehaj",
         "description": "венецианская крепость"
       }
     },
@@ -96,7 +96,7 @@
         "coordinates": [19.09294394288587, 42.24422638563624]
       },
       "properties": {
-        "title": "Tvrđava Besac",
+        "name": "Tvrđava Besac",
         "description": "турецкая крепость"
       }
     },
@@ -107,7 +107,7 @@
         "coordinates": [18.550161999504393, 42.42037183870199]
       },
       "properties": {
-        "title": "Tvrđava Kabala",
+        "name": "Tvrđava Kabala",
         "description": "австро-венгерский форт"
       }
     },
@@ -118,7 +118,7 @@
         "coordinates": [18.556340658001947, 42.4286327060343]
       },
       "properties": {
-        "title": "Fort Rose",
+        "name": "Fort Rose",
         "description": "венецианский форт"
       }
     },
@@ -129,7 +129,7 @@
         "coordinates": [18.774840831756592, 42.422141816711076]
       },
       "properties": {
-        "title": "Tvrđava Svetog Ivana",
+        "name": "Tvrđava Svetog Ivana",
         "description": "городская цитадель"
       }
     },
@@ -140,7 +140,7 @@
         "coordinates": [18.538098082400303, 42.45242465974347]
       },
       "properties": {
-        "title": "Tvrđava Kanli Kula",
+        "name": "Tvrđava Kanli Kula",
         "description": "турецкая крепость-тюрьма"
       }
     },
@@ -151,7 +151,7 @@
         "coordinates": [19.268178146568587, 42.43359218808875]
       },
       "properties": {
-        "title": "Tamnica Jusovača",
+        "name": "Tamnica Jusovača",
         "description": "турецкая тюрьма"
       }
     },
@@ -162,7 +162,7 @@
         "coordinates": [19.946000576019287, 42.595625635934226]
       },
       "properties": {
-        "title": "Kula Redžepagića",
+        "name": "Kula Redžepagića",
         "description": "средневековый дом-крепость"
       }
     },
@@ -173,7 +173,7 @@
         "coordinates": [19.135108928615224, 42.092712215907845]
       },
       "properties": {
-        "title": "Sahat kula",
+        "name": "Sahat kula",
         "description": "часовая башня"
       }
     },
@@ -184,7 +184,7 @@
         "coordinates": [18.68976246235343, 42.441905077120644]
       },
       "properties": {
-        "title": "Blokhauz Donja Lastva",
+        "name": "Blokhauz Donja Lastva",
         "description": "австро-венгерский блокгауз",
         "notVerified": true
       }
@@ -196,7 +196,7 @@
         "coordinates": [18.692942641151447, 42.44393182889879]
       },
       "properties": {
-        "title": "Blokhauz Ruljina",
+        "name": "Blokhauz Ruljina",
         "description": "австро-венгерский блокгауз",
         "notVerified": true
       }
@@ -208,7 +208,7 @@
         "coordinates": [18.699165567406542, 42.4398647598723]
       },
       "properties": {
-        "title": "Blokhauz Podkuk",
+        "name": "Blokhauz Podkuk",
         "description": "австро-венгерский блокгауз",
         "notVerified": true
       }
@@ -220,7 +220,7 @@
         "coordinates": [18.70119868183983, 42.43837098011306]
       },
       "properties": {
-        "title": "Blokhauz Nadkuk",
+        "name": "Blokhauz Nadkuk",
         "description": "австро-венгерский блокгауз",
         "notVerified": true
       }
@@ -232,7 +232,7 @@
         "coordinates": [18.70210942438805, 42.43231526552022]
       },
       "properties": {
-        "title": "Blokhauz Tripovići",
+        "name": "Blokhauz Tripovići",
         "description": "австро-венгерский блокгауз"
       }
     },
@@ -243,7 +243,7 @@
         "coordinates": [18.701154603020118, 42.434889042682556]
       },
       "properties": {
-        "title": "Blokhauz Mažina",
+        "name": "Blokhauz Mažina",
         "description": "австро-венгерский блокгауз"
       }
     },
@@ -254,7 +254,7 @@
         "coordinates": [18.696327209472656, 42.43148668473511]
       },
       "properties": {
-        "title": "Palata Buća-Luković",
+        "name": "Palata Buća-Luković",
         "description": "средневековый дворец-крепость"
       }
     },
@@ -265,7 +265,7 @@
         "coordinates": [18.69164293184655, 42.47584593286428]
       },
       "properties": {
-        "title": "Tvrđava Verige",
+        "name": "Tvrđava Verige",
         "description": "австро-венгерский форт",
         "notVerified": true
       }
@@ -277,7 +277,7 @@
         "coordinates": [18.689567636566203, 42.472406838205806]
       },
       "properties": {
-        "title": "Tvrđava Bijeli Pjesak",
+        "name": "Tvrđava Bijeli Pjesak",
         "description": "австро-венгерский форт",
         "notVerified": true
       }
@@ -289,7 +289,7 @@
         "coordinates": [18.756779098086778, 42.409141259053634]
       },
       "properties": {
-        "title": "Tvrđava Kavač",
+        "name": "Tvrđava Kavač",
         "description": "австро-венгерская батарея",
         "notVerified": true
       }
@@ -301,7 +301,7 @@
         "coordinates": [18.760863636062343, 42.408781459286395]
       },
       "properties": {
-        "title": "Tvrđava Škaljari",
+        "name": "Tvrđava Škaljari",
         "description": "австро-венгерская батарея",
         "notVerified": true
       }
@@ -313,7 +313,7 @@
         "coordinates": [18.713169493917952, 42.37168373700897]
       },
       "properties": {
-        "title": "Tvrđava Grabovac",
+        "name": "Tvrđava Grabovac",
         "description": "австро-венгерский форт",
         "notVerified": true
       }
@@ -325,7 +325,7 @@
         "coordinates": [18.558057969561386, 42.395507661776286]
       },
       "properties": {
-        "title": "Tvrđava Mamula",
+        "name": "Tvrđava Mamula",
         "description": "австро-венгерский форт",
         "notVerified": true
       }
@@ -337,7 +337,7 @@
         "coordinates": [18.570526222215555, 42.391444881926006]
       },
       "properties": {
-        "title": "Tvrđava Arza",
+        "name": "Tvrđava Arza",
         "description": "австро-венгерский форт",
         "notVerified": true
       }
@@ -349,7 +349,7 @@
         "coordinates": [18.69562178850174, 42.43055226061956]
       },
       "properties": {
-        "title": "Sat kula",
+        "name": "Sat kula",
         "description": "часовая башня"
       }
     },
@@ -360,7 +360,7 @@
         "coordinates": [18.970904559284172, 42.724357496536435]
       },
       "properties": {
-        "title": "Pandurica",
+        "name": "Pandurica",
         "description": "развалины замка",
         "notVerified": true
       }
@@ -372,7 +372,7 @@
         "coordinates": [19.202245473861694, 42.462101162771525]
       },
       "properties": {
-        "title": "Tvrđava Crvena Stijena (Grad)",
+        "name": "Tvrđava Crvena Stijena (Grad)",
         "description": "турецкая крепость",
         "notVerified": true
       }
@@ -384,7 +384,7 @@
         "coordinates": [19.19722849001985, 42.514150079725034]
       },
       "properties": {
-        "title": "Tvrđava Spuž",
+        "name": "Tvrđava Spuž",
         "description": "турецкая крепость",
         "notVerified": true
       }
@@ -396,7 +396,7 @@
         "coordinates": [19.258750799462504, 42.438910028859986]
       },
       "properties": {
-        "title": "Tvrđava Depedogen (Ribnica)",
+        "name": "Tvrđava Depedogen (Ribnica)",
         "description": "турецкая крепость"
       }
     },
@@ -407,7 +407,7 @@
         "coordinates": [19.260085008791442, 42.435592498629376]
       },
       "properties": {
-        "title": "Sahat kula",
+        "name": "Sahat kula",
         "description": "часовая башня"
       }
     },
@@ -418,7 +418,7 @@
         "coordinates": [18.90023946762085, 42.301301503824796]
       },
       "properties": {
-        "title": "Tvrđava Kosmač",
+        "name": "Tvrđava Kosmač",
         "description": "австро-венгерский форт",
         "notVerified": true
       }
@@ -430,7 +430,7 @@
         "coordinates": [19.119721949100494, 42.271483821614275]
       },
       "properties": {
-        "title": "Tvrđava Lesendro",
+        "name": "Tvrđava Lesendro",
         "description": "черногорская крепость",
         "notVerified": true
       }
@@ -442,7 +442,7 @@
         "coordinates": [18.7251542850063, 42.50436583541206]
       },
       "properties": {
-        "title": "Tvrđava Šanik",
+        "name": "Tvrđava Šanik",
         "description": "австро-венгерский форт",
         "notVerified": true
       }
@@ -454,7 +454,7 @@
         "coordinates": [18.728288412094116, 42.4950897704194]
       },
       "properties": {
-        "title": "Tvrđava sv. Andrija",
+        "name": "Tvrđava sv. Andrija",
         "description": "австро-венгерский форт",
         "notVerified": true
       }
@@ -466,7 +466,7 @@
         "coordinates": [18.53594623573269, 42.45000762000502]
       },
       "properties": {
-        "title": "Morska Kula (Forte Mare)",
+        "name": "Morska Kula (Forte Mare)",
         "description": "боснийская крепость"
       }
     },
@@ -477,7 +477,7 @@
         "coordinates": [18.537183701992035, 42.45169910405725]
       },
       "properties": {
-        "title": "Sahat kula",
+        "name": "Sahat kula",
         "description": "часовая башня"
       }
     },
@@ -488,7 +488,7 @@
         "coordinates": [19.3660868704319, 42.470415234559916]
       },
       "properties": {
-        "title": "Medun",
+        "name": "Medun",
         "description": "иллирийский город-крепость",
         "notVerified": true
       }
@@ -500,7 +500,7 @@
         "coordinates": [19.156352877616882, 42.316987472918996]
       },
       "properties": {
-        "title": "Žabljak Crnojevića",
+        "name": "Žabljak Crnojevića",
         "description": "черногорский город-крепость",
         "notVerified": true
       }
@@ -512,7 +512,7 @@
         "coordinates": [18.689675331115726, 42.52857095801026]
       },
       "properties": {
-        "title": "Rizon",
+        "name": "Rizon",
         "description": "иллирийская крепость"
       }
     },
@@ -523,7 +523,7 @@
         "coordinates": [19.02342796325684, 42.353798831140914]
       },
       "properties": {
-        "title": "Obod",
+        "name": "Obod",
         "description": "несохранившаяся крепость Ивана Чрноевича",
         "notVerified": true
       }

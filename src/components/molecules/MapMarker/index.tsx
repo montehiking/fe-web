@@ -28,14 +28,14 @@ export const MapMarker: React.FC<Props> = ({
   description,
   icon,
   latLng,
-  title,
+  name,
   zoom,
 }) => (
-  <Marker icon={mapIcons[icon]} position={latLng} title={title}>
+  <Marker icon={mapIcons[icon]} position={latLng} title={name}>
     <MapPopup
       description={description}
       latLng={latLng}
-      title={title}
+      name={name}
       zoom={zoom}
     />
   </Marker>
