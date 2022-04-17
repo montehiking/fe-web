@@ -112,3 +112,7 @@
 .leaflet-popup-content-wrapper .leaflet-popup-content .popup-link a:hover {
   text-decoration: underline;
 }
+
+.editor-mode .leaflet-container {
+  cursor: pointer !important;
+}

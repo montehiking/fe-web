@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import React, { useState } from 'react';
 
 import { Spin } from 'src/components/atoms/Spin';
@@ -28,7 +29,10 @@ export const MapView: React.FC = () => {
   }
 
   return (
-    <div className={styles.wrapper} data-testid="page">
+    <div
+      className={classNames(styles.wrapper, { 'editor-mode': isEditor })}
+      data-testid="page"
+    >
       <Map
         onClick={setPoints}
         state={mapState}
