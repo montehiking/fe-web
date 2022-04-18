@@ -1,8 +1,14 @@
 import { useLayoutEffect, useState } from 'react';
 
 import { Category, FiltersState, LatLng, MapState, Point } from 'src/types';
-import { dehydrate, filterData, hydrate } from 'src/utils/filters';
+import {
+  dehydrate,
+  filterData,
+  hydrate,
+  prepareLastPoint,
+} from 'src/utils/filters';
 import { getData } from 'src/utils/geoJSON';
+import { roundCoordinate } from 'src/utils/maps';
 import { getItem, setItem } from 'src/utils/storage';
 
 type State = {
@@ -34,7 +40,7 @@ export const useMapState = (isOwner: boolean, isEditor: boolean) => {
         type: 'Feature',
         geometry: {
           type: 'Point',
-          coordinates: [lng, lat],
+          coordinates: [roundCoordinate(lng), roundCoordinate(lat)],
         },
         properties: {
           name: '',
@@ -57,11 +63,7 @@ export const useMapState = (isOwner: boolean, isEditor: boolean) => {
   const filteredRoutes = filterData(state.routes, state.filters);
 
   return {
-    added: JSON.stringify(
-      state.points.filter((m) => (m.properties.category as never) === '')[0],
-      null,
-      2
-    ),
+    added: prepareLastPoint(state.points),
     filters: state.filters,
     mapState: {
       points: filteredPoints,

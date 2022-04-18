@@ -55,3 +55,20 @@ export const filterData = <T extends Point | Route>(
           (m.properties.category as never) === ''
       )
     : [];
+
+export const prepareLastPoint = (points: Point[]) => {
+  const point = points.filter(
+    (m) => (m.properties.category as never) === ''
+  )[0];
+
+  if (!point) {
+    return '';
+  }
+
+  const serialized = {
+    ...point,
+    properties: { ...point.properties, category: undefined },
+  };
+
+  return JSON.stringify(serialized, null, 2);
+};
