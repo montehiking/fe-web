@@ -5,7 +5,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.149699097352958, 41.95262753306175]
+        "coordinates": [19.149699, 41.952628]
       },
       "properties": {
         "name": "Svetionik Mendra",
@@ -16,7 +16,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.684660269783908, 42.43918827354297]
+        "coordinates": [18.68466, 42.439188]
       },
       "properties": {
         "name": "Svetionik Ponta",
@@ -27,7 +27,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.69019185676949, 42.47742212302048]
+        "coordinates": [18.690192, 42.477422]
       },
       "properties": {
         "name": "Svetionik Verige",
@@ -39,7 +39,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.66450812754341, 42.384264418634125]
+        "coordinates": [18.664508, 42.384264]
       },
       "properties": {
         "name": "Svetionik Luštica Bay",
@@ -51,7 +51,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.754079287825146, 42.44905231484165]
+        "coordinates": [18.754079, 42.449052]
       },
       "properties": {
         "name": "Svetionik Prčanj",
@@ -63,7 +63,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.695156976035822, 42.430233389941485]
+        "coordinates": [18.695157, 42.430233]
       },
       "properties": {
         "name": "Svetionik Pine",
@@ -74,7 +74,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.68825143171881, 42.48724684103894]
+        "coordinates": [18.688251, 42.487247]
       },
       "properties": {
         "name": "Svetionik Gospa od Škrpjela",

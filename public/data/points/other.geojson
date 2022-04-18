@@ -5,7 +5,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.87403428554535, 42.294409390923214]
+        "coordinates": [18.874034, 42.294409]
       },
       "properties": {
         "name": "Velja Maslina",
@@ -16,7 +16,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.875591026300892, 42.293835245820986]
+        "coordinates": [18.875591, 42.293835]
       },
       "properties": {
         "name": "Stari mlin",
@@ -27,7 +27,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.136201264742816, 42.094140467135325]
+        "coordinates": [19.136201, 42.09414]
       },
       "properties": {
         "name": "Barski akvadukt",
@@ -38,7 +38,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.764200508594513, 42.43607347565511]
+        "coordinates": [18.764201, 42.436073]
       },
       "properties": {
         "name": "Boka Aquarium",
@@ -49,7 +49,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.837052238037078, 42.40067480734931]
+        "coordinates": [18.837052, 42.400675]
       },
       "properties": {
         "name": "Vidikovac",
@@ -60,7 +60,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.8381751087869, 42.27731233872019]
+        "coordinates": [18.838175, 42.277312]
       },
       "properties": {
         "name": "Ranohrišćanska bazilika i rimske terme",
@@ -71,7 +71,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.88916038320632, 42.27335143895809]
+        "coordinates": [18.88916, 42.273351]
       },
       "properties": {
         "name": "Napušteni hotel",
@@ -82,7 +82,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.266270978250073, 42.43774262697601]
+        "coordinates": [19.266271, 42.437743]
       },
       "properties": {
         "name": "Turski hamam",
@@ -93,7 +93,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.36194901161591, 42.72576926655998]
+        "coordinates": [19.361949, 42.725769]
       },
       "properties": {
         "name": "Stari mlin",
@@ -104,7 +104,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.33338941048785, 42.73372472095865]
+        "coordinates": [19.333389, 42.733725]
       },
       "properties": {
         "name": "Kapija želja",
@@ -115,7 +115,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.103429201725607, 43.12234997471822]
+        "coordinates": [19.103429, 43.12235]
       },
       "properties": {
         "name": "Lanovka Žabljak - Savin Kuk",
@@ -126,7 +126,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.1076965685424, 43.15614281816168]
+        "coordinates": [19.107697, 43.156143]
       },
       "properties": {
         "name": "Napuštena lanovka",
@@ -137,7 +137,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.096701496780824, 43.1635079853255]
+        "coordinates": [19.096701, 43.163508]
       },
       "properties": {
         "name": "Napuštena lanovka",
@@ -148,7 +148,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.84226483078344, 43.2728068224189]
+        "coordinates": [18.842265, 43.272807]
       },
       "properties": {
         "name": "Piva Dam",
@@ -159,7 +159,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.693842630309966, 42.43764927431719]
+        "coordinates": [18.693843, 42.437649]
       },
       "properties": {
         "name": "Zbirka pomorskog nasljeđa",
@@ -170,7 +170,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.690956875984707, 42.41144808577672]
+        "coordinates": [18.690957, 42.411448]
       },
       "properties": {
         "name": "Ostrvo Sveti Marko (Stradioti)",
@@ -182,7 +182,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.702947849040672, 42.39270082440593]
+        "coordinates": [18.702948, 42.392701]
       },
       "properties": {
         "name": "Prva Bokeška Glinena Industrija",
@@ -194,7 +194,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.69547078509772, 42.429819467252265]
+        "coordinates": [18.695471, 42.429819]
       },
       "properties": {
         "name": "Sunčani časovnik",
@@ -205,7 +205,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.939708173274994, 42.208534070749174]
+        "coordinates": [18.939708, 42.208534]
       },
       "properties": {
         "name": "Rimski mozaici",
@@ -217,7 +217,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.697051510464078, 42.512895255146155]
+        "coordinates": [18.697052, 42.512895]
       },
       "properties": {
         "name": "Rimski mozaici",
@@ -229,7 +229,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.129387219975303, 42.080148423000544]
+        "coordinates": [19.129387, 42.080148]
       },
       "properties": {
         "name": "Velja Maslina",
@@ -241,7 +241,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.32024121284485, 42.37527769398803]
+        "coordinates": [19.320241, 42.375278]
       },
       "properties": {
         "name": "Šipčanik (Plantaže)",
@@ -253,7 +253,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.70684146881104, 42.40660091013178]
+        "coordinates": [18.706841, 42.406601]
       },
       "properties": {
         "name": "Potopljeni brod",
@@ -264,7 +264,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.770871162414554, 42.4216982968253]
+        "coordinates": [18.770871, 42.421698]
       },
       "properties": {
         "name": "Campo Santo",
@@ -276,7 +276,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.69433701038361, 42.51708173926494]
+        "coordinates": [18.694337, 42.517082]
       },
       "properties": {
         "name": "Carine",
@@ -287,7 +287,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.02840077877045, 42.356411249661676]
+        "coordinates": [19.028401, 42.356411]
       },
       "properties": {
         "name": "Stara Fabrica ribe",
@@ -298,7 +298,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.01863753795624, 42.35547967129649]
+        "coordinates": [19.018638, 42.35548]
       },
       "properties": {
         "name": "Stari Mlin",
@@ -320,7 +320,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.009003043174747, 42.352316165952985]
+        "coordinates": [19.009003, 42.352316]
       },
       "properties": {
         "name": "Stari Mlin",

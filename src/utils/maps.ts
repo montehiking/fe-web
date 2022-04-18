@@ -37,3 +37,6 @@ export const createGoogleMapsURL = (
     (c) => '%' + c.charCodeAt(0).toString(16)
   );
 };
+
+export const roundCoordinate = (value: Coordinate) =>
+  Math.round(value * 1000000) / 1000000;

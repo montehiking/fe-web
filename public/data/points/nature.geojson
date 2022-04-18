@@ -5,7 +5,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.711776919687182, 42.39074914393358]
+        "coordinates": [18.711777, 42.390749]
       },
       "properties": {
         "name": "Solila",
@@ -16,7 +16,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.091746110217937, 42.10078754208998]
+        "coordinates": [19.091746, 42.100788]
       },
       "properties": {
         "name": "Dvorski park",
@@ -27,7 +27,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.822779970220854, 42.28611186037201]
+        "coordinates": [18.82278, 42.286112]
       },
       "properties": {
         "name": "Spas",
@@ -38,7 +38,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.706616342017828, 42.42408896111287]
+        "coordinates": [18.706616, 42.424089]
       },
       "properties": {
         "name": "Župa",
@@ -49,7 +49,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.575072587335605, 42.91610470311226]
+        "coordinates": [19.575073, 42.916105]
       },
       "properties": {
         "name": "Biogradska gora",
@@ -60,7 +60,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.596208032735717, 42.90047487237151]
+        "coordinates": [19.596208, 42.900475]
       },
       "properties": {
         "name": "Biogradsko jezero",
@@ -71,7 +71,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.37002051595729, 42.717988169825944]
+        "coordinates": [19.370021, 42.717988]
       },
       "properties": {
         "name": "Kanjon Mrtvice",
@@ -82,7 +82,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.096010247442177, 43.147244608464035]
+        "coordinates": [19.09601, 43.147245]
       },
       "properties": {
         "name": "Crno jezero",
@@ -93,7 +93,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.101030925214022, 43.1538046493287]
+        "coordinates": [19.101031, 43.153805]
       },
       "properties": {
         "name": "Durmitor",
@@ -104,7 +104,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.08104075446335, 43.12244183447552]
+        "coordinates": [19.081041, 43.122442]
       },
       "properties": {
         "name": "Savin Kuk",
@@ -115,7 +115,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.840376555636954, 43.27215064062372]
+        "coordinates": [18.840377, 43.272151]
       },
       "properties": {
         "name": "Pivsko jezero",
@@ -126,7 +126,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.93244754186229, 42.59616946678381]
+        "coordinates": [19.932448, 42.596169]
       },
       "properties": {
         "name": "Plavsko jezero",
@@ -137,7 +137,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.54390525817871, 42.48482868753571]
+        "coordinates": [19.543905, 42.484829]
       },
       "properties": {
         "name": "Grlo Sokolovo",
@@ -148,7 +148,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.844720903797086, 42.38063117529631]
+        "coordinates": [18.844721, 42.380631]
       },
       "properties": {
         "name": "Lovćen",
@@ -159,7 +159,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.692337552271965, 42.43930473055805]
+        "coordinates": [18.692338, 42.439305]
       },
       "properties": {
         "name": "Park Doma Vojske",
@@ -171,7 +171,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.925277195695877, 42.38562939336716]
+        "coordinates": [18.925277, 42.385629]
       },
       "properties": {
         "name": "Njegošev park",
@@ -182,7 +182,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.276627756451802, 42.4512073095172]
+        "coordinates": [19.276628, 42.451207]
       },
       "properties": {
         "name": "Park Gorica",
@@ -193,7 +193,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.211654663085938, 42.248788166100866]
+        "coordinates": [19.211655, 42.248788]
       },
       "properties": {
         "name": "Skadarsko jezero",
@@ -204,7 +204,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.913571098479146, 42.53068469711943]
+        "coordinates": [19.913571, 42.530685]
       },
       "properties": {
         "name": "Prokletije",
@@ -215,7 +215,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.070518520824667, 43.15562876580869]
+        "coordinates": [19.070519, 43.155629]
       },
       "properties": {
         "name": "Zminje jezero",
@@ -226,7 +226,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.847005607485563, 42.2703665039242]
+        "coordinates": [18.847006, 42.270367]
       },
       "properties": {
         "name": "Sveti Nikola",
@@ -237,7 +237,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.69561454284023, 42.43415137162696]
+        "coordinates": [18.695615, 42.434151]
       },
       "properties": {
         "name": "Veliki gradski park",
@@ -248,7 +248,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.556945236863918, 42.604723758957135]
+        "coordinates": [19.556945, 42.604724]
       },
       "properties": {
         "name": "Bukuminsko jezero",
@@ -260,7 +260,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.368445873260498, 42.67486340903166]
+        "coordinates": [19.368446, 42.674863]
       },
       "properties": {
         "name": "Kanjon Morače",
@@ -271,7 +271,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.258938425910642, 42.44227657613145]
+        "coordinates": [19.258938, 42.442277]
       },
       "properties": {
         "name": "Njegošev Park",

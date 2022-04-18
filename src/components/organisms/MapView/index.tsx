@@ -55,7 +55,7 @@ export const MapView: React.FC = () => {
       >
         <Filters filters={filters} onChange={setFilters} mapState={mapState} />
 
-        {isEditor && <pre className={styles.code}>{added}</pre>}
+        {isEditor && <textarea className={styles.code} defaultValue={added} />}
       </Sidebar>
     </div>
   );
