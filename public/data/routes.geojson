@@ -18,7 +18,7 @@
         ]
       },
       "properties": {
-        "title": "Pržno - Manastir Praskvica",
+        "name": "Pržno - Manastir Praskvica",
         "description": "тропа"
       }
     },
@@ -54,7 +54,7 @@
         ]
       },
       "properties": {
-        "title": "Jegorov put",
+        "name": "Jegorov put",
         "description": "старая дорога"
       }
     },
@@ -83,7 +83,7 @@
         ]
       },
       "properties": {
-        "title": "Manastir Praskvica - crkva Svetog Save",
+        "name": "Manastir Praskvica - crkva Svetog Save",
         "description": "тропа"
       }
     },
@@ -137,7 +137,7 @@
         ]
       },
       "properties": {
-        "title": "Tudorovići - sv. Spiridon",
+        "name": "Tudorovići - sv. Spiridon",
         "description": "тропа"
       }
     },
@@ -185,7 +185,7 @@
         ]
       },
       "properties": {
-        "title": "Tivat - Bogdašići",
+        "name": "Tivat - Bogdašići",
         "description": "тропа"
       }
     },
@@ -220,7 +220,7 @@
         ]
       },
       "properties": {
-        "title": "Vrmac - Bogdašići",
+        "name": "Vrmac - Bogdašići",
         "description": "тропа"
       }
     },
@@ -280,7 +280,7 @@
         ]
       },
       "properties": {
-        "title": "Vrmac - Trojica",
+        "name": "Vrmac - Trojica",
         "description": "дорога"
       }
     },
@@ -351,7 +351,7 @@
         ]
       },
       "properties": {
-        "title": "Kotor - Vrmac",
+        "name": "Kotor - Vrmac",
         "description": "тропа"
       }
     },
@@ -413,7 +413,7 @@
         ]
       },
       "properties": {
-        "title": "Bogdašići - Orašje",
+        "name": "Bogdašići - Orašje",
         "description": "старая дорога"
       }
     },
@@ -440,7 +440,7 @@
         ]
       },
       "properties": {
-        "title": "Staza zdravlja",
+        "name": "Staza zdravlja",
         "description": "дорога"
       }
     },
@@ -470,7 +470,7 @@
         ]
       },
       "properties": {
-        "title": "Stara francuska staza",
+        "name": "Stara francuska staza",
         "description": "старая дорога"
       }
     },
@@ -481,7 +481,7 @@
         "coordinates": [[18.809559345245365, 42.305499093551745]]
       },
       "properties": {
-        "title": "Начало неизвестного маршрута",
+        "name": "Начало неизвестного маршрута",
         "description": "TODO",
         "notVerified": true
       }
@@ -538,7 +538,7 @@
         ]
       },
       "properties": {
-        "title": "Krapina - Lastva Grbaljska",
+        "name": "Krapina - Lastva Grbaljska",
         "description": "горная дорога"
       }
     },
@@ -579,7 +579,7 @@
         ]
       },
       "properties": {
-        "title": "Staza do Obodske pećine",
+        "name": "Staza do Obodske pećine",
         "description": "тропа"
       }
     }

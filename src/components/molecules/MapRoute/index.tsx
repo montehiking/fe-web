@@ -15,12 +15,10 @@ type Props = Omit<MapPopupProps, 'latLng' | 'zoom'> & {
 
 export const MapRoute: React.FC<Props> = ({
   coordinates,
-  description,
   notVerified,
-  title,
+  ...commonProps
 }) => {
   const icon = notVerified ? 'yellow' : 'blue';
-  const commonProps = { description, title };
 
   return (
     <>

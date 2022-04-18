@@ -17,7 +17,7 @@ const MapMarker: Story = ({ icon, zoom }) => (
     description="description"
     icon={icon}
     latLng={{ lat: 0, lng: 0 }}
-    title="title"
+    name="name"
     zoom={zoom}
   />
 );

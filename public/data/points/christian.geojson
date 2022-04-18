@@ -8,7 +8,7 @@
         "coordinates": [18.846744833369705, 42.27125921448397]
       },
       "properties": {
-        "title": "Crkva Svetog Nikole",
+        "name": "Crkva Svetog Nikole",
         "description": "часовня крестоносцев"
       }
     },
@@ -19,7 +19,7 @@
         "coordinates": [18.844456806203493, 42.29803761094782]
       },
       "properties": {
-        "title": "Manastir Podmaine (Podostrog)",
+        "name": "Manastir Podmaine (Podostrog)",
         "description": "древний монастырь"
       }
     },
@@ -30,7 +30,7 @@
         "coordinates": [18.68867932258627, 42.48681897035983]
       },
       "properties": {
-        "title": "Gospa od Škrpjela",
+        "name": "Gospa od Škrpjela",
         "description": "рукотворный остров"
       }
     },
@@ -41,7 +41,7 @@
         "coordinates": [19.26710129300291, 42.44536809066676]
       },
       "properties": {
-        "title": "Crkva Svetog Đorđa",
+        "name": "Crkva Svetog Đorđa",
         "description": "церковь IX-XI вв."
       }
     },
@@ -52,7 +52,7 @@
         "coordinates": [19.390536546707153, 42.76615077592451]
       },
       "properties": {
-        "title": "Manastir Morača",
+        "name": "Manastir Morača",
         "description": "древний монастырь"
       }
     },
@@ -63,7 +63,7 @@
         "coordinates": [18.89748103952347, 42.262384928245424]
       },
       "properties": {
-        "title": "Manastir Praskvica",
+        "name": "Manastir Praskvica",
         "description": "древний монастырь"
       }
     },
@@ -74,7 +74,7 @@
         "coordinates": [18.92172564975118, 42.38813654053419]
       },
       "properties": {
-        "title": "Cetinjski manastir",
+        "name": "Cetinjski manastir",
         "description": "древний монастырь"
       }
     },
@@ -85,7 +85,7 @@
         "coordinates": [18.707383275032043, 42.432165717248665]
       },
       "properties": {
-        "title": "Crkva Sv. Antuna Padovanskog",
+        "name": "Crkva Sv. Antuna Padovanskog",
         "description": "старинная церковь"
       }
     },
@@ -96,7 +96,7 @@
         "coordinates": [18.69837373495102, 42.45568974901303]
       },
       "properties": {
-        "title": "Crkva Svetog Vida",
+        "name": "Crkva Svetog Vida",
         "description": "древняя церковь",
         "notVerified": true
       }
@@ -108,7 +108,7 @@
         "coordinates": [18.690285734085013, 42.47736871036033]
       },
       "properties": {
-        "title": "Crkva Gospe od Anđela",
+        "name": "Crkva Gospe od Anđela",
         "description": "древняя церковь",
         "notVerified": true
       }
@@ -120,7 +120,7 @@
         "coordinates": [18.702483807680498, 42.40625235843973]
       },
       "properties": {
-        "title": "Ruševine crkve Arhanđela Mihaila",
+        "name": "Ruševine crkve Arhanđela Mihaila",
         "description": "руины церкви VI в."
       }
     },
@@ -131,7 +131,7 @@
         "coordinates": [18.678551278555904, 42.41071932549397]
       },
       "properties": {
-        "title": "Gospa od milosrđa",
+        "name": "Gospa od milosrđa",
         "description": "древний монастырь",
         "notVerified": true
       }
@@ -143,7 +143,7 @@
         "coordinates": [18.744559935570564, 42.44960266018683]
       },
       "properties": {
-        "title": "Stara župna crkva",
+        "name": "Stara župna crkva",
         "description": "древняя церковь",
         "notVerified": true
       }
@@ -155,7 +155,7 @@
         "coordinates": [18.837328255176544, 42.277359380495355]
       },
       "properties": {
-        "title": "Santa Marija in Punta",
+        "name": "Santa Marija in Punta",
         "description": "церковь IX в."
       }
     },
@@ -166,7 +166,7 @@
         "coordinates": [18.8382026553154, 42.27746456200016]
       },
       "properties": {
-        "title": "Crkva Svetog Ivana",
+        "name": "Crkva Svetog Ivana",
         "description": "собор XII в."
       }
     },
@@ -177,7 +177,7 @@
         "coordinates": [18.811957240104675, 42.315010081886435]
       },
       "properties": {
-        "title": "Crkva Svetog Ilije",
+        "name": "Crkva Svetog Ilije",
         "description": "церковь XII в."
       }
     },
@@ -188,7 +188,7 @@
         "coordinates": [18.698633909225464, 42.48614602943655]
       },
       "properties": {
-        "title": "Crkva Svetog Nikole",
+        "name": "Crkva Svetog Nikole",
         "description": "храм XVII в."
       }
     },
@@ -199,7 +199,7 @@
         "coordinates": [19.23247128725052, 42.40393710368471]
       },
       "properties": {
-        "title": "Manastir Dajbabe",
+        "name": "Manastir Dajbabe",
         "description": "монастырь в катакомбах",
         "notVerified": true
       }
@@ -211,7 +211,7 @@
         "coordinates": [19.128006992444913, 42.310004506991106]
       },
       "properties": {
-        "title": "Manastir Kom",
+        "name": "Manastir Kom",
         "description": "монастырь XV в.",
         "notVerified": true
       }
@@ -223,7 +223,7 @@
         "coordinates": [19.030534476041794, 42.67478650128153]
       },
       "properties": {
-        "title": "Manastir Ostrog",
+        "name": "Manastir Ostrog",
         "description": "монастырь в скале",
         "notVerified": true
       }
@@ -235,7 +235,7 @@
         "coordinates": [18.807542324066166, 42.30692732113816]
       },
       "properties": {
-        "title": "Manastir Podlastva",
+        "name": "Manastir Podlastva",
         "description": "монастырь XIV в."
       }
     },
@@ -246,7 +246,7 @@
         "coordinates": [18.783059120178226, 42.359019595617745]
       },
       "properties": {
-        "title": "Crkva Sv. Đorđa",
+        "name": "Crkva Sv. Đorđa",
         "description": "церковь XVI в."
       }
     },
@@ -257,7 +257,7 @@
         "coordinates": [18.769798278808597, 42.27364120074085]
       },
       "properties": {
-        "title": "Sveti Nikola na hridi",
+        "name": "Sveti Nikola na hridi",
         "description": "старинная часовня на острове",
         "notVerified": true
       }

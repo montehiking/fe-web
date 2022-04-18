@@ -39,7 +39,7 @@ type GeoJSONRouteField = {
 type GeoJSONPoint<C, G> = {
   type: 'Feature';
   properties: {
-    title: string;
+    name: string;
     description: string;
     category: C;
     notVerified?: true;

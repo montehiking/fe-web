@@ -20,7 +20,7 @@ const MapRoute: Story = ({ notVerified }) => (
       { lng: 18.926866507872543, lat: 42.20901835902516 },
     ]}
     notVerified={notVerified}
-    title="title"
+    name="name"
   />
 );
 

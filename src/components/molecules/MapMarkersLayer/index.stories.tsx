@@ -21,7 +21,7 @@ const points: Point[] = [
       coordinates: [19.091258949410722, 42.24619402714383],
     },
     properties: {
-      title: 'Most na Crmnici',
+      name: 'Most na Crmnici',
       description: 'старинный мост',
       category: 'bridge',
     },
@@ -33,7 +33,7 @@ const points: Point[] = [
       coordinates: [19.091367718576958, 43.14370625468662],
     },
     properties: {
-      title: 'Titova pećina',
+      name: 'Titova pećina',
       description: 'пещера',
       category: 'cave',
     },

@@ -1,0 +1,16 @@
+.wrapper {
+  padding: var(--SPACING_NORMAL);
+  text-align: center;
+}
+
+.buttons {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.p {
+  margin-bottom: var(--SPACING_NORMAL);
+  padding-bottom: 0;
+}

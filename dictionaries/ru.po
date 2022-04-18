@@ -1,3 +1,5 @@
+msgid ""
+msgstr ""
 "Project-Id-Version: 0.0.13\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -9,6 +11,26 @@
 msgctxt "base"
 msgid "components.atoms.MapPopup.tooltip.showOnGoogleMaps"
 msgstr "Показать на Google Картах"
+
+msgctxt "base"
+msgid "components.molecules.MapTilesLayer.map"
+msgstr "Карта"
+
+msgctxt "base"
+msgid "components.molecules.MapTilesLayer.satellite"
+msgstr "Спутник"
+
+msgctxt "base"
+msgid "components.organisms.ExportButton.geojson"
+msgstr ".geojson"
+
+msgctxt "base"
+msgid "components.organisms.ExportButton.kmz"
+msgstr ".kmz"
+
+msgctxt "base"
+msgid "components.organisms.ExportButton.text"
+msgstr "Экспортировать выбранные объекты:"
 
 msgctxt "base"
 msgid "components.organisms.Filters.subLabel.0"
@@ -63,61 +85,53 @@ msgid "components.organisms.MapView.filters.3"
 msgstr "{to} объектов из {from}"
 
 msgctxt "base"
-msgid "components.molecules.MapTilesLayer.map"
-msgstr "Карта"
-
-msgctxt "base"
-msgid "components.molecules.MapTilesLayer.satellite"
-msgstr "Спутник"
-
-msgctxt "base"
-msgid "constants.filters.labels.routes"
-msgstr "Маршруты"
-
-msgctxt "base"
-msgid "constants.filters.labels.old_town"
-msgstr "Старинные поселения"
-
-msgctxt "base"
-msgid "constants.filters.labels.fortress"
-msgstr "Форты и крепости"
-
-msgctxt "base"
-msgid "constants.filters.labels.palace"
-msgstr "Дворцы"
-
-msgctxt "base"
-msgid "constants.filters.labels.christian"
-msgstr "Часовни и монастыри"
-
-msgctxt "base"
-msgid "constants.filters.labels.islamic"
-msgstr "Мечети"
+msgid "constants.filters.labels.bridge"
+msgstr "Мосты"
 
 msgctxt "base"
 msgid "constants.filters.labels.cave"
 msgstr "Пещеры"
 
 msgctxt "base"
-msgid "constants.filters.labels.waterfall"
-msgstr "Водопады"
+msgid "constants.filters.labels.christian"
+msgstr "Часовни и монастыри"
 
 msgctxt "base"
-msgid "constants.filters.labels.nature"
-msgstr "Озера, парки, природные зоны"
+msgid "constants.filters.labels.fortress"
+msgstr "Форты и крепости"
+
+msgctxt "base"
+msgid "constants.filters.labels.islamic"
+msgstr "Мечети"
 
 msgctxt "base"
 msgid "constants.filters.labels.lighthouse"
 msgstr "Маяки"
 
 msgctxt "base"
-msgid "constants.filters.labels.bridge"
-msgstr "Мосты"
-
-msgctxt "base"
 msgid "constants.filters.labels.monument"
 msgstr "Монументы и памятники"
 
 msgctxt "base"
+msgid "constants.filters.labels.nature"
+msgstr "Озера, парки, природные зоны"
+
+msgctxt "base"
+msgid "constants.filters.labels.old_town"
+msgstr "Старинные поселения"
+
+msgctxt "base"
 msgid "constants.filters.labels.other"
 msgstr "Разное"
+
+msgctxt "base"
+msgid "constants.filters.labels.palace"
+msgstr "Дворцы"
+
+msgctxt "base"
+msgid "constants.filters.labels.routes"
+msgstr "Маршруты"
+
+msgctxt "base"
+msgid "constants.filters.labels.waterfall"
+msgstr "Водопады"
