@@ -5,9 +5,12 @@ export const base = {
   'components.atoms.MapPopup.tooltip.showOnGoogleMaps':
     'Показать на Google Картах',
 
-  'components.organisms.ExportButton.text': 'Экспортировать выбранные объекты:',
-  'components.organisms.ExportButton.kmz': '.kmz',
+  'components.molecules.MapTilesLayer.map': 'Карта',
+  'components.molecules.MapTilesLayer.satellite': 'Спутник',
+
   'components.organisms.ExportButton.geojson': '.geojson',
+  'components.organisms.ExportButton.kmz': '.kmz',
+  'components.organisms.ExportButton.text': 'Экспортировать выбранные объекты:',
 
   'components.organisms.Filters.subLabel.0': 'нет локаций',
   'components.organisms.Filters.subLabel.1': '{count} локация',
@@ -24,20 +27,17 @@ export const base = {
   'components.organisms.MapView.filters.2': '{to} объекта из {from}',
   'components.organisms.MapView.filters.3': '{to} объектов из {from}',
 
-  'components.molecules.MapTilesLayer.map': 'Карта',
-  'components.molecules.MapTilesLayer.satellite': 'Спутник',
-
-  'constants.filters.labels.routes': 'Маршруты',
-  'constants.filters.labels.old_town': 'Старинные поселения',
-  'constants.filters.labels.fortress': 'Форты и крепости',
-  'constants.filters.labels.palace': 'Дворцы',
-  'constants.filters.labels.christian': 'Часовни и монастыри',
-  'constants.filters.labels.islamic': 'Мечети',
-  'constants.filters.labels.cave': 'Пещеры',
-  'constants.filters.labels.waterfall': 'Водопады',
-  'constants.filters.labels.nature': 'Озера, парки, природные зоны',
-  'constants.filters.labels.lighthouse': 'Маяки',
   'constants.filters.labels.bridge': 'Мосты',
+  'constants.filters.labels.cave': 'Пещеры',
+  'constants.filters.labels.christian': 'Часовни и монастыри',
+  'constants.filters.labels.fortress': 'Форты и крепости',
+  'constants.filters.labels.islamic': 'Мечети',
+  'constants.filters.labels.lighthouse': 'Маяки',
   'constants.filters.labels.monument': 'Монументы и памятники',
+  'constants.filters.labels.nature': 'Озера, парки, природные зоны',
+  'constants.filters.labels.old_town': 'Старинные поселения',
   'constants.filters.labels.other': 'Разное',
+  'constants.filters.labels.palace': 'Дворцы',
+  'constants.filters.labels.routes': 'Маршруты',
+  'constants.filters.labels.waterfall': 'Водопады',
 };
