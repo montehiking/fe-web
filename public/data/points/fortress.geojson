@@ -5,7 +5,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.826982975006104, 42.275133659000936]
+        "coordinates": [18.826983, 42.275134]
       },
       "properties": {
         "name": "Tvrđava Mogren",
@@ -16,7 +16,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.838263198862933, 42.27712926575511]
+        "coordinates": [18.838263, 42.277129]
       },
       "properties": {
         "name": "Tvrđava Svete Marije (Citadela)",
@@ -27,7 +27,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.749308432526366, 42.42118354844844]
+        "coordinates": [18.749308, 42.421184]
       },
       "properties": {
         "name": "Tvrđava Vrmac",
@@ -38,7 +38,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.764165868455795, 42.39580006812814]
+        "coordinates": [18.764166, 42.3958]
       },
       "properties": {
         "name": "Tvrđava Goražda",
@@ -49,7 +49,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.762486468098057, 42.403142859039846]
+        "coordinates": [18.762486, 42.403143]
       },
       "properties": {
         "name": "Tvrđava Trojica",
@@ -60,7 +60,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.9371158182621, 42.2052360221782]
+        "coordinates": [18.937116, 42.205236]
       },
       "properties": {
         "name": "Tvrđava Kastelo",
@@ -71,7 +71,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.043902330881547, 42.13712533225962]
+        "coordinates": [19.043902, 42.137125]
       },
       "properties": {
         "name": "Tvrđava Tabija",
@@ -82,7 +82,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.031547706428505, 42.15039215436781]
+        "coordinates": [19.031548, 42.150392]
       },
       "properties": {
         "name": "Tvrđava Haj-Nehaj",
@@ -93,7 +93,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.09294394288587, 42.24422638563624]
+        "coordinates": [19.092944, 42.244226]
       },
       "properties": {
         "name": "Tvrđava Besac",
@@ -104,7 +104,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.550161999504393, 42.42037183870199]
+        "coordinates": [18.550162, 42.420372]
       },
       "properties": {
         "name": "Tvrđava Kabala",
@@ -115,7 +115,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.556340658001947, 42.4286327060343]
+        "coordinates": [18.556341, 42.428633]
       },
       "properties": {
         "name": "Fort Rose",
@@ -126,7 +126,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.774840831756592, 42.422141816711076]
+        "coordinates": [18.774841, 42.422142]
       },
       "properties": {
         "name": "Tvrđava Svetog Ivana",
@@ -137,7 +137,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.538098082400303, 42.45242465974347]
+        "coordinates": [18.538098, 42.452425]
       },
       "properties": {
         "name": "Tvrđava Kanli Kula",
@@ -148,7 +148,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.268178146568587, 42.43359218808875]
+        "coordinates": [19.268178, 42.433592]
       },
       "properties": {
         "name": "Tamnica Jusovača",
@@ -159,7 +159,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.946000576019287, 42.595625635934226]
+        "coordinates": [19.946001, 42.595626]
       },
       "properties": {
         "name": "Kula Redžepagića",
@@ -170,7 +170,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.135108928615224, 42.092712215907845]
+        "coordinates": [19.135109, 42.092712]
       },
       "properties": {
         "name": "Sahat kula",
@@ -181,7 +181,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.68976246235343, 42.441905077120644]
+        "coordinates": [18.689762, 42.441905]
       },
       "properties": {
         "name": "Blokhauz Donja Lastva",
@@ -193,7 +193,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.692942641151447, 42.44393182889879]
+        "coordinates": [18.692943, 42.443932]
       },
       "properties": {
         "name": "Blokhauz Ruljina",
@@ -205,7 +205,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.699165567406542, 42.4398647598723]
+        "coordinates": [18.699166, 42.439865]
       },
       "properties": {
         "name": "Blokhauz Podkuk",
@@ -217,7 +217,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.70119868183983, 42.43837098011306]
+        "coordinates": [18.701199, 42.438371]
       },
       "properties": {
         "name": "Blokhauz Nadkuk",
@@ -229,7 +229,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.70210942438805, 42.43231526552022]
+        "coordinates": [18.702109, 42.432315]
       },
       "properties": {
         "name": "Blokhauz Tripovići",
@@ -240,7 +240,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.701154603020118, 42.434889042682556]
+        "coordinates": [18.701155, 42.434889]
       },
       "properties": {
         "name": "Blokhauz Mažina",
@@ -251,7 +251,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.696327209472656, 42.43148668473511]
+        "coordinates": [18.696327, 42.431487]
       },
       "properties": {
         "name": "Palata Buća-Luković",
@@ -262,7 +262,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.69164293184655, 42.47584593286428]
+        "coordinates": [18.691643, 42.475846]
       },
       "properties": {
         "name": "Tvrđava Verige",
@@ -274,7 +274,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.689567636566203, 42.472406838205806]
+        "coordinates": [18.689568, 42.472407]
       },
       "properties": {
         "name": "Tvrđava Bijeli Pjesak",
@@ -286,7 +286,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.756779098086778, 42.409141259053634]
+        "coordinates": [18.756779, 42.409141]
       },
       "properties": {
         "name": "Tvrđava Kavač",
@@ -298,7 +298,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.760863636062343, 42.408781459286395]
+        "coordinates": [18.760864, 42.408781]
       },
       "properties": {
         "name": "Tvrđava Škaljari",
@@ -310,7 +310,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.713169493917952, 42.37168373700897]
+        "coordinates": [18.713169, 42.371684]
       },
       "properties": {
         "name": "Tvrđava Grabovac",
@@ -322,7 +322,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.558057969561386, 42.395507661776286]
+        "coordinates": [18.558058, 42.395508]
       },
       "properties": {
         "name": "Tvrđava Mamula",
@@ -334,7 +334,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.570526222215555, 42.391444881926006]
+        "coordinates": [18.570526, 42.391445]
       },
       "properties": {
         "name": "Tvrđava Arza",
@@ -346,7 +346,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.69562178850174, 42.43055226061956]
+        "coordinates": [18.695622, 42.430552]
       },
       "properties": {
         "name": "Sat kula",
@@ -357,7 +357,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.970904559284172, 42.724357496536435]
+        "coordinates": [18.970905, 42.724357]
       },
       "properties": {
         "name": "Pandurica",
@@ -369,7 +369,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.202245473861694, 42.462101162771525]
+        "coordinates": [19.202245, 42.462101]
       },
       "properties": {
         "name": "Tvrđava Crvena Stijena (Grad)",
@@ -381,7 +381,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.19722849001985, 42.514150079725034]
+        "coordinates": [19.197228, 42.51415]
       },
       "properties": {
         "name": "Tvrđava Spuž",
@@ -393,7 +393,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.258750799462504, 42.438910028859986]
+        "coordinates": [19.258751, 42.43891]
       },
       "properties": {
         "name": "Tvrđava Depedogen (Ribnica)",
@@ -404,7 +404,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.260085008791442, 42.435592498629376]
+        "coordinates": [19.260085, 42.435592]
       },
       "properties": {
         "name": "Sahat kula",
@@ -415,7 +415,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.90023946762085, 42.301301503824796]
+        "coordinates": [18.900239, 42.301302]
       },
       "properties": {
         "name": "Tvrđava Kosmač",
@@ -427,7 +427,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.119721949100494, 42.271483821614275]
+        "coordinates": [19.119722, 42.271484]
       },
       "properties": {
         "name": "Tvrđava Lesendro",
@@ -439,7 +439,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.7251542850063, 42.50436583541206]
+        "coordinates": [18.725154, 42.504366]
       },
       "properties": {
         "name": "Tvrđava Šanik",
@@ -451,7 +451,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.728288412094116, 42.4950897704194]
+        "coordinates": [18.728288, 42.49509]
       },
       "properties": {
         "name": "Tvrđava sv. Andrija",
@@ -463,7 +463,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.53594623573269, 42.45000762000502]
+        "coordinates": [18.535946, 42.450008]
       },
       "properties": {
         "name": "Morska Kula (Forte Mare)",
@@ -474,7 +474,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.537183701992035, 42.45169910405725]
+        "coordinates": [18.537184, 42.451699]
       },
       "properties": {
         "name": "Sahat kula",
@@ -485,7 +485,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.3660868704319, 42.470415234559916]
+        "coordinates": [19.366087, 42.470415]
       },
       "properties": {
         "name": "Medun",
@@ -497,7 +497,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.156352877616882, 42.316987472918996]
+        "coordinates": [19.156353, 42.316987]
       },
       "properties": {
         "name": "Žabljak Crnojevića",
@@ -509,7 +509,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.689675331115726, 42.52857095801026]
+        "coordinates": [18.689675, 42.528571]
       },
       "properties": {
         "name": "Rizon",
@@ -520,7 +520,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.02342796325684, 42.353798831140914]
+        "coordinates": [19.023428, 42.353799]
       },
       "properties": {
         "name": "Obod",

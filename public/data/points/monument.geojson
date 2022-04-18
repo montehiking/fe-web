@@ -5,7 +5,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.836129307746887, 42.27860666307504]
+        "coordinates": [18.836129, 42.278607]
       },
       "properties": {
         "name": "Antička nekropola",
@@ -16,7 +16,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.141599125333922, 42.3938008811846]
+        "coordinates": [19.141599, 42.393801]
       },
       "properties": {
         "name": "Barutana",
@@ -27,7 +27,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.091084003448486, 42.10087726917829]
+        "coordinates": [19.091084, 42.100877]
       },
       "properties": {
         "name": "Praistorijski tumul",
@@ -38,7 +38,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.205785989761353, 41.924021333862484]
+        "coordinates": [19.205786, 41.924021]
       },
       "properties": {
         "name": "Sloboda",
@@ -49,7 +49,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.835078033083207, 42.27751730160111]
+        "coordinates": [18.835078, 42.277517]
       },
       "properties": {
         "name": "Balerina",
@@ -60,7 +60,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.8375186920166, 42.399914442570854]
+        "coordinates": [18.837519, 42.399914]
       },
       "properties": {
         "name": "Njegošev mauzolej",
@@ -71,7 +71,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.837909570094425, 42.278120602985496]
+        "coordinates": [18.83791, 42.278121]
       },
       "properties": {
         "name": "Rimski žrtvenik",
@@ -82,7 +82,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.12310872922712, 43.155900801539865]
+        "coordinates": [19.123109, 43.155901]
       },
       "properties": {
         "name": "Spomenik palim borcima NOB-a",
@@ -93,7 +93,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.027730226516724, 42.355487599681254]
+        "coordinates": [19.02773, 42.355488]
       },
       "properties": {
         "name": "Spomenik žrtvama fašizma",
@@ -104,7 +104,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.69898796081543, 42.43226272129293]
+        "coordinates": [18.698988, 42.432263]
       },
       "properties": {
         "name": "Spomenik palim borcima",
@@ -115,7 +115,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.699523871118405, 42.432311824887556]
+        "coordinates": [18.699524, 42.432312]
       },
       "properties": {
         "name": "Spomenik palim borcima",
@@ -126,7 +126,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.69787728688552, 42.43185603660826]
+        "coordinates": [18.697877, 42.431856]
       },
       "properties": {
         "name": "Icarus",
@@ -137,7 +137,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.722681842014918, 42.44507602617566]
+        "coordinates": [18.722682, 42.445076]
       },
       "properties": {
         "name": "Spomenik žrtvama fašizma",
@@ -148,7 +148,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.091760771673147, 42.24606317361818]
+        "coordinates": [19.091761, 42.246063]
       },
       "properties": {
         "name": "Spomenik palim borcima NOB-a",
@@ -159,7 +159,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.256975075345316, 42.4441904611713]
+        "coordinates": [19.256975, 42.44419]
       },
       "properties": {
         "name": "Spomenik Vladimiru Visockomu",
@@ -170,7 +170,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.260536581277847, 42.43916743978628]
+        "coordinates": [19.260537, 42.439167]
       },
       "properties": {
         "name": "Spomenik kralju Nikoli",
@@ -181,7 +181,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.260902539701533, 42.439595731752185]
+        "coordinates": [19.260903, 42.439596]
       },
       "properties": {
         "name": "Spomenik Aleksandru Puškinu i Nataliji Gončarovoj",
@@ -192,7 +192,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.25986075009583, 42.442168221281094]
+        "coordinates": [19.259861, 42.442168]
       },
       "properties": {
         "name": "Spomenik Petru Petroviću Njegošu",
@@ -203,7 +203,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.266063272953033, 42.44961017264718]
+        "coordinates": [19.266063, 42.44961]
       },
       "properties": {
         "name": "Spomenik palim borcima NOB-a",
@@ -215,7 +215,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.20458590356761, 42.41528494221949]
+        "coordinates": [19.204586, 42.415285]
       },
       "properties": {
         "name": "Crnogorsko oro",
@@ -226,7 +226,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.790054321289066, 42.34311413817623]
+        "coordinates": [18.790054, 42.343114]
       },
       "properties": {
         "name": "Spomenik palim borcima NOB-a",
@@ -237,7 +237,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.028095006942753, 42.35580077007984]
+        "coordinates": [19.028095, 42.355801]
       },
       "properties": {
         "name": "Spomenik žrtvama fašizma",

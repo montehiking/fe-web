@@ -5,7 +5,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.94430350575417, 42.596479000761796]
+        "coordinates": [19.944304, 42.596479]
       },
       "properties": {
         "name": "Stara džamija",
@@ -16,7 +16,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.134246110916138, 42.09450860776335]
+        "coordinates": [19.134246, 42.094509]
       },
       "properties": {
         "name": "Omerbašića džamija",
@@ -27,7 +27,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.25903856754303, 42.437653138616675]
+        "coordinates": [19.259039, 42.437653]
       },
       "properties": {
         "name": "Starodoganjska džamija",

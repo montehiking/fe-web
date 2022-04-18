@@ -5,7 +5,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.885689892322766, 42.287052571960125]
+        "coordinates": [18.88569, 42.287053]
       },
       "properties": {
         "name": "Vodopad",
@@ -16,7 +16,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.681551579394878, 42.51378269755718]
+        "coordinates": [18.681552, 42.513783]
       },
       "properties": {
         "name": "Vodopad Sopot",
@@ -27,7 +27,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.899305568559605, 42.262136155407255]
+        "coordinates": [18.899306, 42.262136]
       },
       "properties": {
         "name": "Vodopad",
@@ -38,7 +38,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.30070079449733, 43.13692626480629]
+        "coordinates": [19.300701, 43.136926]
       },
       "properties": {
         "name": "Ljutica vodopad",
@@ -49,7 +49,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.035336952867528, 42.252274916923795]
+        "coordinates": [19.035337, 42.252275]
       },
       "properties": {
         "name": "Vodopad",
@@ -61,7 +61,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.141875619285656, 42.100589380092664]
+        "coordinates": [19.141876, 42.100589]
       },
       "properties": {
         "name": "Vodopad",
@@ -72,7 +72,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.149835109710693, 42.10514789445141]
+        "coordinates": [19.149835, 42.105148]
       },
       "properties": {
         "name": "Vodopad Vrteljak",
@@ -84,7 +84,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.821135198156348, 42.31854842500129]
+        "coordinates": [18.821135, 42.318548]
       },
       "properties": {
         "name": "Vodopad Krapina",
@@ -95,7 +95,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.27926242351532, 42.38355375622302]
+        "coordinates": [19.279262, 42.383554]
       },
       "properties": {
         "name": "Nijagara",
@@ -107,7 +107,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.78349363803864, 42.364854287564576]
+        "coordinates": [18.783494, 42.364854]
       },
       "properties": {
         "name": "Vodopad",

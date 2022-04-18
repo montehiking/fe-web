@@ -5,7 +5,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.846744833369705, 42.27125921448397]
+        "coordinates": [18.846745, 42.271259]
       },
       "properties": {
         "name": "Crkva Svetog Nikole",
@@ -16,7 +16,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.844456806203493, 42.29803761094782]
+        "coordinates": [18.844457, 42.298038]
       },
       "properties": {
         "name": "Manastir Podmaine (Podostrog)",
@@ -27,7 +27,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.68867932258627, 42.48681897035983]
+        "coordinates": [18.688679, 42.486819]
       },
       "properties": {
         "name": "Gospa od Škrpjela",
@@ -38,7 +38,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.26710129300291, 42.44536809066676]
+        "coordinates": [19.267101, 42.445368]
       },
       "properties": {
         "name": "Crkva Svetog Đorđa",
@@ -49,7 +49,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.390536546707153, 42.76615077592451]
+        "coordinates": [19.390537, 42.766151]
       },
       "properties": {
         "name": "Manastir Morača",
@@ -60,7 +60,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.89748103952347, 42.262384928245424]
+        "coordinates": [18.897481, 42.262385]
       },
       "properties": {
         "name": "Manastir Praskvica",
@@ -71,7 +71,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.92172564975118, 42.38813654053419]
+        "coordinates": [18.921726, 42.388137]
       },
       "properties": {
         "name": "Cetinjski manastir",
@@ -82,7 +82,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.707383275032043, 42.432165717248665]
+        "coordinates": [18.707383, 42.432166]
       },
       "properties": {
         "name": "Crkva Sv. Antuna Padovanskog",
@@ -93,7 +93,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.69837373495102, 42.45568974901303]
+        "coordinates": [18.698374, 42.45569]
       },
       "properties": {
         "name": "Crkva Svetog Vida",
@@ -105,7 +105,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.690285734085013, 42.47736871036033]
+        "coordinates": [18.690286, 42.477369]
       },
       "properties": {
         "name": "Crkva Gospe od Anđela",
@@ -117,7 +117,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.702483807680498, 42.40625235843973]
+        "coordinates": [18.702484, 42.406252]
       },
       "properties": {
         "name": "Ruševine crkve Arhanđela Mihaila",
@@ -128,7 +128,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.678551278555904, 42.41071932549397]
+        "coordinates": [18.678551, 42.410719]
       },
       "properties": {
         "name": "Gospa od milosrđa",
@@ -140,7 +140,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.744559935570564, 42.44960266018683]
+        "coordinates": [18.74456, 42.449603]
       },
       "properties": {
         "name": "Stara župna crkva",
@@ -152,7 +152,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.837328255176544, 42.277359380495355]
+        "coordinates": [18.837328, 42.277359]
       },
       "properties": {
         "name": "Santa Marija in Punta",
@@ -163,7 +163,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.8382026553154, 42.27746456200016]
+        "coordinates": [18.838203, 42.277465]
       },
       "properties": {
         "name": "Crkva Svetog Ivana",
@@ -174,7 +174,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.811957240104675, 42.315010081886435]
+        "coordinates": [18.811957, 42.31501]
       },
       "properties": {
         "name": "Crkva Svetog Ilije",
@@ -185,7 +185,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.698633909225464, 42.48614602943655]
+        "coordinates": [18.698634, 42.486146]
       },
       "properties": {
         "name": "Crkva Svetog Nikole",
@@ -196,7 +196,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.23247128725052, 42.40393710368471]
+        "coordinates": [19.232471, 42.403937]
       },
       "properties": {
         "name": "Manastir Dajbabe",
@@ -208,7 +208,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.128006992444913, 42.310004506991106]
+        "coordinates": [19.128007, 42.310005]
       },
       "properties": {
         "name": "Manastir Kom",
@@ -220,7 +220,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.030534476041794, 42.67478650128153]
+        "coordinates": [19.030534, 42.674787]
       },
       "properties": {
         "name": "Manastir Ostrog",
@@ -232,7 +232,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.807542324066166, 42.30692732113816]
+        "coordinates": [18.807542, 42.306927]
       },
       "properties": {
         "name": "Manastir Podlastva",
@@ -243,7 +243,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.783059120178226, 42.359019595617745]
+        "coordinates": [18.783059, 42.35902]
       },
       "properties": {
         "name": "Crkva Sv. Đorđa",
@@ -254,7 +254,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.769798278808597, 42.27364120074085]
+        "coordinates": [18.769798, 42.273641]
       },
       "properties": {
         "name": "Sveti Nikola na hridi",

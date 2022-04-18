@@ -5,7 +5,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.84341023914012, 42.297946797761924]
+        "coordinates": [18.84341, 42.297947]
       },
       "properties": {
         "name": "Most na Grđevici",
@@ -16,7 +16,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.091258949410722, 42.24619402714383]
+        "coordinates": [19.091259, 42.246194]
       },
       "properties": {
         "name": "Most na Crmnici",
@@ -27,7 +27,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.362528920173645, 42.725428368443445]
+        "coordinates": [19.362529, 42.725428]
       },
       "properties": {
         "name": "Danilov most",
@@ -38,7 +38,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.34087575612702, 42.7289781067489]
+        "coordinates": [19.340876, 42.728978]
       },
       "properties": {
         "name": "Ruševine starog mosta",
@@ -49,7 +49,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.898009750156625, 42.26136992620115]
+        "coordinates": [18.89801, 42.26137]
       },
       "properties": {
         "name": "Stari most",
@@ -60,7 +60,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.8994665011005, 42.26217188607564]
+        "coordinates": [18.899467, 42.262172]
       },
       "properties": {
         "name": "Stari most",
@@ -71,7 +71,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.29499217361109, 43.15027563817881]
+        "coordinates": [19.294992, 43.150276]
       },
       "properties": {
         "name": "Most na Đurđevića Tari",
@@ -82,7 +82,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.024382829666138, 42.355804734252104]
+        "coordinates": [19.024383, 42.355805]
       },
       "properties": {
         "name": "Most na Rijeke Crnojevića",
@@ -93,7 +93,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.960340713537292, 42.73038604754991]
+        "coordinates": [18.960341, 42.730386]
       },
       "properties": {
         "name": "Carev most",
@@ -105,7 +105,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.258835496891496, 42.43948514953294]
+        "coordinates": [19.258835, 42.439485]
       },
       "properties": {
         "name": "Most Ribnica",
@@ -116,7 +116,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.14221812495832, 42.10018001012829]
+        "coordinates": [19.142218, 42.10018]
       },
       "properties": {
         "name": "Most Menke",
@@ -127,7 +127,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.14212383553045, 42.10048007062716]
+        "coordinates": [19.142124, 42.10048]
       },
       "properties": {
         "name": "Most Turčini",
