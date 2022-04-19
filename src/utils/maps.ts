@@ -1,4 +1,4 @@
-import { Coordinate, Zoom } from 'src/types';
+import { Coordinate, Place, Zoom } from 'src/types';
 
 export const getInitialZoom = (): Zoom => (window.innerWidth > 700 ? 9 : 8);
 
@@ -24,11 +24,7 @@ export const latLngToDMS = (lat: Coordinate, lng: Coordinate) => {
   return `${first}+${second}`;
 };
 
-export const createGoogleMapsURL = (
-  lat: Coordinate,
-  lng: Coordinate,
-  zoom: Zoom
-) => {
+export const createGoogleMapsURL = ({ lat, lng, zoom }: Place) => {
   const dms = latLngToDMS(lat, lng);
   const url = `https://www.google.com/maps/place/${dms}/@${lat},${lng},${zoom}z`;
 

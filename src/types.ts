@@ -9,6 +9,10 @@ export type LatLng = {
   lng: Coordinate;
 };
 
+export type Place = LatLng & {
+  zoom: Zoom;
+};
+
 export type valueof<T> = T[keyof T];
 
 export type Category =

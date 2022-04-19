@@ -1,4 +1,3 @@
-import { LatLngLiteral } from 'leaflet';
 import React from 'react';
 import { MapContainer } from 'react-leaflet';
 
@@ -7,18 +6,18 @@ import { MapControlsLayer } from 'src/components/molecules/MapControlsLayer';
 import { MapMarkersLayer } from 'src/components/molecules/MapMarkersLayer';
 import { MapRoutesLayer } from 'src/components/molecules/MapRoutesLayer';
 import { MapTilesLayer } from 'src/components/molecules/MapTilesLayer';
-import { LatLng, MapState } from 'src/types';
+import { LatLng, MapState, Place } from 'src/types';
 import { getInitialZoom } from 'src/utils/maps';
 
 import styles from 'src/components/molecules/Map/styles.module.css';
 
 type Props = {
   filter: MapFilterButtonProps;
-  onClick: (latLng: LatLng) => void;
+  onClick: (latLng: Place) => void;
   state: MapState;
 };
 
-const INITIAL_CENTER: LatLngLiteral = {
+const INITIAL_CENTER: LatLng = {
   lat: 42.729601871834504,
   lng: 19.28824681389678,
 };

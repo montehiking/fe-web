@@ -1,6 +1,7 @@
 import { useLayoutEffect, useState } from 'react';
 
-import { Category, FiltersState, LatLng, MapState, Point } from 'src/types';
+import { redirect } from 'src/navigation';
+import { Category, FiltersState, MapState, Place, Point } from 'src/types';
 import {
   dehydrate,
   filterData,
@@ -34,13 +35,21 @@ export const useMapState = (isOwner: boolean, isEditor: boolean) => {
     });
   }, [isOwner, isEditor]);
 
-  const setPoints = ({ lat, lng }: LatLng) => {
+  const setPoints = ({ lat, lng, zoom }: Place) => {
+    const place = {
+      lat: roundCoordinate(lat),
+      lng: roundCoordinate(lng),
+      zoom,
+    };
+
+    redirect(place);
+
     if (isEditor) {
       const newPoint: Point = {
         type: 'Feature',
         geometry: {
           type: 'Point',
-          coordinates: [roundCoordinate(lng), roundCoordinate(lat)],
+          coordinates: [place.lng, place.lat],
         },
         properties: {
           name: '',

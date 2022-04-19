@@ -3,11 +3,11 @@ import { useMapEvents } from 'react-leaflet';
 
 import { MapGeolocationMarker } from 'src/components/atoms/MapGeolocationMarker';
 import { MapMarker } from 'src/components/molecules/MapMarker';
-import { LatLng, Point } from 'src/types';
+import { Place, Point } from 'src/types';
 import { getInitialZoom } from 'src/utils/maps';
 
 type Props = {
-  onClick: (latLng: LatLng) => void;
+  onClick: (latLng: Place) => void;
   points: Point[];
 };
 
@@ -16,7 +16,7 @@ export const MapMarkersLayer: React.FC<Props> = ({ onClick, points }) => {
 
   useMapEvents({
     zoomend: (event) => setZoom(event.target._zoom),
-    click: (event) => onClick(event.latlng),
+    click: (event) => onClick({ ...event.latlng, zoom: event.target._zoom }),
   });
 
   return (
@@ -31,6 +31,7 @@ export const MapMarkersLayer: React.FC<Props> = ({ onClick, points }) => {
             key={`${lat}${lng}`}
             latLng={{ lng, lat }}
             name={properties.name}
+            onClick={onClick}
             zoom={zoom}
           />
         );
