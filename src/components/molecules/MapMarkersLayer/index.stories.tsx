@@ -41,5 +41,9 @@ const points: Point[] = [
 ];
 
 export const MapMarkersLayer: Story = () => (
-  <MapMarkersLayerComponent onClick={console.log} points={points} />
+  <MapMarkersLayerComponent
+    initialZoom={9}
+    onClick={console.log}
+    points={points}
+  />
 );
