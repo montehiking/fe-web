@@ -13,6 +13,8 @@ export type Place = LatLng & {
   zoom: Zoom;
 };
 
+export type SetPlace = (mode: 'new' | 'existing', place: Place) => void;
+
 export type valueof<T> = T[keyof T];
 
 export type Category =

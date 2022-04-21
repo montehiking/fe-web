@@ -1,4 +1,4 @@
-import { POINT_ROUTES } from 'src/constants';
+import { POINT_ROUTES, POINT_TEMP } from 'src/constants';
 import { labels } from 'src/constants/filters';
 import { Category, FiltersState, Point, Route } from 'src/types';
 
@@ -52,14 +52,12 @@ export const filterData = <T extends Point | Route>(
     ? data.filter(
         (m) =>
           filters[m.properties.category]?.checked ??
-          (m.properties.category as never) === ''
+          m.properties.category === POINT_TEMP
       )
     : [];
 
 export const prepareLastPoint = (points: Point[]) => {
-  const point = points.filter(
-    (m) => (m.properties.category as never) === ''
-  )[0];
+  const point = points.filter((m) => m.properties.category === POINT_TEMP)[0];
 
   if (!point) {
     return '';
@@ -67,7 +65,12 @@ export const prepareLastPoint = (points: Point[]) => {
 
   const serialized = {
     ...point,
-    properties: { ...point.properties, category: undefined },
+    properties: {
+      ...point.properties,
+      name: '',
+      description: '',
+      category: undefined,
+    },
   };
 
   return JSON.stringify(serialized, null, 2);

@@ -40,4 +40,7 @@ export const base = {
   'constants.filters.labels.palace': 'Дворцы',
   'constants.filters.labels.routes': 'Маршруты',
   'constants.filters.labels.waterfall': 'Водопады',
+
+  'hooks.useMapState.newPoint.name': 'Неизвестное место',
+  'hooks.useMapState.newPoint.description': 'новая локация',
 };

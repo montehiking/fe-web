@@ -6,7 +6,7 @@ import {
   MapPopup,
   Props as MapPopupProps,
 } from 'src/components/atoms/MapPopup';
-import { LatLng, Place, Zoom } from 'src/types';
+import { LatLng, SetPlace, Zoom } from 'src/types';
 
 const iconOptions: BaseIconOptions = {
   iconSize: new Point(27, 43),
@@ -15,6 +15,7 @@ const iconOptions: BaseIconOptions = {
 
 const mapIcons = {
   blue: new Icon({ iconUrl: '/pin/blue.svg', ...iconOptions }),
+  gray: new Icon({ iconUrl: '/pin/gray.svg', ...iconOptions }),
   red: new Icon({ iconUrl: '/pin/red.svg', ...iconOptions }),
   yellow: new Icon({ iconUrl: '/pin/yellow.svg', ...iconOptions }),
 };
@@ -22,7 +23,7 @@ const mapIcons = {
 type Props = Omit<MapPopupProps, 'place'> & {
   icon: keyof typeof mapIcons;
   latLng: LatLng;
-  onClick?: (place: Place) => void;
+  onClick?: SetPlace;
   zoom?: Zoom;
 };
 
@@ -41,7 +42,10 @@ export const MapMarker: React.FC<Props> = ({
     eventHandlers={
       onClick && {
         click: (event) =>
-          onClick({ ...event.latlng, zoom: event.target._map._zoom }),
+          onClick('existing', {
+            ...event.latlng,
+            zoom: event.target._map._zoom,
+          }),
       }
     }
   >

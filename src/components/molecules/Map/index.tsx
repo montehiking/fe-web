@@ -6,14 +6,14 @@ import { MapControlsLayer } from 'src/components/molecules/MapControlsLayer';
 import { MapMarkersLayer } from 'src/components/molecules/MapMarkersLayer';
 import { MapRoutesLayer } from 'src/components/molecules/MapRoutesLayer';
 import { MapTilesLayer } from 'src/components/molecules/MapTilesLayer';
-import { LatLng, MapState, Place } from 'src/types';
+import { LatLng, MapState, SetPlace } from 'src/types';
 import { getInitialZoom } from 'src/utils/maps';
 
 import styles from 'src/components/molecules/Map/styles.module.css';
 
 type Props = {
   filter: MapFilterButtonProps;
-  onClick: (latLng: Place) => void;
+  onClick: SetPlace;
   state: MapState;
 };
 

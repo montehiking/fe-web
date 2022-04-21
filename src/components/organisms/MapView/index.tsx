@@ -17,7 +17,7 @@ export const MapView: React.FC = () => {
   const isEditor = searchString === 'editor';
 
   const { added, counter, mapState, filters, setFilters, setPoints } =
-    useMapState(isOwner, isEditor);
+    useMapState(isOwner || isEditor);
   const [isSidebarVisible, setIsSidebarVisible] = useState(false);
 
   if (!filters) {

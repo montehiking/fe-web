@@ -6,7 +6,9 @@ import { Place } from 'src/types';
 const history = createBrowserHistory();
 
 export const redirect = ({ lat, lng, zoom }: Place): void => {
-  history.replace(`/place/@${lat},${lng},${zoom}z`, {});
+  const { search } = history.location;
+
+  history.replace(`/place/@${lat},${lng},${zoom}z${search}`, {});
 };
 
 export const usePlace = (): Place | undefined => {

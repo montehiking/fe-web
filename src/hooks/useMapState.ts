@@ -1,7 +1,10 @@
 import { useLayoutEffect, useState } from 'react';
+import { useIntl } from 'react-intl';
 
+import { POINT_TEMP } from 'src/constants';
+import { msg } from 'src/i18n/Msg';
 import { redirect } from 'src/navigation';
-import { Category, FiltersState, MapState, Place, Point } from 'src/types';
+import { Category, FiltersState, MapState, Point, SetPlace } from 'src/types';
 import {
   dehydrate,
   filterData,
@@ -18,7 +21,9 @@ type State = {
 
 const hiddenFilters = getItem<Category[]>('filters', []);
 
-export const useMapState = (isOwner: boolean, isEditor: boolean) => {
+export const useMapState = (isEditor: boolean) => {
+  const intl = useIntl();
+
   const [state, setState] = useState<State>({
     filters: undefined,
     points: [],
@@ -26,16 +31,16 @@ export const useMapState = (isOwner: boolean, isEditor: boolean) => {
   });
 
   useLayoutEffect(() => {
-    getData(isOwner || isEditor).then(({ points, routes }) => {
+    getData(isEditor).then(({ points, routes }) => {
       setState({
         filters: hydrate(points, routes, hiddenFilters),
         points,
         routes,
       });
     });
-  }, [isOwner, isEditor]);
+  }, [isEditor]);
 
-  const setPoints = ({ lat, lng, zoom }: Place) => {
+  const setPoints: SetPlace = (mode, { lat, lng, zoom }) => {
     const place = {
       lat: roundCoordinate(lat),
       lng: roundCoordinate(lng),
@@ -44,7 +49,7 @@ export const useMapState = (isOwner: boolean, isEditor: boolean) => {
 
     redirect(place);
 
-    if (isEditor) {
+    if (mode === 'new') {
       const newPoint: Point = {
         type: 'Feature',
         geometry: {
@@ -52,14 +57,22 @@ export const useMapState = (isOwner: boolean, isEditor: boolean) => {
           coordinates: [place.lng, place.lat],
         },
         properties: {
-          name: '',
-          description: '',
-          category: '',
+          name: msg(intl, { id: 'hooks.useMapState.newPoint.name' }),
+          description: msg(intl, {
+            id: 'hooks.useMapState.newPoint.description',
+          }),
+          category: POINT_TEMP,
           notVerified: true,
         },
       } as never;
 
-      setState((state) => ({ ...state, points: [newPoint, ...state.points] }));
+      setState((state) => {
+        const points = state.points.filter(
+          (point) => point.properties.category !== POINT_TEMP
+        );
+
+        return { ...state, points: [newPoint, ...points] };
+      });
     }
   };
 
