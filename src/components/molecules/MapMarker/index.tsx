@@ -1,5 +1,5 @@
 import { BaseIconOptions, Icon, Point } from 'leaflet';
-import React from 'react';
+import React, { Ref } from 'react';
 import { Marker } from 'react-leaflet';
 
 import {
@@ -20,7 +20,11 @@ const mapIcons = {
   yellow: new Icon({ iconUrl: '/pin/yellow.svg', ...iconOptions }),
 };
 
+// eslint-disable-next-line @typescript-eslint/no-redeclare
+export type Marker = typeof Marker;
+
 type Props = Omit<MapPopupProps, 'place'> & {
+  activeRef?: Ref<Marker>;
   icon: keyof typeof mapIcons;
   latLng: LatLng;
   onClick?: SetPlace;
@@ -28,6 +32,7 @@ type Props = Omit<MapPopupProps, 'place'> & {
 };
 
 export const MapMarker: React.FC<Props> = ({
+  activeRef,
   description,
   icon,
   latLng,
@@ -36,6 +41,7 @@ export const MapMarker: React.FC<Props> = ({
   zoom,
 }) => (
   <Marker
+    ref={activeRef as never}
     icon={mapIcons[icon]}
     position={latLng}
     title={name}

@@ -16,8 +16,16 @@ export const MapView: React.FC = () => {
   const isOwner = searchString === 'owner';
   const isEditor = searchString === 'editor';
 
-  const { added, counter, mapState, filters, setFilters, setPoints } =
-    useMapState(isOwner || isEditor);
+  const {
+    added,
+    counter,
+    filters,
+    initial,
+    mapState,
+    setFilters,
+    setPoints,
+    setZoom,
+  } = useMapState(isOwner || isEditor);
   const [isSidebarVisible, setIsSidebarVisible] = useState(false);
 
   if (!filters) {
@@ -34,12 +42,14 @@ export const MapView: React.FC = () => {
       data-testid="page"
     >
       <Map
-        onClick={setPoints}
-        state={mapState}
         filter={{
           ...counter,
           onClick: () => setIsSidebarVisible(!isSidebarVisible),
         }}
+        initial={initial}
+        onClick={setPoints}
+        onZoom={setZoom}
+        state={mapState}
       />
 
       <Sidebar

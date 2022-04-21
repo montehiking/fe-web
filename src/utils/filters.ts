@@ -1,6 +1,9 @@
+import { IntlShape } from 'react-intl';
+
 import { POINT_ROUTES, POINT_TEMP } from 'src/constants';
 import { labels } from 'src/constants/filters';
-import { Category, FiltersState, Point, Route } from 'src/types';
+import { msg } from 'src/i18n/Msg';
+import { Category, FiltersState, LatLng, Point, Route } from 'src/types';
 
 export const categories = Object.keys(labels) as Category[];
 
@@ -75,3 +78,24 @@ export const prepareLastPoint = (points: Point[]) => {
 
   return JSON.stringify(serialized, null, 2);
 };
+
+export const createPoint = (
+  intl: IntlShape,
+  latLng: LatLng,
+  active: boolean
+): Point => ({
+  type: 'Feature',
+  geometry: {
+    type: 'Point',
+    coordinates: [latLng.lng, latLng.lat],
+  },
+  properties: {
+    active,
+    name: msg(intl, { id: 'utils.filters.newPoint.name' }),
+    description: msg(intl, {
+      id: 'utils.filters.newPoint.description',
+    }),
+    category: POINT_TEMP,
+    notVerified: true,
+  },
+});

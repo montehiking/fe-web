@@ -14,6 +14,7 @@ export type Place = LatLng & {
 };
 
 export type SetPlace = (mode: 'new' | 'existing', place: Place) => void;
+export type SetZoom = (zoom: Zoom) => void;
 
 export type valueof<T> = T[keyof T];
 
@@ -42,12 +43,13 @@ type GeoJSONRouteField = {
   coordinates: [number, number][];
 };
 
-type GeoJSONPoint<C, G> = {
+type GeoJSONPoint<A, C, G> = {
   type: 'Feature';
   properties: {
-    name: string;
-    description: string;
+    active?: A;
     category: C;
+    description: string;
+    name: string;
     notVerified?: true;
   };
   geometry: G;
@@ -55,11 +57,11 @@ type GeoJSONPoint<C, G> = {
 
 export type GeoJSON = {
   type: 'FeatureCollection';
-  features: GeoJSONPoint<never, GeoJSONPointField | GeoJSONRouteField>[];
+  features: GeoJSONPoint<never, never, GeoJSONPointField | GeoJSONRouteField>[];
 };
 
-export type Point = GeoJSONPoint<Category, GeoJSONPointField>;
-export type Route = GeoJSONPoint<Category, GeoJSONRouteField>;
+export type Point = GeoJSONPoint<boolean, Category, GeoJSONPointField>;
+export type Route = GeoJSONPoint<never, Category, GeoJSONRouteField>;
 
 export type MapState = {
   points: Point[];
