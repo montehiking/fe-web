@@ -37,7 +37,7 @@ export const Map: React.FC<Props> = ({
       initialZoom={zoom}
       onClick={onClick}
       onZoom={onZoom}
-      points={state.points}
+      points={state.newPoint ? [...state.points, state.newPoint] : state.points}
     />
     <MapRoutesLayer routes={state.routes} />
     <MapControlsLayer filter={filter} />

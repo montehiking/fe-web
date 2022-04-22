@@ -7,6 +7,7 @@ import { Sidebar } from 'src/components/molecules/Sidebar';
 import { Filters } from 'src/components/organisms/Filters';
 import { useMapState } from 'src/hooks/useMapState';
 import { getWithDecline } from 'src/i18n/Decline';
+import { prepareTempPoint } from 'src/utils/filters';
 
 import styles from 'src/components/organisms/MapView/styles.module.css';
 
@@ -17,7 +18,6 @@ export const MapView: React.FC = () => {
   const isEditor = searchString === 'editor';
 
   const {
-    added,
     counter,
     filters,
     initial,
@@ -65,7 +65,12 @@ export const MapView: React.FC = () => {
       >
         <Filters filters={filters} onChange={setFilters} mapState={mapState} />
 
-        {isEditor && <textarea className={styles.code} defaultValue={added} />}
+        {isEditor && (
+          <textarea
+            className={styles.code}
+            defaultValue={prepareTempPoint(mapState.newPoint)}
+          />
+        )}
       </Sidebar>
     </div>
   );

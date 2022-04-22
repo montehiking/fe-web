@@ -11,13 +11,7 @@ import {
   SetPlace,
   SetZoom,
 } from 'src/types';
-import {
-  createPoint,
-  dehydrate,
-  filterData,
-  hydrate,
-  prepareLastPoint,
-} from 'src/utils/filters';
+import { createPoint, dehydrate, filterData, hydrate } from 'src/utils/filters';
 import { getData } from 'src/utils/geoJSON';
 import { getInitialZoom, roundCoordinate } from 'src/utils/maps';
 import { getItem, setItem } from 'src/utils/storage';
@@ -35,6 +29,7 @@ export const useMapState = (isEditor: boolean) => {
 
   const [state, setState] = useState<State>({
     filters: undefined,
+    newPoint: undefined,
     points: [],
     routes: [],
   });
@@ -61,14 +56,12 @@ export const useMapState = (isEditor: boolean) => {
 
           return point;
         });
-
-        if (!isExist) {
-          patchedPoints.push(createPoint(intl, initial, true));
-        }
       }
 
       setState({
         filters: hydrate(points, routes, hiddenFilters),
+        newPoint:
+          initial && !isExist ? createPoint(intl, initial, true) : undefined,
         points: patchedPoints,
         routes,
       });
@@ -101,7 +94,7 @@ export const useMapState = (isEditor: boolean) => {
             return point;
           });
 
-        return { ...state, points: [newPoint, ...points] };
+        return { ...state, points: points, newPoint };
       });
     }
   };
@@ -118,15 +111,9 @@ export const useMapState = (isEditor: boolean) => {
   const filteredRoutes = filterData(state.routes, state.filters);
 
   return {
-    added: prepareLastPoint(state.points),
     counter: {
-      from:
-        state.points.filter((point) => point.properties.category !== POINT_TEMP)
-          .length + state.routes.length,
-      to:
-        filteredPoints.filter(
-          (point) => point.properties.category !== POINT_TEMP
-        ).length + filteredRoutes.length,
+      from: state.points.length + state.routes.length,
+      to: filteredPoints.length + filteredRoutes.length,
     },
     filters: state.filters,
     initial: initial || {
@@ -135,6 +122,7 @@ export const useMapState = (isEditor: boolean) => {
       zoom: getInitialZoom(),
     },
     mapState: {
+      newPoint: state.newPoint,
       points: filteredPoints,
       routes: filteredRoutes,
     },

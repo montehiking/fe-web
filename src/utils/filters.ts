@@ -59,9 +59,7 @@ export const filterData = <T extends Point | Route>(
       )
     : [];
 
-export const prepareLastPoint = (points: Point[]) => {
-  const point = points.filter((m) => m.properties.category === POINT_TEMP)[0];
-
+export const prepareTempPoint = (point?: Point) => {
   if (!point) {
     return '';
   }

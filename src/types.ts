@@ -66,6 +66,7 @@ export type Route = GeoJSONPoint<never, Category, GeoJSONRouteField>;
 export type MapState = {
   points: Point[];
   routes: Route[];
+  newPoint?: Point;
 };
 
 export type FiltersState = Record<

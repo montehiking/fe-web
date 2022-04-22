@@ -62,7 +62,13 @@ export const Filters: React.FC<Props> = ({ filters, onChange, mapState }) => {
       dataSource={categories}
       renderItem={renderItem}
       footer={
-        <Suspense fallback={<Spin size="small" />}>
+        <Suspense
+          fallback={
+            <div className={styles.preloader}>
+              <Spin size="small" />
+            </div>
+          }
+        >
           <ExportButton mapState={mapState} />
         </Suspense>
       }
