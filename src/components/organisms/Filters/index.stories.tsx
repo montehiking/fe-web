@@ -11,7 +11,7 @@ export default {
 } as Meta;
 
 export const Filters: Story = () => {
-  const { filters, setFilters, mapState } = useMapState(false, false);
+  const { filters, setFilters, mapState } = useMapState(false);
 
   if (!filters) {
     return <></>;

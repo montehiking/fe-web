@@ -135,3 +135,11 @@ msgstr "Маршруты"
 msgctxt "base"
 msgid "constants.filters.labels.waterfall"
 msgstr "Водопады"
+
+msgctxt "base"
+msgid "utils.filters.newPoint.description"
+msgstr "новая локация"
+
+msgctxt "base"
+msgid "utils.filters.newPoint.name"
+msgstr "Неизвестное место"

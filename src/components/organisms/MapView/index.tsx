@@ -7,6 +7,7 @@ import { Sidebar } from 'src/components/molecules/Sidebar';
 import { Filters } from 'src/components/organisms/Filters';
 import { useMapState } from 'src/hooks/useMapState';
 import { getWithDecline } from 'src/i18n/Decline';
+import { prepareTempPoint } from 'src/utils/filters';
 
 import styles from 'src/components/organisms/MapView/styles.module.css';
 
@@ -16,8 +17,15 @@ export const MapView: React.FC = () => {
   const isOwner = searchString === 'owner';
   const isEditor = searchString === 'editor';
 
-  const { added, counter, mapState, filters, setFilters, setPoints } =
-    useMapState(isOwner, isEditor);
+  const {
+    counter,
+    filters,
+    initial,
+    mapState,
+    setFilters,
+    setPoints,
+    setZoom,
+  } = useMapState(isOwner || isEditor);
   const [isSidebarVisible, setIsSidebarVisible] = useState(false);
 
   if (!filters) {
@@ -34,12 +42,14 @@ export const MapView: React.FC = () => {
       data-testid="page"
     >
       <Map
-        onClick={setPoints}
-        state={mapState}
         filter={{
           ...counter,
           onClick: () => setIsSidebarVisible(!isSidebarVisible),
         }}
+        initial={initial}
+        onClick={setPoints}
+        onZoom={setZoom}
+        state={mapState}
       />
 
       <Sidebar
@@ -55,7 +65,12 @@ export const MapView: React.FC = () => {
       >
         <Filters filters={filters} onChange={setFilters} mapState={mapState} />
 
-        {isEditor && <textarea className={styles.code} defaultValue={added} />}
+        {isEditor && (
+          <textarea
+            className={styles.code}
+            defaultValue={prepareTempPoint(mapState.newPoint)}
+          />
+        )}
       </Sidebar>
     </div>
   );

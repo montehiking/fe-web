@@ -79,6 +79,7 @@
     bottom: auto;
     height: auto;
     min-height: 100vh;
+    height: -webkit-fill-available;
     top: 0;
     width: 0;
   }
@@ -95,6 +96,7 @@
 
   .container {
     height: 100vh;
+    height: -webkit-fill-available;
     width: var(--WIDTH_SIDEBAR);
   }
 }
