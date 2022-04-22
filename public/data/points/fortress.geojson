@@ -527,6 +527,17 @@
         "description": "несохранившаяся крепость Ивана Чрноевича",
         "notVerified": true
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.519973, 42.817636]
+      },
+      "properties": {
+        "name": "Tvrđava Ičindži",
+        "description": "турецкая крепость"
+      }
     }
   ]
 }

@@ -243,6 +243,17 @@
         "name": "Spomenik žrtvama fašizma",
         "description": "югославский мемориал"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.577572, 42.956642]
+      },
+      "properties": {
+        "name": "Spomenik junacima Mojkovačke bitke",
+        "description": "югославский мемориал"
+      }
     }
   ]
 }

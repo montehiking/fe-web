@@ -80,6 +80,17 @@
         "name": "Svetionik Gospa od Škrpjela",
         "description": "маяк"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.201409, 41.922381]
+      },
+      "properties": {
+        "name": "Svetionik Ulcinj",
+        "description": "маяк"
+      }
     }
   ]
 }

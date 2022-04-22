@@ -133,6 +133,17 @@
         "name": "Most Turčini",
         "description": "старинный мост"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.576714, 42.956705]
+      },
+      "properties": {
+        "name": "Stari most",
+        "description": "старый мост"
+      }
     }
   ]
 }

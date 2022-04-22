@@ -68,9 +68,10 @@ export const prepareTempPoint = (point?: Point) => {
     ...point,
     properties: {
       ...point.properties,
-      name: '',
-      description: '',
+      active: undefined,
       category: undefined,
+      description: '',
+      name: '',
     },
   };
 
