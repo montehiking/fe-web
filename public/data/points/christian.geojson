@@ -261,6 +261,53 @@
         "description": "старинная часовня на острове",
         "notVerified": true
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.739581, 42.433328]
+      },
+      "properties": {
+        "name": "Sveta Vrača",
+        "description": "церковь XV в.",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.734286, 42.426339]
+      },
+      "properties": {
+        "name": "Crkva Svetog Petra",
+        "description": "церковь XIII в."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.720489, 42.428272]
+      },
+      "properties": {
+        "name": "Crkva Sveti Agate",
+        "description": "древняя церковь",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.711146, 42.436925]
+      },
+      "properties": {
+        "name": "Crkva Svetog Šimuna",
+        "description": "церковь XIV в.",
+        "notVerified": true
+      }
     }
   ]
 }

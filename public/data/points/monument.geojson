@@ -254,6 +254,66 @@
         "name": "Spomenik junacima Mojkovačke bitke",
         "description": "югославский мемориал"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.71983, 42.43398]
+      },
+      "properties": {
+        "name": "Kameni tumul Gomilica",
+        "description": "каменный курган VIII-I до н.э.",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.71393, 42.4489]
+      },
+      "properties": {
+        "name": "Kameni tumul Pasiglav 1",
+        "description": "курган VIII-I до н.э.",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.72787, 42.43537]
+      },
+      "properties": {
+        "name": "Kameni tumul Pasiglav 2",
+        "description": "курган VIII-I до н.э.",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.72005, 42.4426]
+      },
+      "properties": {
+        "name": "Kameni tumul Pasiglav 3",
+        "description": "курган VIII-I до н.э.",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.71137, 42.4405]
+      },
+      "properties": {
+        "name": "Kameni tumul Kalac",
+        "description": "курган VIII-I до н.э.",
+        "notVerified": true
+      }
     }
   ]
 }

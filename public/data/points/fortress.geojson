@@ -538,6 +538,28 @@
         "name": "Tvrđava Ičindži",
         "description": "турецкая крепость"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.710876, 42.405238]
+      },
+      "properties": {
+        "name": "Dančulovina",
+        "description": "старинный дом-крепость"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.706477, 42.405064]
+      },
+      "properties": {
+        "name": "Grgurevina",
+        "description": "старинный дом-крепость"
+      }
     }
   ]
 }

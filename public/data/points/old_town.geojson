@@ -212,6 +212,29 @@
         "name": "Šišići",
         "description": "старинное поселение"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.737209, 42.428279]
+      },
+      "properties": {
+        "name": "Petkovići",
+        "description": "старинная полузаброшенная деревня",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.740573, 42.433878]
+      },
+      "properties": {
+        "name": "Marovići",
+        "description": "старинная полузаброшенная деревня"
+      }
     }
   ]
 }
