@@ -1,8 +1,5 @@
 .map {
   height: 100vh;
+  height: -webkit-fill-available;
   width: 100vw;
-}
-
-.map > div:nth-child(2n) {
-  display: none !important;
 }

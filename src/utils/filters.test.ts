@@ -6,6 +6,7 @@ const initialFiltersState: FiltersState = {
   bridge: { checked: true, count: 1 },
   cave: { checked: true, count: 1 },
   christian: { checked: true, count: 0 },
+  islamic: { checked: true, count: 0 },
   fortress: { checked: true, count: 1 },
   lighthouse: { checked: true, count: 0 },
   monument: { checked: true, count: 0 },
@@ -24,7 +25,7 @@ const points: Point[] = [
       coordinates: [19.091258949410722, 42.24619402714383],
     },
     properties: {
-      title: 'Most na Crmnici',
+      name: 'Most na Crmnici',
       description: 'старинный мост',
       category: 'bridge',
     },
@@ -36,7 +37,7 @@ const points: Point[] = [
       coordinates: [19.091367718576958, 43.14370625468662],
     },
     properties: {
-      title: 'Titova pećina',
+      name: 'Titova pećina',
       description: 'пещера',
       category: 'cave',
     },
@@ -48,7 +49,7 @@ const points: Point[] = [
       coordinates: [18.826982975006104, 42.275133659000936],
     },
     properties: {
-      title: 'Tvrđava Mogren',
+      name: 'Tvrđava Mogren',
       description: 'австро-венгерский форт',
       category: 'fortress',
     },
@@ -66,7 +67,7 @@ const routes: Route[] = [
       ],
     },
     properties: {
-      title: 'Test',
+      name: 'Test',
       description: 'проверка работоспособности',
       category: 'routes',
     },

@@ -5,10 +5,10 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.87504913460358, 42.292574304900405]
+        "coordinates": [18.875049, 42.292574]
       },
       "properties": {
-        "title": "Pećina Ivanovići",
+        "name": "Pećina Ivanovići",
         "description": "пещера"
       }
     },
@@ -16,10 +16,10 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.953089730534305, 42.36710394637622]
+        "coordinates": [18.95309, 42.367104]
       },
       "properties": {
-        "title": "Lipska pećina",
+        "name": "Lipska pećina",
         "description": "пещера"
       }
     },
@@ -27,10 +27,10 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.091367718576958, 43.14370625468662]
+        "coordinates": [19.091368, 43.143706]
       },
       "properties": {
-        "title": "Titova pećina",
+        "name": "Titova pećina",
         "description": "пещера"
       }
     },
@@ -38,12 +38,23 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.20321645663744, 42.45890513409661]
+        "coordinates": [19.203216, 42.458905]
       },
       "properties": {
-        "title": "Pećina Magara",
+        "name": "Pećina Magara",
         "description": "пещера",
         "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.00521, 42.352118]
+      },
+      "properties": {
+        "name": "Obodska pećina",
+        "description": "пещера"
       }
     }
   ]

@@ -1,10 +1,13 @@
+import classNames from 'classnames';
 import React, { useState } from 'react';
 
+import { Spin } from 'src/components/atoms/Spin';
 import { Map } from 'src/components/molecules/Map';
 import { Sidebar } from 'src/components/molecules/Sidebar';
 import { Filters } from 'src/components/organisms/Filters';
 import { useMapState } from 'src/hooks/useMapState';
 import { getWithDecline } from 'src/i18n/Decline';
+import { prepareTempPoint } from 'src/utils/filters';
 
 import styles from 'src/components/organisms/MapView/styles.module.css';
 
@@ -14,19 +17,39 @@ export const MapView: React.FC = () => {
   const isOwner = searchString === 'owner';
   const isEditor = searchString === 'editor';
 
-  const { added, counter, mapState, filters, setFilters, setPoints } =
-    useMapState(isOwner, isEditor);
+  const {
+    counter,
+    filters,
+    initial,
+    mapState,
+    setFilters,
+    setPoints,
+    setZoom,
+  } = useMapState(isOwner || isEditor);
   const [isSidebarVisible, setIsSidebarVisible] = useState(false);
 
+  if (!filters) {
+    return (
+      <div className={styles.wrapper} data-testid="page">
+        <Spin size="large" />
+      </div>
+    );
+  }
+
   return (
-    <div className={styles.wrapper} data-testid="page">
+    <div
+      className={classNames(styles.wrapper, { 'editor-mode': isEditor })}
+      data-testid="page"
+    >
       <Map
-        onClick={setPoints}
-        state={mapState}
         filter={{
           ...counter,
           onClick: () => setIsSidebarVisible(!isSidebarVisible),
         }}
+        initial={initial}
+        onClick={setPoints}
+        onZoom={setZoom}
+        state={mapState}
       />
 
       <Sidebar
@@ -40,9 +63,15 @@ export const MapView: React.FC = () => {
           { id: 'components.organisms.MapView.filters.3', values: counter },
         ])}
       >
-        <Filters filters={filters} onChange={setFilters} />
+        <Filters filters={filters} onChange={setFilters} mapState={mapState} />
 
-        {isEditor && <pre className={styles.code}>{added}</pre>}
+        {isEditor && (
+          <textarea
+            key={mapState.newPoint?.geometry.coordinates.join()}
+            className={styles.code}
+            defaultValue={prepareTempPoint(mapState.newPoint)}
+          />
+        )}
       </Sidebar>
     </div>
   );

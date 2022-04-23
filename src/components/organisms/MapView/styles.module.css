@@ -1,9 +1,12 @@
 .wrapper {
   display: flex;
   height: 100vh;
+  height: -webkit-fill-available;
+  align-items: center;
+  justify-content: center;
 }
 
 .code {
-  font-size: var(--FONT_SIZE_SMALL);
-  min-height: 260px;
+  font-size: var(--FONT_SIZE_LITTLE);
+  min-height: 245px;
 }

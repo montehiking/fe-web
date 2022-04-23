@@ -51,7 +51,7 @@
   right: 0;
   top: auto;
   width: auto;
-  z-index: 101;
+  z-index: 1001;
 }
 
 .sidebar__visible {
@@ -79,6 +79,7 @@
     bottom: auto;
     height: auto;
     min-height: 100vh;
+    height: -webkit-fill-available;
     top: 0;
     width: 0;
   }
@@ -95,6 +96,7 @@
 
   .container {
     height: 100vh;
+    height: -webkit-fill-available;
     width: var(--WIDTH_SIDEBAR);
   }
 }

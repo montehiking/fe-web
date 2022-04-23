@@ -1,25 +1,27 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 
 import { List } from 'src/components/atoms/List';
+import { Spin } from 'src/components/atoms/Spin';
 import { Switch } from 'src/components/atoms/Switch';
 import { POINT_ROUTES } from 'src/constants';
 import { labels } from 'src/constants/filters';
 import { getWithDecline } from 'src/i18n/Decline';
-import { Category, FiltersState } from 'src/types';
+import { Category, FiltersState, MapState } from 'src/types';
 import { categories } from 'src/utils/filters';
 
 import styles from 'src/components/organisms/Filters/styles.module.css';
 
 type Props = {
-  filters?: FiltersState;
+  filters: FiltersState;
   onChange: (value: FiltersState) => void;
+  mapState: MapState;
 };
 
-export const Filters: React.FC<Props> = ({ filters, onChange }) => {
-  if (!filters) {
-    return null;
-  }
+const ExportButton = lazy(
+  () => import('src/components/organisms/ExportButton')
+);
 
+export const Filters: React.FC<Props> = ({ filters, onChange, mapState }) => {
   const renderItem = (category: Category) => {
     const { checked, count } = filters[category];
     const values = { count };
@@ -55,5 +57,21 @@ export const Filters: React.FC<Props> = ({ filters, onChange }) => {
     );
   };
 
-  return <List dataSource={categories} renderItem={renderItem} />;
+  return (
+    <List
+      dataSource={categories}
+      renderItem={renderItem}
+      footer={
+        <Suspense
+          fallback={
+            <div className={styles.preloader}>
+              <Spin size="small" />
+            </div>
+          }
+        >
+          <ExportButton mapState={mapState} />
+        </Suspense>
+      }
+    />
+  );
 };

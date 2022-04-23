@@ -20,5 +20,5 @@
 .subLabel {
   padding-left: var(--SPACING_NORMAL);
   color: var(--COLOR_GRAY_1);
-  font-size: var(--FONT_SIZE_SMALL);
+  font-size: var(--FONT_SIZE_LITTLE);
 }
