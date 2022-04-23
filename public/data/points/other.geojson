@@ -373,6 +373,17 @@
         "description": "заброшенная деревня?",
         "notVerified": true
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.922947, 42.387692]
+      },
+      "properties": {
+        "name": "Reljefna karta Crne Gore",
+        "description": "старинная каменная карта"
+      }
     }
   ]
 }

@@ -293,8 +293,7 @@
       },
       "properties": {
         "name": "Crkva Sveti Agate",
-        "description": "древняя церковь",
-        "notVerified": true
+        "description": "древняя церковь"
       }
     },
     {
@@ -305,8 +304,18 @@
       },
       "properties": {
         "name": "Crkva Svetog Šimuna",
-        "description": "церковь XIV в.",
-        "notVerified": true
+        "description": "церковь XIV в."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.923553, 42.386963]
+      },
+      "properties": {
+        "name": "Cetinjski manastir na Ćipuru",
+        "description": "руины монастыря XV в."
       }
     }
   ]

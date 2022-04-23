@@ -67,6 +67,7 @@ export const MapView: React.FC = () => {
 
         {isEditor && (
           <textarea
+            key={mapState.newPoint?.geometry.coordinates.join()}
             className={styles.code}
             defaultValue={prepareTempPoint(mapState.newPoint)}
           />

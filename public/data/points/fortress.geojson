@@ -560,6 +560,17 @@
         "name": "Grgurevina",
         "description": "старинный дом-крепость"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.923065, 42.387827]
+      },
+      "properties": {
+        "name": "Biljarda",
+        "description": "крепость-дворец Петра II Негоша"
+      }
     }
   ]
 }
