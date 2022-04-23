@@ -1,0 +1,38 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.944304, 42.596479]
+      },
+      "properties": {
+        "name": "Stara džamija",
+        "description": "деревянная мечеть XV в."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.134246, 42.094509]
+      },
+      "properties": {
+        "name": "Omerbašića džamija",
+        "description": "старинная мечеть"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.259039, 42.437653]
+      },
+      "properties": {
+        "name": "Starodoganjska džamija",
+        "description": "мечеть XV в."
+      }
+    }
+  ]
+}

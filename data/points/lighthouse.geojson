@@ -5,10 +5,10 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.149699097352958, 41.95262753306175]
+        "coordinates": [19.149699, 41.952628]
       },
       "properties": {
-        "title": "Svetionik Mendra",
+        "name": "Svetionik Mendra",
         "description": "маяк"
       }
     },
@@ -16,10 +16,10 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.684660269783908, 42.43918827354297]
+        "coordinates": [18.68466, 42.439188]
       },
       "properties": {
-        "title": "Svetionik Ponta",
+        "name": "Svetionik Ponta",
         "description": "маяк"
       }
     },
@@ -27,10 +27,10 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.69019185676949, 42.47742212302048]
+        "coordinates": [18.690192, 42.477422]
       },
       "properties": {
-        "title": "Svetionik Verige",
+        "name": "Svetionik Verige",
         "description": "маяк",
         "notVerified": true
       }
@@ -39,10 +39,10 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.66450812754341, 42.384264418634125]
+        "coordinates": [18.664508, 42.384264]
       },
       "properties": {
-        "title": "Svetionik Luštica Bay",
+        "name": "Svetionik Luštica Bay",
         "description": "маяк",
         "notVerified": true
       }
@@ -51,10 +51,10 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.754079287825146, 42.44905231484165]
+        "coordinates": [18.754079, 42.449052]
       },
       "properties": {
-        "title": "Svetionik Prčanj",
+        "name": "Svetionik Prčanj",
         "description": "маяк",
         "notVerified": true
       }
@@ -63,10 +63,10 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.695156976035822, 42.430233389941485]
+        "coordinates": [18.695157, 42.430233]
       },
       "properties": {
-        "title": "Svetionik Pine",
+        "name": "Svetionik Pine",
         "description": "маяк"
       }
     },
@@ -74,10 +74,21 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.68825143171881, 42.48724684103894]
+        "coordinates": [18.688251, 42.487247]
       },
       "properties": {
-        "title": "Svetionik Gospa od Škrpjela",
+        "name": "Svetionik Gospa od Škrpjela",
+        "description": "маяк"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.201409, 41.922381]
+      },
+      "properties": {
+        "name": "Svetionik Ulcinj",
         "description": "маяк"
       }
     }

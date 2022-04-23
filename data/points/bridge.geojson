@@ -5,10 +5,10 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.84341023914012, 42.297946797761924]
+        "coordinates": [18.84341, 42.297947]
       },
       "properties": {
-        "title": "Most na Grđevici",
+        "name": "Most na Grđevici",
         "description": "старинный мост"
       }
     },
@@ -16,10 +16,10 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.091258949410722, 42.24619402714383]
+        "coordinates": [19.091259, 42.246194]
       },
       "properties": {
-        "title": "Most na Crmnici",
+        "name": "Most na Crmnici",
         "description": "старинный мост"
       }
     },
@@ -27,10 +27,10 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.362528920173645, 42.725428368443445]
+        "coordinates": [19.362529, 42.725428]
       },
       "properties": {
-        "title": "Danilov most",
+        "name": "Danilov most",
         "description": "старинный мост"
       }
     },
@@ -38,10 +38,10 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.34087575612702, 42.7289781067489]
+        "coordinates": [19.340876, 42.728978]
       },
       "properties": {
-        "title": "Ruševine starog mosta",
+        "name": "Ruševine starog mosta",
         "description": "остатки старинного моста"
       }
     },
@@ -49,10 +49,10 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.898009750156625, 42.26136992620115]
+        "coordinates": [18.89801, 42.26137]
       },
       "properties": {
-        "title": "Stari most",
+        "name": "Stari most",
         "description": "старинный мост"
       }
     },
@@ -60,10 +60,10 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.8994665011005, 42.26217188607564]
+        "coordinates": [18.899467, 42.262172]
       },
       "properties": {
-        "title": "Stari most",
+        "name": "Stari most",
         "description": "старинный мост"
       }
     },
@@ -71,10 +71,10 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.29499217361109, 43.15027563817881]
+        "coordinates": [19.294992, 43.150276]
       },
       "properties": {
-        "title": "Most na Đurđevića Tari",
+        "name": "Most na Đurđevića Tari",
         "description": "мост через каньон"
       }
     },
@@ -82,10 +82,10 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.024382829666138, 42.355804734252104]
+        "coordinates": [19.024383, 42.355805]
       },
       "properties": {
-        "title": "Most na Rijeke Crnojevića",
+        "name": "Most na Rijeke Crnojevića",
         "description": "старинный мост"
       }
     },
@@ -93,10 +93,10 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.960340713537292, 42.73038604754991]
+        "coordinates": [18.960341, 42.730386]
       },
       "properties": {
-        "title": "Carev most",
+        "name": "Carev most",
         "description": "старинный мост",
         "notVerified": true
       }
@@ -105,22 +105,10 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.258835496891496, 42.43948514953294]
+        "coordinates": [19.258835, 42.439485]
       },
       "properties": {
-        "title": "Most Ribnica",
-        "description": "старинный мост",
-        "notVerified": true
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [19.14221812495832, 42.10018001012829]
-      },
-      "properties": {
-        "title": "Most Menke",
+        "name": "Most Ribnica",
         "description": "старинный мост"
       }
     },
@@ -128,11 +116,33 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.14212383553045, 42.10048007062716]
+        "coordinates": [19.142218, 42.10018]
       },
       "properties": {
-        "title": "Most Turčini",
+        "name": "Most Menke",
         "description": "старинный мост"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.142124, 42.10048]
+      },
+      "properties": {
+        "name": "Most Turčini",
+        "description": "старинный мост"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.576714, 42.956705]
+      },
+      "properties": {
+        "name": "Stari most",
+        "description": "старый мост"
       }
     }
   ]

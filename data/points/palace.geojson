@@ -5,10 +5,10 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.091215032832988, 42.100676095855995]
+        "coordinates": [19.091215, 42.100676]
       },
       "properties": {
-        "title": "Dvorac kralja Nikole",
+        "name": "Dvorac kralja Nikole",
         "description": "музей"
       }
     },
@@ -16,10 +16,10 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.704336285591125, 42.423092205901625]
+        "coordinates": [18.704336, 42.423092]
       },
       "properties": {
-        "title": "Kompleks Bizanti",
+        "name": "Kompleks Bizanti",
         "description": "развалины виллы"
       }
     },
@@ -27,10 +27,10 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.70025396347046, 42.48523220061461]
+        "coordinates": [18.700254, 42.485232]
       },
       "properties": {
-        "title": "Palata Visković",
+        "name": "Palata Visković",
         "description": "музей"
       }
     },
@@ -38,10 +38,10 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.705764963993825, 42.420842967144296]
+        "coordinates": [18.705765, 42.420843]
       },
       "properties": {
-        "title": "Palata Verona",
+        "name": "Palata Verona",
         "description": "развалины виллы"
       }
     },
@@ -49,10 +49,10 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.924387795282, 42.38737579348151]
+        "coordinates": [18.924388, 42.387376]
       },
       "properties": {
-        "title": "Dvorac kralja Nikole",
+        "name": "Dvorac kralja Nikole",
         "description": "музей"
       }
     },
@@ -60,10 +60,10 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.250112175941467, 42.43801142755777]
+        "coordinates": [19.250112, 42.438011]
       },
       "properties": {
-        "title": "Dvorac Petrovića",
+        "name": "Dvorac Petrovića",
         "description": "музей",
         "notVerified": true
       }
