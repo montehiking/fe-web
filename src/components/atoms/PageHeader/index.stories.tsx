@@ -12,8 +12,8 @@ export default {
 export const PageHeader: Story = () => (
   <div className="sb-box">
     <PageHeaderComponent
-      title={{ id: 'components.organisms.MapView.filters' }}
-      subTitle={{ id: 'components.organisms.MapView.filters.0' }}
+      title={{ id: 'components.organisms.Sidebar.filters' }}
+      subTitle={{ id: 'components.organisms.Sidebar.filters.0' }}
       onBack={console.log}
     />
   </div>

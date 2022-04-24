@@ -38,12 +38,12 @@ export const Sidebar: React.FC<Props> = ({
     <SidebarComponent
       isVisible={isVisible}
       onClose={onClose}
-      title={{ id: 'components.organisms.MapView.filters' }}
+      title={{ id: 'components.organisms.Sidebar.filters' }}
       subTitle={getWithDecline(counter.to, [
-        { id: 'components.organisms.MapView.filters.0' },
-        { id: 'components.organisms.MapView.filters.1', values: counter },
-        { id: 'components.organisms.MapView.filters.2', values: counter },
-        { id: 'components.organisms.MapView.filters.3', values: counter },
+        { id: 'components.organisms.Sidebar.filters.0' },
+        { id: 'components.organisms.Sidebar.filters.1', values: counter },
+        { id: 'components.organisms.Sidebar.filters.2', values: counter },
+        { id: 'components.organisms.Sidebar.filters.3', values: counter },
       ])}
     >
       <Filters filters={filters} onChange={setFilters} mapState={mapState} />

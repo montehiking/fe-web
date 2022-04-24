@@ -65,23 +65,23 @@ msgid "components.organisms.Filters.subLabel.7"
 msgstr "{count} маршрутов"
 
 msgctxt "base"
-msgid "components.organisms.MapView.filters"
+msgid "components.organisms.Sidebar.filters"
 msgstr "Фильтры"
 
 msgctxt "base"
-msgid "components.organisms.MapView.filters.0"
+msgid "components.organisms.Sidebar.filters.0"
 msgstr "ничего не выбрано"
 
 msgctxt "base"
-msgid "components.organisms.MapView.filters.1"
+msgid "components.organisms.Sidebar.filters.1"
 msgstr "{to} объект из {from}"
 
 msgctxt "base"
-msgid "components.organisms.MapView.filters.2"
+msgid "components.organisms.Sidebar.filters.2"
 msgstr "{to} объекта из {from}"
 
 msgctxt "base"
-msgid "components.organisms.MapView.filters.3"
+msgid "components.organisms.Sidebar.filters.3"
 msgstr "{to} объектов из {from}"
 
 msgctxt "base"
