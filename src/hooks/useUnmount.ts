@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useLayoutEffect, useState } from 'react';
 
 type Props = {
   isVisible: boolean;
@@ -9,7 +9,7 @@ export const useUnmount = ({ isVisible, delaySeconds }: Props) => {
   const [visible, setVisible] = useState(false);
   const [inProgress, setInProgress] = useState(false);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     let timeout: NodeJS.Timeout;
 
     if (isVisible && !visible) {

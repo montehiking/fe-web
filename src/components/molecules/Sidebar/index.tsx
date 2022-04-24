@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import React, { useEffect, useState } from 'react';
+import React, { useLayoutEffect, useState } from 'react';
 
 import { PageHeader } from 'src/components/atoms/PageHeader';
 import { useUnmount } from 'src/hooks/useUnmount';
@@ -24,7 +24,7 @@ export const Sidebar: React.FC<Props> = ({
   const { visible, inProgress } = useUnmount({ isVisible, delaySeconds: 0.3 });
   const [isModalVisible, setIsModalVisible] = useState(!inProgress);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (!visible) {
       setIsModalVisible(false);
     }

@@ -36,33 +36,31 @@ export const useMapState = (isEditor: boolean) => {
 
   useLayoutEffect(() => {
     getData(isEditor).then(({ points, routes }) => {
-      let isExist = false;
-      let patchedPoints: Point[] = points;
+      let newPoint: Point | undefined = undefined;
 
       if (initial) {
-        patchedPoints = points.map((point) => {
+        let isExist = false;
+
+        points.forEach((point) => {
           if (
-            point.properties.category === POINT_ROUTES ||
-            !(
-              point.geometry.coordinates[0] === initial.lng &&
-              point.geometry.coordinates[1] === initial.lat
-            )
+            point.properties.category !== POINT_ROUTES &&
+            point.geometry.coordinates[0] === initial.lng &&
+            point.geometry.coordinates[1] === initial.lat
           ) {
-            return point;
+            isExist = true;
+            point.properties.active = true;
           }
-
-          isExist = true;
-          point.properties.active = true;
-
-          return point;
         });
+
+        if (!isExist) {
+          newPoint = createPoint(intl, initial, true);
+        }
       }
 
       setState({
         filters: hydrate(points, routes, hiddenFilters),
-        newPoint:
-          initial && !isExist ? createPoint(intl, initial, true) : undefined,
-        points: patchedPoints,
+        newPoint,
+        points,
         routes,
       });
     });
@@ -89,9 +87,16 @@ export const useMapState = (isEditor: boolean) => {
         const points = state.points
           .filter((point) => point.properties.category !== POINT_TEMP)
           .map((point) => {
+            if (!point.properties.active) {
+              return point;
+            }
+
             point.properties.active = undefined;
 
-            return point;
+            return {
+              ...point,
+              properties: { ...point.properties, active: undefined },
+            };
           });
 
         return { ...state, points: points, newPoint };
