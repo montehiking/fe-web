@@ -8,6 +8,7 @@ import {
   FiltersState,
   MapState,
   Point,
+  SetFilters,
   SetPlace,
   SetZoom,
 } from 'src/types';
@@ -66,7 +67,7 @@ export const useMapState = (isEditor: boolean) => {
     });
   }, [intl, isEditor]);
 
-  const setFilters = (filters: FiltersState) => {
+  const setFilters: SetFilters = (filters) => {
     setState({ ...state, filters });
     setItem('filters', dehydrate(filters));
   };

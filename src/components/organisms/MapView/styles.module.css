@@ -5,8 +5,3 @@
   align-items: center;
   justify-content: center;
 }
-
-.code {
-  font-size: var(--FONT_SIZE_LITTLE);
-  min-height: 245px;
-}

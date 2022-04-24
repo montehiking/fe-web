@@ -13,6 +13,7 @@ export type Place = LatLng & {
   zoom: Zoom;
 };
 
+export type SetFilters = (filters: FiltersState) => void;
 export type SetPlace = (mode: 'new' | 'existing', place: Place) => void;
 export type SetZoom = (zoom: Zoom) => void;
 

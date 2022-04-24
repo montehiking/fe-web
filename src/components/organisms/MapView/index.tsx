@@ -3,11 +3,8 @@ import React, { useState } from 'react';
 
 import { Spin } from 'src/components/atoms/Spin';
 import { Map } from 'src/components/molecules/Map';
-import { Sidebar } from 'src/components/molecules/Sidebar';
-import { Filters } from 'src/components/organisms/Filters';
+import { Sidebar } from 'src/components/organisms/Sidebar';
 import { useMapState } from 'src/hooks/useMapState';
-import { getWithDecline } from 'src/i18n/Decline';
-import { prepareTempPoint } from 'src/utils/filters';
 
 import styles from 'src/components/organisms/MapView/styles.module.css';
 
@@ -53,26 +50,14 @@ export const MapView: React.FC = () => {
       />
 
       <Sidebar
+        counter={counter}
+        filters={filters}
+        isEditor={isEditor}
         isVisible={isSidebarVisible}
+        mapState={mapState}
         onClose={() => setIsSidebarVisible(false)}
-        title={{ id: 'components.organisms.MapView.filters' }}
-        subTitle={getWithDecline(counter.to, [
-          { id: 'components.organisms.MapView.filters.0' },
-          { id: 'components.organisms.MapView.filters.1', values: counter },
-          { id: 'components.organisms.MapView.filters.2', values: counter },
-          { id: 'components.organisms.MapView.filters.3', values: counter },
-        ])}
-      >
-        <Filters filters={filters} onChange={setFilters} mapState={mapState} />
-
-        {isEditor && (
-          <textarea
-            key={mapState.newPoint?.geometry.coordinates.join()}
-            className={styles.code}
-            defaultValue={prepareTempPoint(mapState.newPoint)}
-          />
-        )}
-      </Sidebar>
+        setFilters={setFilters}
+      />
     </div>
   );
 };
