@@ -14,18 +14,10 @@ export const MapView: React.FC = () => {
   const isOwner = searchString === 'owner';
   const isEditor = searchString === 'editor';
 
-  const {
-    counter,
-    filters,
-    initial,
-    mapState,
-    setFilters,
-    setPoints,
-    setZoom,
-  } = useMapState(isOwner || isEditor);
+  const { actions, filters, map } = useMapState(isOwner || isEditor);
   const [isSidebarVisible, setIsSidebarVisible] = useState(false);
 
-  if (!filters) {
+  if (!filters.state) {
     return (
       <div className={styles.wrapper} data-testid="page">
         <Spin size="large" />
@@ -40,23 +32,23 @@ export const MapView: React.FC = () => {
     >
       <Map
         filter={{
-          ...counter,
+          ...filters.counter,
           onClick: () => setIsSidebarVisible(!isSidebarVisible),
         }}
-        initial={initial}
-        onClick={setPoints}
-        onZoom={setZoom}
-        state={mapState}
+        initial={map.initial}
+        onClick={actions.setPoints}
+        onZoom={actions.setZoom}
+        state={map.state}
       />
 
       <Sidebar
-        counter={counter}
-        filters={filters}
+        counter={filters.counter}
+        filters={filters.state}
         isEditor={isEditor}
         isVisible={isSidebarVisible}
-        mapState={mapState}
+        mapState={map.state}
         onClose={() => setIsSidebarVisible(false)}
-        setFilters={setFilters}
+        setFilters={actions.setFilters}
       />
     </div>
   );

@@ -117,23 +117,29 @@ export const useMapState = (isEditor: boolean) => {
   const filteredRoutes = filterData(state.routes, state.filters);
 
   return {
-    counter: {
-      from: state.points.length + state.routes.length,
-      to: filteredPoints.length + filteredRoutes.length,
+    actions: {
+      setFilters,
+      setPoints,
+      setZoom,
     },
-    filters: state.filters,
-    initial: initial || {
-      lat: 42.729602,
-      lng: 19.288247,
-      zoom: getInitialZoom(),
+    filters: {
+      counter: {
+        from: state.points.length + state.routes.length,
+        to: filteredPoints.length + filteredRoutes.length,
+      },
+      state: state.filters,
     },
-    mapState: {
-      newPoint: state.newPoint,
-      points: filteredPoints,
-      routes: filteredRoutes,
+    map: {
+      initial: initial || {
+        lat: 42.729602,
+        lng: 19.288247,
+        zoom: getInitialZoom(),
+      },
+      state: {
+        newPoint: state.newPoint,
+        points: filteredPoints,
+        routes: filteredRoutes,
+      } as MapState,
     },
-    setFilters,
-    setPoints,
-    setZoom,
   };
 };

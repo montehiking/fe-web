@@ -11,15 +11,15 @@ export default {
 } as Meta;
 
 export const Map: Story = () => {
-  const { mapState, initial } = useMapState(false);
+  const { map } = useMapState(false);
 
   return (
     <MapComponent
       filter={{ from: 100, to: 5, onClick: console.log }}
-      initial={initial}
+      initial={map.initial}
       onClick={console.log}
       onZoom={console.log}
-      state={mapState}
+      state={map.state}
     />
   );
 };

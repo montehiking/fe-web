@@ -64,9 +64,12 @@ export type GeoJSON = {
 export type Point = GeoJSONPoint<boolean, Category, GeoJSONPointField>;
 export type Route = GeoJSONPoint<never, Category, GeoJSONRouteField>;
 
-export type MapState = {
+export type MapData = {
   points: Point[];
   routes: Route[];
+};
+
+export type MapState = MapData & {
   newPoint?: Point;
 };
 
