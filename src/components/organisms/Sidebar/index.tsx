@@ -6,6 +6,7 @@ import { Filters } from 'src/components/organisms/Filters';
 import { getWithDecline } from 'src/i18n/Decline';
 import { FiltersState, MapState, SetFilters } from 'src/types';
 import { prepareTempPoint } from 'src/utils/filters';
+import { isLandscape } from 'src/utils/lib';
 
 import styles from 'src/components/organisms/Sidebar/styles.module.css';
 
@@ -32,13 +33,7 @@ export const Sidebar: React.FC<Props> = ({
   setFilters,
 }) => (
   <>
-    <Dimmer
-      isVisible={
-        isVisible &&
-        window.matchMedia('only screen and (orientation: portrait)').matches
-      }
-      onClose={onClose}
-    />
+    <Dimmer isVisible={isVisible && !isLandscape()} onClose={onClose} />
 
     <SidebarComponent
       isVisible={isVisible}
