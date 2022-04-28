@@ -95,9 +95,14 @@ export const useMapState = (isEditor: boolean) => {
         } as const;
 
         acc.push(
-          createPoint({ ...properties, latLng: left, active: lsLeftActive }),
-          createPoint({ ...properties, latLng: right, active: isRightActive })
+          createPoint({ ...properties, latLng: left, active: lsLeftActive })
         );
+
+        if (coordinates.length > 1) {
+          acc.push(
+            createPoint({ ...properties, latLng: right, active: isRightActive })
+          );
+        }
 
         return acc;
       }, []);

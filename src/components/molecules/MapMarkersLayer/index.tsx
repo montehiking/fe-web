@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { useMapEvents } from 'react-leaflet';
 
 import { MapGeolocationMarker } from 'src/components/atoms/MapGeolocationMarker';
-import { MapMarker, Marker } from 'src/components/molecules/MapMarker';
+import { MapMarker, TMarker } from 'src/components/molecules/MapMarker';
 import { POINT_ROUTE } from 'src/constants';
 import { Point, SetPlace, SetZoom, Zoom } from 'src/types';
 import { getIconColor } from 'src/utils/maps';
@@ -22,12 +22,11 @@ export const MapMarkersLayer: React.FC<Props> = ({
 }) => {
   const [zoom, setZoom] = useState(initialZoom);
 
-  const marker = useRef<Marker>();
+  const marker = useRef<TMarker>(null);
 
   useEffect(() => {
     if (marker.current) {
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      (marker.current as any).openPopup();
+      marker.current.openPopup();
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [!!marker.current]);
@@ -48,10 +47,10 @@ export const MapMarkersLayer: React.FC<Props> = ({
 
         return (
           <MapMarker
-            activeRef={properties.active ? (marker as never) : undefined}
+            ref={properties.active ? marker : null}
             description={properties.description}
             icon={getIconColor(properties.category, properties.notVerified)}
-            key={`${lat}${lng}`}
+            key={`${lat}${lng}${properties.name}`}
             latLng={{ lng, lat }}
             name={properties.name}
             onClick={onClick}
