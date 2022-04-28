@@ -18,6 +18,7 @@ const MapMarker: Story = ({ icon, zoom }) => (
     icon={icon}
     latLng={{ lat: 0, lng: 0 }}
     name="name"
+    onClick={console.log}
     zoom={zoom}
   />
 );
@@ -25,6 +26,12 @@ const MapMarker: Story = ({ icon, zoom }) => (
 export const MapMarkerBlue = MapMarker.bind({});
 MapMarkerBlue.args = {
   icon: 'blue',
+  zoom: 1,
+};
+
+export const MapMarkerGray = MapMarker.bind({});
+MapMarkerGray.args = {
+  icon: 'gray',
   zoom: 1,
 };
 

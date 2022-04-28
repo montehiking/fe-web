@@ -3,8 +3,9 @@ import { useMapEvents } from 'react-leaflet';
 
 import { MapGeolocationMarker } from 'src/components/atoms/MapGeolocationMarker';
 import { MapMarker, Marker } from 'src/components/molecules/MapMarker';
-import { POINT_TEMP } from 'src/constants';
+import { POINT_ROUTE } from 'src/constants';
 import { Point, SetPlace, SetZoom, Zoom } from 'src/types';
+import { getIconColor } from 'src/utils/maps';
 
 type Props = {
   initialZoom: Zoom;
@@ -45,23 +46,16 @@ export const MapMarkersLayer: React.FC<Props> = ({
       {points.map(({ properties, geometry }) => {
         const [lng, lat] = geometry.coordinates;
 
-        const icon =
-          properties.category === POINT_TEMP
-            ? 'gray'
-            : properties.notVerified
-            ? 'yellow'
-            : 'red';
-
         return (
           <MapMarker
             activeRef={properties.active ? (marker as never) : undefined}
             description={properties.description}
-            icon={icon}
+            icon={getIconColor(properties.category, properties.notVerified)}
             key={`${lat}${lng}`}
             latLng={{ lng, lat }}
             name={properties.name}
             onClick={onClick}
-            zoom={zoom}
+            zoom={properties.category === POINT_ROUTE ? undefined : zoom}
           />
         );
       })}

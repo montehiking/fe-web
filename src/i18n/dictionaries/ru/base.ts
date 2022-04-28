@@ -41,6 +41,6 @@ export const base = {
   'constants.filters.labels.routes': 'Маршруты',
   'constants.filters.labels.waterfall': 'Водопады',
 
-  'utils.filters.newPoint.description': 'новая локация',
-  'utils.filters.newPoint.name': 'Неизвестное место',
+  'hooks.useMapState.newPoint.description': 'новая локация',
+  'hooks.useMapState.newPoint.name': 'Неизвестное место',
 };

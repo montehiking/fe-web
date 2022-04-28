@@ -19,7 +19,8 @@ export const Map: Story = () => {
       initial={map.initial}
       onClick={console.log}
       onZoom={console.log}
-      state={map.state}
+      points={map.state.points}
+      routes={map.state.routes}
     />
   );
 };

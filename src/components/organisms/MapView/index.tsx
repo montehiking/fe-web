@@ -17,6 +17,8 @@ export const MapView: React.FC = () => {
   const { actions, filters, map } = useMapState(isOwner || isEditor);
   const [isSidebarVisible, setIsSidebarVisible] = useState(false);
 
+  const points = [...map.state.points, ...map.state.routesPoints];
+
   if (!filters.state) {
     return (
       <div className={styles.wrapper} data-testid="page">
@@ -38,7 +40,8 @@ export const MapView: React.FC = () => {
         initial={map.initial}
         onClick={actions.setPoints}
         onZoom={actions.setZoom}
-        state={map.state}
+        points={map.state.newPoint ? [...points, map.state.newPoint] : points}
+        routes={map.state.routes}
       />
 
       <Sidebar

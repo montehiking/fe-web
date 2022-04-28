@@ -1,11 +1,13 @@
 import { useLayoutEffect, useState } from 'react';
 import { useIntl } from 'react-intl';
 
-import { POINT_ROUTES, POINT_TEMP } from 'src/constants';
+import { POINT_ROUTE, POINT_TEMP } from 'src/constants';
+import { msg } from 'src/i18n/Msg';
 import { getPlace, redirect } from 'src/navigation';
 import {
   Category,
   FiltersState,
+  LatLng,
   MapState,
   Point,
   SetFilters,
@@ -28,23 +30,31 @@ const initial = getPlace();
 export const useMapState = (isEditor: boolean) => {
   const intl = useIntl();
 
+  const newPointParams = {
+    name: msg(intl, { id: 'hooks.useMapState.newPoint.name' }),
+    description: msg(intl, {
+      id: 'hooks.useMapState.newPoint.description',
+    }),
+    category: POINT_TEMP,
+    notVerified: true,
+  } as const;
+
   const [state, setState] = useState<State>({
     filters: undefined,
     newPoint: undefined,
     points: [],
     routes: [],
+    routesPoints: [],
   });
 
   useLayoutEffect(() => {
     getData(isEditor).then(({ points, routes }) => {
       let newPoint: Point | undefined = undefined;
+      let isExist = false;
 
       if (initial) {
-        let isExist = false;
-
         points.forEach((point) => {
           if (
-            point.properties.category !== POINT_ROUTES &&
             point.geometry.coordinates[0] === initial.lng &&
             point.geometry.coordinates[1] === initial.lat
           ) {
@@ -52,10 +62,52 @@ export const useMapState = (isEditor: boolean) => {
             point.properties.active = true;
           }
         });
+      }
 
-        if (!isExist) {
-          newPoint = createPoint(intl, initial, true);
+      const routesPoints = routes.reduce<Point[]>((acc, route) => {
+        const { coordinates } = route.geometry;
+        const { name, description, notVerified } = route.properties;
+
+        const left: LatLng = {
+          lat: coordinates[0][1],
+          lng: coordinates[0][0],
+        };
+
+        const right: LatLng = {
+          lat: coordinates[coordinates.length - 1][1],
+          lng: coordinates[coordinates.length - 1][0],
+        };
+
+        const lsLeftActive =
+          left.lat === initial?.lat && left.lng === initial.lng;
+        const isRightActive =
+          right.lat === initial?.lat && right.lng === initial.lng;
+
+        if (lsLeftActive || isRightActive) {
+          isExist = true;
         }
+
+        const properties = {
+          name,
+          description,
+          notVerified,
+          category: POINT_ROUTE,
+        } as const;
+
+        acc.push(
+          createPoint({ ...properties, latLng: left, active: lsLeftActive }),
+          createPoint({ ...properties, latLng: right, active: isRightActive })
+        );
+
+        return acc;
+      }, []);
+
+      if (!isExist && initial) {
+        newPoint = createPoint({
+          ...newPointParams,
+          active: true,
+          latLng: initial,
+        });
       }
 
       setState({
@@ -63,9 +115,11 @@ export const useMapState = (isEditor: boolean) => {
         newPoint,
         points,
         routes,
+        routesPoints,
       });
     });
-  }, [intl, isEditor]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const setFilters: SetFilters = (filters) => {
     setState({ ...state, filters });
@@ -82,7 +136,11 @@ export const useMapState = (isEditor: boolean) => {
     redirect(place);
 
     if (mode === 'new') {
-      const newPoint: Point = createPoint(intl, place, false);
+      const newPoint = createPoint({
+        ...newPointParams,
+        active: false,
+        latLng: place,
+      });
 
       setState((state) => {
         const points = state.points
@@ -139,6 +197,7 @@ export const useMapState = (isEditor: boolean) => {
         newPoint: state.newPoint,
         points: filteredPoints,
         routes: filteredRoutes,
+        routesPoints: state.routesPoints,
       } as MapState,
     },
   };

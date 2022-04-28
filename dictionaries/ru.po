@@ -137,9 +137,9 @@ msgid "constants.filters.labels.waterfall"
 msgstr "Водопады"
 
 msgctxt "base"
-msgid "utils.filters.newPoint.description"
+msgid "hooks.useMapState.newPoint.description"
 msgstr "новая локация"
 
 msgctxt "base"
-msgid "utils.filters.newPoint.name"
+msgid "hooks.useMapState.newPoint.name"
 msgstr "Неизвестное место"

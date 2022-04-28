@@ -34,6 +34,8 @@ export type Category =
   | 'palace'
   | 'waterfall';
 
+export type InternalCategory = Category | 'routePoint' | '';
+
 type GeoJSONPointField = {
   type: 'Point';
   coordinates: [number, number];
@@ -61,8 +63,12 @@ export type GeoJSON = {
   features: GeoJSONPoint<never, never, GeoJSONPointField | GeoJSONRouteField>[];
 };
 
-export type Point = GeoJSONPoint<boolean, Category, GeoJSONPointField>;
-export type Route = GeoJSONPoint<never, Category, GeoJSONRouteField>;
+export type Point = GeoJSONPoint<
+  boolean,
+  Exclude<InternalCategory, 'routes'>,
+  GeoJSONPointField
+>;
+export type Route = GeoJSONPoint<never, 'routes', GeoJSONRouteField>;
 
 export type MapData = {
   points: Point[];
@@ -71,6 +77,7 @@ export type MapData = {
 
 export type MapState = MapData & {
   newPoint?: Point;
+  routesPoints: Point[];
 };
 
 export type FiltersState = Record<
