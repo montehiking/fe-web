@@ -5,14 +5,12 @@ import { Spin } from 'src/components/atoms/Spin';
 import { Map } from 'src/components/molecules/Map';
 import { Sidebar } from 'src/components/organisms/Sidebar';
 import { useMapState } from 'src/hooks/useMapState';
+import { getMode } from 'src/navigation';
 
 import styles from 'src/components/organisms/MapView/styles.module.css';
 
 export const MapView: React.FC = () => {
-  const searchString = window.location.search.replace('?', '');
-
-  const isOwner = searchString === 'owner';
-  const isEditor = searchString === 'editor';
+  const { isOwner, isEditor } = getMode();
 
   const { actions, filters, map } = useMapState(isOwner || isEditor);
   const [isSidebarVisible, setIsSidebarVisible] = useState(false);

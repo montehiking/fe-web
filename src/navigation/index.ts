@@ -11,6 +11,15 @@ export const redirect = ({ lat, lng, zoom }: Place): void => {
   history.replace(`/place/@${lat},${lng},${zoom}z${search}`, {});
 };
 
+export const getMode = () => {
+  const searchString = history.location.search.replace('?', '');
+
+  return {
+    isOwner: searchString === 'owner',
+    isEditor: searchString === 'editor',
+  };
+};
+
 export const getPlace = (
   { pathname }: Location = history.location
 ): Place | undefined => {
