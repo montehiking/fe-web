@@ -2,7 +2,7 @@
 // If you want to change the content of this file, you need to edit
 // file '/dictionaries/ru.po' and run '.po' extractor
 export const base = {
-  'components.atoms.MapPopup.tooltip.showOnGoogleMaps':
+  'components.atoms.PlaceLink.tooltip.showOnGoogleMaps':
     'Показать на Google Картах',
 
   'components.molecules.MapTilesLayer.map': 'Карта',

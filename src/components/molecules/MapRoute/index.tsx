@@ -4,7 +4,7 @@ import { Polyline } from 'react-leaflet';
 import {
   MapPopup,
   Props as MapPopupProps,
-} from 'src/components/atoms/MapPopup';
+} from 'src/components/molecules/MapPopup';
 import { LatLng } from 'src/types';
 
 type Props = Omit<MapPopupProps, 'latLng' | 'zoom'> & {

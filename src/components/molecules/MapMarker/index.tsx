@@ -5,7 +5,7 @@ import { Marker } from 'react-leaflet';
 import {
   MapPopup,
   Props as MapPopupProps,
-} from 'src/components/atoms/MapPopup';
+} from 'src/components/molecules/MapPopup';
 import { LatLng, SetPlace, Zoom } from 'src/types';
 import { Icons, icons } from 'src/utils/maps';
 
