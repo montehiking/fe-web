@@ -1,20 +1,30 @@
 import { Meta, Story } from '@storybook/react/types-6-0';
 
-import { PageHeader as PageHeaderComponent } from 'src/components/atoms/PageHeader';
+import { PageHeader, Props } from 'src/components/atoms/PageHeader';
 import { decorators } from 'src/components/providers/StorybookProvider';
 
 export default {
-  title: 'Atoms',
-  component: PageHeaderComponent,
+  title: 'Atoms/PageHeader',
+  component: PageHeader,
   decorators,
 } as Meta;
 
-export const PageHeader: Story = () => (
+const Template: Story<Props> = (args) => (
   <div className="sb-box">
-    <PageHeaderComponent
+    <PageHeader
+      {...args}
       title={{ id: 'components.organisms.SidebarFilters.filters' }}
-      subTitle={{ id: 'components.organisms.SidebarFilters.filters.0' }}
       onBack={console.log}
     />
   </div>
 );
+
+export const WithSubTitle = Template.bind({});
+WithSubTitle.args = {
+  subTitle: { id: 'components.organisms.SidebarFilters.filters.0' },
+};
+
+export const WithoutSubTitle = Template.bind({});
+WithoutSubTitle.args = {
+  subTitle: undefined,
+};

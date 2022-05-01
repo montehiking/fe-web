@@ -11,8 +11,8 @@ type Props = {
   children: React.ReactNode | React.ReactNode[];
   isVisible: boolean;
   onClose: () => void;
-  subTitle: MsgProps;
-  title: MsgProps;
+  subTitle?: MsgProps;
+  title: string | MsgProps;
 };
 
 export const Sidebar: React.FC<Props> = ({
