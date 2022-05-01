@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { Sidebar } from 'src/components/molecules/Sidebar';
+import { PointCard } from 'src/components/organisms/PointCard';
 import { useSidebarPoint } from 'src/hooks/useSidebarPoint';
 import { Point } from 'src/types';
 
@@ -9,15 +10,16 @@ type Props = {
 };
 
 export const SidebarPoint: React.FC<Props> = ({ allFiltredPoints }) => {
-  const { point, isVisible, onClose } = useSidebarPoint(allFiltredPoints);
+  const { isVisible, onClose, point, zoom } = useSidebarPoint(allFiltredPoints);
 
   return (
     <Sidebar
       isVisible={isVisible}
       onClose={onClose}
+      size="small"
       title={point?.properties.name || ''}
     >
-      TODO
+      {point && <PointCard point={point} zoom={zoom} />}
     </Sidebar>
   );
 };

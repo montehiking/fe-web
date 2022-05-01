@@ -53,8 +53,9 @@ export const useSidebarPoint = (points: Point[]) => {
   const prevPoint = findPoint(points, prevPlace);
 
   return {
-    point: point || prevPoint,
     isVisible: !!(point && isVisible),
     onClose: () => setState((state) => ({ ...state, isVisible: false })),
+    point: point || prevPoint,
+    zoom: point ? currentPlace?.zoom : prevPlace?.zoom,
   };
 };
