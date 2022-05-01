@@ -9,6 +9,10 @@ import 'src/styles/global.css';
 import 'src/styles/leaflet.css';
 import 'src/styles/theme.css';
 
-export const Provider: React.FC = ({ children }) => (
+type Props = {
+  children: React.ReactNode | React.ReactNode[];
+};
+
+export const Provider: React.FC<Props> = ({ children }) => (
   <IntlProvider>{children}</IntlProvider>
 );
