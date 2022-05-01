@@ -202,7 +202,7 @@ export const useMapState = (isEditor: boolean) => {
         newPoint: state.newPoint,
         points: filteredPoints,
         routes: filteredRoutes,
-        routesPoints: state.routesPoints,
+        routesPoints: state.filters?.routes.checked ? state.routesPoints : [],
       } as MapState,
     },
   };
