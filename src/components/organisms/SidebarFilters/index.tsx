@@ -1,14 +1,14 @@
 import React from 'react';
 
 import { Dimmer } from 'src/components/atoms/Dimmer';
-import { Sidebar as SidebarComponent } from 'src/components/molecules/Sidebar';
+import { Sidebar } from 'src/components/molecules/Sidebar';
 import { Filters } from 'src/components/organisms/Filters';
 import { getWithDecline } from 'src/i18n/Decline';
 import { FiltersState, MapState, SetFilters } from 'src/types';
 import { prepareTempPoint } from 'src/utils/filters';
 import { isLandscape } from 'src/utils/lib';
 
-import styles from 'src/components/organisms/Sidebar/styles.module.css';
+import styles from 'src/components/organisms/SidebarFilters/styles.module.css';
 
 type Props = {
   counter: {
@@ -23,7 +23,7 @@ type Props = {
   setFilters: SetFilters;
 };
 
-export const Sidebar: React.FC<Props> = ({
+export const SidebarFilters: React.FC<Props> = ({
   counter,
   filters,
   isEditor,
@@ -35,15 +35,26 @@ export const Sidebar: React.FC<Props> = ({
   <>
     <Dimmer isVisible={isVisible && !isLandscape()} onClose={onClose} />
 
-    <SidebarComponent
+    <Sidebar
       isVisible={isVisible}
       onClose={onClose}
-      title={{ id: 'components.organisms.Sidebar.filters' }}
+      title={{ id: 'components.organisms.SidebarFilters.filters' }}
       subTitle={getWithDecline(counter.to, [
-        { id: 'components.organisms.Sidebar.filters.0' },
-        { id: 'components.organisms.Sidebar.filters.1', values: counter },
-        { id: 'components.organisms.Sidebar.filters.2', values: counter },
-        { id: 'components.organisms.Sidebar.filters.3', values: counter },
+        {
+          id: 'components.organisms.SidebarFilters.filters.0',
+        },
+        {
+          id: 'components.organisms.SidebarFilters.filters.1',
+          values: counter,
+        },
+        {
+          id: 'components.organisms.SidebarFilters.filters.2',
+          values: counter,
+        },
+        {
+          id: 'components.organisms.SidebarFilters.filters.3',
+          values: counter,
+        },
       ])}
     >
       <Filters filters={filters} onChange={setFilters} mapState={mapState} />
@@ -55,6 +66,6 @@ export const Sidebar: React.FC<Props> = ({
           defaultValue={prepareTempPoint(mapState.newPoint)}
         />
       )}
-    </SidebarComponent>
+    </Sidebar>
   </>
 );

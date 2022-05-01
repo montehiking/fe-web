@@ -21,8 +21,8 @@ export const Sidebar: Story = () => {
       <SidebarComponent
         isVisible={isVisible}
         onClose={() => setIsVisible(false)}
-        title={{ id: 'components.organisms.Sidebar.filters' }}
-        subTitle={{ id: 'components.organisms.Sidebar.filters.0' }}
+        title={{ id: 'components.organisms.SidebarFilters.filters' }}
+        subTitle={{ id: 'components.organisms.SidebarFilters.filters.0' }}
       >
         children
       </SidebarComponent>

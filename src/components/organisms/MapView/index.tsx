@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 
 import { Spin } from 'src/components/atoms/Spin';
 import { Map } from 'src/components/molecules/Map';
-import { Sidebar } from 'src/components/organisms/Sidebar';
+import { SidebarFilters } from 'src/components/organisms/SidebarFilters';
 import { useMapState } from 'src/hooks/useMapState';
 import { getMode } from 'src/navigation';
 
@@ -42,7 +42,7 @@ export const MapView: React.FC = () => {
         routes={map.state.routes}
       />
 
-      <Sidebar
+      <SidebarFilters
         counter={filters.counter}
         filters={filters.state}
         isEditor={isEditor}

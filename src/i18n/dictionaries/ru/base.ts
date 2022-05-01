@@ -21,11 +21,11 @@ export const base = {
   'components.organisms.Filters.subLabel.6': '{count} маршрута',
   'components.organisms.Filters.subLabel.7': '{count} маршрутов',
 
-  'components.organisms.Sidebar.filters': 'Фильтры',
-  'components.organisms.Sidebar.filters.0': 'ничего не выбрано',
-  'components.organisms.Sidebar.filters.1': '{to} объект из {from}',
-  'components.organisms.Sidebar.filters.2': '{to} объекта из {from}',
-  'components.organisms.Sidebar.filters.3': '{to} объектов из {from}',
+  'components.organisms.SidebarFilters.filters': 'Фильтры',
+  'components.organisms.SidebarFilters.filters.0': 'ничего не выбрано',
+  'components.organisms.SidebarFilters.filters.1': '{to} объект из {from}',
+  'components.organisms.SidebarFilters.filters.2': '{to} объекта из {from}',
+  'components.organisms.SidebarFilters.filters.3': '{to} объектов из {from}',
 
   'constants.filters.labels.bridge': 'Мосты',
   'constants.filters.labels.cave': 'Пещеры',
