@@ -8,18 +8,19 @@ import { MsgProps } from 'src/i18n/Msg';
 import styles from 'src/components/molecules/Sidebar/styles.module.css';
 
 type Props = {
-  title: MsgProps;
-  subTitle: MsgProps;
+  children: React.ReactNode | React.ReactNode[];
   isVisible: boolean;
   onClose: () => void;
+  subTitle: MsgProps;
+  title: MsgProps;
 };
 
 export const Sidebar: React.FC<Props> = ({
   children,
   isVisible,
   onClose,
-  title,
   subTitle,
+  title,
 }) => {
   const { visible, inProgress } = useUnmount({ isVisible, delaySeconds: 0.3 });
   const [isModalVisible, setIsModalVisible] = useState(!inProgress);
