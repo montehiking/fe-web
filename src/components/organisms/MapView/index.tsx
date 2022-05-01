@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { Spin } from 'src/components/atoms/Spin';
 import { Map } from 'src/components/molecules/Map';
 import { SidebarFilters } from 'src/components/organisms/SidebarFilters';
+import { SidebarPoint } from 'src/components/organisms/SidebarPoint';
 import { useMapState } from 'src/hooks/useMapState';
 import { getMode } from 'src/navigation';
 
@@ -50,6 +51,10 @@ export const MapView: React.FC = () => {
         mapState={map.state}
         onClose={() => setIsSidebarVisible(false)}
         setFilters={actions.setFilters}
+      />
+
+      <SidebarPoint
+        allFiltredPoints={[...map.state.points, ...map.state.routesPoints]}
       />
     </div>
   );
