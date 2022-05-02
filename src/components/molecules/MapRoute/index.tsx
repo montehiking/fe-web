@@ -18,7 +18,7 @@ export const MapRoute: React.FC<Props> = ({
   ...commonProps
 }) => (
   <Polyline
-    pathOptions={{ color: notVerified ? '#1890FF' : '#FFCC00' }}
+    pathOptions={{ color: notVerified ? '#FFCC00' : '#1890FF' }}
     positions={coordinates}
   >
     <MapPopup {...commonProps} />
