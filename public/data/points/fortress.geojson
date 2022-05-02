@@ -415,12 +415,11 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.900239, 42.301302]
+        "coordinates": [18.900154, 42.301246]
       },
       "properties": {
         "name": "Tvrđava Kosmač",
-        "description": "австро-венгерский форт",
-        "notVerified": true
+        "description": "австро-венгерский форт"
       }
     },
     {
@@ -570,6 +569,17 @@
       "properties": {
         "name": "Biljarda",
         "description": "крепость-дворец Петра II Негоша"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.92178, 42.25872]
+      },
+      "properties": {
+        "name": "Tvrđava Sv. Spiridon",
+        "description": "австро-венгерский форт"
       }
     }
   ]
