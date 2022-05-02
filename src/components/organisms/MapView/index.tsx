@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { Spin } from 'src/components/atoms/Spin';
 import { Map } from 'src/components/molecules/Map';
 import { SidebarFilters } from 'src/components/organisms/SidebarFilters';
+import { SidebarPoint } from 'src/components/organisms/SidebarPoint';
 import { useMapState } from 'src/hooks/useMapState';
 import { getMode } from 'src/navigation';
 
@@ -12,8 +13,8 @@ import styles from 'src/components/organisms/MapView/styles.module.css';
 export const MapView: React.FC = () => {
   const { isOwner, isEditor } = getMode();
 
-  const { actions, filters, map } = useMapState(isOwner || isEditor);
-  const [isSidebarVisible, setIsSidebarVisible] = useState(false);
+  const { actions, filters, map, point } = useMapState(isOwner || isEditor);
+  const [isSidebarFiltersVisible, setIsSidebarFiltersVisible] = useState(false);
 
   const points = [...map.state.points, ...map.state.routesPoints];
 
@@ -33,10 +34,10 @@ export const MapView: React.FC = () => {
       <Map
         filter={{
           ...filters.counter,
-          onClick: () => setIsSidebarVisible(!isSidebarVisible),
+          onClick: () => setIsSidebarFiltersVisible(!isSidebarFiltersVisible),
         }}
         initial={map.initial}
-        onClick={actions.setPoints}
+        onClick={actions.setPlace}
         onZoom={actions.setZoom}
         points={map.state.newPoint ? [...points, map.state.newPoint] : points}
         routes={map.state.routes}
@@ -46,11 +47,13 @@ export const MapView: React.FC = () => {
         counter={filters.counter}
         filters={filters.state}
         isEditor={isEditor}
-        isVisible={isSidebarVisible}
+        isVisible={isSidebarFiltersVisible}
         mapState={map.state}
-        onClose={() => setIsSidebarVisible(false)}
+        onClose={() => setIsSidebarFiltersVisible(false)}
         setFilters={actions.setFilters}
       />
+
+      <SidebarPoint {...point} onClose={actions.hideSidebarPoint} />
     </div>
   );
 };

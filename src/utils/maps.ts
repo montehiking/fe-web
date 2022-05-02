@@ -3,7 +3,7 @@ import { BaseIconOptions, Icon, Point } from 'leaflet';
 import { POINT_ROUTE, POINT_TEMP } from 'src/constants';
 import { Coordinate, InternalCategory, Place, Zoom } from 'src/types';
 
-export const getInitialZoom = (): Zoom => (window.innerWidth > 700 ? 9 : 8);
+export const getDefaultZoom = (): Zoom => (window.innerWidth > 700 ? 9 : 8);
 
 const convertToSexagesimal = (
   value: Coordinate,

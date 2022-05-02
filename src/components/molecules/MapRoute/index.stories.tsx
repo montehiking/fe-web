@@ -12,7 +12,7 @@ export default {
   decorators: [...decorators, mapDecorator],
 } as Meta;
 
-const MapRoute: Story = ({ notVerified }) => (
+const Template: Story = ({ notVerified }) => (
   <MapRouteComponent
     description="description"
     coordinates={[
@@ -24,12 +24,12 @@ const MapRoute: Story = ({ notVerified }) => (
   />
 );
 
-export const MapRouteVerified = MapRoute.bind({});
-MapRouteVerified.args = {
+export const Verified = Template.bind({});
+Verified.args = {
   notVerified: false,
 };
 
-export const MapRouteNotVerified = MapRoute.bind({});
-MapRouteNotVerified.args = {
+export const NotVerified = Template.bind({});
+NotVerified.args = {
   notVerified: true,
 };

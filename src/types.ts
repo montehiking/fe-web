@@ -84,3 +84,9 @@ export type FiltersState = Record<
   Category,
   { checked: boolean; count: number }
 >;
+
+export type PointState = {
+  current?: Point;
+  isVisible: boolean;
+  zoom: Zoom;
+};

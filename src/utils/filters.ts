@@ -1,6 +1,15 @@
 import { POINT_ROUTES, POINT_TEMP } from 'src/constants';
 import { labels } from 'src/constants/filters';
-import { Category, FiltersState, LatLng, Point, Route } from 'src/types';
+import {
+  Category,
+  FiltersState,
+  LatLng,
+  Place,
+  Point,
+  PointState,
+  Route,
+  Zoom,
+} from 'src/types';
 
 export const categories = Object.keys(labels) as Category[];
 
@@ -88,3 +97,27 @@ export const createPoint = ({
   },
   properties,
 });
+
+const findPoint = (points: Point[], place: Place): Point | undefined =>
+  points.find(
+    ({ geometry }) =>
+      geometry.coordinates[0] === place.lng &&
+      geometry.coordinates[1] === place.lat
+  );
+
+export const calcPointState = (
+  zoom: Zoom,
+  points: Point[],
+  routesPoints: Point[],
+  place?: Place
+): PointState => {
+  if (!place) {
+    return { zoom, isVisible: false };
+  }
+
+  const current = findPoint(points, place) || findPoint(routesPoints, place);
+
+  return current
+    ? { zoom, isVisible: true, current }
+    : { zoom, isVisible: false };
+};

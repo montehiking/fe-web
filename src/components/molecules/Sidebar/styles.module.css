@@ -12,7 +12,16 @@
     height: 0;
   }
   to {
-    height: var(--HEIGHT_SIDEBAR);
+    height: var(--HEIGHT_SIDEBAR_BIG);
+  }
+}
+
+@keyframes SidebarSmallInMobile {
+  from {
+    height: 0;
+  }
+  to {
+    height: var(--HEIGHT_SIDEBAR_SMALL);
   }
 }
 
@@ -27,7 +36,16 @@
 
 @keyframes SidebarOutMobile {
   from {
-    height: var(--HEIGHT_SIDEBAR);
+    height: var(--HEIGHT_SIDEBAR_BIG);
+  }
+  to {
+    height: 0;
+  }
+}
+
+@keyframes SidebarSmallOutMobile {
+  from {
+    height: var(--HEIGHT_SIDEBAR_SMALL);
   }
   to {
     height: 0;
@@ -54,23 +72,39 @@
   z-index: 1002;
 }
 
+.sidebar_small {
+  animation-name: SidebarSmallInMobile;
+}
+
 .sidebar__visible {
   animation-name: none;
-  height: var(--HEIGHT_SIDEBAR);
+  height: var(--HEIGHT_SIDEBAR_BIG);
   width: 100vw;
+}
+
+.sidebar_small__visible {
+  height: var(--HEIGHT_SIDEBAR_SMALL);
 }
 
 .sidebar__hide {
   animation-name: SidebarOutMobile;
 }
 
+.sidebar_small__hide {
+  animation-name: SidebarSmallOutMobile;
+}
+
 .container {
   display: flex;
   flex-direction: column;
-  height: var(--HEIGHT_SIDEBAR);
+  height: var(--HEIGHT_SIDEBAR_BIG);
   overflow: auto;
   padding-bottom: var(--SPACING_EXTRA_LARGE);
   width: 100vw;
+}
+
+.container_small {
+  height: var(--HEIGHT_SIDEBAR_SMALL);
 }
 
 @media only screen and (orientation: landscape) {

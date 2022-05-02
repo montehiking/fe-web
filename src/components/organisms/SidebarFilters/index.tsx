@@ -38,7 +38,7 @@ export const SidebarFilters: React.FC<Props> = ({
     <Sidebar
       isVisible={isVisible}
       onClose={onClose}
-      title={{ id: 'components.organisms.SidebarFilters.filters' }}
+      size="big"
       subTitle={getWithDecline(counter.to, [
         {
           id: 'components.organisms.SidebarFilters.filters.0',
@@ -56,6 +56,7 @@ export const SidebarFilters: React.FC<Props> = ({
           values: counter,
         },
       ])}
+      title={{ id: 'components.organisms.SidebarFilters.filters' }}
     >
       <Filters filters={filters} onChange={setFilters} mapState={mapState} />
 

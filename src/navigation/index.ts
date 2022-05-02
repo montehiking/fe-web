@@ -1,9 +1,8 @@
 import { Location, createBrowserHistory } from 'history';
-import { useLayoutEffect, useState } from 'react';
 
 import { Place } from 'src/types';
 
-const history = createBrowserHistory();
+export const history = createBrowserHistory();
 
 export const redirect = ({ lat, lng, zoom }: Place): void => {
   const { search } = history.location;
@@ -44,18 +43,4 @@ export const getPlace = (
     lng: result[1],
     zoom: result[2],
   };
-};
-
-export const usePlace = (): Place | undefined => {
-  const [place, setPlace] = useState<Place | undefined>(getPlace());
-
-  useLayoutEffect(() => {
-    const unlisten = history.listen(({ location }) =>
-      setPlace(getPlace(location))
-    );
-
-    return unlisten;
-  }, []);
-
-  return place;
 };
