@@ -54,10 +54,7 @@ export const useMapState = (isEditor: boolean) => {
     points: [],
     routes: [],
     routesPoints: [],
-    point: {
-      isVisible: false,
-      zoom,
-    },
+    point: calcPointState(zoom, [], []),
   });
 
   useLayoutEffect(() => {
@@ -244,6 +241,11 @@ export const useMapState = (isEditor: boolean) => {
         routesPoints: state.filters?.routes.checked ? state.routesPoints : [],
       } as MapState,
     },
-    point: state.point,
+    // TODO
+    // point: state.point,
+    point: {
+      ...state.point,
+      isVisible: false,
+    },
   };
 };
