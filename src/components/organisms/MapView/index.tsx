@@ -14,7 +14,7 @@ export const MapView: React.FC = () => {
   const { isOwner, isEditor } = getMode();
 
   const { actions, filters, map } = useMapState(isOwner || isEditor);
-  const [isSidebarVisible, setIsSidebarVisible] = useState(false);
+  const [isSidebarFiltersVisible, setIsSidebarFiltersVisible] = useState(false);
 
   const points = [...map.state.points, ...map.state.routesPoints];
 
@@ -34,7 +34,7 @@ export const MapView: React.FC = () => {
       <Map
         filter={{
           ...filters.counter,
-          onClick: () => setIsSidebarVisible(!isSidebarVisible),
+          onClick: () => setIsSidebarFiltersVisible(!isSidebarFiltersVisible),
         }}
         initial={map.initial}
         onClick={actions.setPoints}
@@ -47,15 +47,13 @@ export const MapView: React.FC = () => {
         counter={filters.counter}
         filters={filters.state}
         isEditor={isEditor}
-        isVisible={isSidebarVisible}
+        isVisible={isSidebarFiltersVisible}
         mapState={map.state}
-        onClose={() => setIsSidebarVisible(false)}
+        onClose={() => setIsSidebarFiltersVisible(false)}
         setFilters={actions.setFilters}
       />
 
-      <SidebarPoint
-        allFiltredPoints={[...map.state.points, ...map.state.routesPoints]}
-      />
+      <SidebarPoint points={points} />
     </div>
   );
 };

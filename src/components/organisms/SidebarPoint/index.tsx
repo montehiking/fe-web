@@ -6,11 +6,11 @@ import { useSidebarPoint } from 'src/hooks/useSidebarPoint';
 import { Point } from 'src/types';
 
 type Props = {
-  allFiltredPoints: Point[];
+  points: Point[];
 };
 
-export const SidebarPoint: React.FC<Props> = ({ allFiltredPoints }) => {
-  const { isVisible, onClose, point, zoom } = useSidebarPoint(allFiltredPoints);
+export const SidebarPoint: React.FC<Props> = ({ points }) => {
+  const { isVisible, onClose, point, zoom } = useSidebarPoint(points);
 
   return (
     <Sidebar

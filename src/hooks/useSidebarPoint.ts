@@ -36,13 +36,22 @@ export const useSidebarPoint = (points: Point[]) => {
         const { currentPlace } = state;
         const nextPlace = getPlace(location);
 
-        return JSON.stringify(currentPlace) === JSON.stringify(nextPlace)
-          ? state
-          : {
-              prevPlace: currentPlace,
-              currentPlace: nextPlace,
-              isVisible: true,
-            };
+        if (JSON.stringify(currentPlace) === JSON.stringify(nextPlace)) {
+          return state;
+        }
+
+        if (
+          currentPlace?.lat === nextPlace?.lat &&
+          currentPlace?.lng === nextPlace?.lng
+        ) {
+          return { ...state, zoom: nextPlace?.zoom };
+        }
+
+        return {
+          prevPlace: currentPlace,
+          currentPlace: nextPlace,
+          isVisible: true,
+        };
       });
     });
 
