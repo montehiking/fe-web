@@ -13,7 +13,7 @@ import styles from 'src/components/organisms/MapView/styles.module.css';
 export const MapView: React.FC = () => {
   const { isOwner, isEditor } = getMode();
 
-  const { actions, filters, map } = useMapState(isOwner || isEditor);
+  const { actions, filters, map, point } = useMapState(isOwner || isEditor);
   const [isSidebarFiltersVisible, setIsSidebarFiltersVisible] = useState(false);
 
   const points = [...map.state.points, ...map.state.routesPoints];
@@ -37,7 +37,7 @@ export const MapView: React.FC = () => {
           onClick: () => setIsSidebarFiltersVisible(!isSidebarFiltersVisible),
         }}
         initial={map.initial}
-        onClick={actions.setPoints}
+        onClick={actions.setPlace}
         onZoom={actions.setZoom}
         points={map.state.newPoint ? [...points, map.state.newPoint] : points}
         routes={map.state.routes}
@@ -53,7 +53,7 @@ export const MapView: React.FC = () => {
         setFilters={actions.setFilters}
       />
 
-      <SidebarPoint points={points} />
+      <SidebarPoint {...point} onClose={actions.hideSidebarPoint} />
     </div>
   );
 };

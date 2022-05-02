@@ -10,17 +10,25 @@ import {
   LatLng,
   MapState,
   Point,
+  PointState,
   SetFilters,
   SetPlace,
   SetZoom,
 } from 'src/types';
-import { createPoint, dehydrate, filterData, hydrate } from 'src/utils/filters';
+import {
+  calcPointState,
+  createPoint,
+  dehydrate,
+  filterData,
+  hydrate,
+} from 'src/utils/filters';
 import { getData } from 'src/utils/geoJSON';
-import { getInitialZoom, roundCoordinate } from 'src/utils/maps';
+import { getDefaultZoom, roundCoordinate } from 'src/utils/maps';
 import { getItem, setItem } from 'src/utils/storage';
 
 type State = {
   filters?: FiltersState;
+  point: PointState;
 } & MapState;
 
 const hiddenFilters = getItem<Category[]>('filters', []);
@@ -29,6 +37,7 @@ const initial = getPlace();
 
 export const useMapState = (isEditor: boolean) => {
   const intl = useIntl();
+  const zoom = initial?.zoom || getDefaultZoom();
 
   const newPointParams = {
     name: msg(intl, { id: 'hooks.useMapState.newPoint.name' }),
@@ -45,6 +54,10 @@ export const useMapState = (isEditor: boolean) => {
     points: [],
     routes: [],
     routesPoints: [],
+    point: {
+      isVisible: false,
+      zoom,
+    },
   });
 
   useLayoutEffect(() => {
@@ -115,13 +128,14 @@ export const useMapState = (isEditor: boolean) => {
         });
       }
 
-      setState({
+      setState((state) => ({
         filters: hydrate(points, routes, hiddenFilters),
         newPoint,
         points,
         routes,
         routesPoints,
-      });
+        point: calcPointState(state.point.zoom, points, routesPoints, initial),
+      }));
     });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
@@ -131,7 +145,7 @@ export const useMapState = (isEditor: boolean) => {
     setItem('filters', dehydrate(filters));
   };
 
-  const setPoints: SetPlace = (mode, { lat, lng, zoom }) => {
+  const setPlace: SetPlace = (mode, { lat, lng, zoom }) => {
     const place = {
       lat: roundCoordinate(lat),
       lng: roundCoordinate(lng),
@@ -163,17 +177,41 @@ export const useMapState = (isEditor: boolean) => {
             };
           });
 
-        return { ...state, points: points, newPoint };
+        return {
+          ...state,
+          points: points,
+          newPoint,
+          point: { ...state.point, isVisible: false },
+        };
       });
+    } else {
+      setState((state) => ({
+        ...state,
+        point: calcPointState(
+          state.point.zoom,
+          state.points,
+          state.routesPoints,
+          place
+        ),
+      }));
     }
   };
 
   const setZoom: SetZoom = (zoom) => {
     const place = getPlace();
 
+    setState((state) => ({ ...state, point: { ...state.point, zoom } }));
+
     if (place) {
       redirect({ ...place, zoom });
     }
+  };
+
+  const hideSidebarPoint = () => {
+    setState((state) => ({
+      ...state,
+      point: { ...state.point, isVisible: false },
+    }));
   };
 
   const filteredPoints = filterData(state.points, state.filters);
@@ -181,8 +219,9 @@ export const useMapState = (isEditor: boolean) => {
 
   return {
     actions: {
+      hideSidebarPoint,
       setFilters,
-      setPoints,
+      setPlace,
       setZoom,
     },
     filters: {
@@ -196,7 +235,7 @@ export const useMapState = (isEditor: boolean) => {
       initial: initial || {
         lat: 42.729602,
         lng: 19.288247,
-        zoom: getInitialZoom(),
+        zoom,
       },
       state: {
         newPoint: state.newPoint,
@@ -205,5 +244,6 @@ export const useMapState = (isEditor: boolean) => {
         routesPoints: state.filters?.routes.checked ? state.routesPoints : [],
       } as MapState,
     },
+    point: state.point,
   };
 };

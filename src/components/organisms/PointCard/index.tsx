@@ -2,17 +2,13 @@ import React from 'react';
 
 import { PlaceLink } from 'src/components/atoms/PlaceLink';
 import { Point, Zoom } from 'src/types';
-import { getInitialZoom } from 'src/utils/maps';
 
 type Props = {
   point: Point;
-  zoom?: Zoom;
+  zoom: Zoom;
 };
 
-export const PointCard: React.FC<Props> = ({
-  point,
-  zoom = getInitialZoom(),
-}) => {
+export const PointCard: React.FC<Props> = ({ point, zoom }) => {
   return (
     <PlaceLink
       place={{
