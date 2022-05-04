@@ -342,18 +342,6 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.709885, 42.430835]
-      },
-      "properties": {
-        "name": "TODO",
-        "description": "странный дом",
-        "notVerified": true
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
         "coordinates": [18.719778, 42.43386]
       },
       "properties": {

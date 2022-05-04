@@ -314,6 +314,28 @@
         "description": "курган VIII-I до н.э.",
         "notVerified": true
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.920839, 42.256031]
+      },
+      "properties": {
+        "name": "Spomenik palim borcima",
+        "description": "югославский мемориал"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.744972, 42.412463]
+      },
+      "properties": {
+        "name": "Spomenik palim borcima i žrtvama fašizma",
+        "description": "югославский мемориал"
+      }
     }
   ]
 }
