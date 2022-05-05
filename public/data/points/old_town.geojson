@@ -234,6 +234,40 @@
         "name": "Marovići",
         "description": "старинная полузаброшенная деревня"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.751606, 42.412104]
+      },
+      "properties": {
+        "name": "Gornji Kavač (?)",
+        "description": "старинная полузаброшенная деревня",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.722403, 42.445139]
+      },
+      "properties": {
+        "name": "Ruševine sela",
+        "description": "руины деревни"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.717251, 42.429883]
+      },
+      "properties": {
+        "name": "Ruševine sela",
+        "description": "руины деревни"
+      }
     }
   ]
 }

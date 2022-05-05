@@ -349,6 +349,40 @@
         "name": "Kapela sv. Nikole",
         "description": "развалины часовни 1676"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.701858, 42.426319]
+      },
+      "properties": {
+        "name": "Sv. Antun",
+        "description": "средневековая часовня",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.739779, 42.41897]
+      },
+      "properties": {
+        "name": "Sv. Petke",
+        "description": "церковь XIX в."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.706541, 42.44197]
+      },
+      "properties": {
+        "name": "Sv. Neđelje",
+        "description": "разрушенная часовня XVII в."
+      }
     }
   ]
 }

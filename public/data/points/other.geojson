@@ -372,6 +372,30 @@
         "name": "Reljefna karta Crne Gore",
         "description": "старинная каменная карта"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.739457, 42.418403]
+      },
+      "properties": {
+        "name": "Странный дом (кула?)",
+        "description": "TODO",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.752428, 42.407913]
+      },
+      "properties": {
+        "name": "Начало тропы в Gornji Kavač (?)",
+        "description": "TODO",
+        "notVerified": true
+      }
     }
   ]
 }

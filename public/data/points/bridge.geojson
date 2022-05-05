@@ -144,6 +144,29 @@
         "name": "Stari most",
         "description": "старый мост"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.911652, 42.769142]
+      },
+      "properties": {
+        "name": "Most na Moštanici",
+        "description": "древнеримский мост",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.736945, 42.436048]
+      },
+      "properties": {
+        "name": "Stari most",
+        "description": "старый мост"
+      }
     }
   ]
 }
