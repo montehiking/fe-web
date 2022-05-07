@@ -396,6 +396,28 @@
         "description": "TODO",
         "notVerified": true
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.751716, 42.416518]
+      },
+      "properties": {
+        "name": "Tuneli Vrmac",
+        "description": "система старых тоннелей под горой"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.749828, 42.419086]
+      },
+      "properties": {
+        "name": "Bunker",
+        "description": "заброшенный бункер"
+      }
     }
   ]
 }
