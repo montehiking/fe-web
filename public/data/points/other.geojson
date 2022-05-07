@@ -405,7 +405,7 @@
       },
       "properties": {
         "name": "Tuneli Vrmac",
-        "description": "система старых тоннелей под горой"
+        "description": "система старых тоннелей"
       }
     },
     {
@@ -417,6 +417,17 @@
       "properties": {
         "name": "Bunker",
         "description": "заброшенный бункер"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.838881, 42.277706]
+      },
+      "properties": {
+        "name": "Istočna kapija",
+        "description": "восточные (морские) ворота"
       }
     }
   ]
