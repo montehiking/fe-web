@@ -336,6 +336,17 @@
         "name": "IV. Proleterske",
         "description": "старый квартал"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.26178, 42.443031]
+      },
+      "properties": {
+        "name": "Hercegovačka",
+        "description": "старый квартал"
+      }
     }
   ]
 }

@@ -406,6 +406,17 @@
         "name": "Spomenik palim borcima",
         "description": "югославский мемориал"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.359697, 42.454593]
+      },
+      "properties": {
+        "name": "Spomenik u čast bitke na Fundini",
+        "description": "обелиск"
+      }
     }
   ]
 }

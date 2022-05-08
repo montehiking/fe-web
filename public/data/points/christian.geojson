@@ -383,6 +383,28 @@
         "name": "Sv. Neđelje",
         "description": "разрушенная часовня XVII в."
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.537594, 42.45153]
+      },
+      "properties": {
+        "name": "Sveti Arhangel Mihail",
+        "description": "церковь"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.697615, 42.486988]
+      },
+      "properties": {
+        "name": "Crkva sv. Marka",
+        "description": "городская усыпальница"
+      }
     }
   ]
 }
