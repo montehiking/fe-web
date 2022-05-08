@@ -38,7 +38,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.300701, 43.136926]
+        "coordinates": [19.300307, 43.137281]
       },
       "properties": {
         "name": "Ljutica vodopad",
@@ -108,6 +108,17 @@
       "geometry": {
         "type": "Point",
         "coordinates": [18.783494, 42.364854]
+      },
+      "properties": {
+        "name": "Vodopad",
+        "description": "небольшой водопад"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.337515, 42.73052]
       },
       "properties": {
         "name": "Vodopad",

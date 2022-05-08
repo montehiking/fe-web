@@ -93,7 +93,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.361949, 42.725769]
+        "coordinates": [19.361574, 42.725629]
       },
       "properties": {
         "name": "Stari mlin",
@@ -104,7 +104,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.333389, 42.733725]
+        "coordinates": [19.333524, 42.733569]
       },
       "properties": {
         "name": "Kapija želja",

@@ -384,6 +384,28 @@
         "description": "курган XII в. до н.э.",
         "notVerified": true
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.292207, 43.148726]
+      },
+      "properties": {
+        "name": "Spomenik poručnika Božidara Žugića",
+        "description": "памятник"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.342386, 42.729223]
+      },
+      "properties": {
+        "name": "Spomenik palim borcima",
+        "description": "югославский мемориал"
+      }
     }
   ]
 }

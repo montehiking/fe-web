@@ -27,7 +27,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.362529, 42.725428]
+        "coordinates": [19.362631, 42.725436]
       },
       "properties": {
         "name": "Danilov most",
@@ -38,7 +38,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.340876, 42.728978]
+        "coordinates": [19.340583, 42.729353]
       },
       "properties": {
         "name": "Ruševine starog mosta",
