@@ -86,7 +86,7 @@ msgstr "{to} объектов из {from}"
 
 msgctxt "base"
 msgid "constants.filters.labels.bridge"
-msgstr "Мосты"
+msgstr "Мельницы и мосты"
 
 msgctxt "base"
 msgid "constants.filters.labels.cave"

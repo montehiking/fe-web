@@ -27,7 +27,7 @@ export const base = {
   'components.organisms.SidebarFilters.filters.2': '{to} объекта из {from}',
   'components.organisms.SidebarFilters.filters.3': '{to} объектов из {from}',
 
-  'constants.filters.labels.bridge': 'Мосты',
+  'constants.filters.labels.bridge': 'Мельницы и мосты',
   'constants.filters.labels.cave': 'Пещеры',
   'constants.filters.labels.christian': 'Часовни и монастыри',
   'constants.filters.labels.fortress': 'Форты и крепости',

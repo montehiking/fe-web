@@ -167,6 +167,83 @@
         "name": "Stari most",
         "description": "старый мост"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.875591, 42.293835]
+      },
+      "properties": {
+        "name": "Stari mlin",
+        "description": "разрушенная мельница"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.136201, 42.09414]
+      },
+      "properties": {
+        "name": "Barski akvadukt",
+        "description": "турецкий акведук"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.361574, 42.725629]
+      },
+      "properties": {
+        "name": "Stari mlin",
+        "description": "разрушенная мельница"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.018638, 42.35548]
+      },
+      "properties": {
+        "name": "Stari Mlin",
+        "description": "заброшенная мельница"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.00943, 42.353241]
+      },
+      "properties": {
+        "name": "Stari Mlin",
+        "description": "заброшенная мельница"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.009003, 42.352316]
+      },
+      "properties": {
+        "name": "Stari Mlin",
+        "description": "заброшенная мельница"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.089636, 43.152319]
+      },
+      "properties": {
+        "name": "Jakšića Mlin",
+        "description": "старая мельница"
+      }
     }
   ]
 }
