@@ -26,7 +26,7 @@ export const renderFile = (
     backup.call(console, ...args);
   };
 
-  const styles = ['placemark-red', 'placemark-yellow'].map((id) =>
+  const placemarkStyles = ['placemark-red', 'placemark-yellow'].map((id) =>
     createElement('Style', {
       id,
       key: id,
@@ -36,6 +36,23 @@ export const renderFile = (
             children: `https://${providerToDomain[provider]}/placemarks/${id}.png`,
           }),
         }),
+      }),
+    })
+  );
+
+  const lineStyles = [
+    // KML colors
+    { id: 'line-blue', color: 'ffff9018' },
+    { id: 'line-yellow', color: 'ff00ccff' },
+  ].map(({ id, color }) =>
+    createElement('Style', {
+      id,
+      key: id,
+      children: createElement('LineStyle', {
+        children: [
+          createElement('color', { children: color }),
+          createElement('width', { children: 4 }),
+        ],
       }),
     })
   );
@@ -78,39 +95,43 @@ export const renderFile = (
     });
   });
 
-  const routes = mapState.routes.map(({ geometry, properties }) =>
-    createElement('Placemark', {
+  const routes = mapState.routes.map(({ geometry, properties }) => {
+    const style = properties.notVerified ? 'line-yellow' : 'line-blue';
+
+    return createElement('Placemark', {
       key: geometry.coordinates[0].join() + properties.name,
       children: [
         createElement('name', { children: properties.name }),
         createElement('description', {
           children: properties.description,
         }),
-        createElement('Style', {
-          children: createElement('LineStyle', {
-            children: [
-              createElement('color', {
-                children: properties.notVerified ? 'yellow' : 'blue',
-              }),
-              createElement('width', { children: 5 }),
-            ],
-          }),
-        }),
+        createElement('styleUrl', { children: `#${style}` }),
         createElement('LineString', {
-          children: createElement('coordinates', {
-            children: geometry.coordinates
-              .map((coords) => coords.join())
-              .join(' '),
-          }),
+          children: [
+            createElement('tessellate', { children: 1 }),
+            createElement('coordinates', {
+              children: geometry.coordinates
+                .map((coords) => coords.join())
+                .join(' '),
+            }),
+          ],
         }),
       ],
-    })
-  );
+    });
+  });
 
   const xmlDoc = createElement('kml', {
     xmlns: 'http://earth.google.com/kml/2.2',
     children: createElement('Document', {
-      children: [...styles, name, visibility, extendedData, points, routes],
+      children: [
+        ...placemarkStyles,
+        ...lineStyles,
+        name,
+        visibility,
+        extendedData,
+        points,
+        routes,
+      ],
     }),
   });
 

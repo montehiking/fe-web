@@ -20,6 +20,7 @@ export const MapRoute: React.FC<Props> = ({
   <Polyline
     pathOptions={{ color: notVerified ? '#FFCC00' : '#1890FF' }}
     positions={coordinates}
+    weight={4}
   >
     <MapPopup {...commonProps} />
   </Polyline>
