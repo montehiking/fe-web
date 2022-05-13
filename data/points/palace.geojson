@@ -67,6 +67,62 @@
         "description": "музей",
         "notVerified": true
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.709885, 42.430835]
+      },
+      "properties": {
+        "name": "Kompleks Buća",
+        "description": "имение",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.740058, 42.419132]
+      },
+      "properties": {
+        "name": "Kompleks Rizzo",
+        "description": "руины имения XVI в."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.701023, 42.426532]
+      },
+      "properties": {
+        "name": "Ljetnikovac Pima Pasquali",
+        "description": "руины средневекового имения"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.7015347, 42.4851907]
+      },
+      "properties": {
+        "name": "Palača Balović",
+        "description": "дворец XVIII в."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.7025546, 42.4852676]
+      },
+      "properties": {
+        "name": "Palača Bronza",
+        "description": "дворец XVIII в."
+      }
     }
   ]
 }

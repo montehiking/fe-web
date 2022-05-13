@@ -16,28 +16,6 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.875591, 42.293835]
-      },
-      "properties": {
-        "name": "Stari mlin",
-        "description": "разрушенная мельница"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [19.136201, 42.09414]
-      },
-      "properties": {
-        "name": "Barski akvadukt",
-        "description": "турецкий акведук"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
         "coordinates": [18.764201, 42.436073]
       },
       "properties": {
@@ -93,18 +71,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [19.361949, 42.725769]
-      },
-      "properties": {
-        "name": "Stari mlin",
-        "description": "разрушенная мельница"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [19.333389, 42.733725]
+        "coordinates": [19.333524, 42.733569]
       },
       "properties": {
         "name": "Kapija želja",
@@ -291,63 +258,7 @@
       },
       "properties": {
         "name": "Stara Fabrica ribe",
-        "description": "Заброшенный завод по изготовлению жемчуга из рыбьей чешуи"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [19.018638, 42.35548]
-      },
-      "properties": {
-        "name": "Stari Mlin",
-        "description": "заброшенная мельница"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [19.00943, 42.353241]
-      },
-      "properties": {
-        "name": "Stari Mlin",
-        "description": "заброшенная мельница"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [19.009003, 42.352316]
-      },
-      "properties": {
-        "name": "Stari Mlin",
-        "description": "заброшенная мельница"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [19.089636, 43.152319]
-      },
-      "properties": {
-        "name": "Jakšića Mlin",
-        "description": "старая мельница"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [18.709885, 42.430835]
-      },
-      "properties": {
-        "name": "TODO",
-        "description": "странный дом",
-        "notVerified": true
+        "description": "заброшенный завод по изготовлению жемчуга из рыбьей чешуи"
       }
     },
     {
@@ -383,6 +294,74 @@
       "properties": {
         "name": "Reljefna karta Crne Gore",
         "description": "старинная каменная карта"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.739457, 42.418403]
+      },
+      "properties": {
+        "name": "Странный дом (кула?)",
+        "description": "TODO",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.752428, 42.407913]
+      },
+      "properties": {
+        "name": "Начало тропы в Gornji Kavač (?)",
+        "description": "TODO",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.751716, 42.416518]
+      },
+      "properties": {
+        "name": "Tuneli Vrmac",
+        "description": "система старых тоннелей"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.749828, 42.419086]
+      },
+      "properties": {
+        "name": "Bunker",
+        "description": "заброшенный бункер"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.838881, 42.277706]
+      },
+      "properties": {
+        "name": "Istočna kapija",
+        "description": "восточные (морские) ворота"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.201328, 41.924748]
+      },
+      "properties": {
+        "name": "Trg roblja",
+        "description": "невольничья площадь"
       }
     }
   ]

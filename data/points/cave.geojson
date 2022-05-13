@@ -56,6 +56,18 @@
         "name": "Obodska pećina",
         "description": "пещера"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.4814663, 42.7790573]
+      },
+      "properties": {
+        "name": "Crvena stijena",
+        "description": "археологический памятник (пещера)",
+        "notVerified": true
+      }
     }
   ]
 }
