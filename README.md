@@ -7,7 +7,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Infrastructure
 
 - staging: TODO
-- production: [map.neruchev.com](https://map.neruchev.com)
+- production: [montehiking.com](https://montehiking.com)
 
 ## Pre requirements
 
