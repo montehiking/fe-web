@@ -270,8 +270,7 @@
       },
       "properties": {
         "name": "Sveta Vrača",
-        "description": "церковь XV в.",
-        "notVerified": true
+        "description": "церковь XV в."
       }
     },
     {
@@ -316,6 +315,95 @@
       "properties": {
         "name": "Cetinjski manastir na Ćipuru",
         "description": "руины монастыря XV в."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.742461, 42.421667]
+      },
+      "properties": {
+        "name": "Sv. Ane",
+        "description": "часовня XV в."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.742182, 42.417548]
+      },
+      "properties": {
+        "name": "Sv. Križ",
+        "description": "часовня XVII в."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.740165, 42.41918]
+      },
+      "properties": {
+        "name": "Kapela sv. Nikole",
+        "description": "развалины часовни 1676"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.701858, 42.426319]
+      },
+      "properties": {
+        "name": "Sv. Antun",
+        "description": "средневековая часовня",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.739779, 42.41897]
+      },
+      "properties": {
+        "name": "Sv. Petke",
+        "description": "церковь XIX в."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.706541, 42.44197]
+      },
+      "properties": {
+        "name": "Sv. Neđelje",
+        "description": "разрушенная часовня XVII в."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.537594, 42.45153]
+      },
+      "properties": {
+        "name": "Sveti Arhangel Mihail",
+        "description": "церковь"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.697615, 42.486988]
+      },
+      "properties": {
+        "name": "Crkva sv. Marka",
+        "description": "городская усыпальница"
       }
     }
   ]

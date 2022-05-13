@@ -26,7 +26,11 @@ const ExportButton: React.FC<Props> = ({ mapState }) => {
 
     zip
       .file('MonteHiking.kml', renderFile('mapsme', mapState))
-      .generateAsync({ type: 'blob' })
+      .generateAsync({
+        type: 'blob',
+        compression: 'DEFLATE',
+        compressionOptions: { level: 9 },
+      })
       .then((content) => saveAs(content, 'MonteHiking.kmz'));
   };
 

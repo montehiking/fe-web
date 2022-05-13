@@ -1,9 +1,15 @@
-import { IntlShape } from 'react-intl';
-
 import { POINT_ROUTES, POINT_TEMP } from 'src/constants';
 import { labels } from 'src/constants/filters';
-import { msg } from 'src/i18n/Msg';
-import { Category, FiltersState, LatLng, Point, Route } from 'src/types';
+import {
+  Category,
+  FiltersState,
+  LatLng,
+  Place,
+  Point,
+  PointState,
+  Route,
+  Zoom,
+} from 'src/types';
 
 export const categories = Object.keys(labels) as Category[];
 
@@ -38,8 +44,9 @@ export const hydrate = (
   [...points, ...routes].forEach((point) => {
     const { category } = point.properties;
 
-    if (state[category]) {
-      state[category].count += 1;
+    if (category in state) {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      (state as any)[category].count += 1;
     }
   });
 
@@ -54,7 +61,8 @@ export const filterData = <T extends Point | Route>(
   filters
     ? data.filter(
         (m) =>
-          filters[m.properties.category]?.checked ??
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          (filters as any)[m.properties.category]?.checked ??
           m.properties.category === POINT_TEMP
       )
     : [];
@@ -78,23 +86,38 @@ export const prepareTempPoint = (point?: Point) => {
   return JSON.stringify(serialized, null, 2);
 };
 
-export const createPoint = (
-  intl: IntlShape,
-  latLng: LatLng,
-  active: boolean
-): Point => ({
+export const createPoint = ({
+  latLng,
+  ...properties
+}: { latLng: LatLng } & Point['properties']): Point => ({
   type: 'Feature',
   geometry: {
     type: 'Point',
     coordinates: [latLng.lng, latLng.lat],
   },
-  properties: {
-    active,
-    name: msg(intl, { id: 'utils.filters.newPoint.name' }),
-    description: msg(intl, {
-      id: 'utils.filters.newPoint.description',
-    }),
-    category: POINT_TEMP,
-    notVerified: true,
-  },
+  properties,
 });
+
+const findPoint = (points: Point[], place: Place): Point | undefined =>
+  points.find(
+    ({ geometry }) =>
+      geometry.coordinates[0] === place.lng &&
+      geometry.coordinates[1] === place.lat
+  );
+
+export const calcPointState = (
+  zoom: Zoom,
+  points: Point[],
+  routesPoints: Point[],
+  place?: Place
+): PointState => {
+  if (!place) {
+    return { zoom, isVisible: false };
+  }
+
+  const current = findPoint(points, place) || findPoint(routesPoints, place);
+
+  return current
+    ? { zoom, isVisible: true, current }
+    : { zoom, isVisible: false };
+};

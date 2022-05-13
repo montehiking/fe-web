@@ -3,7 +3,11 @@ import { IntlProvider as Provider } from 'react-intl';
 
 import { defaultLocale, locales } from 'src/i18n';
 
-export const IntlProvider: React.FC = ({ children }) => {
+type Props = {
+  children: React.ReactNode | React.ReactNode[];
+};
+
+export const IntlProvider: React.FC<Props> = ({ children }) => {
   const locale = defaultLocale; // TODO: automatic language detection
 
   return (

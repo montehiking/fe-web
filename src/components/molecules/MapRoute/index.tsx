@@ -4,8 +4,7 @@ import { Polyline } from 'react-leaflet';
 import {
   MapPopup,
   Props as MapPopupProps,
-} from 'src/components/atoms/MapPopup';
-import { MapMarker } from 'src/components/molecules/MapMarker';
+} from 'src/components/molecules/MapPopup';
 import { LatLng } from 'src/types';
 
 type Props = Omit<MapPopupProps, 'latLng' | 'zoom'> & {
@@ -17,21 +16,12 @@ export const MapRoute: React.FC<Props> = ({
   coordinates,
   notVerified,
   ...commonProps
-}) => {
-  const icon = notVerified ? 'yellow' : 'blue';
-
-  return (
-    <>
-      <Polyline pathOptions={{ color: '#1890ff' }} positions={coordinates}>
-        <MapPopup {...commonProps} />
-      </Polyline>
-
-      <MapMarker icon={icon} latLng={coordinates[0]} {...commonProps} />
-      <MapMarker
-        icon={icon}
-        latLng={coordinates[coordinates.length - 1]}
-        {...commonProps}
-      />
-    </>
-  );
-};
+}) => (
+  <Polyline
+    pathOptions={{ color: notVerified ? '#FFCC00' : '#1890FF' }}
+    positions={coordinates}
+    weight={4}
+  >
+    <MapPopup {...commonProps} />
+  </Polyline>
+);

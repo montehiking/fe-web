@@ -2,7 +2,7 @@
 // If you want to change the content of this file, you need to edit
 // file '/dictionaries/ru.po' and run '.po' extractor
 export const base = {
-  'components.atoms.MapPopup.tooltip.showOnGoogleMaps':
+  'components.atoms.PlaceLink.tooltip.showOnGoogleMaps':
     'Показать на Google Картах',
 
   'components.molecules.MapTilesLayer.map': 'Карта',
@@ -21,13 +21,13 @@ export const base = {
   'components.organisms.Filters.subLabel.6': '{count} маршрута',
   'components.organisms.Filters.subLabel.7': '{count} маршрутов',
 
-  'components.organisms.MapView.filters': 'Фильтры',
-  'components.organisms.MapView.filters.0': 'ничего не выбрано',
-  'components.organisms.MapView.filters.1': '{to} объект из {from}',
-  'components.organisms.MapView.filters.2': '{to} объекта из {from}',
-  'components.organisms.MapView.filters.3': '{to} объектов из {from}',
+  'components.organisms.SidebarFilters.filters': 'Фильтры',
+  'components.organisms.SidebarFilters.filters.0': 'ничего не выбрано',
+  'components.organisms.SidebarFilters.filters.1': '{to} объект из {from}',
+  'components.organisms.SidebarFilters.filters.2': '{to} объекта из {from}',
+  'components.organisms.SidebarFilters.filters.3': '{to} объектов из {from}',
 
-  'constants.filters.labels.bridge': 'Мосты',
+  'constants.filters.labels.bridge': 'Мельницы и мосты',
   'constants.filters.labels.cave': 'Пещеры',
   'constants.filters.labels.christian': 'Часовни и монастыри',
   'constants.filters.labels.fortress': 'Форты и крепости',
@@ -41,6 +41,6 @@ export const base = {
   'constants.filters.labels.routes': 'Маршруты',
   'constants.filters.labels.waterfall': 'Водопады',
 
-  'utils.filters.newPoint.description': 'новая локация',
-  'utils.filters.newPoint.name': 'Неизвестное место',
+  'hooks.useMapState.newPoint.description': 'новая локация',
+  'hooks.useMapState.newPoint.name': 'Неизвестное место',
 };

@@ -1,9 +1,8 @@
 import React from 'react';
 import { Popup } from 'react-leaflet';
 
-import { Msg } from 'src/i18n/Msg';
+import { PlaceLink } from 'src/components/atoms/PlaceLink';
 import { Place } from 'src/types';
-import { createGoogleMapsURL } from 'src/utils/maps';
 
 export type Props = {
   description: string;
@@ -19,9 +18,7 @@ export const MapPopup: React.FC<Props> = ({ description, name, place }) => (
 
     {place && (
       <p className="popup-link">
-        <a href={createGoogleMapsURL(place)} rel="noreferrer" target="_blank">
-          <Msg id="components.atoms.MapPopup.tooltip.showOnGoogleMaps" />
-        </a>
+        <PlaceLink place={place} />
       </p>
     )}
   </Popup>

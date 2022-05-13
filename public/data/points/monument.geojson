@@ -263,7 +263,7 @@
       },
       "properties": {
         "name": "Kameni tumul Gomilica",
-        "description": "каменный курган VIII-I до н.э.",
+        "description": "каменный курган VIII-I в. до н.э.",
         "notVerified": true
       }
     },
@@ -275,7 +275,7 @@
       },
       "properties": {
         "name": "Kameni tumul Pasiglav 1",
-        "description": "курган VIII-I до н.э.",
+        "description": "каменный курган VIII-I в. до н.э.",
         "notVerified": true
       }
     },
@@ -287,7 +287,7 @@
       },
       "properties": {
         "name": "Kameni tumul Pasiglav 2",
-        "description": "курган VIII-I до н.э.",
+        "description": "каменный курган VIII-I в. до н.э.",
         "notVerified": true
       }
     },
@@ -299,7 +299,7 @@
       },
       "properties": {
         "name": "Kameni tumul Pasiglav 3",
-        "description": "курган VIII-I до н.э.",
+        "description": "каменный курган VIII-I в. до н.э.",
         "notVerified": true
       }
     },
@@ -311,7 +311,157 @@
       },
       "properties": {
         "name": "Kameni tumul Kalac",
-        "description": "курган VIII-I до н.э.",
+        "description": "каменный курган VIII-I в. до н.э.",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.920839, 42.256031]
+      },
+      "properties": {
+        "name": "Spomenik palim borcima",
+        "description": "югославский мемориал"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.744972, 42.412463]
+      },
+      "properties": {
+        "name": "Spomenik palim borcima i žrtvama fašizma",
+        "description": "югославский мемориал"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.740251, 42.382387]
+      },
+      "properties": {
+        "name": "Velika Gruda",
+        "description": "курган бронзового века",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.7375, 42.38361]
+      },
+      "properties": {
+        "name": "Mala Gruda",
+        "description": "курган бронзового века",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.03472, 42.1425]
+      },
+      "properties": {
+        "name": "Mogila na Rake",
+        "description": "курган III тыс. до н.э.",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.223461, 42.454628]
+      },
+      "properties": {
+        "name": "Gruda Boljevica",
+        "description": "курган XII в. до н.э.",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.292207, 43.148726]
+      },
+      "properties": {
+        "name": "Spomenik poručnika Božidara Žugića",
+        "description": "памятник"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.342386, 42.729223]
+      },
+      "properties": {
+        "name": "Spomenik palim borcima",
+        "description": "югославский мемориал"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.359697, 42.454593]
+      },
+      "properties": {
+        "name": "Spomenik u čast bitke na Fundini",
+        "description": "обелиск"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.919809, 42.386096]
+      },
+      "properties": {
+        "name": "Mauzolej Vladike Danila",
+        "description": "усыпальница"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.148313, 43.09446]
+      },
+      "properties": {
+        "name": "Bogumilski stećci",
+        "description": "некрополь XII-XVI вв.",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.8409806, 43.1542178]
+      },
+      "properties": {
+        "name": "Grčko groblje",
+        "description": "древний некрополь",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.7412932, 43.1954159]
+      },
+      "properties": {
+        "name": "Grčko groblje",
+        "description": "древний некрополь",
         "notVerified": true
       }
     }

@@ -1,14 +1,22 @@
 import { Location, createBrowserHistory } from 'history';
-import { useLayoutEffect, useState } from 'react';
 
 import { Place } from 'src/types';
 
-const history = createBrowserHistory();
+export const history = createBrowserHistory();
 
 export const redirect = ({ lat, lng, zoom }: Place): void => {
   const { search } = history.location;
 
   history.replace(`/place/@${lat},${lng},${zoom}z${search}`, {});
+};
+
+export const getMode = () => {
+  const searchString = history.location.search.replace('?', '');
+
+  return {
+    isOwner: searchString === 'owner',
+    isEditor: searchString === 'editor',
+  };
 };
 
 export const getPlace = (
@@ -35,18 +43,4 @@ export const getPlace = (
     lng: result[1],
     zoom: result[2],
   };
-};
-
-export const usePlace = (): Place | undefined => {
-  const [place, setPlace] = useState<Place | undefined>(getPlace());
-
-  useLayoutEffect(() => {
-    const unlisten = history.listen(({ location }) =>
-      setPlace(getPlace(location))
-    );
-
-    return unlisten;
-  }, []);
-
-  return place;
 };

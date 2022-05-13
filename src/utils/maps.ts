@@ -1,6 +1,9 @@
-import { Coordinate, Place, Zoom } from 'src/types';
+import { BaseIconOptions, Icon, Point } from 'leaflet';
 
-export const getInitialZoom = (): Zoom => (window.innerWidth > 700 ? 9 : 8);
+import { POINT_ROUTE, POINT_TEMP } from 'src/constants';
+import { Coordinate, InternalCategory, Place, Zoom } from 'src/types';
+
+export const getDefaultZoom = (): Zoom => (window.innerWidth > 700 ? 9 : 8);
 
 const convertToSexagesimal = (
   value: Coordinate,
@@ -36,3 +39,32 @@ export const createGoogleMapsURL = ({ lat, lng, zoom }: Place) => {
 
 export const roundCoordinate = (value: Coordinate) =>
   Math.round(value * 1000000) / 1000000;
+
+const iconOptions: BaseIconOptions = {
+  iconSize: new Point(27, 43),
+  iconAnchor: [13.5, 41],
+};
+
+export const icons = {
+  blue: new Icon({ iconUrl: '/pin/blue.svg', ...iconOptions }),
+  gray: new Icon({ iconUrl: '/pin/gray.svg', ...iconOptions }),
+  red: new Icon({ iconUrl: '/pin/red.svg', ...iconOptions }),
+  yellow: new Icon({ iconUrl: '/pin/yellow.svg', ...iconOptions }),
+};
+
+export type Icons = keyof typeof icons;
+
+export const getIconColor = (
+  category: InternalCategory,
+  notVerified?: boolean
+): Icons => {
+  if (category === POINT_TEMP) {
+    return 'gray';
+  }
+
+  if (notVerified) {
+    return 'yellow';
+  }
+
+  return category === POINT_ROUTE ? 'blue' : 'red';
+};

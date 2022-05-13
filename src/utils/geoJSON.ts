@@ -1,5 +1,5 @@
 import { POINT_ROUTES } from 'src/constants';
-import { Category, GeoJSON, MapState, Point, Route } from 'src/types';
+import { Category, GeoJSON, MapData, Point, Route } from 'src/types';
 import { categories } from 'src/utils/filters';
 
 type GeoData = Point | Route;
@@ -35,7 +35,7 @@ const fetchData = async (
   }
 };
 
-export const getData = async (isEditor: boolean): Promise<MapState> => {
+export const getData = async (isEditor: boolean): Promise<MapData> => {
   const collections = await Promise.all(
     categories.map((category) => fetchData(category, isEditor))
   );

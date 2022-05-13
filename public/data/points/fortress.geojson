@@ -16,7 +16,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.838263, 42.277129]
+        "coordinates": [18.838216, 42.277122]
       },
       "properties": {
         "name": "Tvrđava Svete Marije (Citadela)",
@@ -274,7 +274,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.689568, 42.472407]
+        "coordinates": [18.690072, 42.473284]
       },
       "properties": {
         "name": "Tvrđava Bijeli Pjesak",
@@ -302,8 +302,7 @@
       },
       "properties": {
         "name": "Tvrđava Škaljari",
-        "description": "австро-венгерская батарея",
-        "notVerified": true
+        "description": "австро-венгерская батарея"
       }
     },
     {
@@ -415,12 +414,11 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.900239, 42.301302]
+        "coordinates": [18.900154, 42.301246]
       },
       "properties": {
         "name": "Tvrđava Kosmač",
-        "description": "австро-венгерский форт",
-        "notVerified": true
+        "description": "австро-венгерский форт"
       }
     },
     {
@@ -488,7 +486,7 @@
         "coordinates": [19.366087, 42.470415]
       },
       "properties": {
-        "name": "Medun",
+        "name": "Medun (Meteon)",
         "description": "иллирийский город-крепость",
         "notVerified": true
       }
@@ -570,6 +568,52 @@
       "properties": {
         "name": "Biljarda",
         "description": "крепость-дворец Петра II Негоша"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.92178, 42.25872]
+      },
+      "properties": {
+        "name": "Tvrđava Sv. Spiridon",
+        "description": "австро-венгерский форт"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.942017, 42.774442]
+      },
+      "properties": {
+        "name": "Bedem",
+        "description": "турецкая крепость",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.7324519, 42.4839375]
+      },
+      "properties": {
+        "name": "Bajova Kula",
+        "description": "черногорский дом-крепость",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.201629, 41.924764]
+      },
+      "properties": {
+        "name": "Kula Balšića",
+        "description": "средневековый дом-крепость"
       }
     }
   ]

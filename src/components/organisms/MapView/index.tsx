@@ -3,32 +3,22 @@ import React, { useState } from 'react';
 
 import { Spin } from 'src/components/atoms/Spin';
 import { Map } from 'src/components/molecules/Map';
-import { Sidebar } from 'src/components/molecules/Sidebar';
-import { Filters } from 'src/components/organisms/Filters';
+import { SidebarFilters } from 'src/components/organisms/SidebarFilters';
+import { SidebarPoint } from 'src/components/organisms/SidebarPoint';
 import { useMapState } from 'src/hooks/useMapState';
-import { getWithDecline } from 'src/i18n/Decline';
-import { prepareTempPoint } from 'src/utils/filters';
+import { getMode } from 'src/navigation';
 
 import styles from 'src/components/organisms/MapView/styles.module.css';
 
 export const MapView: React.FC = () => {
-  const searchString = window.location.search.replace('?', '');
+  const { isOwner, isEditor } = getMode();
 
-  const isOwner = searchString === 'owner';
-  const isEditor = searchString === 'editor';
+  const { actions, filters, map, point } = useMapState(isOwner || isEditor);
+  const [isSidebarFiltersVisible, setIsSidebarFiltersVisible] = useState(false);
 
-  const {
-    counter,
-    filters,
-    initial,
-    mapState,
-    setFilters,
-    setPoints,
-    setZoom,
-  } = useMapState(isOwner || isEditor);
-  const [isSidebarVisible, setIsSidebarVisible] = useState(false);
+  const points = [...map.state.points, ...map.state.routesPoints];
 
-  if (!filters) {
+  if (!filters.state) {
     return (
       <div className={styles.wrapper} data-testid="page">
         <Spin size="large" />
@@ -43,36 +33,27 @@ export const MapView: React.FC = () => {
     >
       <Map
         filter={{
-          ...counter,
-          onClick: () => setIsSidebarVisible(!isSidebarVisible),
+          ...filters.counter,
+          onClick: () => setIsSidebarFiltersVisible(!isSidebarFiltersVisible),
         }}
-        initial={initial}
-        onClick={setPoints}
-        onZoom={setZoom}
-        state={mapState}
+        initial={map.initial}
+        onClick={actions.setPlace}
+        onZoom={actions.setZoom}
+        points={map.state.newPoint ? [...points, map.state.newPoint] : points}
+        routes={map.state.routes}
       />
 
-      <Sidebar
-        isVisible={isSidebarVisible}
-        onClose={() => setIsSidebarVisible(false)}
-        title={{ id: 'components.organisms.MapView.filters' }}
-        subTitle={getWithDecline(counter.to, [
-          { id: 'components.organisms.MapView.filters.0' },
-          { id: 'components.organisms.MapView.filters.1', values: counter },
-          { id: 'components.organisms.MapView.filters.2', values: counter },
-          { id: 'components.organisms.MapView.filters.3', values: counter },
-        ])}
-      >
-        <Filters filters={filters} onChange={setFilters} mapState={mapState} />
+      <SidebarFilters
+        counter={filters.counter}
+        filters={filters.state}
+        isEditor={isEditor}
+        isVisible={isSidebarFiltersVisible}
+        mapState={map.state}
+        onClose={() => setIsSidebarFiltersVisible(false)}
+        setFilters={actions.setFilters}
+      />
 
-        {isEditor && (
-          <textarea
-            key={mapState.newPoint?.geometry.coordinates.join()}
-            className={styles.code}
-            defaultValue={prepareTempPoint(mapState.newPoint)}
-          />
-        )}
-      </Sidebar>
+      <SidebarPoint {...point} onClose={actions.hideSidebarPoint} />
     </div>
   );
 };

@@ -13,6 +13,7 @@ export type Place = LatLng & {
   zoom: Zoom;
 };
 
+export type SetFilters = (filters: FiltersState) => void;
 export type SetPlace = (mode: 'new' | 'existing', place: Place) => void;
 export type SetZoom = (zoom: Zoom) => void;
 
@@ -32,6 +33,8 @@ export type Category =
   | 'other'
   | 'palace'
   | 'waterfall';
+
+export type InternalCategory = Category | 'routePoint' | '';
 
 type GeoJSONPointField = {
   type: 'Point';
@@ -60,16 +63,30 @@ export type GeoJSON = {
   features: GeoJSONPoint<never, never, GeoJSONPointField | GeoJSONRouteField>[];
 };
 
-export type Point = GeoJSONPoint<boolean, Category, GeoJSONPointField>;
-export type Route = GeoJSONPoint<never, Category, GeoJSONRouteField>;
+export type Point = GeoJSONPoint<
+  boolean,
+  Exclude<InternalCategory, 'routes'>,
+  GeoJSONPointField
+>;
+export type Route = GeoJSONPoint<never, 'routes', GeoJSONRouteField>;
 
-export type MapState = {
+export type MapData = {
   points: Point[];
   routes: Route[];
+};
+
+export type MapState = MapData & {
   newPoint?: Point;
+  routesPoints: Point[];
 };
 
 export type FiltersState = Record<
   Category,
   { checked: boolean; count: number }
 >;
+
+export type PointState = {
+  current?: Point;
+  isVisible: boolean;
+  zoom: Zoom;
+};

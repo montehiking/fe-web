@@ -11,7 +11,7 @@ export default {
 } as Meta;
 
 export const ExportButton: Story = () => {
-  const { mapState } = useMapState(false);
+  const { map } = useMapState(false);
 
-  return <ExportButtonComponent mapState={mapState} />;
+  return <ExportButtonComponent mapState={map.state} />;
 };

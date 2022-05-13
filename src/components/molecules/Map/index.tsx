@@ -6,7 +6,7 @@ import { MapControlsLayer } from 'src/components/molecules/MapControlsLayer';
 import { MapMarkersLayer } from 'src/components/molecules/MapMarkersLayer';
 import { MapRoutesLayer } from 'src/components/molecules/MapRoutesLayer';
 import { MapTilesLayer } from 'src/components/molecules/MapTilesLayer';
-import { MapState, Place, SetPlace, SetZoom } from 'src/types';
+import { Place, Point, Route, SetPlace, SetZoom } from 'src/types';
 
 import styles from 'src/components/molecules/Map/styles.module.css';
 
@@ -15,7 +15,8 @@ type Props = {
   initial: Place;
   onClick: SetPlace;
   onZoom: SetZoom;
-  state: MapState;
+  points: Point[];
+  routes: Route[];
 };
 
 export const Map: React.FC<Props> = ({
@@ -23,7 +24,8 @@ export const Map: React.FC<Props> = ({
   initial: { zoom, ...center },
   onClick,
   onZoom,
-  state,
+  points,
+  routes,
 }) => (
   <MapContainer
     center={center}
@@ -37,9 +39,9 @@ export const Map: React.FC<Props> = ({
       initialZoom={zoom}
       onClick={onClick}
       onZoom={onZoom}
-      points={state.newPoint ? [...state.points, state.newPoint] : state.points}
+      points={points}
     />
-    <MapRoutesLayer routes={state.routes} />
+    <MapRoutesLayer routes={routes} />
     <MapControlsLayer filter={filter} />
   </MapContainer>
 );

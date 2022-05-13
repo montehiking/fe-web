@@ -221,8 +221,7 @@
       },
       "properties": {
         "name": "Petkovići",
-        "description": "старинная полузаброшенная деревня",
-        "notVerified": true
+        "description": "заброшенная деревня"
       }
     },
     {
@@ -234,6 +233,119 @@
       "properties": {
         "name": "Marovići",
         "description": "старинная полузаброшенная деревня"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.751606, 42.412104]
+      },
+      "properties": {
+        "name": "Gornji Kavač (?)",
+        "description": "старинная полузаброшенная деревня",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.722403, 42.445139]
+      },
+      "properties": {
+        "name": "Ruševine sela",
+        "description": "руины деревни"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.717251, 42.429883]
+      },
+      "properties": {
+        "name": "Ruševine sela",
+        "description": "руины деревни"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.695614, 42.514539]
+      },
+      "properties": {
+        "name": "Stari Grad Risan",
+        "description": "старый квартал"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.69342, 42.466416]
+      },
+      "properties": {
+        "name": "Gornje Lepetane",
+        "description": "полузаброшенная деревня",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.259173, 42.438102]
+      },
+      "properties": {
+        "name": "Stara Varoš",
+        "description": "старый квартал"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.686628, 42.447362]
+      },
+      "properties": {
+        "name": "Donja Lastva",
+        "description": "старый квартал",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.704191, 42.432477]
+      },
+      "properties": {
+        "name": "Tripovići",
+        "description": "старый квартал"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.521396, 42.82394]
+      },
+      "properties": {
+        "name": "IV. Proleterske",
+        "description": "старый квартал"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.26178, 42.443031]
+      },
+      "properties": {
+        "name": "Hercegovačka",
+        "description": "старый квартал"
       }
     }
   ]

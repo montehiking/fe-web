@@ -1,6 +1,6 @@
 import { Meta, Story } from '@storybook/react/types-6-0';
 
-import { MapMarker as MapMarkerComponent } from 'src/components/molecules/MapMarker';
+import { MapMarker } from 'src/components/molecules/MapMarker';
 import {
   decorators,
   mapDecorator,
@@ -8,40 +8,47 @@ import {
 
 export default {
   title: 'Molecules/MapMarker',
-  component: MapMarkerComponent,
+  component: MapMarker,
   decorators: [...decorators, mapDecorator],
 } as Meta;
 
-const MapMarker: Story = ({ icon, zoom }) => (
-  <MapMarkerComponent
+const Template: Story = ({ icon, zoom }) => (
+  <MapMarker
     description="description"
     icon={icon}
     latLng={{ lat: 0, lng: 0 }}
     name="name"
+    onClick={console.log}
     zoom={zoom}
   />
 );
 
-export const MapMarkerBlue = MapMarker.bind({});
-MapMarkerBlue.args = {
+export const Blue = Template.bind({});
+Blue.args = {
   icon: 'blue',
   zoom: 1,
 };
 
-export const MapMarkerRed = MapMarker.bind({});
-MapMarkerRed.args = {
+export const Gray = Template.bind({});
+Gray.args = {
+  icon: 'gray',
+  zoom: 1,
+};
+
+export const Red = Template.bind({});
+Red.args = {
   icon: 'red',
   zoom: 1,
 };
 
-export const MapMarkerYellow = MapMarker.bind({});
-MapMarkerYellow.args = {
+export const Yellow = Template.bind({});
+Yellow.args = {
   icon: 'yellow',
   zoom: 1,
 };
 
-export const MapWithoutLink = MapMarker.bind({});
-MapWithoutLink.args = {
+export const WithoutLink = Template.bind({});
+WithoutLink.args = {
   icon: 'red',
   zoom: null,
 };

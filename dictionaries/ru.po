@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: 0.1.0\n"
+"Project-Id-Version: 0.1.1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -9,7 +9,7 @@ msgstr ""
 "PO-Revision-Date: 2022-04-23T00:00:00.000Z\n"
 
 msgctxt "base"
-msgid "components.atoms.MapPopup.tooltip.showOnGoogleMaps"
+msgid "components.atoms.PlaceLink.tooltip.showOnGoogleMaps"
 msgstr "Показать на Google Картах"
 
 msgctxt "base"
@@ -65,28 +65,28 @@ msgid "components.organisms.Filters.subLabel.7"
 msgstr "{count} маршрутов"
 
 msgctxt "base"
-msgid "components.organisms.MapView.filters"
+msgid "components.organisms.SidebarFilters.filters"
 msgstr "Фильтры"
 
 msgctxt "base"
-msgid "components.organisms.MapView.filters.0"
+msgid "components.organisms.SidebarFilters.filters.0"
 msgstr "ничего не выбрано"
 
 msgctxt "base"
-msgid "components.organisms.MapView.filters.1"
+msgid "components.organisms.SidebarFilters.filters.1"
 msgstr "{to} объект из {from}"
 
 msgctxt "base"
-msgid "components.organisms.MapView.filters.2"
+msgid "components.organisms.SidebarFilters.filters.2"
 msgstr "{to} объекта из {from}"
 
 msgctxt "base"
-msgid "components.organisms.MapView.filters.3"
+msgid "components.organisms.SidebarFilters.filters.3"
 msgstr "{to} объектов из {from}"
 
 msgctxt "base"
 msgid "constants.filters.labels.bridge"
-msgstr "Мосты"
+msgstr "Мельницы и мосты"
 
 msgctxt "base"
 msgid "constants.filters.labels.cave"
@@ -137,9 +137,9 @@ msgid "constants.filters.labels.waterfall"
 msgstr "Водопады"
 
 msgctxt "base"
-msgid "utils.filters.newPoint.description"
+msgid "hooks.useMapState.newPoint.description"
 msgstr "новая локация"
 
 msgctxt "base"
-msgid "utils.filters.newPoint.name"
+msgid "hooks.useMapState.newPoint.name"
 msgstr "Неизвестное место"
