@@ -101,6 +101,28 @@
         "name": "Ljetnikovac Pima Pasquali",
         "description": "руины средневекового имения"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.7015347, 42.4851907]
+      },
+      "properties": {
+        "name": "Palača Balović",
+        "description": "дворец XVIII в."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.7025546, 42.4852676]
+      },
+      "properties": {
+        "name": "Palača Bronza",
+        "description": "дворец XVIII в."
+      }
     }
   ]
 }

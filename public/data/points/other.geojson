@@ -352,6 +352,17 @@
         "name": "Istočna kapija",
         "description": "восточные (морские) ворота"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.201328, 41.924748]
+      },
+      "properties": {
+        "name": "Trg roblja",
+        "description": "невольничья площадь"
+      }
     }
   ]
 }

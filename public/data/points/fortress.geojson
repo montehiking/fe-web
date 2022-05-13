@@ -580,6 +580,41 @@
         "name": "Tvrđava Sv. Spiridon",
         "description": "австро-венгерский форт"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.942017, 42.774442]
+      },
+      "properties": {
+        "name": "Bedem",
+        "description": "турецкая крепость",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.7324519, 42.4839375]
+      },
+      "properties": {
+        "name": "Bajova Kula",
+        "description": "черногорский дом-крепость",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.201629, 41.924764]
+      },
+      "properties": {
+        "name": "Kula Balšića",
+        "description": "средневековый дом-крепость"
+      }
     }
   ]
 }

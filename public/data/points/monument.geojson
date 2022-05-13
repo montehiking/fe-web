@@ -417,6 +417,53 @@
         "name": "Spomenik u čast bitke na Fundini",
         "description": "обелиск"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.919809, 42.386096]
+      },
+      "properties": {
+        "name": "Mauzolej Vladike Danila",
+        "description": "усыпальница"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.148313, 43.09446]
+      },
+      "properties": {
+        "name": "Bogumilski stećci",
+        "description": "некрополь XII-XVI вв.",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.8409806, 43.1542178]
+      },
+      "properties": {
+        "name": "Grčko groblje",
+        "description": "древний некрополь",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.7412932, 43.1954159]
+      },
+      "properties": {
+        "name": "Grčko groblje",
+        "description": "древний некрополь",
+        "notVerified": true
+      }
     }
   ]
 }

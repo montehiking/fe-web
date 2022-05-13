@@ -244,6 +244,18 @@
         "name": "Jakšića Mlin",
         "description": "старая мельница"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.891608, 42.273641]
+      },
+      "properties": {
+        "name": "Stari most",
+        "description": "старый мост",
+        "notVerified": true
+      }
     }
   ]
 }
