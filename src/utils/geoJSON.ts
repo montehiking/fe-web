@@ -53,3 +53,12 @@ export const getData = async (isEditor: boolean): Promise<MapData> => {
 
   return { points, routes };
 };
+
+// TODO: temp code
+(async () => {
+  try {
+    await fetch('https://data.montehiking.com/points/bridge.geojson');
+  } catch (e) {
+    console.error(e);
+  }
+})();
