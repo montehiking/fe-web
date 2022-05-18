@@ -21,6 +21,8 @@ const buttonProps = {
 } as const;
 
 const ExportButton: React.FC<Props> = ({ mapState }) => {
+  const disabled = mapState.routes.length + mapState.points.length === 0;
+
   const exportKMZ = () => {
     const zip = new JSZip();
 
@@ -66,11 +68,13 @@ const ExportButton: React.FC<Props> = ({ mapState }) => {
       <div className={styles.buttons}>
         <Button
           {...buttonProps}
+          disabled={disabled}
           onClick={exportGeoJson}
           text={{ id: 'components.organisms.ExportButton.geojson' }}
         />
         <Button
           {...buttonProps}
+          disabled={disabled}
           onClick={exportKMZ}
           text={{ id: 'components.organisms.ExportButton.kmz' }}
         />
