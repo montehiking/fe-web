@@ -159,12 +159,11 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.692338, 42.439305]
+        "coordinates": [18.691928, 42.439373]
       },
       "properties": {
         "name": "Park Doma Vojske",
-        "description": "городской парк",
-        "notVerified": true
+        "description": "городской парк"
       }
     },
     {

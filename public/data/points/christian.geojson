@@ -358,8 +358,7 @@
       },
       "properties": {
         "name": "Sv. Antun",
-        "description": "средневековая часовня",
-        "notVerified": true
+        "description": "средневековая часовня"
       }
     },
     {
@@ -404,6 +403,17 @@
       "properties": {
         "name": "Crkva sv. Marka",
         "description": "городская усыпальница"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.691703, 42.438364]
+      },
+      "properties": {
+        "name": "Crkva Blagovjesti",
+        "description": "церковь XVII в."
       }
     }
   ]

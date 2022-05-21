@@ -123,6 +123,28 @@
         "name": "Palača Bronza",
         "description": "дворец XVIII в."
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.689032, 42.439753]
+      },
+      "properties": {
+        "name": "Ruševine ljetnikovca",
+        "description": "остатки резиденции или виллы"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.687106, 42.443649]
+      },
+      "properties": {
+        "name": "Park Ivovića",
+        "description": "остатки резиденции или виллы"
+      }
     }
   ]
 }
