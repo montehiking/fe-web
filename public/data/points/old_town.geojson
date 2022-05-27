@@ -170,12 +170,11 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.716346, 42.470169]
+        "coordinates": [18.712433, 42.472365]
       },
       "properties": {
         "name": "Donji Stoliv",
-        "description": "старинное поселение",
-        "notVerified": true
+        "description": "старинное поселение"
       }
     },
     {
@@ -198,8 +197,7 @@
       },
       "properties": {
         "name": "Prčanj",
-        "description": "старинное поселение",
-        "notVerified": true
+        "description": "старинное поселение"
       }
     },
     {
@@ -307,7 +305,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.686628, 42.447362]
+        "coordinates": [18.687084, 42.44701]
       },
       "properties": {
         "name": "Donja Lastva",

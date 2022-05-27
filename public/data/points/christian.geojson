@@ -105,12 +105,11 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.690286, 42.477369]
+        "coordinates": [18.6904, 42.47747]
       },
       "properties": {
-        "name": "Crkva Gospe od Anđela",
-        "description": "древняя церковь",
-        "notVerified": true
+        "name": "Gospa od Anđela",
+        "description": "древняя церковь"
       }
     },
     {
@@ -414,6 +413,17 @@
       "properties": {
         "name": "Crkva Blagovjesti",
         "description": "церковь XVII в."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.686784, 42.447544]
+      },
+      "properties": {
+        "name": "Sveti Roko",
+        "description": "старая церковь с колокольней"
       }
     }
   ]
