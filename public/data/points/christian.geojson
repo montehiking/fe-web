@@ -425,6 +425,28 @@
         "name": "Sveti Roko",
         "description": "старая церковь с колокольней"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.752884, 42.449305]
+      },
+      "properties": {
+        "name": "Gospa od Karmena",
+        "description": "фамильная церковь Луковичей"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.747799, 42.453271]
+      },
+      "properties": {
+        "name": "Župa Rođenja Blažene Djevice Marije",
+        "description": "храм"
+      }
     }
   ]
 }
