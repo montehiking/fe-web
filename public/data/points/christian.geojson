@@ -447,6 +447,74 @@
         "name": "Župa Rođenja Blažene Djevice Marije",
         "description": "храм"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.707013, 42.454154]
+      },
+      "properties": {
+        "name": "Župna crkva Svete Marije",
+        "description": "храм XV в."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.750384, 42.40893]
+      },
+      "properties": {
+        "name": "Sveti Ivan",
+        "description": "церковь XV в.",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.748984, 42.452527]
+      },
+      "properties": {
+        "name": "Sveti Nikola",
+        "description": "церковь XVIII в."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.74914, 42.452448]
+      },
+      "properties": {
+        "name": "Samostan Svetog Nikole",
+        "description": "монастырь XVIII в.",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.747508, 42.454855]
+      },
+      "properties": {
+        "name": "Crkva Svetog Ivana Krstitelja",
+        "description": "старинная церковь"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.710332, 42.472469]
+      },
+      "properties": {
+        "name": "Crkva Svete Marije",
+        "description": "храм XVIII в."
+      }
     }
   ]
 }

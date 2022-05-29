@@ -267,6 +267,17 @@
         "name": "Stari most",
         "description": "старый мост"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.357912, 42.585033]
+      },
+      "properties": {
+        "name": "Most na sajlama",
+        "description": "проволочный мост"
+      }
     }
   ]
 }

@@ -497,6 +497,17 @@
         "name": "Spomenik palim borcima",
         "description": "югославский мемориал"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.708166, 42.453149]
+      },
+      "properties": {
+        "name": "Spomenik palim borcima",
+        "description": "югославский мемориал"
+      }
     }
   ]
 }
