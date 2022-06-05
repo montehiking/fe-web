@@ -515,6 +515,50 @@
         "name": "Crkva Svete Marije",
         "description": "храм XVIII в."
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.733166, 42.37378]
+      },
+      "properties": {
+        "name": "Sveti Đorđe",
+        "description": "церковь XVIII в."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.737222, 42.368056]
+      },
+      "properties": {
+        "name": "Crkva Sveta Vara",
+        "description": "старинная церковь"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.705533, 42.351741]
+      },
+      "properties": {
+        "name": "Crkva sv. Nikole",
+        "description": "церковь XIX в."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.671468, 42.398924]
+      },
+      "properties": {
+        "name": "Crkva svete Gospodje",
+        "description": "храм XIX в."
+      }
     }
   ]
 }

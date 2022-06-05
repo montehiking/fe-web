@@ -312,8 +312,7 @@
       },
       "properties": {
         "name": "Tvrđava Grabovac",
-        "description": "австро-венгерский форт",
-        "notVerified": true
+        "description": "австро-венгерский форт"
       }
     },
     {
@@ -613,6 +612,18 @@
       "properties": {
         "name": "Kula Balšića",
         "description": "средневековый дом-крепость"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.65287, 42.3916]
+      },
+      "properties": {
+        "name": "Batterie Alt Radišević",
+        "description": "австрийская батарея",
+        "notVerified": true
       }
     }
   ]
