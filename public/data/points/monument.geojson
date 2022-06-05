@@ -520,6 +520,18 @@
         "description": "югославский мемориал",
         "notVerified": true
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.71424, 42.37898]
+      },
+      "properties": {
+        "name": "Tumul Trašte",
+        "description": "курган",
+        "notVerified": true
+      }
     }
   ]
 }

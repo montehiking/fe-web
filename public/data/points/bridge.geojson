@@ -278,6 +278,17 @@
         "name": "Most na sajlama",
         "description": "проволочный мост"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.735766, 42.41693]
+      },
+      "properties": {
+        "name": "Uljara Čelanovića",
+        "description": "старая маслиничная мельница"
+      }
     }
   ]
 }

@@ -625,6 +625,30 @@
         "description": "австрийская батарея",
         "notVerified": true
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.704936, 42.36768]
+      },
+      "properties": {
+        "name": "Batterie Trašte",
+        "description": "австрийская батарея",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.713266, 42.369541]
+      },
+      "properties": {
+        "name": "Trašte Bunker",
+        "description": "бункер с подземным ходом",
+        "notVerified": true
+      }
     }
   ]
 }

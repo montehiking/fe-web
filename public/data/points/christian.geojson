@@ -559,6 +559,17 @@
         "name": "Crkva svete Gospodje",
         "description": "храм XIX в."
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.031449, 42.15045]
+      },
+      "properties": {
+        "name": "Crkva Svetog Dimitrija",
+        "description": "развалины церкви XIII в"
+      }
     }
   ]
 }

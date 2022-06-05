@@ -276,6 +276,17 @@
         "name": "Njegošev Park",
         "description": "городской парк"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.893974, 42.263241]
+      },
+      "properties": {
+        "name": "Miločer",
+        "description": "парк и ботанический сад"
+      }
     }
   ]
 }
