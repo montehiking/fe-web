@@ -105,12 +105,11 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.690286, 42.477369]
+        "coordinates": [18.6904, 42.47747]
       },
       "properties": {
-        "name": "Crkva Gospe od Anđela",
-        "description": "древняя церковь",
-        "notVerified": true
+        "name": "Gospa od Anđela",
+        "description": "древняя церковь"
       }
     },
     {
@@ -358,8 +357,7 @@
       },
       "properties": {
         "name": "Sv. Antun",
-        "description": "средневековая часовня",
-        "notVerified": true
+        "description": "средневековая часовня"
       }
     },
     {
@@ -404,6 +402,173 @@
       "properties": {
         "name": "Crkva sv. Marka",
         "description": "городская усыпальница"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.691703, 42.438364]
+      },
+      "properties": {
+        "name": "Crkva Blagovjesti",
+        "description": "церковь XVII в."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.686784, 42.447544]
+      },
+      "properties": {
+        "name": "Sveti Roko",
+        "description": "старая церковь с колокольней"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.752884, 42.449305]
+      },
+      "properties": {
+        "name": "Gospa od Karmena",
+        "description": "фамильная церковь Луковичей"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.747799, 42.453271]
+      },
+      "properties": {
+        "name": "Župa Rođenja Blažene Djevice Marije",
+        "description": "храм"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.707013, 42.454154]
+      },
+      "properties": {
+        "name": "Župna crkva Svete Marije",
+        "description": "храм XV в."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.750384, 42.40893]
+      },
+      "properties": {
+        "name": "Sveti Ivan",
+        "description": "церковь XV в.",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.748984, 42.452527]
+      },
+      "properties": {
+        "name": "Sveti Nikola",
+        "description": "церковь XVIII в."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.74914, 42.452448]
+      },
+      "properties": {
+        "name": "Samostan Svetog Nikole",
+        "description": "монастырь XVIII в.",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.747508, 42.454855]
+      },
+      "properties": {
+        "name": "Crkva Svetog Ivana Krstitelja",
+        "description": "старинная церковь"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.710332, 42.472469]
+      },
+      "properties": {
+        "name": "Crkva Svete Marije",
+        "description": "храм XVIII в."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.733166, 42.37378]
+      },
+      "properties": {
+        "name": "Sveti Đorđe",
+        "description": "церковь XVIII в."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.737222, 42.368056]
+      },
+      "properties": {
+        "name": "Crkva Sveta Vara",
+        "description": "старинная церковь"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.705533, 42.351741]
+      },
+      "properties": {
+        "name": "Crkva sv. Nikole",
+        "description": "церковь XIX в."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.671468, 42.398924]
+      },
+      "properties": {
+        "name": "Crkva svete Gospodje",
+        "description": "храм XIX в."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [19.031449, 42.15045]
+      },
+      "properties": {
+        "name": "Crkva Svetog Dimitrija",
+        "description": "развалины церкви XIII в"
       }
     }
   ]

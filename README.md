@@ -11,7 +11,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Pre requirements
 
-- `node.js`: `14.*`
+- `node.js`: `16.*`
 - `yarn`: `1.22.*`
 - `tmux`: `*` (optional, for local launch)
 
