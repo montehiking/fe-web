@@ -159,12 +159,11 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.692338, 42.439305]
+        "coordinates": [18.691928, 42.439373]
       },
       "properties": {
         "name": "Park Doma Vojske",
-        "description": "городской парк",
-        "notVerified": true
+        "description": "городской парк"
       }
     },
     {
@@ -237,7 +236,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.695615, 42.434151]
+        "coordinates": [18.697164, 42.434337]
       },
       "properties": {
         "name": "Veliki gradski park",
@@ -276,6 +275,17 @@
       "properties": {
         "name": "Njegošev Park",
         "description": "городской парк"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.893974, 42.263241]
+      },
+      "properties": {
+        "name": "Miločer",
+        "description": "парк и ботанический сад"
       }
     }
   ]

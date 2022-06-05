@@ -464,6 +464,74 @@
         "description": "древний некрополь",
         "notVerified": true
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.696467, 42.43349]
+      },
+      "properties": {
+        "name": "31 oktobra 1918",
+        "description": "памятная плита"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.695984, 42.433823]
+      },
+      "properties": {
+        "name": "Narodni heroji",
+        "description": "памятник"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.686945, 42.447366]
+      },
+      "properties": {
+        "name": "Spomenik palim borcima",
+        "description": "югославский мемориал"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.708166, 42.453149]
+      },
+      "properties": {
+        "name": "Spomenik palim borcima",
+        "description": "югославский мемориал"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.685024, 42.384855]
+      },
+      "properties": {
+        "name": "Spomenik palim borcima",
+        "description": "югославский мемориал",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.71424, 42.37898]
+      },
+      "properties": {
+        "name": "Tumul Trašte",
+        "description": "курган",
+        "notVerified": true
+      }
     }
   ]
 }

@@ -31,8 +31,7 @@
       },
       "properties": {
         "name": "Svetionik Verige",
-        "description": "маяк",
-        "notVerified": true
+        "description": "маяк"
       }
     },
     {
@@ -55,8 +54,7 @@
       },
       "properties": {
         "name": "Svetionik Prčanj",
-        "description": "маяк",
-        "notVerified": true
+        "description": "маяк"
       }
     },
     {
@@ -89,6 +87,28 @@
       },
       "properties": {
         "name": "Svetionik Ulcinj",
+        "description": "маяк"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.748925, 42.453683]
+      },
+      "properties": {
+        "name": "Svetionik Prčanj",
+        "description": "маяк"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.704267, 42.356054]
+      },
+      "properties": {
+        "name": "Svetionik Bigova",
         "description": "маяк"
       }
     }

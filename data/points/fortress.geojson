@@ -181,12 +181,11 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [18.689762, 42.441905]
+        "coordinates": [18.689697, 42.441939]
       },
       "properties": {
         "name": "Blokhauz Donja Lastva",
-        "description": "австро-венгерский блокгауз",
-        "notVerified": true
+        "description": "австро-венгерский блокгауз"
       }
     },
     {
@@ -313,8 +312,7 @@
       },
       "properties": {
         "name": "Tvrđava Grabovac",
-        "description": "австро-венгерский форт",
-        "notVerified": true
+        "description": "австро-венгерский форт"
       }
     },
     {
@@ -614,6 +612,42 @@
       "properties": {
         "name": "Kula Balšića",
         "description": "средневековый дом-крепость"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.65287, 42.3916]
+      },
+      "properties": {
+        "name": "Batterie Alt Radišević",
+        "description": "австрийская батарея",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.704936, 42.36768]
+      },
+      "properties": {
+        "name": "Batterie Trašte",
+        "description": "австрийская батарея",
+        "notVerified": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.713266, 42.369541]
+      },
+      "properties": {
+        "name": "Trašte Bunker",
+        "description": "бункер с подземным ходом",
+        "notVerified": true
       }
     }
   ]

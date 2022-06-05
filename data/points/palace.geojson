@@ -123,6 +123,94 @@
         "name": "Palača Bronza",
         "description": "дворец XVIII в."
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.689032, 42.439753]
+      },
+      "properties": {
+        "name": "Ruševine ljetnikovca",
+        "description": "остатки резиденции или виллы"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.687106, 42.443649]
+      },
+      "properties": {
+        "name": "Park Ivovića",
+        "description": "остатки резиденции или виллы"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.754162, 42.447842]
+      },
+      "properties": {
+        "name": "Tre Sorele",
+        "description": "дворец XV в."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.75311, 42.44925]
+      },
+      "properties": {
+        "name": "Palace Luković",
+        "description": "дворец Луковичей"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.753389, 42.449147]
+      },
+      "properties": {
+        "name": "Palata Beskuća",
+        "description": "дворец Бескуча"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.748421, 42.45383]
+      },
+      "properties": {
+        "name": "Kuća Niegoša",
+        "description": "летний дом Петра II Петровича Негоша"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.70193, 42.48535]
+      },
+      "properties": {
+        "name": "Palata Mazarović",
+        "description": "дворец XVIII в."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.69847, 42.48652]
+      },
+      "properties": {
+        "name": "Palata Martinović",
+        "description": "старинный дворец"
+      }
     }
   ]
 }

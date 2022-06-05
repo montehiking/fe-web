@@ -363,6 +363,17 @@
         "name": "Trg roblja",
         "description": "невольничья площадь"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.686968, 42.446268]
+      },
+      "properties": {
+        "name": "Rogač",
+        "description": "природная достопримечательность"
+      }
     }
   ]
 }
